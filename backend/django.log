@@ -1,0 +1,2421 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+Bad Request: /auth/register/
+"POST /auth/register/ HTTP/1.1" 400 61
+Bad Request: /auth/register/
+"POST /auth/register/ HTTP/1.1" 400 61
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Bad Request: /auth/register/
+"POST /auth/register/ HTTP/1.1" 400 61
+Bad Request: /auth/register/
+"POST /auth/register/ HTTP/1.1" 400 59
+Internal Server Error: /auth/register/
+"POST /auth/register/ HTTP/1.1" 500 50
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /auth/register/
+"POST /auth/register/ HTTP/1.1" 400 59
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Bad Request: /auth/register/
+"POST /auth/register/ HTTP/1.1" 400 59
+"POST /auth/register/ HTTP/1.1" 200 97
+"OPTIONS /auth/otp-verification/ HTTP/1.1" 200 0
+"POST /auth/otp-verification/ HTTP/1.1" 201 635
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 403 58
+"POST /auth/token/ HTTP/1.1" 200 483
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Watching for file changes with StatReloader
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+Forbidden: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 403 58
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /auth/token/ HTTP/1.1" 200 483
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 403 58
+"POST /auth/token/ HTTP/1.1" 200 483
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+"POST /auth/token/ HTTP/1.1" 200 483
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 403 58
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+Watching for file changes with StatReloader
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+Forbidden: /auth/home/
+"GET /auth/home/ HTTP/1.1" 403 58
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+Watching for file changes with StatReloader
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"OPTIONS /auth/register/ HTTP/1.1" 200 0
+Bad Request: /auth/register/
+"POST /auth/register/ HTTP/1.1" 400 59
+"POST /auth/register/ HTTP/1.1" 200 101
+"OPTIONS /auth/otp-verification/ HTTP/1.1" 200 0
+"POST /auth/otp-verification/ HTTP/1.1" 201 646
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /auth/home/
+"GET /auth/home/ HTTP/1.1" 401 172
+Unauthorized: /auth/home/
+"GET /auth/home/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /auth/home/ HTTP/1.1" 200 52
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+Unauthorized: /auth/admin-dashboard/
+"GET /auth/admin-dashboard/ HTTP/1.1" 401 172
+Unauthorized: /auth/admin-dashboard/
+"GET /auth/admin-dashboard/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+Unauthorized: /auth/admin-dashboard/
+"GET /auth/admin-dashboard/ HTTP/1.1" 401 172
+Unauthorized: /auth/admin-dashboard/
+"GET /auth/admin-dashboard/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"OPTIONS /adminsite/customers-details/3/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/3/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/3/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/3/ HTTP/1.1" 200 217
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 206
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 206
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 206
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 206
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 206
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 206
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 206
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 206
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+"POST /auth/token/ HTTP/1.1" 200 483
+"POST /auth/token/ HTTP/1.1" 200 483
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /adminsite/customers-list/ HTTP/1.1" 200 426
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+Watching for file changes with StatReloader
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+Internal Server Error: /auth/token/refresh/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework_simplejwt\views.py", line 44, in post
+    serializer.is_valid(raise_exception=True)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\serializers.py", line 447, in run_validation
+    value = self.validate(value)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework_simplejwt\serializers.py", line 116, in validate
+    user := get_user_model().objects.get(
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        **{api_settings.USER_ID_FIELD: user_id}
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 633, in get
+    raise self.model.DoesNotExist(
+        "%s matching query does not exist." % self.model._meta.object_name
+    )
+authservice.models.User.DoesNotExist: User matching query does not exist.
+"POST /auth/token/refresh/ HTTP/1.1" 500 118822
+"OPTIONS /auth/register/ HTTP/1.1" 200 0
+"POST /auth/register/ HTTP/1.1" 200 101
+"OPTIONS /auth/otp-verification/ HTTP/1.1" 200 0
+"POST /auth/otp-verification/ HTTP/1.1" 201 646
+"POST /auth/token/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Watching for file changes with StatReloader
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /auth/token/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Watching for file changes with StatReloader
+"POST /auth/admin-login/ HTTP/1.1" 200 556
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"POST /auth/token/ HTTP/1.1" 200 483
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/admin-login/ HTTP/1.1" 200 556
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 556
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"POST /auth/admin-login/ HTTP/1.1" 200 556
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2628
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2679
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 556
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"GET /adminsite/customers-list/ HTTP/1.1" 200 219
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /auth/register/ HTTP/1.1" 200 0
+"POST /auth/register/ HTTP/1.1" 200 103
+"OPTIONS /auth/otp-verification/ HTTP/1.1" 200 0
+"POST /auth/otp-verification/ HTTP/1.1" 201 641
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/admin-login/ HTTP/1.1" 200 556
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /auth/admin-dashboard/
+"GET /auth/admin-dashboard/ HTTP/1.1" 401 172
+Unauthorized: /auth/admin-dashboard/
+"GET /auth/admin-dashboard/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\signals.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\apps.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\apps.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 168
+"GET /profile-service/user-profile/ HTTP/1.1" 200 168
+"GET /profile-service/user-profile/ HTTP/1.1" 200 168
+"GET /profile-service/user-profile/ HTTP/1.1" 200 168
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+Unauthorized: /profile-service/user-profile/
+"PUT /profile-service/user-profile/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"GET /profile-service/user-profile/ HTTP/1.1" 200 205
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 556
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+Watching for file changes with StatReloader
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/admin-login/ HTTP/1.1" 200 556
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+Watching for file changes with StatReloader
+"OPTIONS /barber-reg/personal-details/ HTTP/1.1" 200 0
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Bad Request: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 400 42
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+"OPTIONS /barber-reg/approve-request/ HTTP/1.1" 200 0
+"POST /barber-reg/approve-request/ HTTP/1.1" 201 46
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Watching for file changes with StatReloader
+"POST /auth/admin-login/ HTTP/1.1" 200 555
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+Watching for file changes with StatReloader
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"POST /auth/admin-login/ HTTP/1.1" 200 555
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"POST /auth/admin-login/ HTTP/1.1" 200 555
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"GET /adminsite/all-requests/ HTTP/1.1" 200 308
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 308
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 308
+"GET /adminsite/all-requests/ HTTP/1.1" 200 308
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 308
+"GET /adminsite/all-requests/ HTTP/1.1" 200 308
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 308
+"GET /adminsite/all-requests/ HTTP/1.1" 200 308
+"OPTIONS /adminsite/barber-details/3/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/3/ HTTP/1.1" 200 348
+"GET /media/documents/licences/aatharThiru.jpg HTTP/1.1" 200 99341
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2992
+"GET /media/documents/certificates/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 200 62912
+"POST /adminsite/pending-requests/ HTTP/1.1" 200 79
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 309
+"OPTIONS /barber-reg/personal-details/ HTTP/1.1" 200 0
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+"OPTIONS /barber-reg/approve-request/ HTTP/1.1" 200 0
+"POST /barber-reg/approve-request/ HTTP/1.1" 201 46
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /adminsite/all-requests/ HTTP/1.1" 200 626
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 318
+"GET /adminsite/all-requests/ HTTP/1.1" 200 626
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 318
+"OPTIONS /adminsite/barber-details/5/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/5/ HTTP/1.1" 200 358
+"GET /media/documents/licences/ChatGPT_Image_May_23_2025_03_32_46_PM.png HTTP/1.1" 200 1906951
+"GET /media/documents/certificates/WIN_20250518_16_52_19_Pro.jpg HTTP/1.1" 200 150345
+"POST /adminsite/pending-requests/ HTTP/1.1" 200 79
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/barber-details/3/ HTTP/1.1" 200 349
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 83
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+Unauthorized: /barber-reg/approve-request/
+"GET /barber-reg/approve-request/ HTTP/1.1" 401 172
+Unauthorized: /barber-reg/approve-request/
+"GET /barber-reg/approve-request/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Not Found: /barber-reg/approve-request/
+"GET /barber-reg/approve-request/ HTTP/1.1" 404 39
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Watching for file changes with StatReloader
+"POST /auth/admin-login/ HTTP/1.1" 200 547
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 43
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 217
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 627
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+"POST /barber-reg/approve-request/ HTTP/1.1" 201 46
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 295
+"GET /adminsite/all-requests/ HTTP/1.1" 200 921
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 295
+"GET /adminsite/all-requests/ HTTP/1.1" 200 921
+"OPTIONS /adminsite/barber-details/6/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/6/ HTTP/1.1" 200 335
+"GET /media/documents/licences/aatharThiru_7CfKXRj.jpg HTTP/1.1" 200 99341
+"POST /adminsite/pending-requests/ HTTP/1.1" 200 78
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 97
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 97
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 97
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 97
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 97
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 97
+"GET /adminsite/barber-details/6/ HTTP/1.1" 200 336
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 97
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/customers-list/ HTTP/1.1" 200 432
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+Unauthorized: /barber-reg/approve-request/
+"GET /barber-reg/approve-request/ HTTP/1.1" 401 172
+Unauthorized: /barber-reg/approve-request/
+"GET /barber-reg/approve-request/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 97
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/pending-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/all-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/pending-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/all-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 58
+"GET /adminsite/all-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 58
+"GET /adminsite/all-requests/ HTTP/1.1" 401 58
+D:\practiceProject\backend\barber_reg\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /barber-reg/personal-details/ HTTP/1.1" 200 0
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+Internal Server Error: /profile-service/user-profile/
+"PUT /profile-service/user-profile/ HTTP/1.1" 500 36
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"GET /profile-service/user-profile/ HTTP/1.1" 200 223
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+D:\practiceProject\backend\profileservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+Internal Server Error: /profile-service/user-profile/
+"PUT /profile-service/user-profile/ HTTP/1.1" 500 36
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+Unauthorized: /auth/home/
+"GET /auth/home/ HTTP/1.1" 401 172
+Unauthorized: /auth/home/
+"GET /auth/home/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /auth/home/ HTTP/1.1" 200 52
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+Unauthorized: /auth/home/
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 401 172
+Unauthorized: /auth/home/
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+Bad Request: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 400 25
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+"GET /profile-service/user-profile/ HTTP/1.1" 200 272
+Internal Server Error: /profile-service/user-profile/
+"PUT /profile-service/user-profile/ HTTP/1.1" 500 36
+"GET /auth/home/ HTTP/1.1" 200 52
+"GET /auth/home/ HTTP/1.1" 200 52
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/1/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 287
+"GET /adminsite/customers-details/1/ HTTP/1.1" 200 287
+"GET /media/profile_images/WIN_20250518_16_52_19_Pro.jpg HTTP/1.1" 200 150345
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 163
+"GET /profile-service/user-profile/ HTTP/1.1" 200 163
+Bad Request: /profile-service/user-profile/
+"PUT /profile-service/user-profile/ HTTP/1.1" 400 90
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 163
+"GET /profile-service/user-profile/ HTTP/1.1" 200 163
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"OPTIONS /adminsite/barber-details/5/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/5/ HTTP/1.1" 200 359
+"GET /media/documents/licences/ChatGPT_Image_May_23_2025_03_32_46_PM.png HTTP/1.1" 304 0
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3146
+"GET /media/documents/certificates/WIN_20250518_16_52_19_Pro.jpg HTTP/1.1" 304 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"GET /adminsite/customers-list/ HTTP/1.1" 200 481
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/all-requests/ HTTP/1.1" 200 922
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"OPTIONS /barber-reg/personal-details/ HTTP/1.1" 200 0
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+"OPTIONS /barber-reg/approve-request/ HTTP/1.1" 200 0
+"POST /barber-reg/approve-request/ HTTP/1.1" 201 46
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Watching for file changes with StatReloader
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+Unauthorized: /barber-reg/personal-details/
+"POST /barber-reg/personal-details/ HTTP/1.1" 401 58
+Unauthorized: /auth/token/
+"POST /auth/token/ HTTP/1.1" 401 63
+"OPTIONS /auth/register/ HTTP/1.1" 200 0
+"POST /auth/register/ HTTP/1.1" 200 101
+"OPTIONS /auth/otp-verification/ HTTP/1.1" 200 0
+"POST /auth/otp-verification/ HTTP/1.1" 201 639
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 161
+"GET /profile-service/user-profile/ HTTP/1.1" 200 161
+Bad Request: /profile-service/user-profile/
+"PUT /profile-service/user-profile/ HTTP/1.1" 400 90
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 161
+"GET /profile-service/user-profile/ HTTP/1.1" 200 161
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 53
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 53
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"OPTIONS /adminsite/customers-details/2/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/2/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/2/ HTTP/1.1" 200 210
+"GET /adminsite/customers-details/2/ HTTP/1.1" 200 210
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 2
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+"POST /barber-reg/approve-request/ HTTP/1.1" 201 46
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 326
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 326
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"OPTIONS /adminsite/barber-details/1/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/1/ HTTP/1.1" 200 366
+"GET /media/documents/licences/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 200 62912
+"GET /media/documents/certificates/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 200 73211
+"POST /adminsite/pending-requests/ HTTP/1.1" 200 79
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 327
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 83
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 15, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94259
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 15, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94259
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/2/ HTTP/1.1" 200 210
+"GET /adminsite/customers-details/2/ HTTP/1.1" 200 210
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 161
+"GET /profile-service/user-profile/ HTTP/1.1" 200 161
+"POST /auth/logout/ HTTP/1.1" 200 37
+Unauthorized: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/customers-list/
+"GET /adminsite/customers-list/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/all-requests/ HTTP/1.1" 401 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/pending-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/all-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 58
+"GET /adminsite/all-requests/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 58
+"GET /adminsite/all-requests/ HTTP/1.1" 401 58
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Watching for file changes with StatReloader
+"POST /auth/admin-login/ HTTP/1.1" 200 558
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"OPTIONS /barbersite/barber-login/ HTTP/1.1" 200 0
+"POST /barbersite/barber-login/ HTTP/1.1" 200 555
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 45, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94260
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 45, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94260
+"POST /barbersite/barber-login/ HTTP/1.1" 200 555
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 45, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94260
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 45, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94260
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 45, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94260
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 45, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94260
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 45, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94260
+Internal Server Error: /barbersite/barber-dash/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 45, in get
+    "username": user.username,
+                ^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'username'
+"GET /barbersite/barber-dash/ HTTP/1.1" 500 94260
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 54
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 54
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"OPTIONS /adminsite/customers-details/2/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/2/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/2/ HTTP/1.1" 200 210
+"GET /adminsite/customers-details/2/ HTTP/1.1" 200 210
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 172
+"GET /adminsite/all-requests/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 172
+"GET /adminsite/all-requests/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+Unauthorized: /barbersite/barber-login/
+"POST /barbersite/barber-login/ HTTP/1.1" 401 47
+"POST /barbersite/barber-login/ HTTP/1.1" 200 555
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 54
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 54
+"POST /barbersite/barber-login/ HTTP/1.1" 200 555
+"POST /barbersite/barber-login/ HTTP/1.1" 200 555
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+"POST /auth/admin-login/ HTTP/1.1" 200 558
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 172
+"GET /adminsite/all-requests/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/pending-requests/
+Unauthorized: /adminsite/all-requests/
+"GET /adminsite/pending-requests/ HTTP/1.1" 401 172
+"GET /adminsite/all-requests/ HTTP/1.1" 401 172
+Unauthorized: /barbersite/barber-dash/
+"GET /barbersite/barber-dash/ HTTP/1.1" 401 172
+Unauthorized: /barbersite/barber-dash/
+"GET /barbersite/barber-dash/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 58
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 326
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /auth/admin-login/
+"POST /auth/admin-login/ HTTP/1.1" 401 25
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Watching for file changes with StatReloader
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 53
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 53
+"OPTIONS /auth/register/ HTTP/1.1" 200 0
+"POST /auth/register/ HTTP/1.1" 200 101
+"OPTIONS /auth/otp-verification/ HTTP/1.1" 200 0
+"POST /auth/otp-verification/ HTTP/1.1" 201 639
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 161
+"GET /profile-service/user-profile/ HTTP/1.1" 200 161
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-details/2/ HTTP/1.1" 200 210
+"GET /adminsite/customers-details/2/ HTTP/1.1" 200 210
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/customers-list/ HTTP/1.1" 200 212
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 2
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /barber-reg/personal-details/ HTTP/1.1" 200 0
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+"OPTIONS /barber-reg/approve-request/ HTTP/1.1" 200 0
+"POST /barber-reg/approve-request/ HTTP/1.1" 201 46
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /adminsite/all-requests/ HTTP/1.1" 200 350
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 350
+"GET /adminsite/all-requests/ HTTP/1.1" 200 350
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 350
+"POST /adminsite/pending-requests/ HTTP/1.1" 200 79
+"GET /adminsite/all-requests/ HTTP/1.1" 200 351
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 83
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 83
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 63
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 63
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 83
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 83
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+Bad Request: /barber-reg/approve-request/
+"POST /barber-reg/approve-request/ HTTP/1.1" 400 37
+"OPTIONS /adminsite/barber-details/2/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/2/ HTTP/1.1" 200 393
+"GET /media/documents/licences/WhatsApp_Image_2025-05-17_at_21_1Ha9Fgf.55.50_c4dfc966.jpg HTTP/1.1" 200 62912
+"GET /media/documents/certificates/bfced07e2c857f72970b7c104edb304b_mCHA3fk.jpg HTTP/1.1" 200 73211
+Unauthorized: /barbersite/barber-login/
+"POST /barbersite/barber-login/ HTTP/1.1" 401 47
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+Unauthorized: /barbersite/barber-login/
+"POST /barbersite/barber-login/ HTTP/1.1" 401 47
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 353
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 353
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/customers-list/ HTTP/1.1" 200 2
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 353
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 353
+Bad Request: /auth/register/
+"POST /auth/register/ HTTP/1.1" 400 50
+"POST /auth/register/ HTTP/1.1" 200 97
+"POST /auth/otp-verification/ HTTP/1.1" 201 635
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 157
+"GET /profile-service/user-profile/ HTTP/1.1" 200 157
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/admin-login/ HTTP/1.1" 200 553
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"OPTIONS /adminsite/customers-details/3/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/3/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/3/ HTTP/1.1" 200 206
+"GET /adminsite/customers-details/3/ HTTP/1.1" 200 206
+"OPTIONS /auth/token/ HTTP/1.1" 200 0
+"POST /auth/token/ HTTP/1.1" 200 483
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 157
+"GET /profile-service/user-profile/ HTTP/1.1" 200 157
+Bad Request: /profile-service/user-profile/
+"PUT /profile-service/user-profile/ HTTP/1.1" 400 90
+"GET /adminsite/customers-details/3/ HTTP/1.1" 200 206
+"GET /adminsite/customers-details/3/ HTTP/1.1" 200 206
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 157
+"GET /profile-service/user-profile/ HTTP/1.1" 200 157
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 157
+"GET /profile-service/user-profile/ HTTP/1.1" 200 157
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+- Broken pipe from ('127.0.0.1', 63372)
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"GET /adminsite/customers-list/ HTTP/1.1" 200 208
+"POST /barber-reg/personal-details/ HTTP/1.1" 200 51
+"POST /barber-reg/approve-request/ HTTP/1.1" 201 46
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 84
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 289
+"GET /adminsite/all-requests/ HTTP/1.1" 200 641
+"GET /adminsite/all-requests/ HTTP/1.1" 200 641
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 289
+"OPTIONS /adminsite/barber-details/3/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/3/ HTTP/1.1" 200 329
+"GET /media/documents/licences/aatharThiru_NCOiVls.jpg HTTP/1.1" 200 99341
+"GET /media/documents/certificates/images_4CtIWlZ.jpg HTTP/1.1" 200 8447
+"POST /adminsite/pending-requests/ HTTP/1.1" 200 79
+"GET /adminsite/all-requests/ HTTP/1.1" 200 642
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /barber-reg/approve-request/ HTTP/1.1" 200 83
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 61
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 61
+D:\practiceProject\backend\barber_reg\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barber_reg\serializers.py changed, reloading.
+Watching for file changes with StatReloader
