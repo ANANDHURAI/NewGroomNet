@@ -102,7 +102,7 @@ export default function Landing() {
                   ))}
                 </div>
                 <Link
-                  to="/barber-login"
+                  to="/barber-personal"
                   className="block w-full bg-pink-600 hover:bg-pink-700 text-white font-semibold text-lg py-3 px-6 rounded-md text-center transition"
                 >
                   Join Now

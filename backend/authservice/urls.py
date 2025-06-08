@@ -1,6 +1,9 @@
 from django.urls import path
 from rest_framework_simplejwt import views as jwt_views
-from .views import Home, LogoutView, RegisterView,OTPVerification,AdminLogin, AdminDashboard
+from .views import (
+    Home, LogoutView, RegisterView, OTPVerification, 
+    AdminLogin, AdminDashboard, CustomerBarberLogin  
+)
 
 urlpatterns = [
     # JWT Authentication
@@ -13,7 +16,8 @@ urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
     path('otp-verification/', OTPVerification.as_view(), name='otp-verification'),
 
-    #admins
+    # Login routes
+    path('customer-barber-login/', CustomerBarberLogin.as_view(), name='customer-barber-login'),  # Add this line
     path('admin-login/', AdminLogin.as_view(), name='admin-login'),
     path('admin-dashboard/', AdminDashboard.as_view(), name='admin-dashboard'),
 ]

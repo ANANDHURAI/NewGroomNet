@@ -1,38 +1,41 @@
 import React, { useState } from 'react';
-import apiClient from '../../slices/api/apiIntercepters';
 import { useDispatch } from 'react-redux';
-import { logout } from '../../slices/auth/LoginSlice';
 import { useNavigate } from 'react-router-dom';
+import apiClient from '../../slices/api/apiIntercepters';
+import { logout } from '../../slices/auth/LoginSlice';
 
-function Logout({ onLogout, className = "" }) {
+function Logout({ className = "" }) {
   const [loading, setLoading] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    if (onLogout) {
-      onLogout();
-      return;
-    }
-
     setLoading(true);
+    
     const refresh_token = localStorage.getItem('refresh_token');
-
+    const user_type = localStorage.getItem('user_type');
+    
     try {
-      if (refresh_token) {
+      if (refresh_token && user_type) {
         await apiClient.post('/auth/logout/', {
-          refresh_token: refresh_token
+          refresh_token,
+          user_type,
         });
+        console.log('Logout API successful');
       }
     } catch (error) {
       console.error('Logout API failed:', error);
-    } finally {
       
-      localStorage.removeItem('access_token');
-      localStorage.removeItem('refresh_token');
-      localStorage.removeItem('is_admin');
+    } finally {
+    
       dispatch(logout());
-      navigate('/login');
+
+      if (user_type === 'admin') {
+        navigate('/admin-login');
+      } else {
+        navigate('/login');
+      }
+      
       setLoading(false);
     }
   };
@@ -41,12 +44,10 @@ function Logout({ onLogout, className = "" }) {
     <button
       onClick={handleLogout}
       disabled={loading}
-      className={`
-        group relative px-4 py-2 rounded-xl font-medium transition-all duration-300
-        ${loading 
-          ? 'bg-gray-300 text-gray-500 cursor-not-allowed' 
-          : 'bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5'
-        }
+      className={`group relative px-4 py-2 rounded-xl font-medium transition-all duration-300
+        ${loading
+          ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
+          : 'bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white shadow-lg hover:shadow-xl transform hover:-translate-y-0.5'}
         ${className}
       `}
     >
@@ -58,8 +59,18 @@ function Logout({ onLogout, className = "" }) {
           </>
         ) : (
           <>
-            <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+            <svg
+              className="w-4 h-4 transition-transform group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+              />
             </svg>
             <span>Logout</span>
           </>

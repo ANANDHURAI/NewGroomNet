@@ -1,170 +1,227 @@
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { User, Mail, Phone, Users } from 'lucide-react';
+import { User, Mail, Phone, Users, KeyRound, AlertCircle } from 'lucide-react';
 import apiClient from '../../slices/api/apiIntercepters';
-import { personaldetails } from '../../slices/auth/BarberRegSlice';
 
-function BarberPersDetails() {
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [phone, setPhone] = useState('')
-    const [gender, setGender] = useState('')
-    const [loading, setLoading] = useState(false)
-    const [errors, setErrors] = useState({})
+function BarberPersonalDetails() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    gender: '',
+    password: '',
+    confirm_password: ''
+  });
+  const [loading, setLoading] = useState(false);
+  const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState('');
+
+  const navigate = useNavigate();
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
     
-    const dispatch = useDispatch()
-    const navigate = useNavigate()
-
-    const handleSubmit = async (e) => {
-        e.preventDefault()
-        setLoading(true)
-        setErrors({})
-
-        try {
-            const response = await apiClient.post('/barber-reg/personal-details/', { 
-                name, 
-                email, 
-                phone, 
-                gender 
-            })
-            
-            dispatch(personaldetails({ name, email, phone, gender }))
-            navigate('/barber/document-upload')
-            
-        } catch (error) {
-            if (error.response?.data) {
-                setErrors(error.response.data)
-            } else {
-                setErrors({ general: 'Something went wrong. Please try again.' })
-            }
-        } finally {
-            setLoading(false)
-        }
+    if (errors[name]) {
+      setErrors(prev => ({ ...prev, [name]: '' }));
     }
+  };
 
-    return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
-            <div className="max-w-md mx-auto">
-                <div className="bg-white rounded-2xl shadow-xl p-8">
-                  
-                    <div className="text-center mb-8">
-                        <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <User className="w-8 h-8 text-white" />
-                        </div>
-                        <h2 className="text-3xl font-bold text-gray-800 mb-2">Personal Details</h2>
-                        <p className="text-gray-600">Let's get to know you better</p>
-                    </div>
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setErrors({});
+    setSuccessMessage('');
 
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                       
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-2">
-                                Full Name
-                            </label>
-                            <div className="relative">
-                                <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                                <input
-                                    type="text"
-                                    value={name}
-                                    onChange={(e) => setName(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                                    placeholder="Enter your full name"
-                                    required
-                                />
-                            </div>
-                            {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name[0]}</p>}
-                        </div>
+    try {
+      const response = await apiClient.post('barber-reg/personal-details/', formData);
+      
+      localStorage.setItem('access_token', response.data.access);
+      localStorage.setItem('refresh_token', response.data.refresh);
+      localStorage.setItem('user_type', 'barber');
+      localStorage.setItem('user_id', response.data.user_id);
+      
+      setSuccessMessage('Personal details submitted successfully!');
+      
+      setTimeout(() => {
+        navigate('/barber-document-upload');
+      }, 1500);
+      
+    } catch (error) {
+      console.error('Registration failed:', error);
+      if (error.response?.data) {
+        setErrors(error.response.data);
+      } else {
+        setErrors({ general: 'Registration failed. Please try again.' });
+      }
+    } finally {
+      setLoading(false);
+    }
+  };
 
-                      
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-2">
-                                Email Address <span className="text-red-500">*</span>
-                            </label>
-                            <div className="relative group">
-                                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                                <input
-                                    type="email"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg bg-gray-50 group-hover:border-red-400 group-hover:bg-white group-hover:shadow-sm"
-                                    placeholder="your.email@example.com"
-                                    title="Email address is required"
-                                    required
-                                />
-                            </div>
-                            {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email[0]}</p>}
-                        </div>
-
-
-                        {/* Phone Field */}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-2">
-                                Phone Number
-                            </label>
-                            <div className="relative">
-                                <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                                <input
-                                    type="text"
-                                    value={phone}
-                                    onChange={(e) => setPhone(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                                    placeholder="+1 (555) 123-4567"
-                                    required
-                                />
-                            </div>
-                            {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone[0]}</p>}
-                        </div>
-
-                        {/* Gender Field */}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-2">
-                                Gender
-                            </label>
-                            <div className="relative">
-                                <Users className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
-                                <select
-                                    value={gender}
-                                    onChange={(e) => setGender(e.target.value)}
-                                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200"
-                                    required
-                                >
-                                    <option value="">Select your gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            {errors.gender && <p className="mt-1 text-sm text-red-600">{errors.gender[0]}</p>}
-                        </div>
-
-                        {/* Error Message */}
-                        {errors.general && (
-                            <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                                <p className="text-red-600 text-sm">{errors.general}</p>
-                            </div>
-                        )}
-
-                        
-                        <button
-                            type="submit"
-                            disabled={loading}
-                            className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 px-4 rounded-lg font-medium hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
-                        >
-                            {loading ? (
-                                <div className="flex items-center justify-center">
-                                    <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
-                                    Saving...
-                                </div>
-                            ) : (
-                                'Continue to Documents'
-                            )}
-                        </button>
-                    </form>
-                </div>
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 py-12 px-4">
+      <div className="max-w-md mx-auto">
+        <div className="bg-white rounded-2xl shadow-xl p-8">
+          <div className="text-center mb-8">
+            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <User className="w-8 h-8 text-white" />
             </div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">Join as Barber</h2>
+            <p className="text-gray-600">Enter your personal details to get started</p>
+          </div>
+
+          {successMessage && (
+            <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+              <p className="text-green-600 text-sm">{successMessage}</p>
+            </div>
+          )}
+
+          {errors.general && (
+            <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6 flex items-center">
+              <AlertCircle className="w-5 h-5 text-red-500 mr-2" />
+              <p className="text-red-600 text-sm">{errors.general}</p>
+            </div>
+          )}
+
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                <User className="w-4 h-4 inline mr-2" />
+                Full Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                placeholder="Enter your full name"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+              {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                <Mail className="w-4 h-4 inline mr-2" />
+                Email Address
+              </label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                placeholder="Enter your email"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+              {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                <Phone className="w-4 h-4 inline mr-2" />
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                name="phone"
+                value={formData.phone}
+                onChange={handleInputChange}
+                placeholder="Enter your phone number"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+              {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                <Users className="w-4 h-4 inline mr-2" />
+                Gender
+              </label>
+              <select
+                name="gender"
+                value={formData.gender}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              >
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+              {errors.gender && <p className="text-red-500 text-sm mt-1">{errors.gender}</p>}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                <KeyRound className="w-4 h-4 inline mr-2" />
+                Password
+              </label>
+              <input
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleInputChange}
+                placeholder="Create a password"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+              {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                <KeyRound className="w-4 h-4 inline mr-2" />
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                name="confirm_password"
+                value={formData.confirm_password}
+                onChange={handleInputChange}
+                placeholder="Confirm your password"
+                required
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+              />
+              {errors.confirm_password && <p className="text-red-500 text-sm mt-1">{errors.confirm_password}</p>}
+            </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-3 px-4 rounded-lg font-medium hover:from-blue-600 hover:to-indigo-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+            >
+              {loading ? (
+                <div className="flex items-center justify-center">
+                  <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                  Processing...
+                </div>
+              ) : (
+                'Continue to Documents'
+              )}
+            </button>
+          </form>
+
+          <p className="text-center text-sm text-gray-600 mt-6">
+            Already have an account?{' '}
+            <button
+              onClick={() => navigate('/login')}
+              className="text-blue-600 hover:text-blue-800 font-medium"
+            >
+              Sign In
+            </button>
+          </p>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default BarberPersDetails
+export default BarberPersonalDetails;
+
+
+

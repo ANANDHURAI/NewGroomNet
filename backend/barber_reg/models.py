@@ -1,4 +1,3 @@
-
 from django.db import models
 from authservice.models import User
 
@@ -9,10 +8,21 @@ class BarberRequest(models.Model):
         ('rejected', 'Rejected'),
     )
     
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='approval_request')
-    licence = models.FileField(upload_to='documents/licences/')
-    certificate = models.FileField(upload_to='documents/certificates/')
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')
+    REGISTRATION_STEPS = (
+        ('personal_details', 'Personal Details'),
+        ('documents_uploaded', 'Documents Uploaded'),
+        ('under_review', 'Under Review'),
+        ('completed', 'Completed'),
+    )
+    
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='barber_request')
+    licence = models.FileField(upload_to='documents/licences/', null=True, blank=True)
+    certificate = models.FileField(upload_to='documents/certificates/', null=True, blank=True)
+    profile_image = models.ImageField(upload_to='barber_profiles/', null=True, blank=True)
+    
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
+    registration_step = models.CharField(max_length=20, choices=REGISTRATION_STEPS, default='personal_details')
+    
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     admin_comment = models.TextField(blank=True, null=True)
@@ -25,9 +35,11 @@ class BarberRequest(models.Model):
         return self.status == 'approved'
     
     @property
-    def is_rejected(self):
-        return self.status == 'rejected'
+    def is_documents_complete(self):
+        return bool(self.licence and self.certificate and self.profile_image)
     
-    @property
-    def is_pending(self):
-        return self.status == 'pending'
+    def mark_documents_uploaded(self):
+        if self.is_documents_complete:
+            self.registration_step = 'documents_uploaded'
+            self.status = 'pending'
+            self.save()

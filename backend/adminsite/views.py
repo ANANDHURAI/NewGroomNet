@@ -4,80 +4,202 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from authservice.models import User
 from rest_framework.generics import RetrieveAPIView
-from .serializers import ApproveTheBarberRequestSerializer, BarberApprovalActionSerializer , UsersListSerializer
-from django.http import Http404
+from .serializers import UsersListSerializer, BarbersListSerializer
+from barber_reg.models import BarberRequest
+from django.contrib.auth import get_user_model
+from django.shortcuts import get_object_or_404
+from django.db import transaction
+import logging
 
-class BarbersRequestsView(APIView):
+User = get_user_model()
+logger = logging.getLogger(__name__)
+
+class PendingBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        barbers = User.objects.filter(
-            user_type='barber', 
-            approval_request__isnull=False,
-            approval_request__status='pending'
-        ).select_related('approval_request')
-        
-        serializer = ApproveTheBarberRequestSerializer(barbers, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-
-    def post(self, request):
-        serializer = BarberApprovalActionSerializer(data=request.data)
-        if not serializer.is_valid():
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-        user_id = serializer.validated_data['user_id']
-        action = serializer.validated_data['action']
-        comment = serializer.validated_data.get('comment', '')
-
         try:
-            user = User.objects.get(id=user_id)
-            req = user.approval_request
+            pending_requests = BarberRequest.objects.filter(
+                status='pending',
+                registration_step='documents_uploaded'
+            ).select_related('user').order_by('-created_at')
             
-            if action == "approve":
-                req.status = "approved"
-            elif action == "reject":
-                req.status = "rejected"
+            data = []
+            for req in pending_requests:
+                data.append({
+                    'id': req.user.id,
+                    'name': req.user.name,
+                    'email': req.user.email,
+                    'phone': req.user.phone,
+                    'gender': req.user.gender,
+                    'status': req.status,
+                    'request_date': req.created_at,
+                    'licence': req.licence.url if req.licence else None,
+                    'certificate': req.certificate.url if req.certificate else None,
+                    'profile_image': req.profile_image.url if req.profile_image else None,
+                })
             
-            req.admin_comment = comment
-            req.save()
+            return Response(data, status=status.HTTP_200_OK)
             
+        except Exception as e:
+            logger.error(f"Error fetching pending requests: {str(e)}")
             return Response({
-                'message': f'Request {action}d successfully',
-                'user_id': user_id,
-                'new_status': req.status
-            }, status=status.HTTP_200_OK)
-            
-        except User.DoesNotExist:
-            return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
-        except AttributeError:
-            return Response({'error': 'No approval request found for this user'}, status=status.HTTP_404_NOT_FOUND)
+                'error': 'Failed to fetch pending requests'
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
-class BarberRequestDocumentView(RetrieveAPIView):
-    queryset = User.objects.filter(user_type='barber', approval_request__isnull=False)
-    serializer_class = ApproveTheBarberRequestSerializer
-    permission_classes = [IsAuthenticated]
-    lookup_field = 'id'
-
-    def get_object(self):
-        try:
-            return super().get_object()
-        except:
-            raise Http404("Barber request not found")
 
 class AllBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        barbers = User.objects.filter(
-            user_type='barber', 
-            approval_request__isnull=False
-        ).select_related('approval_request')
+        try:
+            all_requests = BarberRequest.objects.filter(
+                registration_step__in=['documents_uploaded', 'under_review', 'completed']
+            ).select_related('user').order_by('-created_at')
+            
+            data = []
+            for req in all_requests:
+                data.append({
+                    'id': req.user.id,
+                    'name': req.user.name,
+                    'email': req.user.email,
+                    'phone': req.user.phone,
+                    'gender': req.user.gender,
+                    'status': req.status,
+                    'request_date': req.created_at,
+                    'licence': req.licence.url if req.licence else None,
+                    'certificate': req.certificate.url if req.certificate else None,
+                    'profile_image': req.profile_image.url if req.profile_image else None,
+                    'admin_comment': req.admin_comment,
+                })
+            
+            return Response(data, status=status.HTTP_200_OK)
+            
+        except Exception as e:
+            logger.error(f"Error fetching all requests: {str(e)}")
+            return Response({
+                'error': 'Failed to fetch requests'
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class BarberApprovalActionView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request):
+
+        user_id = request.data.get('user_id')
+        action = request.data.get('action')
+        comment = request.data.get('comment', '')
+
+        if not user_id:
+            return Response({
+                'error': 'user_id is required'
+            }, status=status.HTTP_400_BAD_REQUEST)
+            
+        if action not in ['approve', 'reject']:
+            return Response({
+                'error': 'action must be either "approve" or "reject"'
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            with transaction.atomic():
+                
+                user = get_object_or_404(User, id=user_id, user_type='barber')
+                
+                try:
+                    barber_request = user.barber_request
+                except BarberRequest.DoesNotExist:
+                    return Response({
+                        'error': 'Barber request not found for this user'
+                    }, status=status.HTTP_404_NOT_FOUND)
+
+                if barber_request.status != 'pending':
+                    return Response({
+                        'error': f'Request has already been {barber_request.status}'
+                    }, status=status.HTTP_400_BAD_REQUEST)
+                
+                if action == 'approve':
+                    barber_request.status = 'approved'
+                    user.is_verified = True
+                    user.save()
+                    barber_request.registration_step = 'completed'
+                    
+                elif action == 'reject':
+                    barber_request.status = 'rejected'
+                    barber_request.registration_step = 'under_review'
+                    user.is_verified = False
+                    user.save()
+                
+                barber_request.admin_comment = comment
+                barber_request.save()
+
+                logger.info(f"Barber request {action}d: User ID {user.id} by admin {request.user.id}")
+
+                return Response({
+                    'message': f'Barber application {action}d successfully',
+                    'user_id': user.id,
+                    'new_status': barber_request.status,
+                    'action': action
+                }, status=status.HTTP_200_OK)
+                
+        except User.DoesNotExist:
+            return Response({
+                'error': 'Barber user not found'
+            }, status=status.HTTP_404_NOT_FOUND)
+            
+        except Exception as e:
+            logger.error(f"Error processing barber {action}: {str(e)}")
+            return Response({
+                'error': f'Failed to {action} barber request'
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class BarberDetailsView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, barber_id):
+        try:
+            user = get_object_or_404(User, id=barber_id, user_type='barber')
+            
+            try:
+                barber_request = user.barber_request
+            except BarberRequest.DoesNotExist:
+                return Response({
+                    'error': 'Barber request not found'
+                }, status=status.HTTP_404_NOT_FOUND)
+
+            data = {
+                'id': user.id,
+                'name': user.name,
+                'email': user.email,
+                'phone': user.phone,
+                'gender': user.gender,
+                'status': barber_request.status,
+                'request_date': barber_request.created_at,
+                'licence': barber_request.licence.url if barber_request.licence else None,
+                'certificate': barber_request.certificate.url if barber_request.certificate else None,
+                'profile_image': barber_request.profile_image.url if barber_request.profile_image else None,
+                'admin_comment': barber_request.admin_comment,
+                'registration_step': barber_request.registration_step,
+                'created_at': barber_request.created_at,
+                'updated_at': barber_request.updated_at,
+            }
+
+            return Response(data, status=status.HTTP_200_OK)
+            
+        except User.DoesNotExist:
+            return Response({
+                'error': 'Barber not found'
+            }, status=status.HTTP_404_NOT_FOUND)
+            
+        except Exception as e:
+            logger.error(f"Error fetching barber details: {str(e)}")
+            return Response({
+                'error': 'Failed to fetch barber details'
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
-        serializer = ApproveTheBarberRequestSerializer(barbers, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
 
-
-
+        
 class UsersListView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -94,5 +216,33 @@ class UserDetailView(RetrieveAPIView):
     lookup_field = 'id'
         
 
+class BarbersListView(APIView):
+    permission_classes = [IsAuthenticated]
 
-        
+    def get(self, request):
+        barbers = User.objects.filter(user_type='barber',is_verified=True)
+        serializer = BarbersListSerializer(barbers, many=True, context={'request': request})
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+class BarberDetailView(RetrieveAPIView):
+    serializer_class = UsersListSerializer
+    permission_classes = [IsAuthenticated]
+    lookup_field = 'id'
+
+    def get_queryset(self):
+        return User.objects.filter(user_type='barber')
+
+class BlockingView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def post(self, request, id):
+        try:
+            user = User.objects.get(id=id)
+            
+            user.is_blocked = not user.is_blocked
+            user.is_active = not user.is_active
+            user.save()
+            return Response({'message': 'User status updated successfully.'}, status=status.HTTP_200_OK)
+        except User.DoesNotExist:
+            return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)

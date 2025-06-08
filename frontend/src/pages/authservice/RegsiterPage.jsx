@@ -4,6 +4,7 @@ import Input from '../../components/basics/Input';
 import { useNavigate } from 'react-router-dom';
 import apiClient from '../../slices/api/apiIntercepters';
 import { setRegisterData } from '../../slices/auth/RegisterSlice';
+import * as Yup from 'yup';
 
 function RegisterPage() {
   const [formData, setFormData] = useState({
@@ -14,8 +15,27 @@ function RegisterPage() {
   });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [validationErrors, setValidationErrors] = useState({});
+
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const registerSchema = Yup.object().shape({
+    name: Yup.string()
+      .trim()
+      .min(2, 'Name must be at least 2 characters long')
+      .required('Name is required'),
+    email: Yup.string()
+      .trim()
+      .email('Please enter a valid email address')
+      .required('Email is required'),
+    phone: Yup.string()
+      .matches(/^\d{10}$/, 'Phone number must be exactly 10 digits')
+      .required('Phone number is required'),
+    password: Yup.string()
+      .min(8, 'Password must be at least 8 characters long')
+      .required('Password is required'),
+  });
 
   const handleInputChange = (field, value) => {
     setFormData(prev => ({
@@ -23,49 +43,21 @@ function RegisterPage() {
       [field]: value
     }));
     if (error) setError('');
-  };
-
-  const validateForm = () => {
-    const { email, password, name, phone } = formData;
-    
-    if (!email || !password || !name || !phone) {
-      setError('Please fill in all fields');
-      return false;
+    if (validationErrors[field]) {
+      setValidationErrors(prev => ({ ...prev, [field]: '' }));
     }
-
-    if (name.trim().length < 2) {
-      setError('Name must be at least 2 characters long');
-      return false;
-    }
-
-    if (phone.replace(/\D/g, '').length !== 10) {
-      setError('Phone number must be exactly 10 digits');
-      return false;
-    }
-
-    if (password.length < 8) {
-      setError('Password must be at least 8 characters long');
-      return false;
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      setError('Please enter a valid email address');
-      return false;
-    }
-
-    return true;
   };
 
   const handleRegister = async () => {
-    if (!validateForm()) return;
-
-    setLoading(true);
     setError('');
+    setValidationErrors({});
 
     try {
-      console.log('Sending registration data:', formData); 
       
+      await registerSchema.validate(formData, { abortEarly: false });
+
+      setLoading(true);
+
       const response = await apiClient.post('/auth/register/', {
         name: formData.name.trim(),
         email: formData.email.toLowerCase().trim(),
@@ -73,36 +65,41 @@ function RegisterPage() {
         password: formData.password,
         user_type: 'customer'
       });
-      
-      console.log('Registration response:', response.data)
+
       if (response.data.email) {
-        
         dispatch(setRegisterData(formData));
         localStorage.setItem('pending_email', response.data.email);
         navigate('/otp');
       }
-    } catch (error) {
-      console.error("Registration error", error);
-      console.error("Error response:", error.response?.data)
-      
-      
-      if (error.response?.data) {
-        const errorData = error.response.data;
-        if (typeof errorData === 'object') {
-          const errorMessages = [];
-          Object.keys(errorData).forEach(key => {
-            if (Array.isArray(errorData[key])) {
-              errorMessages.push(`${key}: ${errorData[key].join(', ')}`);
-            } else {
-              errorMessages.push(`${key}: ${errorData[key]}`);
-            }
-          });
-          setError(errorMessages.join('\n'));
-        } else {
-          setError(errorData.error || errorData.message || 'Registration failed');
-        }
+    } catch (err) {
+      if (err.name === 'ValidationError') {
+        
+        const errors = {};
+        err.inner.forEach(e => {
+          errors[e.path] = e.message;
+        });
+        setValidationErrors(errors);
       } else {
-        setError('Registration failed. Please try again.');
+       
+        console.error("Registration error", err);
+        const errorData = err.response?.data;
+        if (errorData) {
+          if (typeof errorData === 'object') {
+            const errorMessages = [];
+            Object.keys(errorData).forEach(key => {
+              if (Array.isArray(errorData[key])) {
+                errorMessages.push(`${key}: ${errorData[key].join(', ')}`);
+              } else {
+                errorMessages.push(`${key}: ${errorData[key]}`);
+              }
+            });
+            setError(errorMessages.join('\n'));
+          } else {
+            setError(errorData.error || errorData.message || 'Registration failed');
+          }
+        } else {
+          setError('Registration failed. Please try again.');
+        }
       }
     } finally {
       setLoading(false);
@@ -133,43 +130,63 @@ function RegisterPage() {
               {error}
             </div>
           )}
-          
+
           <div className="space-y-6">
-            <Input
-              value={formData.name}
-              onChange={e => handleInputChange('name', e.target.value)}
-              placeholder="Full Name"
-              required
-              autoComplete="off"
-            />
-            
-            <Input
-              value={formData.email}
-              onChange={e => handleInputChange('email', e.target.value)}
-              placeholder="Email Address"
-              type="email"
-              required
-              autoComplete="off"
-            />
-            
-            <Input
-              value={formData.phone}
-              onChange={e => handleInputChange('phone', e.target.value)}
-              placeholder="Phone Number (10 digits)"
-              type="tel"
-              maxLength="10"
-              required
-              autoComplete="off"
-            />
-            
-            <Input
-              value={formData.password}
-              onChange={e => handleInputChange('password', e.target.value)}
-              placeholder="Password (min 8 characters)"
-              type="password"
-              required
-              autoComplete="new-password"
-            />
+            <div>
+              <Input
+                value={formData.name}
+                onChange={e => handleInputChange('name', e.target.value)}
+                placeholder="Full Name"
+                required
+                autoComplete="off"
+              />
+              {validationErrors.name && (
+                <p className="text-red-500 text-xs mt-1">{validationErrors.name}</p>
+              )}
+            </div>
+
+            <div>
+              <Input
+                value={formData.email}
+                onChange={e => handleInputChange('email', e.target.value)}
+                placeholder="Email Address"
+                type="email"
+                required
+                autoComplete="off"
+              />
+              {validationErrors.email && (
+                <p className="text-red-500 text-xs mt-1">{validationErrors.email}</p>
+              )}
+            </div>
+
+            <div>
+              <Input
+                value={formData.phone}
+                onChange={e => handleInputChange('phone', e.target.value)}
+                placeholder="Phone Number (10 digits)"
+                type="tel"
+                maxLength="10"
+                required
+                autoComplete="off"
+              />
+              {validationErrors.phone && (
+                <p className="text-red-500 text-xs mt-1">{validationErrors.phone}</p>
+              )}
+            </div>
+
+            <div>
+              <Input
+                value={formData.password}
+                onChange={e => handleInputChange('password', e.target.value)}
+                placeholder="Password (min 8 characters)"
+                type="password"
+                required
+                autoComplete="new-password"
+              />
+              {validationErrors.password && (
+                <p className="text-red-500 text-xs mt-1">{validationErrors.password}</p>
+              )}
+            </div>
 
             <button
               onClick={handleRegister}
@@ -190,10 +207,3 @@ function RegisterPage() {
 }
 
 export default RegisterPage;
-
-
-
-
-
-
-

@@ -27,7 +27,11 @@ function CustomersList() {
                     <div className="text-white text-xl">Loading...</div>
                 </div>
             ) : (
-                <TableList listname={'Customers List'} data={data} />
+                <TableList 
+                    listname={'Customers List'} 
+                    data={data} 
+                    setData={setData}
+                />
             )}
         </div>
     )

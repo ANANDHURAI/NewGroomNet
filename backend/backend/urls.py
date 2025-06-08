@@ -5,9 +5,14 @@ from django.urls import path , include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('auth/', include('authservice.urls')),
+  
     path('adminsite/', include('adminsite.urls')),
+ 
     path('profile-service/', include('profileservice.urls')),
+ 
     path('barber-reg/', include('barber_reg.urls')),
+  
     path('barbersite/', include('barbersite.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

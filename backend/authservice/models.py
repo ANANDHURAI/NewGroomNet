@@ -41,6 +41,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     is_blocked = models.BooleanField(default=False)
     created_at = models.DateTimeField(default=timezone.now)
+    is_verified = models.BooleanField(default=False)
     updated_at = models.DateTimeField(auto_now=True)
     profileimage = models.ImageField(upload_to='profile_images/', null=True, blank=True)
     objects = CustomUserManager()

@@ -3,15 +3,15 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
-from .serializers import HomeSerializer ,RegisterSerializer , OtpSerializer , AdminLoginSerializer
-from django.contrib.auth import authenticate
+from .serializers import HomeSerializer ,RegisterSerializer , OtpSerializer , AdminLoginSerializer , CustomerBarberLoginSerializer
 import random
 from .models import User
 from django.conf import settings
 from django.core.mail import send_mail
 from django.core.cache import cache
+from rest_framework_simplejwt.views import TokenRefreshView
 import logging
-
+from rest_framework.permissions import AllowAny
 logger = logging.getLogger(__name__)
 
 class Home(APIView):
@@ -21,6 +21,29 @@ class Home(APIView):
         data = {'great_massage': f'Hello welcome {request.user.name}!'}
         serializer = HomeSerializer(data)
         return Response(serializer.data)
+
+
+class CustomerBarberLogin(APIView):
+    permission_classes = [AllowAny]
+
+    def post(self, request):
+        serializer = CustomerBarberLoginSerializer(data=request.data)
+        if serializer.is_valid():
+            user = serializer.validated_data['user']
+            refresh = RefreshToken.for_user(user)
+            return Response({
+                'access': str(refresh.access_token),
+                'refresh': str(refresh),
+                'user': {
+                    'id': user.id,
+                    'email': user.email,
+                    'name': user.name,
+                    'user_type': user.user_type,
+                    
+                }
+            }, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 
 class RegisterView(APIView):
@@ -156,18 +179,21 @@ class OTPVerification(APIView):
 
 class LogoutView(APIView):
     permission_classes = [IsAuthenticated]
-    
+         
     def post(self, request):
         try:
             refresh_token = request.data.get("refresh_token")
-            if not refresh_token:
+            user_type = request.data.get("user_type")
+            
+            if not refresh_token or not user_type:
                 return Response(
-                    {'error': 'Refresh token is required'}, 
+                    {'error': 'User type and refresh_token is required'}, 
                     status=status.HTTP_400_BAD_REQUEST
                 )
-            
+                     
             token = RefreshToken(refresh_token)
             token.blacklist()
+            
             return Response(
                 {'message': 'Successfully logged out'}, 
                 status=status.HTTP_200_OK
@@ -178,30 +204,28 @@ class LogoutView(APIView):
                 {'error': 'Invalid token'}, 
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
 
 class AdminLogin(APIView):
+    permission_classes = [AllowAny]
+
     def post(self, request):
         serializer = AdminLoginSerializer(data=request.data)
         if serializer.is_valid():
-            email = serializer.validated_data['email']
-            password = serializer.validated_data['password']
-            user = authenticate(email=email, password=password)
-
-            if user and user.user_type == 'admin':
-                refresh = RefreshToken.for_user(user)
-                return Response({
-                    'access': str(refresh.access_token),
-                    'refresh': str(refresh),
-                    'user': {
-                        'email': user.email,
-                        'name': user.name,
-                        'user_type': user.user_type
-                    }
-                }, status=status.HTTP_200_OK)
-            return Response({'detail': 'not an admin'}, status=status.HTTP_401_UNAUTHORIZED)
+            user = serializer.validated_data['user']
+            refresh = RefreshToken.for_user(user)
+            return Response({
+                'access': str(refresh.access_token),
+                'refresh': str(refresh),
+                'user': {
+                    'id': user.id,
+                    'email': user.email,
+                    'name': user.name,
+                    'user_type': user.user_type
+                }
+            }, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-    
+
 
 class AdminDashboard(APIView):
     
@@ -210,4 +234,5 @@ class AdminDashboard(APIView):
     def get(self, request):
         data = {'great_massage': f'Hello welcome Admin {request.user.name}!'}
         return Response(data)
+    
     

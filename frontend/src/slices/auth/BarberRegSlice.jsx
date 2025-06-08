@@ -1,41 +1,80 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  name: '',  
-  email: '',
-  phone: '',
-  gender: '',
-  isMadeRequest: false,
-  requestStatus: 'none',
-  user: null,
+
+  personalDetails: {
+    name: '',
+    email: '',
+    phone: '',
+    gender: '',
+    password:'',
+  },
+ 
+  registrationData: {
+    user_id: null,
+    barber_request_id: null,
+    registration_step: 'personal_details',
+    status: 'pending'
+  },
+
+  tokens: {
+    user_type:'',
+    access: null,
+    refresh: null
+  },
+
+  loading: {
+    personalDetails: false,
+    documentUpload: false,
+    statusCheck: false
+  },
+
+  errors: {},
+
+  successMessage: '',
   documents: {
     licence: null,
-    certificate: null
+    certificate: null,
+    profile_image: null
   }
 };
 
+
 const BarberRegistrationSlice = createSlice({
-    name: 'barber-registration',
-    initialState,
-    reducers: {
-        personaldetails: (state, action) => {
-            state.email = action.payload.email;
-            state.name = action.payload.name;
-            state.phone = action.payload.phone;
-            state.gender = action.payload.gender;
-        },
-        requestToAdmin: (state) => {
-            state.isMadeRequest = true;
-            state.requestStatus = 'pending';
-        },
-        updateRequestStatus: (state, action) => {
-            state.requestStatus = action.payload;
-        },
-        resetRegistration: (state) => {
-            return initialState;
-        }
+  name: 'barberRegistration',
+  initialState,
+  reducers: {
+    updatePersonalDetails: (state, action) => {
+      state.personalDetails = { ...state.personalDetails, ...action.payload };
+    },
+    setRegistrationData: (state, action) => {
+      state.registrationData = { ...state.registrationData, ...action.payload };
+    },
+    setTokens: (state, action) => {
+      state.tokens = action.payload;
+    },
+    updateDocuments: (state, action) => {
+      state.documents = { ...state.documents, ...action.payload };
+    },
+    
+    updateRegistrationStep: (state, action) => {
+      state.registrationData.registration_step = action.payload;
+    },
+    updateStatus: (state, action) => {
+      state.registrationData.status = action.payload;
     }
+  },
+ 
 });
 
-export const { personaldetails, requestToAdmin, updateRequestStatus, resetRegistration } = BarberRegistrationSlice.actions;
+export const {
+  updatePersonalDetails,
+  setRegistrationData,
+  setTokens,
+  updateDocuments,
+  resetRegistration,
+  updateRegistrationStep,
+  updateStatus
+} = BarberRegistrationSlice.actions;
+
 export default BarberRegistrationSlice.reducer;

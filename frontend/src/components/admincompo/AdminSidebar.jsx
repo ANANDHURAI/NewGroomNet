@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Logout from '../basics/Logout';
 
 function AdminSidebar() {
-  return (
+ return (
     <div className="w-64 min-h-screen bg-white/10 backdrop-blur-lg border-r border-purple-300/20 p-6 flex-shrink-0">
       <div className="mb-8">
         <h2 className="text-2xl font-bold text-white mb-2">Admin Panel</h2>
@@ -16,24 +17,21 @@ function AdminSidebar() {
           </svg>
           <p className="text-purple-200 group-hover:text-white transition-colors font-medium">Users</p>
         </Link>
-        
-        <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/10 transition-all duration-200 cursor-pointer group">
+
+        <Link to="/barbers-list" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/10 transition-all duration-200 group">
           <svg className="w-5 h-5 text-purple-300 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
           <p className="text-purple-200 group-hover:text-white transition-colors font-medium">Barbers</p>
-        </div>
-        
-        <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/10 transition-all duration-200 cursor-pointer group">
+        </Link>
+
+        <Link to="/admin-verification" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/10 transition-all duration-200 group">
           <svg className="w-5 h-5 text-purple-300 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
           </svg>
-          <Link to="/admin-verification">
-            <p className="text-purple-200 group-hover:text-white transition-colors font-medium">Verification Pendings</p>
-          </Link>
-        </div>
+          <p className="text-purple-200 group-hover:text-white transition-colors font-medium">Verification Pendings</p>
+        </Link>
 
-        
         <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/10 transition-all duration-200 cursor-pointer group">
           <svg className="w-5 h-5 text-purple-300 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
@@ -41,9 +39,13 @@ function AdminSidebar() {
           </svg>
           <p className="text-purple-200 group-hover:text-white transition-colors font-medium">Settings</p>
         </div>
+
+        <div className="pt-4 mt-4 border-t border-purple-300/20">
+          <Logout className="w-full bg-gradient-to-r from-red-500/80 to-red-600/80 hover:from-red-600/90 hover:to-red-700/90 text-white/90 hover:text-white border-0 backdrop-blur-sm" />
+        </div>
       </nav>
     </div>
-  )
+  );
 }
 
 export default AdminSidebar

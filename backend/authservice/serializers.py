@@ -1,6 +1,8 @@
 from rest_framework import serializers
 from .models import User
 import re
+from django.contrib.auth import authenticate
+
 
 class HomeSerializer(serializers.Serializer):
     great_massage = serializers.CharField()
@@ -31,11 +33,54 @@ class OtpSerializer(serializers.Serializer):
         return value
 
 
-class AdminLoginSerializer(serializers.Serializer):
+
+class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
 
-    
+    def validate_email(self, value):
+        return value.lower().strip()
+
+    def validate(self, attrs):
+        email = attrs.get('email')
+        password = attrs.get('password')
+
+        try:
+            user = User.objects.get(email=email)
+        except User.DoesNotExist:
+            raise serializers.ValidationError({'detail': 'No account found with this email'})
+        
+        if user.is_blocked:
+            raise serializers.ValidationError({'detail': 'Account is blocked'})
+        
+        authenticated_user = authenticate(email=email, password=password)
+        if not authenticated_user:
+            raise serializers.ValidationError({'detail': 'Invalid password'})
+
+        attrs['user'] = authenticated_user
+        return attrs
 
 
+class AdminLoginSerializer(LoginSerializer):
+    def validate(self, attrs):
+        attrs = super().validate(attrs)
+        user = attrs['user']
+        
+        if user.user_type != 'admin':
+            raise serializers.ValidationError({'detail': 'Access restricted to admin users only'})
+        
+        return attrs
+
+
+class CustomerBarberLoginSerializer(LoginSerializer):
+    def validate(self, attrs):
+        attrs = super().validate(attrs)
+        user = attrs['user']
+        
+        if user.user_type not in ['customer', 'barber']:
+            raise serializers.ValidationError({
+                'detail': 'Access restricted to customers and barbers only'
+            })
+        
+        return attrs
 

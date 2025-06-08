@@ -1,7 +1,12 @@
 from django.urls import path
-from .views import ApprovelRequestView , PersonalDetailsView
+from .views import (
+    BarberPersonalDetailsView,
+    DocumentUploadView, 
+    BarberRegistrationStatusView
+)
 
 urlpatterns = [
-    path('personal-details/', PersonalDetailsView.as_view(), name='personaldetails'),
-    path('approve-request/', ApprovelRequestView.as_view(), name='approve-request'),
+    path('personal-details/', BarberPersonalDetailsView.as_view(), name='barber-personal-details'),
+    path('upload-documents/', DocumentUploadView.as_view(), name='barber-document-upload'),
+    path('registration-status/', BarberRegistrationStatusView.as_view(), name='barber-registration-status'),
 ]

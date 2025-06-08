@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { adminlogin } from '../../slices/auth/LoginSlice';
+import { login } from '../../slices/auth/LoginSlice';
 import apiClient from '../../slices/api/apiIntercepters';
-import Input from '../../components/basics/Input';
 
 function AdminLogin() {
     const [email, setEmail] = useState('');
@@ -17,27 +16,31 @@ function AdminLogin() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
+        setError('');
 
         try {
             const response = await apiClient.post('/auth/admin-login/', {
                 email: email.trim().toLowerCase(),
-                password
+                password,
             });
+            
             const { access, refresh, user } = response.data;
 
-            localStorage.setItem('access_token', access);
-            localStorage.setItem('refresh_token', refresh);
-            localStorage.setItem('is_admin', 'true'); 
-
-            dispatch(adminlogin({
-                email,
-                user,
-            }));
+            dispatch(login({ user, access, refresh }));
 
 
-            navigate('/admin-dashboard');
+            if (user.user_type === 'admin') {
+                navigate('/admin-dashboard');
+            } else {
+                setError('Access restricted to admin users only');
+            }
+            
         } catch (error) {
-            setError(error.response?.data?.detail || 'Invalid Admin login');
+            console.error('Admin login error:', error);
+            const errorMessage = error.response?.data?.detail || 
+                                error.response?.data?.message || 
+                                'Invalid admin credentials';
+            setError(errorMessage);
         } finally {
             setLoading(false);
         }
@@ -53,22 +56,22 @@ function AdminLogin() {
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
                     <div className="space-y-4">
-                        <Input 
+                        <input
                             value={email} 
                             onChange={(e) => setEmail(e.target.value)} 
                             placeholder="Email" 
                             type="email"
                             required
-                            autoComplete="off"
+                            autoComplete="email"
                             className="w-full px-4 py-3 bg-white/20 backdrop-blur border border-purple-300/30 rounded-lg text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-200"
                         />
-                        <Input 
+                        <input
                             value={password} 
                             onChange={(e) => setPassword(e.target.value)} 
                             placeholder="Password" 
                             type="password"
                             required
-                            autoComplete="new-password"
+                            autoComplete="current-password"
                             className="w-full px-4 py-3 bg-white/20 backdrop-blur border border-purple-300/30 rounded-lg text-white placeholder-purple-200 focus:outline-none focus:ring-2 focus:ring-purple-400 focus:border-transparent transition-all duration-200"
                         />
                     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import Logout from '../basics/Logout'
 function BarberSidebar() {
   return (
     <div className="bg-gray-900 text-white w-64 min-h-screen p-6 fixed left-0 top-0 shadow-lg">
@@ -61,18 +61,10 @@ function BarberSidebar() {
           </svg>
           Appointments
         </Link>
-        
-        <div className="pt-4 mt-4 border-t border-gray-700">
-          <Link 
-            to="/logout" 
-            className="flex items-center px-4 py-3 text-red-400 hover:text-red-300 hover:bg-red-900/20 rounded-lg transition-all duration-200 ease-in-out group"
-          >
-            <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 01-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clipRule="evenodd" />
-            </svg>
-            Logout
-          </Link>
+        <div className="pt-4 mt-4 border-t border-purple-300/20">
+          <Logout className="w-full bg-gradient-to-r from-red-500/80 to-red-600/80 hover:from-red-600/90 hover:to-red-700/90 text-white/90 hover:text-white border-0 backdrop-blur-sm" />
         </div>
+        
       </nav>
     </div>
   )

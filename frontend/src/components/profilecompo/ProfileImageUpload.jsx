@@ -1,26 +1,53 @@
+import React from 'react';
+
 export const ProfileImageUpload = ({ currentImage, onImageChange, isEdit }) => {
     const handleImageUpload = (e) => {
         const file = e.target.files[0];
-        if (file) {
-            onImageChange(file); 
-        }
+        e.target.value = '';
     };
+
+    const getImageSrc = () => {
+        if (!currentImage) return null;
+        
+       
+        if (currentImage instanceof File) {
+            return URL.createObjectURL(currentImage);
+        }
+        
+       
+        if (typeof currentImage === 'string') {
+            return currentImage;
+        }
+        
+        return null;
+    };
+
+    const imageSrc = getImageSrc();
 
     return (
         <div className="relative">
-            {currentImage ? (
+            {imageSrc ? (
                 <img 
-                    src={typeof currentImage === 'string' ? currentImage : URL.createObjectURL(currentImage)} 
+                    src={imageSrc}
                     alt="Profile" 
                     className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover"
+                    onError={(e) => {
+                        console.error('Image failed to load:', e);
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                    }}
                 />
-            ) : (
-                <div className="w-32 h-32 rounded-full border-4 border-white shadow-lg bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center">
-                    <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                    </svg>
-                </div>
-            )}
+            ) : null}
+            
+            
+            <div 
+                className={`w-32 h-32 rounded-full border-4 border-white shadow-lg bg-gradient-to-br from-indigo-400 to-purple-500 flex items-center justify-center ${imageSrc ? 'hidden' : 'flex'}`}
+            >
+                <svg className="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                </svg>
+            </div>
+            
             {isEdit && (
                 <label className="absolute bottom-0 right-0 bg-indigo-600 hover:bg-indigo-700 text-white p-2 rounded-full cursor-pointer shadow-lg transition-colors">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

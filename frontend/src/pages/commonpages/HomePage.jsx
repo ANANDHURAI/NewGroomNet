@@ -1,19 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import apiClient from '../../slices/api/apiIntercepters';
-import { logout } from '../../slices/auth/LoginSlice';
 import Navbar from '../../components/basics/Navbar';
 
 function HomePage() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
-  const dispatch = useDispatch();
-  const navigate = useNavigate();
+  
   const user = useSelector(state => state.login.user);
   const registerUser = useSelector(state => state.register?.user);
-  
   const currentUser = user || registerUser;
 
   useEffect(() => {
@@ -34,30 +30,9 @@ function HomePage() {
     fetchHomeData();
   }, []);
 
-  const handleLogout = async () => {
-    setLoading(true);
-    const refresh_token = localStorage.getItem("refresh_token");
-
-    try {
-      if (refresh_token) {
-        await apiClient.post('auth/logout/', { refresh_token });
-      }
-    } catch (err) {
-      console.error("Logout API failed", err);
-    } finally {
-      
-      localStorage.removeItem("access_token");
-      localStorage.removeItem("refresh_token");
-      localStorage.removeItem("is_admin");
-      dispatch(logout());
-      navigate('/login');
-      setLoading(false);
-    }
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50">
-      <Navbar onLogout={handleLogout} />
+      <Navbar />
       
       <div className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">
@@ -96,7 +71,6 @@ function HomePage() {
             </div>
           </div>
 
-         
           {currentUser && (
             <div className="bg-white/70 backdrop-blur-sm rounded-3xl shadow-xl border border-white/20 p-6 mb-8">
               <div className="flex items-center space-x-4">
@@ -115,7 +89,6 @@ function HomePage() {
             </div>
           )}
 
-        
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <div className="bg-white/70 backdrop-blur-sm rounded-2xl shadow-lg border border-white/20 p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4">

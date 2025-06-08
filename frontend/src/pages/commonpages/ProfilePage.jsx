@@ -8,6 +8,7 @@ import { ProfileInput } from '../../components/profilecompo/ProfileInput';
 
 function ProfilePage() {
     const [data, setData] = useState({});
+    const [originalData, setOriginalData] = useState({});
     const [loading, setLoading] = useState(true);
     const [isEdit, setIsEdit] = useState(false);
     const [error, setError] = useState(null);
@@ -22,6 +23,7 @@ function ProfilePage() {
         apiClient.get('/profile-service/user-profile/')
             .then(response => {
                 setData(response.data);
+                setOriginalData(response.data);
                 setLoading(false);
                 setError(null);
             })
@@ -34,41 +36,51 @@ function ProfilePage() {
 
     const handleEdit = () => {
         setIsEdit(true);
+        setError(null);
     };
 
-    const handleSave = () => {
-        const formData = new FormData();
-        formData.append('name', data.name);
-        formData.append('phone', data.phone);
-        formData.append('gender', data.gender);
-        formData.append('date_of_birth', data.date_of_birth);
-        formData.append('bio', data.bio);
+    const handleSave = async () => {
+        try {
+            const formData = new FormData();
+           
+            if (data.name) formData.append('name', data.name);
+            if (data.phone) formData.append('phone', data.phone);
+            if (data.gender) formData.append('gender', data.gender);
+            if (data.date_of_birth) formData.append('date_of_birth', data.date_of_birth);
+            if (data.bio) formData.append('bio', data.bio);
 
-        if (uploadedImage instanceof File) {
-            formData.append('profileimage', uploadedImage);
-        }
-
-        apiClient.put('/profile-service/user-profile/', formData, {
-            headers: {
-                'Content-Type': 'multipart/form-data'
+            
+            if (uploadedImage instanceof File) {
+                formData.append('profileimage', uploadedImage);
             }
-        })
-        .then(response => {
+
+            const response = await apiClient.put('/profile-service/user-profile/', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            });
+
             setData(response.data);
+            setOriginalData(response.data); 
             setUploadedImage(null);
             setIsEdit(false);
             setError(null);
-        })
-        .catch(error => {
+        } catch (error) {
             console.error('Profile update error:', error);
-            setError('Failed to update profile');
-        });
+           
+            if (error.response) {
+                setError(`Failed to update profile: ${error.response.data?.error || error.response.statusText}`);
+            } else {
+                setError('Failed to update profile: Network error');
+            }
+        }
     };
 
     const handleCancel = () => {
         setIsEdit(false);
         setUploadedImage(null); 
-        fetchProfile(); 
+        setData(originalData);
+        setError(null);
     };
 
     const handleInputChange = (field, value) => {
@@ -78,15 +90,30 @@ function ProfilePage() {
         }));
     };
 
-
     const handleImageChange = (file) => {
-        const previewUrl = URL.createObjectURL(file);
-        setUploadedImage(file);
-        setData(prev => ({
-            ...prev,
-            profileimage: previewUrl
-        }));
+        if (file) {
+            try {
+                const previewUrl = URL.createObjectURL(file);
+                setUploadedImage(file);
+                setData(prev => ({
+                    ...prev,
+                    profileimage: previewUrl
+                }));
+            } catch (error) {
+                console.error('Error creating image preview:', error);
+                setError('Failed to process image');
+            }
+        }
     };
+
+
+    useEffect(() => {
+        return () => {
+            if (uploadedImage && typeof data.profileimage === 'string' && data.profileimage.startsWith('blob:')) {
+                URL.revokeObjectURL(data.profileimage);
+            }
+        };
+    }, [uploadedImage, data.profileimage]);
 
     if (loading) {
         return (
@@ -105,6 +132,15 @@ function ProfilePage() {
                 <div className="bg-white rounded-lg shadow p-6 max-w-md mx-4 text-center">
                     <div className="text-red-600 mb-2">⚠️</div>
                     <p className="text-gray-600">{error}</p>
+                    <button 
+                        onClick={() => {
+                            setError(null);
+                            fetchProfile();
+                        }}
+                        className="mt-4 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
+                    >
+                        Retry
+                    </button>
                 </div>
             </div>
         );
@@ -116,13 +152,31 @@ function ProfilePage() {
             
             <div className="max-w-4xl mx-auto px-4 py-8">
                 
+                {error && (
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-6">
+                        <div className="flex">
+                            <div className="text-red-400 mr-3">⚠️</div>
+                            <div>
+                                <p className="text-red-700">{error}</p>
+                                <button 
+                                    onClick={() => setError(null)}
+                                    className="text-red-600 underline text-sm mt-1"
+                                >
+                                    Dismiss
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+                
+               
                 <div className="bg-white rounded-lg shadow-sm mb-6">
                     <div className="bg-gradient-to-r from-indigo-500 to-purple-600 h-24 rounded-t-lg"></div>
                     
                     <div className="px-6 pb-6 -mt-16 relative">
                         <div className="flex flex-col sm:flex-row sm:items-end sm:space-x-6">
                             <ProfileImageUpload 
-                                currentImage={uploadedImage || data.profileimage}
+                                currentImage={uploadedImage ? data.profileimage : (data.profileimage || null)}
                                 onImageChange={handleImageChange}
                                 isEdit={isEdit}
                             />
@@ -179,7 +233,7 @@ function ProfilePage() {
                                 <ProfileInput 
                                     value={data.name || ''} 
                                     onChange={(e) => handleInputChange('name', e.target.value)}
-                                    disabled 
+                                    disabled={false} 
                                 />
                             ) : (
                                 <ProfileDisplay value={data.name} />
@@ -195,7 +249,7 @@ function ProfilePage() {
                                 <ProfileInput 
                                     value={data.phone || ''} 
                                     onChange={(e) => handleInputChange('phone', e.target.value)}
-                                    disabled 
+                                    disabled={false} 
                                 />
                             ) : (
                                 <ProfileDisplay value={data.phone} />

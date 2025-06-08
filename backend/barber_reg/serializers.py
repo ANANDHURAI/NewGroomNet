@@ -1,35 +1,85 @@
 from rest_framework import serializers
-from authservice.models import User
+from django.contrib.auth import get_user_model
+from django.contrib.auth.password_validation import validate_password
+from django.core.exceptions import ValidationError
 from .models import BarberRequest
+import re
 
-class PersonalDetailsSerializer(serializers.Serializer):
-    name = serializers.CharField(max_length=100)
-    email = serializers.EmailField(read_only=True)
-    phone = serializers.CharField(max_length=15)
-    gender = serializers.ChoiceField(choices=User.GENDER_CHOICES)
+User = get_user_model()
 
-    def validate_phone(self, value):
+class BarberPersonalDetailsSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, min_length=8)
+    confirm_password = serializers.CharField(write_only=True)
+
+    class Meta:
+        model = User
+        fields = ['name', 'email', 'phone', 'gender', 'password', 'confirm_password']
+
+    # def validate_email(self, value):
+    #     if User.objects.filter(email=value.lower()).exists():
+    #         raise serializers.ValidationError("A user with this email already exists.")
         
-        if len(value) < 10:
-            raise serializers.ValidationError("Phone number must be at least 10 digits")
+    #     return value.lower()
+
+    def validate_password(self, value):
+        try:
+            validate_password(value)
+        except ValidationError as e:
+            raise serializers.ValidationError(list(e.messages))
         return value
 
-class ApprovelRequestSerializer(serializers.ModelSerializer):
+    def validate(self, attrs):
+        if attrs['password'] != attrs['confirm_password']:
+            raise serializers.ValidationError({
+                "confirm_password": "Passwords don't match."
+            })
+        
+        attrs.pop('confirm_password')
+        return attrs
+
+
+class DocumentUploadSerializer(serializers.ModelSerializer):
     class Meta:
         model = BarberRequest
-        fields = ['licence', 'certificate']
+        fields = ['licence', 'certificate', 'profile_image']
 
-    def validate_licence(self, value):
-        allowed_types = ['pdf', 'jpg', 'jpeg', 'png']
-        file_extension = value.name.split('.')[-1].lower()
-        if file_extension not in allowed_types:
-            raise serializers.ValidationError("Only PDF and image files are allowed for licence.")
-        return value
+    def validate(self, data):
+        required_fields = ['licence', 'certificate', 'profile_image']
+        for field in required_fields:
+            if not data.get(field):
+                raise serializers.ValidationError({
+                    field: f'{field.replace("_", " ").title()} is required.'
+                })
 
-    def validate_certificate(self, value):
-        
-        allowed_types = ['pdf', 'jpg', 'jpeg', 'png']
-        file_extension = value.name.split('.')[-1].lower()
-        if file_extension not in allowed_types:
-            raise serializers.ValidationError("Only PDF and image files are allowed for certificate.")
-        return value
+        allowed_extensions = ['pdf', 'jpg', 'jpeg', 'png']
+        image_extensions = ['jpg', 'jpeg', 'png']
+
+        for field_name in ['licence', 'certificate']:
+            file = data.get(field_name)
+            if file:
+                extension = file.name.split('.')[-1].lower()
+                if extension not in allowed_extensions:
+                    raise serializers.ValidationError({
+                        field_name: f"Only PDF and image files are allowed."
+                    })
+       
+        profile_img = data.get('profile_image')
+        if profile_img:
+            extension = profile_img.name.split('.')[-1].lower()
+            if extension not in image_extensions:
+                raise serializers.ValidationError({
+                    'profile_image': "Only image files (JPG, JPEG, PNG) are allowed."
+                })
+
+        return data
+
+
+class BarberRegistrationStatusSerializer(serializers.ModelSerializer):
+    registration_step = serializers.CharField(source='barber_request.registration_step', read_only=True)
+    status = serializers.CharField(source='barber_request.status', read_only=True)
+    admin_comment = serializers.CharField(source='barber_request.admin_comment', read_only=True)
+    documents_complete = serializers.BooleanField(source='barber_request.is_documents_complete', read_only=True)
+    
+    class Meta:
+        model = User
+        fields = ['id', 'name', 'email', 'registration_step', 'status', 'admin_comment', 'documents_complete']
