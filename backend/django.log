@@ -1776,3 +1776,147 @@ Unauthorized: /adminsite/barbers-list/
 "GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
 "GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
 Watching for file changes with StatReloader
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/barbers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/barbers-list/ HTTP/1.1" 200 0
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
+"GET /media/profile_images/aatharThiru_JZXqcCM.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_dzrMeEp.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_Ntk6ybX.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_ssYzQpX.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"OPTIONS /adminsite/users-block/8/ HTTP/1.1" 200 0
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"OPTIONS /adminsite/customers-details/8/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/8/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"GET /adminsite/customers-details/8/ HTTP/1.1" 200 291
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"OPTIONS /adminsite/users-block/4/ HTTP/1.1" 200 0
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/4/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 206
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 206
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/4/ HTTP/1.1" 200 47
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 206
+"GET /adminsite/customers-details/4/ HTTP/1.1" 200 206
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"GET /adminsite/customers-list/ HTTP/1.1" 200 413
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+Bad Request: /auth/customer-barber-login/
+"POST /auth/customer-barber-login/ HTTP/1.1" 400 33
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1151
+"GET /media/profile_images/aatharThiru_JZXqcCM.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_Ntk6ybX.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_ssYzQpX.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 559
+"OPTIONS /barber-reg/registration-status/ HTTP/1.1" 200 0
+"OPTIONS /barber-reg/registration-status/ HTTP/1.1" 200 0
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 215
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 215
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 215
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 215
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 565
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 221
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 221
+Bad Request: /auth/customer-barber-login/
+"POST /auth/customer-barber-login/ HTTP/1.1" 400 31
+Bad Request: /auth/customer-barber-login/
+"POST /auth/customer-barber-login/ HTTP/1.1" 400 31
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 565
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 221
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 221
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 123
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 123
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 221
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 221
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 559
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 215
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 215
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 215
+"GET /barber-reg/registration-status/ HTTP/1.1" 200 215
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"POST /adminsite/users-block/8/ HTTP/1.1" 200 47
+Bad Request: /auth/customer-barber-login/
+"POST /auth/customer-barber-login/ HTTP/1.1" 400 33
+D:\practiceProject\backend\authservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader

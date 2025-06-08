@@ -45,7 +45,7 @@ function BarberPersonalDetails() {
       
       setTimeout(() => {
         navigate('/barber-document-upload');
-      }, 1500);
+      }, 500);
       
     } catch (error) {
       console.error('Registration failed:', error);

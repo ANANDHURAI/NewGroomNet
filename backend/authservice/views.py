@@ -39,7 +39,8 @@ class CustomerBarberLogin(APIView):
                     'email': user.email,
                     'name': user.name,
                     'user_type': user.user_type,
-                    
+                    'is_active': user.is_active,     
+                    'is_verified': user.is_verified,
                 }
             }, status=status.HTTP_200_OK)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

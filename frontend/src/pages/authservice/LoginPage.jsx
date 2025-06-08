@@ -31,7 +31,11 @@ function LoginPage() {
             if (user.user_type === 'customer') {
                 navigate('/home');
             } else if (user.user_type === 'barber') {
-                navigate('/barber-dashboard');
+                if (user.is_active && user.is_verified) {
+                    navigate('/barber-dash');
+                } else {
+                    navigate('/barber-status');
+                }
             } else {
                 setError('Access restricted to customers and barbers only');
             }

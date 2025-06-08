@@ -51,7 +51,7 @@ class LoginSerializer(serializers.Serializer):
             raise serializers.ValidationError({'detail': 'No account found with this email'})
         
         if user.is_blocked:
-            raise serializers.ValidationError({'detail': 'Account is blocked'})
+            raise serializers.ValidationError({'detail': 'Account is temporarily blocked'})
         
         authenticated_user = authenticate(email=email, password=password)
         if not authenticated_user:

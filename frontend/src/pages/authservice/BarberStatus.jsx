@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { RefreshCw, CheckCircle, Clock, XCircle, AlertCircle } from 'lucide-react';
+import { RefreshCw, CheckCircle, Clock, XCircle, AlertCircle, Upload } from 'lucide-react';
 import apiClient from '../../slices/api/apiIntercepters';
 
 function BarberStatus() {
@@ -53,6 +53,15 @@ function BarberStatus() {
   const handleEnterDashboard = () => navigate('/barber-dash');
   const handleStartRegistration = () => navigate('/barber-registration');
   const handleTryAgain = () => navigate('/barber-registration');
+  
+  
+  const handleContinueRegistration = () => {
+    if (nextStep === 'documents_uploaded') {
+      navigate('/barber-document-upload');
+    } else {
+      navigate('/barber-registration');
+    }
+  };
 
   const getStatusInfo = () => {
     if (!userData) {
@@ -109,6 +118,10 @@ function BarberStatus() {
 
   const formatStepName = (step) => {
     return step?.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'Unknown';
+  };
+
+  const canContinueToDocuments = () => {
+      return canContinue && nextStep === 'upload_documents';
   };
 
   const statusInfo = getStatusInfo();
@@ -221,6 +234,18 @@ function BarberStatus() {
                     <RefreshCw className={`w-4 h-4 ${refreshing ? 'animate-spin' : ''}`} />
                     {refreshing ? 'Refreshing...' : 'Refresh Status'}
                   </button>
+                  
+                  {/* Continue Registration Button - only show for document upload step */}
+                  {canContinueToDocuments() && (
+                    <button
+                      onClick={handleContinueRegistration}
+                      className="flex-1 flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200"
+                    >
+                      <Upload className="w-4 h-4" />
+                      Continue Registration
+                    </button>
+                  )}
+                  
                   {userData.status === 'rejected' && (
                     <button
                       onClick={handleTryAgain}
