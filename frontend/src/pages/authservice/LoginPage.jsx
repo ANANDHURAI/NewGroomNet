@@ -23,9 +23,8 @@ function LoginPage() {
                 email: email.trim().toLowerCase(),
                 password,
             });
-            
-            const { access, refresh, user } = response.data;
 
+            const { access, refresh, user } = response.data;
             dispatch(login({ user, access, refresh }));
 
             if (user.user_type === 'customer') {
@@ -39,12 +38,11 @@ function LoginPage() {
             } else {
                 setError('Access restricted to customers and barbers only');
             }
-            
         } catch (error) {
             console.error('Login error:', error);
-            const errorMessage = error.response?.data?.detail || 
-                                error.response?.data?.message || 
-                                'Invalid credentials';
+            const errorMessage = error.response?.data?.detail ||
+                error.response?.data?.message ||
+                'Invalid credentials';
             setError(errorMessage);
         } finally {
             setLoading(false);
@@ -55,34 +53,36 @@ function LoginPage() {
         <div className="min-h-screen bg-gradient-to-br from-blue-900 via-blue-800 to-teal-900 flex items-center justify-center p-4">
             <div className="bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 w-full max-w-md border border-blue-300/20">
                 <div className="text-center mb-8">
-                    <h2 className="text-3xl font-bold text-white mb-2">Welcome Back</h2>
+                    <h2 className="text-3xl font-bold text-white mb-2">Welcome to GroomNet</h2>
                     <p className="text-blue-200">Sign in to your account</p>
                 </div>
-                
-                <form onSubmit={handleSubmit} className="space-y-6">
+
+                <form onSubmit={handleSubmit} autoComplete="off" className="space-y-6">
                     <div className="space-y-4">
                         <input
-                            value={email} 
-                            onChange={(e) => setEmail(e.target.value)} 
-                            placeholder="Email" 
+                            name="login_email"
+                            autoComplete="new-email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Email"
                             type="email"
                             required
-                            autoComplete="email"
                             className="w-full px-4 py-3 bg-white/20 backdrop-blur border border-blue-300/30 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200"
                         />
                         <input
-                            value={password} 
-                            onChange={(e) => setPassword(e.target.value)} 
-                            placeholder="Password" 
+                            name="login_pass"
+                            autoComplete="new-password"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            placeholder="Password"
                             type="password"
                             required
-                            autoComplete="current-password"
                             className="w-full px-4 py-3 bg-white/20 backdrop-blur border border-blue-300/30 rounded-lg text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-200"
                         />
                     </div>
-                    
-                    <button 
-                        type="submit" 
+
+                    <button
+                        type="submit"
                         disabled={loading}
                         className="w-full py-3 px-4 bg-gradient-to-r from-blue-600 to-teal-600 hover:from-blue-700 hover:to-teal-700 disabled:from-blue-400 disabled:to-teal-400 text-white font-semibold rounded-lg shadow-lg transform transition-all duration-200 hover:scale-105 disabled:scale-100 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-transparent"
                     >
@@ -97,7 +97,7 @@ function LoginPage() {
                         ) : 'Sign In'}
                     </button>
                 </form>
-                
+
                 {error && (
                     <div className="mt-4 p-3 bg-red-500/20 border border-red-400/30 rounded-lg">
                         <p className="text-red-200 text-sm text-center">{error}</p>

@@ -3,16 +3,24 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
-from .serializers import HomeSerializer ,RegisterSerializer , OtpSerializer , AdminLoginSerializer , CustomerBarberLoginSerializer
+from .serializers import (
+HomeSerializer ,
+RegisterSerializer , 
+OtpSerializer , 
+AdminLoginSerializer , 
+CustomerBarberLoginSerializer,
+ForgotPasswordSerializer,
+ResetPasswordSerializer)
 import random
 from .models import User
 from django.conf import settings
 from django.core.mail import send_mail
 from django.core.cache import cache
-from rest_framework_simplejwt.views import TokenRefreshView
+from django.conf import settings
 import logging
 from rest_framework.permissions import AllowAny
 logger = logging.getLogger(__name__)
+from utils import send_mail
 
 class Home(APIView):
     permission_classes = [IsAuthenticated]
@@ -236,4 +244,31 @@ class AdminDashboard(APIView):
         data = {'great_massage': f'Hello welcome Admin {request.user.name}!'}
         return Response(data)
     
-    
+class ForgotPasswordView(APIView):
+    def post(self, request):
+        serializer = ForgotPasswordSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        email = serializer.validated_data['email']
+        otp = random.randint(1000, 9999)
+        cache.set(f"otp_{email}", str(otp), timeout=300)
+
+        if send_otp(email, otp):
+            return Response({"message": "OTP sent to your email for password reset.", "email": email})
+        return Response({"error": "Failed to send OTP"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+
+
+class ResetPasswordView(APIView):
+    def post(self, request):
+        serializer = ResetPasswordSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        email = serializer.validated_data['email']
+        new_password = serializer.validated_data['new_password']
+
+        user = User.objects.get(email=email)
+        user.set_password(new_password)
+        user.save()
+        cache.delete(f"otp_{email}")
+
+        return Response({"message": "Password reset successfully."})

@@ -84,3 +84,29 @@ class CustomerBarberLoginSerializer(LoginSerializer):
         
         return attrs
 
+class ForgotPasswordSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+
+    def validate_email(self, value):
+        if not User.objects.filter(email=value).exists():
+            raise serializers.ValidationError("Email not found.")
+        return value
+
+
+class ResetPasswordSerializer(serializers.Serializer):
+    email = serializers.EmailField()
+    otp = serializers.CharField(max_length=4)
+    new_password = serializers.CharField(write_only=True, min_length=6)
+
+    def validate(self, data):
+        email = data.get('email')
+        otp = data.get('otp')
+        cached_otp = cache.get(f"otp_{email}")
+
+        if not cached_otp:
+            raise serializers.ValidationError({"otp": "OTP expired. Please request a new OTP."})
+
+        if cached_otp != otp:
+            raise serializers.ValidationError({"otp": "Invalid OTP."})
+
+        return data
