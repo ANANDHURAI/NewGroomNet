@@ -7,3 +7,4 @@ export const ProfileField = ({ label, icon: Icon, children, className = "" }) =>
     {children}
   </div>
 );
+

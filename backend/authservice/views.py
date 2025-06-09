@@ -20,7 +20,7 @@ from django.conf import settings
 import logging
 from rest_framework.permissions import AllowAny
 logger = logging.getLogger(__name__)
-from utils import send_mail
+from .utils import send_mail
 
 class Home(APIView):
     permission_classes = [IsAuthenticated]
@@ -244,18 +244,18 @@ class AdminDashboard(APIView):
         data = {'great_massage': f'Hello welcome Admin {request.user.name}!'}
         return Response(data)
     
-class ForgotPasswordView(APIView):
-    def post(self, request):
-        serializer = ForgotPasswordSerializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
+# class ForgotPasswordView(APIView):
+#     def post(self, request):
+#         serializer = ForgotPasswordSerializer(data=request.data)
+#         serializer.is_valid(raise_exception=True)
 
-        email = serializer.validated_data['email']
-        otp = random.randint(1000, 9999)
-        cache.set(f"otp_{email}", str(otp), timeout=300)
+#         email = serializer.validated_data['email']
+#         otp = random.randint(1000, 9999)
+#         cache.set(f"otp_{email}", str(otp), timeout=300)
 
-        if send_otp(email, otp):
-            return Response({"message": "OTP sent to your email for password reset.", "email": email})
-        return Response({"error": "Failed to send OTP"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+#         if send_otp(email, otp):
+#             return Response({"message": "OTP sent to your email for password reset.", "email": email})
+#         return Response({"error": "Failed to send OTP"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
 class ResetPasswordView(APIView):

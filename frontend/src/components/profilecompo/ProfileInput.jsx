@@ -1,5 +1,13 @@
-export const ProfileInput = ({ value, onChange, disabled, type = "text", placeholder, rows, options = [] }) => {
-  const baseClasses = "w-full px-4 py-3 border border-gray-300 rounded-lg transition-all duration-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent";
+export const ProfileInput = ({ 
+  value, 
+  onChange, 
+  disabled, 
+  type = "text", 
+  placeholder, 
+  rows, 
+  options = [] 
+}) => {
+  const baseClasses = "w-full px-4 py-3 border border-gray-300 rounded-xl transition-all duration-200 focus:ring-2 focus:ring-blue-500 focus:border-transparent shadow-sm";
   const disabledClasses = disabled ? "bg-gray-50 text-gray-500 cursor-not-allowed" : "bg-white hover:border-gray-400";
 
   if (type === "textarea") {

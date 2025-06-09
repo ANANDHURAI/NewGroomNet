@@ -2305,3 +2305,946 @@ D:\practiceProject\backend\authservice\views.py changed, reloading.
 Watching for file changes with StatReloader
 D:\practiceProject\backend\authservice\views.py changed, reloading.
 Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /media/profile_images/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /profile-service/user-profile/ HTTP/1.1" 200 187
+"GET /profile-service/user-profile/ HTTP/1.1" 200 187
+"GET /media/profile_images/images.jpg HTTP/1.1" 304 0
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 195
+"PUT /profile-service/user-profile/ HTTP/1.1" 200 195
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"OPTIONS /adminsite/barber-details/13/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/13/ HTTP/1.1" 200 487
+"GET /adminsite/barber-details/13/ HTTP/1.1" 200 487
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"OPTIONS /adminsite/barbers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/barbers-list/ HTTP/1.1" 200 0
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /media/profile_images/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_Ntk6ybX.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/aatharThiru_JZXqcCM.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_ssYzQpX.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WIN_20250518_16_52_19_Pro_ZcM0AsE.jpg HTTP/1.1" 304 0
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\profileservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /media/profile_images/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+Internal Server Error: /barbersite/barber-portfolio/
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: barbersite_portfolio
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\practiceProject\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\practiceProject\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\practiceProject\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\practiceProject\backend\barbersite\views.py", line 31, in get
+    portfolio = Portfolio.objects.get(user=request.user)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "D:\practiceProject\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: barbersite_portfolio
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
+Watching for file changes with StatReloader

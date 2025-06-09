@@ -18,6 +18,7 @@ import VerificationPage from './pages/adminsite/VericationPage'
 import BarberDash from './pages/barbersite/BarberDash'
 import BarbersList from './pages/adminsite/BarbersList'
 import BarberDetails from './pages/adminsite/BarberDetails'
+import Portfolio from './pages/barbersite/Portfolio'
 
 
 
@@ -46,6 +47,7 @@ function App() {
           <Route path="/barbers-list" element={<BarbersList />} />
           <Route path="/barbers-details/:id" element={<BarberDetails />} />
           <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="/barbers-portfolio" element={<Portfolio />} />
 
         </Routes>
       </BrowserRouter>

@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Logout from '../basics/Logout'
-import ProfilePage from '../../pages/commonpages/ProfilePage'
+
 function BarberSidebar() {
   return (
     <div className="bg-gray-900 text-white w-64 min-h-screen p-6 fixed left-0 top-0 shadow-lg">
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-blue-400 border-b border-gray-700 pb-4">
-          Barber Panel
-        </h2>
+        <Link to="/barber-dash">
+          <h2 className="text-2xl font-bold text-blue-400 border-b border-gray-700 pb-4 hover:text-blue-600 transition">
+            Barber Panel
+          </h2>
+        </Link>
       </div>
       
       <nav className="space-y-3">
@@ -23,13 +25,13 @@ function BarberSidebar() {
         </Link>
         
         <Link 
-          to="/barber/portfolio" 
+          to="/barbers-portfolio" 
           className="flex items-center px-4 py-3 text-gray-300 hover:text-white hover:bg-gray-800 rounded-lg transition-all duration-200 ease-in-out group"
         >
           <svg className="w-5 h-5 mr-3 group-hover:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
           </svg>
-          Portfolio
+          My Portfolio
         </Link>
         
         <Link 
@@ -70,7 +72,7 @@ function BarberSidebar() {
           <svg className="w-5 h-5 mr-3 group-hover:text-blue-400" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
           </svg>
-          <span>Profile</span>
+          <span>My Profile</span>
         </Link>
 
 

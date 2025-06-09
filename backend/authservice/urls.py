@@ -2,7 +2,7 @@ from django.urls import path
 from rest_framework_simplejwt import views as jwt_views
 from .views import (
     Home, LogoutView, RegisterView, OTPVerification, 
-    AdminLogin, AdminDashboard, CustomerBarberLogin ,ForgotPasswordView,ResetPasswordView 
+    AdminLogin, AdminDashboard, CustomerBarberLogin ,ResetPasswordView 
 )
 
 urlpatterns = [
@@ -21,6 +21,6 @@ urlpatterns = [
     path('admin-login/', AdminLogin.as_view(), name='admin-login'),
     path('admin-dashboard/', AdminDashboard.as_view(), name='admin-dashboard'),
 
-    path('forgot-password/', ForgotPasswordView.as_view(), name='forgot_password'),
+    # path('forgot-password/', ForgotPasswordView.as_view(), name='forgot_password'),
     path('reset-password/', ResetPasswordView.as_view(), name='reset_password'),
 ]

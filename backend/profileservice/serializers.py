@@ -14,13 +14,13 @@ class UserProfileSerializer(serializers.ModelSerializer):
         fields = ['name', 'email', 'phone', 'profileimage', 'usertype', 'date_of_birth', 'gender', 'bio']
     
     def get_profileimage(self, obj):
-        """Return full URL for profile image"""
+       
         if obj.user.profileimage and hasattr(obj.user.profileimage, 'url'):
             request = self.context.get('request')
             if request:
                 return request.build_absolute_uri(obj.user.profileimage.url)
             else:
-                # Fallback if no request context
+               
                 return f"http://localhost:8000{obj.user.profileimage.url}"
         return None
     
