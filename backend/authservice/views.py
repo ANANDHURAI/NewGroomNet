@@ -4,7 +4,6 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import (
-HomeSerializer ,
 RegisterSerializer , 
 OtpSerializer , 
 AdminLoginSerializer , 
@@ -22,13 +21,6 @@ from rest_framework.permissions import AllowAny
 logger = logging.getLogger(__name__)
 from .utils import send_mail
 
-class Home(APIView):
-    permission_classes = [IsAuthenticated]
-    
-    def get(self, request):
-        data = {'great_massage': f'Hello welcome {request.user.name}!'}
-        serializer = HomeSerializer(data)
-        return Response(serializer.data)
 
 
 class CustomerBarberLogin(APIView):

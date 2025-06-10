@@ -4149,3 +4149,245 @@ D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
 Watching for file changes with StatReloader
 D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
 Watching for file changes with StatReloader
+"OPTIONS /adminsite/categories/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/categories/ HTTP/1.1" 200 0
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /media/services/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/services/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /media/services/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /media/categories/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"GET /media/categories/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /media/categories/Adolf-Hitler-1933_k95wmJ6.webp HTTP/1.1" 304 0
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"PATCH /adminsite/services/1/ HTTP/1.1" 200 550
+"GET /adminsite/services/ HTTP/1.1" 200 1753
+"PATCH /adminsite/services/1/ HTTP/1.1" 200 549
+"GET /adminsite/services/ HTTP/1.1" 200 1752
+"DELETE /adminsite/services/1/ HTTP/1.1" 204 0
+"GET /adminsite/services/ HTTP/1.1" 200 1202
+"PUT /adminsite/services/3/ HTTP/1.1" 200 578
+"GET /adminsite/services/ HTTP/1.1" 200 1188
+"POST /adminsite/services/ HTTP/1.1" 201 695
+"GET /adminsite/services/ HTTP/1.1" 200 1884
+"GET /media/services/images.jpg HTTP/1.1" 200 8447
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1884
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 1884
+"GET /media/services/images.jpg HTTP/1.1" 304 0
+"GET /media/services/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /media/services/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /media/categories/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /media/categories/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"GET /media/categories/Adolf-Hitler-1933_k95wmJ6.webp HTTP/1.1" 304 0
+"DELETE /adminsite/categories/5/ HTTP/1.1" 204 0
+"GET /adminsite/categories/ HTTP/1.1" 200 265
+"OPTIONS /adminsite/categories/7/ HTTP/1.1" 200 0
+"DELETE /adminsite/categories/7/ HTTP/1.1" 204 0
+"GET /adminsite/categories/ HTTP/1.1" 200 135
+"POST /adminsite/categories/ HTTP/1.1" 201 137
+"GET /adminsite/categories/ HTTP/1.1" 200 273
+"GET /media/categories/second-row-crochet-2024-10-25T154110.webp HTTP/1.1" 200 209910
+"OPTIONS /adminsite/categories/8/ HTTP/1.1" 200 0
+Bad Request: /adminsite/categories/8/
+"PUT /adminsite/categories/8/ HTTP/1.1" 400 36
+"PUT /adminsite/categories/8/ HTTP/1.1" 200 145
+"GET /adminsite/categories/ HTTP/1.1" 200 281
+"GET /media/categories/second-row-crochet-2024-10-25T154110_PnFAVQt.webp HTTP/1.1" 200 209910
+"PUT /adminsite/categories/8/ HTTP/1.1" 200 144
+"GET /adminsite/categories/ HTTP/1.1" 200 280
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 200 209910
+"OPTIONS /adminsite/categories/6/ HTTP/1.1" 200 0
+Unauthorized: /adminsite/categories/6/
+"PUT /adminsite/categories/6/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"PUT /adminsite/categories/6/ HTTP/1.1" 200 111
+"GET /adminsite/categories/ HTTP/1.1" 200 258
+"GET /media/categories/haircolor.webp HTTP/1.1" 200 28856
+Bad Request: /adminsite/categories/
+"POST /adminsite/categories/ HTTP/1.1" 400 36
+"POST /adminsite/categories/ HTTP/1.1" 201 113
+"GET /adminsite/categories/ HTTP/1.1" 200 372
+"GET /media/categories/beard.webp HTTP/1.1" 200 8844
+"POST /adminsite/categories/ HTTP/1.1" 201 104
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /media/categories/fasial.jpg HTTP/1.1" 200 24222
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"POST /adminsite/services/ HTTP/1.1" 201 672
+"GET /adminsite/services/ HTTP/1.1" 200 674
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 200 179496
+"POST /adminsite/services/ HTTP/1.1" 201 584
+"GET /adminsite/services/ HTTP/1.1" 200 1259
+"GET /media/services/Pompadour.jpeg HTTP/1.1" 200 29781
+Bad Request: /adminsite/services/
+"POST /adminsite/services/ HTTP/1.1" 400 103
+"POST /adminsite/services/ HTTP/1.1" 201 568
+"GET /adminsite/services/ HTTP/1.1" 200 1828
+"GET /media/services/Balayage-864x900.webp HTTP/1.1" 200 78208
+"POST /adminsite/services/ HTTP/1.1" 201 554
+"GET /adminsite/services/ HTTP/1.1" 200 2383
+"GET /media/services/colrng.jpg HTTP/1.1" 200 9631
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /media/categories/fasial.jpg HTTP/1.1" 200 24222
+"GET /media/categories/beard.webp HTTP/1.1" 200 8844
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 200 209910
+"GET /media/categories/haircolor.webp HTTP/1.1" 200 28856
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/services/ HTTP/1.1" 200 2383
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/services/ HTTP/1.1" 200 2383
+Unauthorized: /adminsite/categories/
+"OPTIONS /adminsite/services/ HTTP/1.1" 200 0
+"GET /adminsite/categories/ HTTP/1.1" 401 172
+"OPTIONS /adminsite/services/ HTTP/1.1" 200 0
+Unauthorized: /adminsite/services/
+Unauthorized: /adminsite/categories/
+"GET /adminsite/services/ HTTP/1.1" 401 172
+"GET /adminsite/categories/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/services/
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"GET /adminsite/services/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/categories/
+Unauthorized: /adminsite/services/
+"GET /adminsite/categories/ HTTP/1.1" 401 172
+"GET /adminsite/services/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/categories/
+Unauthorized: /adminsite/services/
+"GET /adminsite/categories/ HTTP/1.1" 401 172
+"GET /adminsite/services/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /adminsite/categories/
+Unauthorized: /adminsite/services/
+"GET /adminsite/categories/ HTTP/1.1" 401 172
+"GET /adminsite/services/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/categories/
+Unauthorized: /adminsite/services/
+"GET /adminsite/categories/ HTTP/1.1" 401 172
+"GET /adminsite/services/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+Unauthorized: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /media/categories/fasial.jpg HTTP/1.1" 304 0
+"GET /media/categories/beard.webp HTTP/1.1" 304 0
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 304 0
+"GET /media/categories/haircolor.webp HTTP/1.1" 304 0
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/services/ HTTP/1.1" 200 2383
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/services/ HTTP/1.1" 200 2383
+"GET /media/services/colrng.jpg HTTP/1.1" 304 0
+"GET /media/services/Balayage-864x900.webp HTTP/1.1" 304 0
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 304 0
+"GET /media/services/Pompadour.jpeg HTTP/1.1" 304 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+Bad Request: /auth/customer-barber-login/
+"POST /auth/customer-barber-login/ HTTP/1.1" 400 31
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /media/profile_images/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\authservice\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /cutomersite/home/ HTTP/1.1" 200 0
+"OPTIONS /cutomersite/home/ HTTP/1.1" 200 0
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader

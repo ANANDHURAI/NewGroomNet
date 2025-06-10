@@ -29,7 +29,6 @@ INSTALLED_APPS = [
     'profileservice',
     'barber_reg',
     'barbersite',
-
 ]
 
 MIDDLEWARE = [
