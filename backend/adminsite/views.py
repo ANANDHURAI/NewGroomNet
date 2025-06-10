@@ -4,15 +4,16 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
 from authservice.models import User
 from rest_framework.generics import RetrieveAPIView
-from .serializers import UsersListSerializer, BarbersListSerializer
+from .serializers import UsersListSerializer, BarbersListSerializer ,CategorySerializer, ServiceSerializer
 from barber_reg.models import BarberRequest
 from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404
 from django.db import transaction
 import logging
-
+from .models import  CategoryModel , ServiceModel
 User = get_user_model()
 logger = logging.getLogger(__name__)
+from rest_framework.viewsets import ModelViewSet
 
 class PendingBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
@@ -199,7 +200,6 @@ class BarberDetailsView(APIView):
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
 
-        
 class UsersListView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -246,3 +246,14 @@ class BlockingView(APIView):
             return Response({'message': 'User status updated successfully.'}, status=status.HTTP_200_OK)
         except User.DoesNotExist:
             return Response({'error': 'User not found'}, status=status.HTTP_404_NOT_FOUND)
+
+
+class CategoryViewSet(ModelViewSet):
+    queryset = CategoryModel.objects.all().order_by('-id')
+    serializer_class = CategorySerializer
+    permission_classes = [IsAuthenticated]
+
+class ServiceViewSet(ModelViewSet):
+    queryset = ServiceModel.objects.all().order_by('-id')
+    serializer_class = ServiceSerializer
+    permission_classes = [IsAuthenticated]

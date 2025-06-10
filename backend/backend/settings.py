@@ -5,15 +5,12 @@ from datetime import timedelta
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-
 SECRET_KEY = 'django-insecure-a6tjyxxc^46bt%zb)yo7%@qzug@_jct$_98y9=gozf8x@&8t=l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -32,6 +29,7 @@ INSTALLED_APPS = [
     'profileservice',
     'barber_reg',
     'barbersite',
+
 ]
 
 MIDDLEWARE = [

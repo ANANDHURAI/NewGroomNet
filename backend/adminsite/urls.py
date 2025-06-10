@@ -1,18 +1,20 @@
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
 from .views import (
-    UsersListView, 
-    UserDetailView,
-    PendingBarbersRequestsView, 
-    AllBarbersRequestsView,
-    BarberApprovalActionView,
-    BarberDetailsView,
-    BarbersListView,
-    BlockingView
+    UsersListView, UserDetailView,
+    PendingBarbersRequestsView, AllBarbersRequestsView,
+    BarberApprovalActionView, BarberDetailsView, BarbersListView,
+    BlockingView,
+    CategoryViewSet, ServiceViewSet
 )
+
+router = DefaultRouter()
+router.register(r'categories', CategoryViewSet, basename='category')
+router.register(r'services', ServiceViewSet, basename='service')
 
 urlpatterns = [
     path('customers-list/', UsersListView.as_view(), name='customers-list'),
-    path('customers-details/<int:id>/', UserDetailView.as_view(), name='customer-detail'), 
+    path('customers-details/<int:id>/', UserDetailView.as_view(), name='customer-detail'),
 
     path('barbers-list/', BarbersListView.as_view(), name='barbers-list'),
     path('pending-requests/', PendingBarbersRequestsView.as_view(), name='pending-barber-requests'),
@@ -20,5 +22,6 @@ urlpatterns = [
     path('approve-barber/', BarberApprovalActionView.as_view(), name='approve-barber'),
     path('barber-details/<int:barber_id>/', BarberDetailsView.as_view(), name='barber-details'),
     path('users-block/<int:id>/', BlockingView.as_view(), name='users-block'),
- 
+
+    path('', include(router.urls)),
 ]

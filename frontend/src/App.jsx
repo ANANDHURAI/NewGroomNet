@@ -19,6 +19,9 @@ import BarberDash from './pages/barbersite/BarberDash'
 import BarbersList from './pages/adminsite/BarbersList'
 import BarberDetails from './pages/adminsite/BarberDetails'
 import Portfolio from './pages/barbersite/Portfolio'
+import Categoryslist from './pages/adminsite/Categoryslist'
+import Servicelist from './pages/adminsite/Servicelist'
+
 
 
 
@@ -48,6 +51,9 @@ function App() {
           <Route path="/barbers-details/:id" element={<BarberDetails />} />
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/barbers-portfolio" element={<Portfolio />} />
+          <Route path="/category" element={<Categoryslist />} />
+          <Route path="/service" element={<Servicelist />} />
+          
 
         </Routes>
       </BrowserRouter>

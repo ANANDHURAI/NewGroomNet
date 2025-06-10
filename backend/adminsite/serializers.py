@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from authservice.models import User
+from authservice.models import User 
+from .models import CategoryModel , ServiceModel
 
 class UsersListSerializer(serializers.ModelSerializer):
     profileimage_url = serializers.SerializerMethodField()
@@ -31,4 +32,28 @@ class BarbersListSerializer(serializers.ModelSerializer):
             return obj.profileimage.url
         return None
     
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CategoryModel
+        fields = '__all__'
+
+class ServiceSerializer(serializers.ModelSerializer):
+    category_name = serializers.CharField(source='category.name', read_only=True)
+    category_details = CategorySerializer(source='category', read_only=True)
+    
+    class Meta:
+        model = ServiceModel
+        fields = '__all__'
+        
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        if instance.category:
+            representation['category'] = {
+                'id': instance.category.id,
+                'name': instance.category.name,
+                'image': instance.category.image.url if instance.category.image else None,
+                'is_blocked': instance.category.is_blocked
+            }
+        return representation
+
     

@@ -31,6 +31,18 @@ function AdminSidebar() {
           </svg>
           <p className="text-purple-200 group-hover:text-white transition-colors font-medium">Verification Pendings</p>
         </Link>
+        <Link to="/category" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/10 transition-all duration-200 group">
+          <svg className="w-5 h-5 text-purple-300 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <p className="text-purple-200 group-hover:text-white transition-colors font-medium">Categorys</p>
+        </Link>
+        <Link to="/service" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/10 transition-all duration-200 group">
+          <svg className="w-5 h-5 text-purple-300 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <p className="text-purple-200 group-hover:text-white transition-colors font-medium">Services</p>
+        </Link>
 
         <div className="flex items-center space-x-3 p-3 rounded-lg hover:bg-white/10 transition-all duration-200 cursor-pointer group">
           <svg className="w-5 h-5 text-purple-300 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -3248,3 +3248,904 @@ Traceback (most recent call last):
 django.db.utils.OperationalError: no such table: barbersite_portfolio
 "GET /barbersite/barber-portfolio/ HTTP/1.1" 500 168954
 Watching for file changes with StatReloader
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+"PUT /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"PUT /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"PUT /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"PUT /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"PUT /barbersite/barber-portfolio/ HTTP/1.1" 200 156
+"PUT /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 601
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 123
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 123
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 123
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 123
+"GET /profile-service/user-profile/ HTTP/1.1" 200 248
+"GET /profile-service/user-profile/ HTTP/1.1" 200 248
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 123
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 123
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+Not Found: /barbersite/barber-portfolio/
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 404 39
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"OPTIONS /categories HTTP/1.1" 200 0
+"OPTIONS /categories HTTP/1.1" 200 0
+Not Found: /categories
+"GET /categories HTTP/1.1" 404 3143
+Not Found: /categories
+"GET /categories HTTP/1.1" 404 3143
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+Not Found: /categories
+"GET /categories HTTP/1.1" 404 3143
+Not Found: /categories
+"GET /categories HTTP/1.1" 404 3143
+"OPTIONS /categories/ HTTP/1.1" 200 0
+"OPTIONS /categories/ HTTP/1.1" 200 0
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+"OPTIONS /services/ HTTP/1.1" 200 0
+Not Found: /categories/
+"OPTIONS /services/ HTTP/1.1" 200 0
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /services/
+Not Found: /categories/
+"GET /services/ HTTP/1.1" 404 3140
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /services/
+"GET /services/ HTTP/1.1" 404 3140
+Not Found: /services/
+"GET /services/ HTTP/1.1" 404 3140
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 3095
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3146
+Not Found: /auth/profile
+"GET /auth/profile HTTP/1.1" 404 5719
+Watching for file changes with StatReloader
+D:\practiceProject\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"OPTIONS /auth/home/ HTTP/1.1" 200 0
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /media/profile_images/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /auth/home/ HTTP/1.1" 200 45
+"GET /auth/home/ HTTP/1.1" 200 45
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /media/profile_images/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"POST /auth/logout/ HTTP/1.1" 200 37
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"OPTIONS /adminsite/barbers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/barbers-list/ HTTP/1.1" 200 0
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_Ntk6ybX.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/aatharThiru_JZXqcCM.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WhatsApp_Image_2025-05-17_at_21_ssYzQpX.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/profile_images/WIN_20250518_16_52_19_Pro_ZcM0AsE.jpg HTTP/1.1" 304 0
+"OPTIONS /adminsite/customers-details/13/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-details/13/ HTTP/1.1" 200 0
+"GET /adminsite/customers-details/13/ HTTP/1.1" 200 273
+"GET /adminsite/customers-details/13/ HTTP/1.1" 200 273
+"OPTIONS /adminsite/users-block/13/ HTTP/1.1" 200 0
+"POST /adminsite/users-block/13/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/13/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/13/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/13/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/13/ HTTP/1.1" 200 47
+"POST /adminsite/users-block/13/ HTTP/1.1" 200 47
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"OPTIONS /categories/ HTTP/1.1" 200 0
+"OPTIONS /categories/ HTTP/1.1" 200 0
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+"OPTIONS /services/ HTTP/1.1" 200 0
+Not Found: /categories/
+"OPTIONS /services/ HTTP/1.1" 200 0
+Not Found: /services/
+"GET /categories/ HTTP/1.1" 404 3146
+"GET /services/ HTTP/1.1" 404 3140
+Not Found: /services/
+Not Found: /categories/
+"GET /services/ HTTP/1.1" 404 3140
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /services/
+"GET /services/ HTTP/1.1" 404 3140
+"GET /profile-service/user-profile/ HTTP/1.1" 200 195
+"GET /profile-service/user-profile/ HTTP/1.1" 200 195
+"GET /media/profile_images/images.jpg HTTP/1.1" 304 0
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+"GET /adminsite/barbers-list/ HTTP/1.1" 200 1389
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"POST /categories/ HTTP/1.1" 404 3147
+Not Found: /categories/
+"POST /categories/ HTTP/1.1" 404 3147
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"POST /categories/ HTTP/1.1" 404 3147
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"POST /categories/ HTTP/1.1" 404 3147
+Not Found: /categories/
+"POST /categories/ HTTP/1.1" 404 3147
+Watching for file changes with StatReloader
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /categories/ HTTP/1.1" 200 0
+"OPTIONS /categories/ HTTP/1.1" 200 0
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /categories/
+"POST /categories/ HTTP/1.1" 404 3147
+"OPTIONS /adminsite/categories/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/categories/ HTTP/1.1" 200 0
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+Bad Request: /adminsite/categories/
+"POST /adminsite/categories/ HTTP/1.1" 400 36
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/customers-list/ HTTP/1.1" 200 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"OPTIONS /services/ HTTP/1.1" 200 0
+"OPTIONS /services/ HTTP/1.1" 200 0
+Not Found: /categories/
+Not Found: /services/
+"GET /categories/ HTTP/1.1" 404 3146
+"GET /services/ HTTP/1.1" 404 3140
+Not Found: /services/
+Not Found: /categories/
+"GET /services/ HTTP/1.1" 404 3140
+"GET /categories/ HTTP/1.1" 404 3146
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/pending-requests/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/all-requests/ HTTP/1.1" 200 0
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 3208
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"POST /adminsite/categories/ HTTP/1.1" 201 119
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /media/categories/WIN_20250523_13_56_32_Pro.jpg HTTP/1.1" 200 95617
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"GET /adminsite/categories/ HTTP/1.1" 200 121
+"OPTIONS /adminsite/categories/1/ HTTP/1.1" 200 0
+Bad Request: /adminsite/categories/1/
+"PUT /adminsite/categories/1/ HTTP/1.1" 400 36
+"PUT /adminsite/categories/1/ HTTP/1.1" 200 133
+"GET /adminsite/categories/ HTTP/1.1" 200 135
+"GET /media/categories/WIN_20250523_13_56_32_Pro_qY6hDCn.jpg HTTP/1.1" 200 95617
+"PUT /adminsite/categories/1/ HTTP/1.1" 200 125
+"GET /adminsite/categories/ HTTP/1.1" 200 127
+"GET /media/categories/WIN_20250518_16_52_19_Pro.jpg HTTP/1.1" 200 150345
+"PATCH /adminsite/categories/1/ HTTP/1.1" 200 124
+"GET /adminsite/categories/ HTTP/1.1" 200 126
+"PATCH /adminsite/categories/1/ HTTP/1.1" 200 125
+"GET /adminsite/categories/ HTTP/1.1" 200 127
+"PATCH /adminsite/categories/1/ HTTP/1.1" 200 124
+"GET /adminsite/categories/ HTTP/1.1" 200 126
+"PATCH /adminsite/categories/1/ HTTP/1.1" 200 125
+"GET /adminsite/categories/ HTTP/1.1" 200 127
+"PATCH /adminsite/categories/1/ HTTP/1.1" 200 124
+"GET /adminsite/categories/ HTTP/1.1" 200 126
+"PATCH /adminsite/categories/1/ HTTP/1.1" 200 125
+"GET /adminsite/categories/ HTTP/1.1" 200 127
+"PATCH /adminsite/categories/1/ HTTP/1.1" 200 124
+"GET /adminsite/categories/ HTTP/1.1" 200 126
+"PATCH /adminsite/categories/1/ HTTP/1.1" 200 125
+"GET /adminsite/categories/ HTTP/1.1" 200 127
+"DELETE /adminsite/categories/1/ HTTP/1.1" 204 0
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"POST /adminsite/categories/ HTTP/1.1" 201 132
+"GET /adminsite/categories/ HTTP/1.1" 200 134
+"GET /media/categories/WIN_20250518_16_52_19_Pro_5dABzvO.jpg HTTP/1.1" 200 150345
+"POST /adminsite/categories/ HTTP/1.1" 201 147
+"GET /adminsite/categories/ HTTP/1.1" 200 282
+"GET /media/categories/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 200 62912
+"POST /adminsite/categories/ HTTP/1.1" 201 118
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /media/categories/Adolf-Hitler-1933.webp HTTP/1.1" 200 164496
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /media/categories/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /media/categories/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/categories/WIN_20250518_16_52_19_Pro_5dABzvO.jpg HTTP/1.1" 304 0
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /media/categories/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/categories/WIN_20250518_16_52_19_Pro_5dABzvO.jpg HTTP/1.1" 304 0
+"GET /media/categories/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /media/categories/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /media/categories/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/categories/WIN_20250518_16_52_19_Pro_5dABzvO.jpg HTTP/1.1" 304 0
+"OPTIONS /adminsite/categories/undefined/ HTTP/1.1" 200 0
+Not Found: /adminsite/categories/undefined/
+"DELETE /adminsite/categories/undefined/ HTTP/1.1" 404 23
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+Not Found: /adminsite/categories/undefined/
+"DELETE /adminsite/categories/undefined/ HTTP/1.1" 404 23
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /adminsite/categories/ HTTP/1.1" 200 401
+"GET /media/categories/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /media/categories/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/categories/WIN_20250518_16_52_19_Pro_5dABzvO.jpg HTTP/1.1" 304 0
+"OPTIONS /adminsite/categories/4/ HTTP/1.1" 200 0
+"DELETE /adminsite/categories/4/ HTTP/1.1" 204 0
+"GET /adminsite/categories/ HTTP/1.1" 200 282
+"OPTIONS /adminsite/categories/2/ HTTP/1.1" 200 0
+"DELETE /adminsite/categories/2/ HTTP/1.1" 204 0
+"GET /adminsite/categories/ HTTP/1.1" 200 149
+"OPTIONS /adminsite/categories/3/ HTTP/1.1" 200 0
+"DELETE /adminsite/categories/3/ HTTP/1.1" 204 0
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /services/
+"GET /services/ HTTP/1.1" 404 3140
+Not Found: /categories/
+"GET /categories/ HTTP/1.1" 404 3146
+Not Found: /services/
+"GET /services/ HTTP/1.1" 404 3140
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 2
+"POST /adminsite/categories/ HTTP/1.1" 201 126
+"GET /adminsite/categories/ HTTP/1.1" 200 128
+"GET /media/categories/Adolf-Hitler-1933_k95wmJ6.webp HTTP/1.1" 200 164496
+"POST /adminsite/categories/ HTTP/1.1" 201 133
+"GET /adminsite/categories/ HTTP/1.1" 200 262
+"GET /media/categories/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 200 73211
+"POST /adminsite/categories/ HTTP/1.1" 201 129
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /media/categories/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 200 60347
+"OPTIONS /adminsite/categories/5/ HTTP/1.1" 200 0
+"PATCH /adminsite/categories/5/ HTTP/1.1" 200 125
+"GET /adminsite/categories/ HTTP/1.1" 200 391
+"PATCH /adminsite/categories/5/ HTTP/1.1" 200 126
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /adminsite/categories/
+"GET /adminsite/categories/ HTTP/1.1" 401 172
+Unauthorized: /adminsite/categories/
+"GET /adminsite/categories/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /media/categories/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"GET /media/categories/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /media/categories/Adolf-Hitler-1933_k95wmJ6.webp HTTP/1.1" 304 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/customers-list/ HTTP/1.1" 200 674
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+Bad Request: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 400 25
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"OPTIONS /adminsite/services/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/services/ HTTP/1.1" 200 0
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 2
+"POST /adminsite/services/ HTTP/1.1" 201 272
+"GET /adminsite/services/ HTTP/1.1" 200 274
+"GET /media/services/Adolf-Hitler-1933.webp HTTP/1.1" 200 164496
+"OPTIONS /adminsite/services/1/ HTTP/1.1" 200 0
+"PATCH /adminsite/services/1/ HTTP/1.1" 200 271
+"GET /adminsite/services/ HTTP/1.1" 200 273
+"POST /adminsite/services/ HTTP/1.1" 201 329
+"GET /adminsite/services/ HTTP/1.1" 200 603
+"GET /media/services/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 200 62912
+"POST /adminsite/services/ HTTP/1.1" 201 300
+"GET /adminsite/services/ HTTP/1.1" 200 904
+"GET /adminsite/services/ HTTP/1.1" 200 904
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 904
+"GET /media/services/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/services/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /media/services/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 200 73211
+"OPTIONS /adminsite/services/3/ HTTP/1.1" 200 0
+"PATCH /adminsite/services/3/ HTTP/1.1" 200 299
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"OPTIONS /adminsite/services/2/ HTTP/1.1" 200 0
+"PATCH /adminsite/services/2/ HTTP/1.1" 200 328
+"GET /adminsite/services/ HTTP/1.1" 200 902
+"PATCH /adminsite/services/2/ HTTP/1.1" 200 329
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /media/services/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /media/services/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /media/services/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /media/categories/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"GET /media/categories/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /media/categories/Adolf-Hitler-1933_k95wmJ6.webp HTTP/1.1" 304 0
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /media/services/bfced07e2c857f72970b7c104edb304b.jpg HTTP/1.1" 304 0
+"GET /media/services/WhatsApp_Image_2025-05-17_at_21.55.50_c4dfc966.jpg HTTP/1.1" 304 0
+"GET /media/services/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+"GET /adminsite/services/ HTTP/1.1" 200 903
+"GET /adminsite/categories/ HTTP/1.1" 200 392
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\serializers.py changed, reloading.
+Watching for file changes with StatReloader
