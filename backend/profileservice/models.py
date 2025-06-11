@@ -22,7 +22,8 @@ class UserProfile(models.Model):
     gender = models.CharField(max_length=10, choices=[('male', 'Male'), ('female', 'Female'), ('other', 'Other')], blank=True)
     bio = models.TextField(blank=True)
     address = models.ForeignKey(Address, on_delete=models.CASCADE, null=True, blank=True)
-
+    latitude = models.FloatField(null=True, blank=True)
+    longitude = models.FloatField(null=True, blank=True)
 
     def __str__(self):
         return f"{self.user.name}'s Profile"

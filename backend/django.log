@@ -4391,3 +4391,280 @@ D:\practiceProject\backend\customersite\views.py changed, reloading.
 Watching for file changes with StatReloader
 D:\practiceProject\backend\customersite\views.py changed, reloading.
 Watching for file changes with StatReloader
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+Not Found: /cutomersite/home/
+"GET /cutomersite/home/ HTTP/1.1" 404 3320
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /media/categories/beard.webp HTTP/1.1" 304 0
+"GET /media/categories/fasial.jpg HTTP/1.1" 304 0
+"GET /media/categories/haircolor.webp HTTP/1.1" 304 0
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /media/services/colrng.jpg HTTP/1.1" 304 0
+"GET /media/services/Balayage-864x900.webp HTTP/1.1" 304 0
+"GET /media/services/Pompadour.jpeg HTTP/1.1" 304 0
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"GET /customersite/home/ HTTP/1.1" 200 1493
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /adminsite/categories/ HTTP/1.1" 200 0
+"OPTIONS /adminsite/categories/ HTTP/1.1" 200 0
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/categories/ HTTP/1.1" 200 477
+"GET /adminsite/services/ HTTP/1.1" 200 2383
+"GET /adminsite/services/ HTTP/1.1" 200 2383
+"OPTIONS /adminsite/services/8/ HTTP/1.1" 200 0
+"PUT /adminsite/services/8/ HTTP/1.1" 200 576
+"GET /adminsite/services/ HTTP/1.1" 200 2405
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 200 303677
+"OPTIONS /adminsite/services/7/ HTTP/1.1" 200 0
+"PATCH /adminsite/services/7/ HTTP/1.1" 200 567
+"GET /adminsite/services/ HTTP/1.1" 200 2404
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/categories/fasial.jpg HTTP/1.1" 304 0
+"GET /media/categories/beard.webp HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 304 0
+"GET /media/categories/haircolor.webp HTTP/1.1" 304 0
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 304 0
+"GET /media/services/Pompadour.jpeg HTTP/1.1" 304 0
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 304 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+Unauthorized: /customersite/home/
+"GET /customersite/home/ HTTP/1.1" 401 172
+Unauthorized: /customersite/home/
+"GET /customersite/home/ HTTP/1.1" 401 172
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/categories/fasial.jpg HTTP/1.1" 304 0
+"GET /media/categories/haircolor.webp HTTP/1.1" 304 0
+"GET /media/categories/beard.webp HTTP/1.1" 304 0
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 304 0
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 304 0
+"GET /media/services/Pompadour.jpeg HTTP/1.1" 304 0
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+D:\practiceProject\backend\customersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\customersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /media/profile_images/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/categories/fasial.jpg HTTP/1.1" 304 0
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 304 0
+"GET /media/categories/haircolor.webp HTTP/1.1" 304 0
+"GET /media/categories/beard.webp HTTP/1.1" 304 0
+"GET /media/services/Pompadour.jpeg HTTP/1.1" 304 0
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 304 0
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /customersite/user-location/ HTTP/1.1" 200 0
+"POST /customersite/user-location/ HTTP/1.1" 200 107
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"POST /customersite/user-location/ HTTP/1.1" 200 109
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"POST /customersite/user-location/ HTTP/1.1" 200 109
+Bad Request: /customersite/user-location/
+"POST /customersite/user-location/ HTTP/1.1" 400 47
+"GET /customersite/home/ HTTP/1.1" 200 1251
+Bad Request: /customersite/user-location/
+Bad Request: /customersite/user-location/
+"POST /customersite/user-location/ HTTP/1.1" 400 47
+"POST /customersite/user-location/ HTTP/1.1" 400 47
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"POST /customersite/user-location/ HTTP/1.1" 200 109
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /media/services/Hair-Color-Balayage-vs-Ombre.jpg HTTP/1.1" 304 0
+"GET /media/categories/haircolor.webp HTTP/1.1" 304 0
+"GET /media/services/Pompadour.jpeg HTTP/1.1" 304 0
+"GET /media/categories/beard.webp HTTP/1.1" 304 0
+"GET /media/categories/fasial.jpg HTTP/1.1" 304 0
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 304 0
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 304 0
+"POST /customersite/user-location/ HTTP/1.1" 200 109
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"POST /customersite/user-location/ HTTP/1.1" 200 109
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"POST /customersite/user-location/ HTTP/1.1" 200 109
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /customersite/user-location/ HTTP/1.1" 200 0
+"POST /customersite/user-location/ HTTP/1.1" 200 109
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"GET /customersite/home/ HTTP/1.1" 200 1251
+"POST /customersite/user-location/ HTTP/1.1" 200 109
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /media/profile_images/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /profile-service/user-profile/ HTTP/1.1" 200 232
+"GET /media/profile_images/Adolf-Hitler-1933.webp HTTP/1.1" 200 164496
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /profile-service/user-profile/
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+Unauthorized: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+Watching for file changes with StatReloader
