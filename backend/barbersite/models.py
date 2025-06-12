@@ -1,5 +1,20 @@
 from django.db import models
 from authservice.models import User
+from adminsite.models import CategoryModel , ServiceModel
+
+class BarberService(models.Model):
+    barber = models.ForeignKey(User, on_delete=models.CASCADE, related_name='barber_services')
+    service = models.ForeignKey(ServiceModel, on_delete=models.CASCADE)
+    is_active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        unique_together = ['barber', 'service']
+    
+    def __str__(self):
+        return f"{self.barber.name} - {self.service.name}"
+    
+
 
 class Portfolio(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='portfolio')

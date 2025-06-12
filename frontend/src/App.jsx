@@ -21,45 +21,48 @@ import BarberDetails from './pages/adminsite/BarberDetails'
 import Portfolio from './pages/barbersite/Portfolio'
 import Categoryslist from './pages/adminsite/Categoryslist'
 import Servicelist from './pages/adminsite/Servicelist'
-
-
-
+import BookServices from './pages/barbersite/BookServices'
+import SelectService from './pages/barbersite/SelectService'
+import MyServices from './pages/barbersite/MyServices'
+import { ServiceProvider } from './contexts/ServiceContext';
 
 function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Routes>
-
-          <Route path="/" element={<Landing />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/admin-login" element={<AdminLogin />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/otp" element={<OtpPage />} />
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/admin-dashboard" element={<AdminDasboard />} />
-          <Route path="/customers-list" element={<CustomersList />} />
-          <Route path="/customer-details/:id" element={<UsersDetails />} />
-          <Route path="/landing-page" element={<Landing />} />
-          <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/barber-personal" element={<BarberPersDetails />} />
-          <Route path="/barber-document-upload" element={<DocumentUpload />} />
-          <Route path="/barber-status" element={<BarberStatus />} />
-          <Route path="/admin-verification" element={<VerificationPage />} />
-          <Route path="/barber-dash" element={<BarberDash />} />
-          <Route path="/barbers-list" element={<BarbersList />} />
-          <Route path="/barbers-details/:id" element={<BarberDetails />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
-          <Route path="/barbers-portfolio" element={<Portfolio />} />
-          <Route path="/category" element={<Categoryslist />} />
-          <Route path="/service" element={<Servicelist />} />
-          
-
-        </Routes>
+        <ServiceProvider>
+          <Routes>
+            <Route path="/" element={<Landing />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/admin-login" element={<AdminLogin />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/otp" element={<OtpPage />} />
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/admin-dashboard" element={<AdminDasboard />} />
+            <Route path="/customers-list" element={<CustomersList />} />
+            <Route path="/customer-details/:id" element={<UsersDetails />} />
+            <Route path="/landing-page" element={<Landing />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/barber-personal" element={<BarberPersDetails />} />
+            <Route path="/barber-document-upload" element={<DocumentUpload />} />
+            <Route path="/barber-status" element={<BarberStatus />} />
+            <Route path="/admin-verification" element={<VerificationPage />} />
+            <Route path="/barber-dash" element={<BarberDash />} />
+            <Route path="/barbers-list" element={<BarbersList />} />
+            <Route path="/barbers-details/:id" element={<BarberDetails />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+            <Route path="/barbers-portfolio" element={<Portfolio />} />
+            <Route path="/category" element={<Categoryslist />} />
+            <Route path="/service" element={<Servicelist />} />
+            
+            <Route path="/barber/book-services" element={<BookServices />} />
+            <Route path="/barber/select-service/:id" element={<SelectService />} />
+            <Route path="/barber/my-services" element={<MyServices />} />
+          </Routes>
+        </ServiceProvider>
       </BrowserRouter>
     </Provider>
   );
 }
-
 export default App;
 

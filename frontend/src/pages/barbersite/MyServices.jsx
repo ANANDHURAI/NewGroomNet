@@ -1,0 +1,120 @@
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import BarberSidebar from '../../components/barbercompo/BarberSidebar';
+import ServiceCard from '../../components/barbercompo/ServiceCard';
+import ServiceCount from '../../components/basics/ServiceCount';
+import { useService } from '../../contexts/ServiceContext';
+
+
+
+function MyServices() {
+  const { myServices, loading, fetchMyServices } = useService();
+  const navigate = useNavigate();
+  const [stats, setStats] = useState({ totalPrice: 0, totalDuration: 0 });
+
+  useEffect(() => {
+    fetchMyServices();
+  }, [fetchMyServices]);
+
+  useEffect(() => {
+    const totalPrice = myServices.reduce((sum, barberService) => 
+      sum + parseFloat(barberService.service.price), 0
+    );
+    const totalDuration = myServices.reduce((sum, barberService) => 
+      sum + barberService.service.duration_minutes, 0
+    );
+    setStats({ totalPrice, totalDuration });
+  }, [myServices]);
+
+  const handleAddMoreServices = () => {
+    navigate('/barber/book-services');
+  };
+
+  if (loading) {
+    return (
+      <div className="flex min-h-screen">
+        <BarberSidebar />
+        <div className="flex-1 p-8 flex items-center justify-center">
+          <div className="text-center">
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+            <p className="text-gray-600">Loading your services...</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="flex min-h-screen bg-gray-50">
+      <BarberSidebar />
+      <div className="flex-1 p-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex justify-between items-center mb-8">
+            <div>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">My Services</h1>
+              <p className="text-gray-600">Services you're offering to customers</p>
+            </div>
+            <ServiceCount />
+          </div>
+
+          {/* Stats Cards */}
+          {myServices.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-lg font-semibold text-gray-700 mb-2">Total Services</h3>
+                <p className="text-3xl font-bold text-blue-600">{myServices.length}</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-lg font-semibold text-gray-700 mb-2">Total Value</h3>
+                <p className="text-3xl font-bold text-green-600">${stats.totalPrice.toFixed(2)}</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h3 className="text-lg font-semibold text-gray-700 mb-2">Total Duration</h3>
+                <p className="text-3xl font-bold text-purple-600">{stats.totalDuration} min</p>
+              </div>
+            </div>
+          )}
+
+          {/* Services Grid */}
+          {myServices.length > 0 ? (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                {myServices.map((barberService) => (
+                  <ServiceCard
+                    key={barberService.id}
+                    service={barberService.service}
+                    showRemoveButton={true}
+                    barberServiceId={barberService.id}
+                  />
+                ))}
+              </div>
+              
+              <div className="text-center">
+                <button 
+                  onClick={handleAddMoreServices}
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
+                >
+                  Add More Services
+                </button>
+              </div>
+            </>
+          ) : (
+            <div className="text-center py-12">
+              <div className="text-6xl mb-4">🛠️</div>
+              <h3 className="text-xl font-semibold text-gray-700 mb-2">No Services Added Yet</h3>
+              <p className="text-gray-500 mb-6">Start building your service portfolio by adding services.</p>
+              <button 
+                onClick={handleAddMoreServices}
+                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors"
+              >
+                Browse Services
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default MyServices;
