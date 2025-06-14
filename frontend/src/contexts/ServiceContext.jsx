@@ -34,7 +34,7 @@ export const ServiceProvider = ({ children }) => {
       const response = await apiClient.post('/barbersite/barber-services/add_service/', {
         service_id: serviceId
       });
-      await fetchMyServices(); // Refresh the list
+      await fetchMyServices();
       return { success: true, data: response.data };
     } catch (error) {
       console.error('Error adding service:', error);

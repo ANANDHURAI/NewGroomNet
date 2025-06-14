@@ -1,0 +1,213 @@
+import { useState, useEffect } from "react";
+import apiClient from "../../slices/api/apiIntercepters";
+import { ArrowLeft, Check, Scissors, User, Calendar, Clock, MapPin, Phone } from 'lucide-react';
+import Navbar from "../../components/basics/Navbar";
+
+
+export const ConfirmBooking = () => {
+  const [bookingSummary, setBookingSummary] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [confirming, setConfirming] = useState(false);
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const bookingData = {
+      service_id: urlParams.get('service_id'),
+      barber_id: urlParams.get('barber_id'),
+      slot_id: urlParams.get('slot_id'),
+      address_id: urlParams.get('address_id')
+    };
+
+    if (!bookingData.service_id || !bookingData.barber_id || !bookingData.slot_id || !bookingData.address_id) {
+      setError('Missing booking information. Please start from the beginning.');
+      setLoading(false);
+      return;
+    }
+
+    fetchBookingSummary(bookingData);
+  }, []);
+
+  const fetchBookingSummary = async (bookingData) => {
+    try {
+      setLoading(true);
+      const response = await apiClient.post('/customersite/booking-summary/', bookingData);
+      setBookingSummary(response.data);
+    } catch (error) {
+      console.error('Error fetching booking summary:', error);
+      setError('Failed to load booking details. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { 
+      weekday: 'long', 
+      year: 'numeric', 
+      month: 'long', 
+      day: 'numeric' 
+    });
+  };
+
+  const formatTime = (timeString) => {
+    const [hours, minutes] = timeString.split(':');
+    const date = new Date();
+    date.setHours(parseInt(hours), parseInt(minutes));
+    return date.toLocaleTimeString('en-US', { 
+      hour: 'numeric', 
+      minute: '2-digit',
+      hour12: true 
+    });
+  };
+
+  const handleConfirmBooking = async () => {
+    try {
+      setConfirming(true);
+      window.location.href = '/payment';
+    } catch (error) {
+      console.error('Error confirming booking:', error);
+      alert('Failed to confirm booking. Please try again.');
+    } finally {
+      setConfirming(false);
+    }
+  };
+
+  const handleBack = () => {
+    window.history.back();
+  };
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
+        <div className="bg-white rounded-lg p-6 text-center max-w-md">
+          <div className="text-red-500 text-4xl mb-4">⚠️</div>
+          <h2 className="text-lg font-semibold text-gray-800 mb-2">Something went wrong</h2>
+          <p className="text-gray-600 mb-4">{error}</p>
+          <button
+            onClick={() => window.location.href = '/'}
+            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
+          >
+            Start Over
+          </button>
+        </div>
+      </div>
+    );
+  }
+
+  if (!bookingSummary) {
+    return null;
+  }
+
+  return (
+    <div className="min-h-screen bg-gray-50">
+      <Navbar/>
+      <div className="max-w-md mx-auto p-4">
+        
+        <div className="flex items-center mb-6">
+          <button 
+            onClick={handleBack}
+            className="flex items-center text-gray-600 hover:text-gray-800 mr-4"
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </button>
+          <div className="flex-1 text-center">
+            <h1 className="text-xl font-bold text-gray-800">Confirm Booking</h1>
+          </div>
+        </div>
+
+        <div className="text-center mb-6">
+          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+            <Check className="w-8 h-8 text-green-600" />
+          </div>
+          <p className="text-gray-600">Review your appointment details</p>
+        </div>
+
+
+        <div className="bg-white rounded-lg p-4 mb-6 shadow-sm">
+          <div className="flex items-center space-x-3 pb-4 border-b border-gray-100">
+            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+              <Scissors className="w-5 h-5 text-blue-600" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">{bookingSummary.service.name}</h3>
+              <p className="text-sm text-gray-600">{bookingSummary.service.duration} minutes</p>
+            </div>
+            <div className="text-right">
+              <p className="font-semibold text-green-600">₹{bookingSummary.service.price}</p>
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-3 py-4 border-b border-gray-100">
+            <div className="w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
+              <User className="w-5 h-5 text-purple-600" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">{bookingSummary.barber.name}</h3>
+              <p className="text-sm text-gray-600">Professional Barber</p>
+            </div>
+          </div>
+
+          <div className="flex items-center space-x-3 py-4 border-b border-gray-100">
+            <div className="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center">
+              <Calendar className="w-5 h-5 text-orange-600" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800">{formatDate(bookingSummary.slot.date)}</h3>
+              <div className="flex items-center text-sm text-gray-600 mt-1">
+                <Clock className="w-4 h-4 mr-1" />
+                {formatTime(bookingSummary.slot.start_time)} - {formatTime(bookingSummary.slot.end_time)}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex items-start space-x-3 pt-4">
+            <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+              <MapPin className="w-5 h-5 text-green-600" />
+            </div>
+            <div className="flex-1">
+              <h3 className="font-semibold text-gray-800 mb-1">Service Address</h3>
+              <p className="text-sm text-gray-600 mb-2">{bookingSummary.address.full_address}</p>
+              <div className="flex items-center text-sm text-gray-600">
+                <Phone className="w-4 h-4 mr-1" />
+                {bookingSummary.address.mobile}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg p-4 mb-6 shadow-sm">
+          <div className="flex justify-between items-center">
+            <span className="text-lg font-semibold text-gray-800">Total Amount</span>
+            <span className="text-2xl font-bold text-green-600">₹{bookingSummary.total_amount}</span>
+          </div>
+        </div>
+
+        <button
+          onClick={handleConfirmBooking}
+          disabled={confirming}
+          className="w-full bg-blue-600 text-white py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {confirming ? 'Processing...' : 'Confirm & Proceed to Payment'}
+        </button>
+
+        <div className="mt-4 bg-blue-50 rounded-lg p-3">
+          <p className="text-xs text-blue-800 text-center">
+             Payment will be processed securely.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ConfirmBooking;

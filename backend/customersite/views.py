@@ -1,14 +1,28 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from rest_framework import status
-from .serializer import HomeSerializer
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework import status ,generics
+from .serializer import (
+HomeSerializer , 
+CategorySerializer, 
+ServiceSerializer , 
+BarberSerializer , 
+AvailableSlotSerializer,
+AddressSerializer,
+BookingCreateSerializer,
+)
 from adminsite.models import CategoryModel , ServiceModel
 from profileservice.models import UserProfile
 import logging
+from barbersite.models import BarberSlot, BarberService
+from django.contrib.auth.models import User
+from django.utils import timezone
+from profileservice.models import Address
+from profileservice.serializers import AddressSerializer
+from authservice.models import User
 
 logger = logging.getLogger(__name__)
-
 
 class Home(APIView):
     permission_classes = [IsAuthenticated]
@@ -59,7 +73,6 @@ class UserLocationUpdateView(APIView):
                     'error': 'Invalid latitude or longitude format'
                 }, status=status.HTTP_400_BAD_REQUEST)
 
-            # Get or create user profile
             profile, created = UserProfile.objects.get_or_create(
                 user=request.user,
                 defaults={
@@ -88,3 +101,149 @@ class UserLocationUpdateView(APIView):
             return Response({
                 'error': 'An error occurred while updating location'
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+    
+
+
+class CategoryListView(generics.ListAPIView):
+    permission_classes = [IsAuthenticated]
+    queryset = CategoryModel.objects.filter(is_blocked=False)
+    serializer_class = CategorySerializer
+
+
+class ServiceListView(generics.ListAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = ServiceSerializer
+    
+    def get_queryset(self):
+        category_id = self.request.query_params.get('category_id')
+        queryset = ServiceModel.objects.filter(is_blocked=False)
+        if category_id:
+            queryset = queryset.filter(category_id=category_id)
+        return queryset
+
+
+class BarberListView(generics.ListAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = BarberSerializer
+    
+    def get_queryset(self):
+        service_id = self.request.query_params.get('service_id')
+        if not service_id:
+            return User.objects.none()
+        
+        try:
+            barber_ids = BarberService.objects.filter(
+                service_id=service_id,
+                is_active=True
+            ).values_list('barber_id', flat=True)
+            
+            return User.objects.filter(
+                id__in=barber_ids,
+                user_type='barber',
+                is_active=True,
+                is_blocked=False
+            )
+        except Exception as e:
+            print(f"Error in BarberListView: {e}")
+            return User.objects.none()
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def available_dates(request):
+    barber_id = request.query_params.get('barber_id')
+    if not barber_id:
+        return Response({"error": "barber_id is required"}, status=400)
+
+    dates = BarberSlot.objects.filter(
+        barber_id=barber_id,
+        is_booked=False,
+        date__gte=timezone.now().date()
+    ).values_list('date', flat=True).distinct().order_by('date')
+    
+    return Response({"available_dates": list(dates)})
+
+
+class AvailableSlotListView(generics.ListAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = AvailableSlotSerializer
+    
+    def get_queryset(self):
+        barber_id = self.request.query_params.get('barber_id')
+        date = self.request.query_params.get('date')
+        
+        if not barber_id or not date:
+            return BarberSlot.objects.none()
+        
+        return BarberSlot.objects.filter(
+            barber_id=barber_id,
+            date=date,
+            is_booked=False
+        ).order_by('start_time')
+
+
+class AddressListCreateView(generics.ListCreateAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = AddressSerializer
+    
+    def get_queryset(self):
+        return Address.objects.filter(user=self.request.user)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def booking_summary(request):
+    service_id = request.data.get('service_id')
+    barber_id = request.data.get('barber_id')
+    slot_id = request.data.get('slot_id')
+    address_id = request.data.get('address_id')
+    
+    try:
+        service = ServiceModel.objects.get(id=service_id)
+        barber = User.objects.get(id=barber_id, user_type='barber')
+        slot = BarberSlot.objects.get(id=slot_id, is_booked=False)
+        address = Address.objects.get(id=address_id, user=request.user)
+        
+        summary = {
+            'service': {
+                'name': service.name,
+                'price': service.price,
+                'duration': service.duration_minutes
+            },
+            'barber': {
+                'name': barber.name,
+                'phone': barber.phone
+            },
+            'slot': {
+                'date': slot.date,
+                'start_time': slot.start_time,
+                'end_time': slot.end_time
+            },
+            'address': {
+                'full_address': f"{address.building}, {address.street}, {address.city}, {address.state} - {address.pincode}",
+                'mobile': address.mobile
+            },
+            'total_amount': service.price
+        }
+        
+        return Response(summary)
+        
+    except Exception as e:
+        return Response({"error": str(e)}, status=400)
+    
+
+class BookingCreateView(generics.CreateAPIView):
+
+    permission_classes = [IsAuthenticated]
+    serializer_class = BookingCreateSerializer
+    
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        booking = serializer.save()
+        
+        return Response({
+            "message": "Your booking is confirmed! Barber will see your appointment.",
+            "booking_id": booking.id,
+            "status": booking.status
+        }, status=status.HTTP_201_CREATED)
+

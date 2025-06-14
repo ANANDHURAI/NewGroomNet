@@ -25,6 +25,15 @@ import BookServices from './pages/barbersite/BookServices'
 import SelectService from './pages/barbersite/SelectService'
 import MyServices from './pages/barbersite/MyServices'
 import { ServiceProvider } from './contexts/ServiceContext';
+import BarberSlotBooking from './pages/barbersite/BarberSlotBooking'
+import CategoryList from './pages/customersite/CategoryList'
+import ServicesList from './pages/customersite/ServicesList'
+import SelectBarber from './pages/customersite/SelectBarbers'
+import SelectDate from './pages/customersite/SelectDate'
+import SelectTime from './pages/customersite/SelectTimeSlots'
+import AddAddress from './pages/customersite/AddAddress'
+import ConfirmBooking from './pages/customersite/ConfirmBooking'
+
 
 function App() {
   return (
@@ -58,6 +67,18 @@ function App() {
             <Route path="/barber/book-services" element={<BookServices />} />
             <Route path="/barber/select-service/:id" element={<SelectService />} />
             <Route path="/barber/my-services" element={<MyServices />} />
+
+            <Route path="/barber-slot-booking" element={<BarberSlotBooking />} />
+
+            <Route path="/customer/categoryes" element={<CategoryList />} />
+            <Route path="/services" element={<ServicesList />} />
+            <Route path="/select-barber" element={<SelectBarber />} />
+            <Route path="/select-date" element={<SelectDate />} />
+            <Route path="/select-time" element={<SelectTime/>} />
+            <Route path="/add-address" element={<AddAddress/>} />
+            <Route path="/confirm-booking" element={<ConfirmBooking/>} />
+            
+            
           </Routes>
         </ServiceProvider>
       </BrowserRouter>

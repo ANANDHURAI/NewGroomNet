@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ShowType() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[40vh] bg-white p-8">
-      {/* Header Section */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
           What do you want?
@@ -33,9 +33,8 @@ function ShowType() {
           </button>
         </div>
 
-
-        <div className="flex-1 group">
-          <button className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 p-8">
+        <Link to="/customer/categoryes" className="flex-1 group">
+          <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 p-8 cursor-pointer">
             <div className="flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-6 group-hover:bg-opacity-30 transition-all duration-300">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,8 +49,8 @@ function ShowType() {
                 Plan Ahead
               </div>
             </div>
-          </button>
-        </div>
+          </div>
+        </Link>
       </div>
 
       <div className="mt-12 text-center">

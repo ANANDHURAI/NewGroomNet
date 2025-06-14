@@ -14,7 +14,24 @@ class BarberService(models.Model):
     def __str__(self):
         return f"{self.barber.name} - {self.service.name}"
     
+class BarberSlot(models.Model):
+    barber = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={'user_type':'barber'})
+    date = models.DateField()
+    start_time = models.TimeField()
+    end_time = models.TimeField()
+    is_booked = models.BooleanField(default=False)
 
+    def __str__(self):
+        return f"{self.barber.name} | {self.date} | {self.start_time}-{self.end_time}"
+
+class BarberSlotBooking(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    slot = models.ForeignKey(BarberSlot, on_delete=models.CASCADE)
+    booked_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.name} booked {self.slot}"
+    
 
 class Portfolio(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='portfolio')
@@ -27,3 +44,4 @@ class Portfolio(models.Model):
 
     def __str__(self):
         return f"{self.user.name}'s Portfolio"
+    

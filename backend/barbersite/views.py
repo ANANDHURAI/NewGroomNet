@@ -10,6 +10,11 @@ from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from .models import BarberService
 from adminsite.models import CategoryModel, ServiceModel
+from datetime import datetime, timedelta
+from calendar import day_name
+from .models import BarberSlot, BarberSlotBooking
+from .serializers import BarberSlotSerializer, BarberSlotBookingSerializer
+from authservice.models import User
 
 
 class BarberDashboard(APIView): 
@@ -131,3 +136,99 @@ class BarberServiceViewSet(viewsets.ModelViewSet):
             'total_duration': total_duration,
             'count': services.count()
         })
+
+
+class BarberSlotViewSet(viewsets.ViewSet):
+    permission_classes = [IsAuthenticated]
+
+    def list(self, request):
+        date_filter = request.query_params.get('date')
+
+        slots = BarberSlot.objects.filter(barber=request.user)
+        
+        if date_filter:
+            slots = slots.filter(date=date_filter)
+    
+        slots = slots.order_by('date', 'start_time')
+        
+        serializer = BarberSlotSerializer(slots, many=True)
+        return Response(serializer.data)
+
+    def retrieve(self, request, pk=None):
+        slot = get_object_or_404(BarberSlot, id=pk, barber=request.user)
+        serializer = BarberSlotSerializer(slot)
+        return Response(serializer.data)
+
+    @action(detail=False, methods=['post'], url_path='create-slot')
+    def create_slot(self, request):
+        date = request.data.get('date')
+        start_time = request.data.get('start_time')
+        end_time = request.data.get('end_time')
+
+        if not all([date, start_time, end_time]):
+            return Response({
+                'error': 'All fields are required',
+                'required_fields': ['date', 'start_time', 'end_time']
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        if BarberSlot.objects.filter(
+            barber=request.user, 
+            date=date, 
+            start_time=start_time, 
+            end_time=end_time
+        ).exists():
+            return Response({
+                'error': f'Slot already exists for {date} at {start_time}-{end_time}'
+            }, status=status.HTTP_400_BAD_REQUEST)
+
+        try:
+            slot = BarberSlot.objects.create(
+                barber=request.user,
+                date=date,
+                start_time=start_time,
+                end_time=end_time
+            )
+            serializer = BarberSlotSerializer(slot)
+            return Response({
+                'message': f'Slot created successfully for {date}', 
+                'slot': serializer.data
+            }, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response({
+                'error': f'Failed to create slot: {str(e)}'
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+
+    @action(detail=True, methods=['delete'], url_path='cancel')
+    def cancel_slot(self, request, pk=None):
+        slot = get_object_or_404(BarberSlot, id=pk, barber=request.user)
+        
+        if slot.is_booked:
+            return Response({
+                'error': 'Slot is already booked by a customer. Cannot cancel.'
+            }, status=status.HTTP_403_FORBIDDEN)
+        
+        slot_info = f"{slot.date} at {slot.start_time}-{slot.end_time}"
+        slot.delete()
+        return Response({
+            'message': f'Slot cancelled successfully for {slot_info}.'
+        }, status=status.HTTP_200_OK)
+    
+
+    @action(detail=False, methods=['get'], url_path='by-date-range')
+    def get_slots_by_date_range(self, request):
+        start_date = request.query_params.get('start_date')
+        end_date = request.query_params.get('end_date')
+        
+        if not start_date or not end_date:
+            return Response({
+                'error': 'Both start_date and end_date are required'
+            }, status=status.HTTP_400_BAD_REQUEST)
+        
+        slots = BarberSlot.objects.filter(
+            barber=request.user,
+            date__range=[start_date, end_date]
+        ).order_by('date', 'start_time')
+        
+        serializer = BarberSlotSerializer(slots, many=True)
+        return Response(serializer.data)

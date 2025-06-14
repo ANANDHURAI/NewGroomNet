@@ -21,7 +21,6 @@ function HomePage() {
   const user = useSelector(state => state.login.user);
   const registerUser = useSelector(state => state.register?.user);
   const currentUser = user || registerUser;
-
   const { location, error: locationError, loading: locationLoading, requestLocation, permissionRequested } = useGeolocation();
 
   useEffect(() => {
@@ -34,14 +33,12 @@ function HomePage() {
     return () => clearTimeout(timer);
   }, [location, locationError, permissionRequested]);
 
-  // Close modal when location is obtained
   useEffect(() => {
     if (location) {
       setShowLocationModal(false);
     }
   }, [location]);
 
-  // Send location to server
   useEffect(() => {
     if (location && !locationSent) {
       const sendLocationToServer = async () => {
@@ -81,7 +78,6 @@ function HomePage() {
   }, []);
 
   const handleRetry = () => {
-    // Re-fetch home data
     const fetchHomeData = async () => {
       setLoading(true);
       setError(null);
@@ -106,21 +102,17 @@ function HomePage() {
 
   const handleDismissLocation = () => {
     setShowLocationModal(false);
-    // You might want to show a banner or notification about limited functionality
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
-      
-      {/* Location Permission Modal */}
       <LocationModal 
         isOpen={showLocationModal}
         onEnableLocation={handleEnableLocation}
         onDismiss={handleDismissLocation}
       />
 
-      {/* Location Error Banner */}
       {locationError && (
         <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mx-4 mt-4">
           <div className="flex">

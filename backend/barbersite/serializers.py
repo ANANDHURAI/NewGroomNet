@@ -1,6 +1,19 @@
 from rest_framework import serializers
 from .models import Portfolio , BarberService
 from adminsite.serializers import ServiceSerializer
+from .models import BarberSlot, BarberSlotBooking
+
+class BarberSlotSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = BarberSlot
+        fields = '__all__'
+
+class BarberSlotBookingSerializer(serializers.ModelSerializer):
+    slot = BarberSlotSerializer()
+
+    class Meta:
+        model = BarberSlotBooking
+        fields = '__all__'
 
 class PortfolioSerializer(serializers.ModelSerializer):
     class Meta:

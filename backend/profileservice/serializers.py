@@ -25,9 +25,30 @@ class UserProfileSerializer(serializers.ModelSerializer):
         return None
     
     def update(self, instance, validated_data):
-        # Update only the UserProfile fields
         for attr, value in validated_data.items():
             if not attr.startswith('user.'):
                 setattr(instance, attr, value)
         instance.save()
         return instance
+
+class AddressSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Address
+        fields = [
+            'id',
+            'name',
+            'mobile',
+            'building',
+            'street',
+            'city',
+            'district',
+            'state',
+            'pincode',
+            'is_default',
+            'created_at'
+        ]
+        read_only_fields = ['id', 'created_at']
+
+    def create(self, validated_data):
+        validated_data['user'] = self.context['request'].user
+        return super().create(validated_data)
