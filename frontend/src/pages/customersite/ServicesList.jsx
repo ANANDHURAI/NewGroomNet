@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Clock, DollarSign } from 'lucide-react';
+import { ArrowLeft, Clock } from 'lucide-react';
 import apiClient from '../../slices/api/apiIntercepters';
+import Navbar from '../../components/basics/Navbar';
 
 const Services = () => {
   const [services, setServices] = useState([]);
@@ -47,7 +48,8 @@ const Services = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="max-w-2xl mx-auto p-6">
+      <Navbar />
+      <div className="max-w-5xl mx-auto px-6 py-8">
         <button 
           onClick={handleBack}
           className="flex items-center text-gray-600 hover:text-gray-800 mb-6"
@@ -56,36 +58,33 @@ const Services = () => {
           Back
         </button>
 
-        <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">Select Service</h2>
-          <p className="text-gray-600">Choose the service you need</p>
+        <div className="text-center mb-10">
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Select Service</h2>
+          <p className="text-gray-600 text-sm">Choose the service you need</p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-6">
           {services.map((service) => (
             <div
               key={service.id}
               onClick={() => handleServiceSelect(service)}
-              className="bg-white rounded-lg shadow-md p-4 cursor-pointer hover:shadow-lg transition-shadow"
+              className="bg-white w-full max-w-4xl mx-auto rounded-xl shadow-md p-5 cursor-pointer hover:shadow-lg transition-shadow"
             >
-              <div className="flex items-center space-x-4">
+              <div className="flex items-start space-x-5">
                 <img
                   src={service.image || '/api/placeholder/80/80'}
                   alt={service.name}
-                  className="w-16 h-16 rounded-lg object-cover"
+                  className="w-24 h-24 rounded-lg object-cover"
                 />
                 <div className="flex-1">
-                  <h3 className="text-lg font-semibold text-gray-800 mb-1">
+                  <h3 className="text-xl font-semibold text-gray-800 mb-1">
                     {service.name}
                   </h3>
                   {service.description && (
-                    <p className="text-sm text-gray-600 mb-2">
-                      {service.description}
-                    </p>
+                    <p className="text-sm text-gray-600 mb-2">{service.description}</p>
                   )}
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
+                  <div className="flex items-center space-x-6 text-sm text-gray-500">
                     <div className="flex items-center">
-                      <DollarSign className="w-4 h-4 mr-1" />
                       ₹{service.price}
                     </div>
                     <div className="flex items-center">
@@ -107,6 +106,7 @@ const Services = () => {
       </div>
     </div>
   );
+
 };
 
 export default Services;

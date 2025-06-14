@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Clock } from 'lucide-react';
 import apiClient from '../../slices/api/apiIntercepters';
+import Navbar from '../../components/basics/Navbar';
 
 export const SelectTime = () => {
   const [timeSlots, setTimeSlots] = useState([]);
@@ -87,6 +88,7 @@ export const SelectTime = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Navbar/>
       <div className="max-w-2xl mx-auto p-6">
         <button 
           onClick={handleBack}
