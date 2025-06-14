@@ -6,15 +6,43 @@ import apiClient from "../../slices/api/apiIntercepters";
 
 export const MySlots = ({ slots, onCancelSlot, onRefetch }) => {
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   const handleCancelSlot = async (slotId) => {
     setLoading(true);
+    setError(null);
+    
     try {
       await apiClient.delete(`/barbersite/barber-slots/${slotId}/cancel/`);
       onCancelSlot(slotId);
       onRefetch();
     } catch (error) {
       console.error('Error cancelling slot:', error);
+      
+      let errorMessage = 'Failed to cancel slot. Please try again.';
+      
+      if (error.response) {
+        const status = error.response.status;
+        const data = error.response.data;
+        
+        switch (status) {
+          case 403:
+            errorMessage = data.error || 'This slot cannot be cancelled.';
+            break;
+          case 409:
+            errorMessage = 'Cannot delete slot due to existing bookings.';
+            break;
+          case 500:
+            errorMessage = 'Server error. Please contact support.';
+            break;
+          default:
+            errorMessage = data.error || errorMessage;
+        }
+      }
+      
+      setError(errorMessage);
+
+      setTimeout(() => setError(null), 5000);
     } finally {
       setLoading(false);
     }
@@ -55,6 +83,12 @@ export const MySlots = ({ slots, onCancelSlot, onRefetch }) => {
     <Card className="p-6">
       <h3 className="text-lg font-semibold mb-4">My Slots</h3>
       
+      {error && (
+        <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
+          {error}
+        </div>
+      )}
+      
       <div className="space-y-3">
         {futureSlots.map((slot) => (
           <div key={slot.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
@@ -74,7 +108,7 @@ export const MySlots = ({ slots, onCancelSlot, onRefetch }) => {
               disabled={slot.is_booked || loading}
             >
               <X className="w-4 h-4" />
-              {slot.is_booked ? 'Cannot Cancel' : 'Cancel'}
+              {loading ? 'Cancelling...' : slot.is_booked ? 'Cannot Cancel' : 'Cancel'}
             </Button>
           </div>
         ))}

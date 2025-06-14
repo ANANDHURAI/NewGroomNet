@@ -34,6 +34,9 @@ import SelectTime from './pages/customersite/SelectTimeSlots'
 import AddAddress from './pages/customersite/AddAddress'
 import ConfirmBooking from './pages/customersite/ConfirmBooking'
 
+// Import Protected Route components
+import ProtectedRoute from './components/protectRoute/ProtectedRoute'
+import AuthRoute from './components/protectRoute/AuthRoute'
 
 function App() {
   return (
@@ -41,49 +44,64 @@ function App() {
       <BrowserRouter>
         <ServiceProvider>
           <Routes>
+
             <Route path="/" element={<Landing />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/admin-login" element={<AdminLogin />} />
-            <Route path="/register" element={<RegisterPage />} />
-            <Route path="/otp" element={<OtpPage />} />
-            <Route path="/home" element={<HomePage />} />
-            <Route path="/admin-dashboard" element={<AdminDasboard />} />
-            <Route path="/customers-list" element={<CustomersList />} />
-            <Route path="/customer-details/:id" element={<UsersDetails />} />
             <Route path="/landing-page" element={<Landing />} />
-            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
+            
+            <Route path="/login" element={<AuthRoute><LoginPage /></AuthRoute>} />
+            <Route path="/admin-login" element={<AuthRoute><AdminLogin /></AuthRoute>} />
+            <Route path="/register" element={<AuthRoute><RegisterPage /></AuthRoute>} />
+            <Route path="/otp" element={<AuthRoute><OtpPage /></AuthRoute>} />
+
             <Route path="/barber-personal" element={<BarberPersDetails />} />
             <Route path="/barber-document-upload" element={<DocumentUpload />} />
             <Route path="/barber-status" element={<BarberStatus />} />
-            <Route path="/admin-verification" element={<VerificationPage />} />
-            <Route path="/barber-dash" element={<BarberDash />} />
-            <Route path="/barbers-list" element={<BarbersList />} />
-            <Route path="/barbers-details/:id" element={<BarberDetails />} />
-            <Route path="*" element={<Navigate to="/" replace />} />
-            <Route path="/barbers-portfolio" element={<Portfolio />} />
-            <Route path="/category" element={<Categoryslist />} />
-            <Route path="/service" element={<Servicelist />} />
+
+            <Route path="/home" element={
+              <ProtectedRoute allowedUserTypes={['customer']}>
+                <HomePage />
+              </ProtectedRoute>
+            } />
             
-            <Route path="/barber/book-services" element={<BookServices />} />
-            <Route path="/barber/select-service/:id" element={<SelectService />} />
-            <Route path="/barber/my-services" element={<MyServices />} />
+            <Route path="/admin-dashboard" element={
+              <ProtectedRoute allowedUserTypes={['admin']}>
+                <AdminDasboard />
+              </ProtectedRoute>
+            } />
 
-            <Route path="/barber-slot-booking" element={<BarberSlotBooking />} />
+            <Route path="/barber-dash" element={
+              <ProtectedRoute allowedUserTypes={['barber']}>
+                <BarberDash />
+              </ProtectedRoute>
+            } />
 
+            <Route path="/profile" element={<ProfilePage />} />
             <Route path="/customer/categoryes" element={<CategoryList />} />
             <Route path="/services" element={<ServicesList />} />
             <Route path="/select-barber" element={<SelectBarber />} />
             <Route path="/select-date" element={<SelectDate />} />
-            <Route path="/select-time" element={<SelectTime/>} />
-            <Route path="/add-address" element={<AddAddress/>} />
-            <Route path="/confirm-booking" element={<ConfirmBooking/>} />
-            
-            
+            <Route path="/select-time" element={<SelectTime />} />
+            <Route path="/add-address" element={<AddAddress />} />
+            <Route path="/confirm-booking" element={<ConfirmBooking />} />
+            <Route path="/customers-list" element={<CustomersList />} />
+            <Route path="/customer-details/:id" element={<UsersDetails />} />
+            <Route path="/admin-verification" element={<VerificationPage />} />
+            <Route path="/barbers-list" element={<BarbersList />} />
+            <Route path="/barbers-details/:id" element={<BarberDetails />} />
+            <Route path="/category" element={<Categoryslist />} />
+            <Route path="/service" element={<Servicelist />} />
+            <Route path="/barbers-portfolio" element={<Portfolio />} />
+            <Route path="/barber/book-services" element={<BookServices />} />
+            <Route path="/barber/select-service/:id" element={<SelectService />} />
+            <Route path="/barber/my-services" element={<MyServices />} />
+            <Route path="/barber-slot-booking" element={<BarberSlotBooking />} />
+
           </Routes>
         </ServiceProvider>
       </BrowserRouter>
     </Provider>
   );
 }
-export default App;
 
+export default App;

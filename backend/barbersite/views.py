@@ -15,6 +15,11 @@ from calendar import day_name
 from .models import BarberSlot, BarberSlotBooking
 from .serializers import BarberSlotSerializer, BarberSlotBookingSerializer
 from authservice.models import User
+from django.db import transaction
+from django.db.models import ProtectedError
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class BarberDashboard(APIView): 
@@ -138,6 +143,8 @@ class BarberServiceViewSet(viewsets.ModelViewSet):
         })
 
 
+
+
 class BarberSlotViewSet(viewsets.ViewSet):
     permission_classes = [IsAuthenticated]
 
@@ -194,26 +201,46 @@ class BarberSlotViewSet(viewsets.ViewSet):
                 'slot': serializer.data
             }, status=status.HTTP_201_CREATED)
         except Exception as e:
+            logger.error(f"Error creating slot: {str(e)}")
             return Response({
                 'error': f'Failed to create slot: {str(e)}'
             }, status=status.HTTP_400_BAD_REQUEST)
         
-
     @action(detail=True, methods=['delete'], url_path='cancel')
     def cancel_slot(self, request, pk=None):
-        slot = get_object_or_404(BarberSlot, id=pk, barber=request.user)
-        
-        if slot.is_booked:
+        try:
+            slot = get_object_or_404(BarberSlot, id=pk, barber=request.user)
+            
+            if slot.is_booked:
+                return Response({
+                    'error': 'Slot is already booked by a customer. Cannot cancel.'
+                }, status=status.HTTP_403_FORBIDDEN)
+
+            if hasattr(slot, 'barberslotbooking_set') and slot.barberslotbooking_set.exists():
+                return Response({
+                    'error': 'Cannot delete slot with existing bookings.'
+                }, status=status.HTTP_403_FORBIDDEN)
+            
+            slot_info = f"{slot.date} at {slot.start_time}-{slot.end_time}"
+            
+            with transaction.atomic():
+                slot.delete()
+                
             return Response({
-                'error': 'Slot is already booked by a customer. Cannot cancel.'
-            }, status=status.HTTP_403_FORBIDDEN)
-        
-        slot_info = f"{slot.date} at {slot.start_time}-{slot.end_time}"
-        slot.delete()
-        return Response({
-            'message': f'Slot cancelled successfully for {slot_info}.'
-        }, status=status.HTTP_200_OK)
-    
+                'message': f'Slot cancelled successfully for {slot_info}.'
+            }, status=status.HTTP_200_OK)
+            
+        except ProtectedError as e:
+            logger.error(f"Protected error when deleting slot {pk}: {str(e)}")
+            return Response({
+                'error': 'Cannot delete slot due to existing related records.'
+            }, status=status.HTTP_409_CONFLICT)
+            
+        except Exception as e:
+            logger.error(f"Unexpected error when deleting slot {pk}: {str(e)}")
+            return Response({
+                'error': f'An error occurred while cancelling the slot: {str(e)}'
+            }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
     @action(detail=False, methods=['get'], url_path='by-date-range')
     def get_slots_by_date_range(self, request):
