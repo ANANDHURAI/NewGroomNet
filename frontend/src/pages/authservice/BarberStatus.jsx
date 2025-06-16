@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { RefreshCw, CheckCircle, Clock, XCircle, AlertCircle, Upload } from 'lucide-react';
 import apiClient from '../../slices/api/apiIntercepters';
+import { login } from '../../slices/auth/LoginSlice';
 
 function BarberStatus() {
   const [userData, setUserData] = useState(null);
@@ -12,6 +14,7 @@ function BarberStatus() {
   const [refreshing, setRefreshing] = useState(false);
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetchStatus();
@@ -27,6 +30,33 @@ function BarberStatus() {
       setUserData(data.user_data || null);
       setNextStep(data.next_step);
       setCanContinue(data.can_continue);
+
+      if (data.user_data?.status === 'approved') {
+        const storedUserData = localStorage.getItem('user_data');
+        const storedAccessToken = localStorage.getItem('access_token');
+        const storedRefreshToken = localStorage.getItem('refresh_token');
+        
+        if (storedUserData) {
+          try {
+            const currentUser = JSON.parse(storedUserData);
+            const updatedUser = {
+              ...currentUser,
+              is_verified: true,
+              is_active: true
+            };
+            
+            localStorage.setItem('user_data', JSON.stringify(updatedUser));
+
+            dispatch(login({
+              user: updatedUser,
+              access: storedAccessToken,
+              refresh: storedRefreshToken
+            }));
+          } catch (parseError) {
+            console.error('Error updating user data:', parseError);
+          }
+        }
+      }
     } catch (err) {
       console.error('Status fetch error:', err);
       const status = err.response?.status;
@@ -50,10 +80,18 @@ function BarberStatus() {
     setRefreshing(false);
   };
 
-  const handleEnterDashboard = () => navigate('/barber-dash');
+  const handleEnterDashboard = () => {
+    if (userData?.status === 'approved') {
+      setTimeout(() => {
+        navigate('/barber-dash');
+      }, 100);
+    } else {
+      navigate('/barber-dash');
+    }
+  };
+
   const handleStartRegistration = () => navigate('/barber-registration');
   const handleTryAgain = () => navigate('/barber-registration');
-  
   
   const handleContinueRegistration = () => {
     if (nextStep === 'documents_uploaded') {
@@ -155,7 +193,6 @@ function BarberStatus() {
             </div>
           )}
 
-          {/* Status Card */}
           <div className="bg-gray-50 rounded-xl p-6 mb-6">
             <div className="flex items-center justify-between mb-4">
               <div className="flex items-center">
@@ -188,7 +225,6 @@ function BarberStatus() {
             )}
           </div>
 
-          {/* Progress Bar */}
           <div className="mb-6">
             <div className="flex justify-between text-xs text-gray-600 mb-2">
               <span>Registration Started</span>
@@ -235,7 +271,6 @@ function BarberStatus() {
                     {refreshing ? 'Refreshing...' : 'Refresh Status'}
                   </button>
                   
-                  {/* Continue Registration Button - only show for document upload step */}
                   {canContinueToDocuments() && (
                     <button
                       onClick={handleContinueRegistration}

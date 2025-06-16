@@ -1,14 +1,16 @@
+// components/protectedRoute/BarberProtectedRoute.jsx
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 import { login, logout } from '../../slices/auth/LoginSlice';
 
-const ProtectedRoute = ({ children, allowedUserTypes = [], requireVerification = false }) => {
+const BarberProtectedRoute = ({ children, requireVerification = true }) => {
   const { isLogin, user, user_type } = useSelector((state) => state.login);
   const dispatch = useDispatch();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    // Check if user data exists in localStorage
     const storedUserData = localStorage.getItem('user_data');
     const storedAccessToken = localStorage.getItem('access_token');
     const storedRefreshToken = localStorage.getItem('refresh_token');
@@ -32,32 +34,25 @@ const ProtectedRoute = ({ children, allowedUserTypes = [], requireVerification =
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-amber-900 via-orange-800 to-red-900">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-amber-300 mx-auto"></div>
+          <p className="mt-4 text-amber-200">Loading Barber Dashboard...</p>
         </div>
       </div>
     );
   }
 
+  // Check if user is logged in
   if (!isLogin || !user) {
-
-    if (window.location.pathname.includes('admin')) {
-      return <Navigate to="/admin-login" replace />;
-    }
     return <Navigate to="/login" replace />;
   }
 
-  if (allowedUserTypes.length > 0 && !allowedUserTypes.includes(user_type)) {
+  // Check if user is barber
+  if (user_type !== 'barber') {
+    // Redirect non-barber users to their appropriate pages
     if (user_type === 'admin') {
       return <Navigate to="/admin-dashboard" replace />;
-    } else if (user_type === 'barber') {
-      if (user.is_active && user.is_verified) {
-        return <Navigate to="/barber-dash" replace />;
-      } else {
-        return <Navigate to="/barber-status" replace />;
-      }
     } else if (user_type === 'customer') {
       return <Navigate to="/home" replace />;
     } else {
@@ -65,19 +60,14 @@ const ProtectedRoute = ({ children, allowedUserTypes = [], requireVerification =
     }
   }
 
-  if (requireVerification && user_type === 'barber') {
+  // Check barber verification status if required
+  if (requireVerification) {
     if (!user.is_active || !user.is_verified) {
       return <Navigate to="/barber-status" replace />;
-    }
-  }
-
-  if (window.location.pathname === '/barber-status' && user_type === 'barber') {
-    if (user.is_active && user.is_verified) {
-      return <Navigate to="/barber-dash" replace />;
     }
   }
 
   return children;
 };
 
-export default ProtectedRoute;
+export default BarberProtectedRoute;

@@ -25,7 +25,8 @@ const authEndpoints = [
   '/auth/register/',
   '/auth/token/',
   '/auth/otp-verification/',
-  '/barber-reg/personal-details/'
+  '/barber-reg/personal-details/',
+  '/barber-reg/registration-status/'
 ];
 
 apiClient.interceptors.request.use(
