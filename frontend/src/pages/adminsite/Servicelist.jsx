@@ -1,6 +1,5 @@
-
 import React, { useEffect, useState } from 'react'
-import { Plus,Search, Filter } from 'lucide-react'
+import { Plus, Search, Filter } from 'lucide-react'
 import apiClient from '../../slices/api/apiIntercepters'
 import AdminSidebar from '../../components/admincompo/AdminSidebar'
 import { Modal } from '../../components/admincompo/categoryCom/Modal'
@@ -8,8 +7,7 @@ import LoadingSpinner from '../../components/admincompo/LoadingSpinner'
 import { ErrorMessage } from '../../components/admincompo/categoryCom/ErrorMessage'
 import { ServiceCard } from '../../components/admincompo/serviceCom/ServiceCard'
 import { ServiceForm } from '../../components/admincompo/serviceCom/ServiceForm'
-import { DeleteConfirmationModal } from '../../components/admincompo/serviceCom/DeleteConfirmationModal'
-
+import { ConfirmationModal } from '../../components/admincompo/serviceCom/ConfirmationModal'
 
 export function Servicelist() {
     const [data, setData] = useState([])
@@ -25,7 +23,6 @@ export function Servicelist() {
     const [editingService, setEditingService] = useState(null)
     const [formErrors, setFormErrors] = useState({})
     const [formData, setFormData] = useState({
-        
         name: '',
         category: '',
         description: '',
@@ -37,7 +34,6 @@ export function Servicelist() {
     useEffect(() => {
         fetchCategories()
         fetchServices()
-        
     }, [])
 
     const fetchServices = async () => {
@@ -318,11 +314,14 @@ export function Servicelist() {
                     />
                 </Modal>
 
-                <DeleteConfirmationModal
+                <ConfirmationModal
                     isOpen={showDeleteModal}
                     onClose={() => setShowDeleteModal(false)}
                     onConfirm={confirmDelete}
-                    serviceName={serviceToDelete?.name || ''}
+                    title="Delete Service"
+                    message={`Are you sure you want to delete "${serviceToDelete?.name}"? This action cannot be undone.`}
+                    confirmText="Delete"
+                    cancelText="Cancel"
                 />
             </div>
         </div>

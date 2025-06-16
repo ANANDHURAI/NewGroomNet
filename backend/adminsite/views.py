@@ -14,6 +14,7 @@ from .models import  CategoryModel , ServiceModel
 User = get_user_model()
 logger = logging.getLogger(__name__)
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.generics import ListAPIView
 
 class PendingBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
@@ -199,14 +200,13 @@ class BarberDetailsView(APIView):
                 'error': 'Failed to fetch barber details'
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
         
-
-class UsersListView(APIView):
+    
+class UsersListView(ListAPIView):
+    serializer_class = UsersListSerializer
     permission_classes = [IsAuthenticated]
 
-    def get(self, request):
-        users = User.objects.filter(user_type='customer') 
-        serializer = UsersListSerializer(users, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+    def get_queryset(self):
+        return User.objects.filter(user_type='customer')
     
     
 class UserDetailView(RetrieveAPIView):
@@ -216,13 +216,12 @@ class UserDetailView(RetrieveAPIView):
     lookup_field = 'id'
         
 
-class BarbersListView(APIView):
+class BarbersListView(ListAPIView):
+    serializer_class = BarbersListSerializer
     permission_classes = [IsAuthenticated]
 
-    def get(self, request):
-        barbers = User.objects.filter(user_type='barber',is_verified=True)
-        serializer = BarbersListSerializer(barbers, many=True, context={'request': request})
-        return Response(serializer.data, status=status.HTTP_200_OK)
+    def get_queryset(self):
+        return User.objects.filter(user_type='barber', is_verified=True)
 
 
 class BarberDetailView(RetrieveAPIView):

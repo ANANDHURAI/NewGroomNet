@@ -10,3 +10,4 @@ urlpatterns = [
     path('upload-documents/', DocumentUploadView.as_view(), name='barber-document-upload'),
     path('registration-status/', BarberRegistrationStatusView.as_view(), name='barber-registration-status'),
 ]
+

@@ -9,6 +9,7 @@ import { SearchBar } from '../../components/admincompo/categoryCom/SearchBar'
 import { Modal } from '../../components/admincompo/categoryCom/Modal'
 import LoadingSpinner from '../../components/admincompo/LoadingSpinner'
 import { ErrorMessage } from '../../components/admincompo/categoryCom/ErrorMessage'
+import { ConfirmationModal } from '../../components/admincompo/serviceCom/ConfirmationModal'
 
 
 export function Categoryslist() {
@@ -243,48 +244,17 @@ export function Categoryslist() {
                     />
                 </Modal>
 
-                {/* Delete Confirmation Modal */}
-                <Modal 
-                    isOpen={showDeleteModal} 
+                <ConfirmationModal
+                    isOpen={showDeleteModal}
                     onClose={cancelDelete}
+                    onConfirm={confirmDelete}
                     title="Delete Category"
-                >
-                    <div className="p-6">
-                        <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-red-100 rounded-full">
-                            <AlertTriangle className="w-8 h-8 text-red-600" />
-                        </div>
-                        
-                        <div className="text-center mb-6">
-                            <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                                Delete Category
-                            </h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
-                                Are you sure you want to delete the category{' '}
-                                <span className="font-semibold text-gray-900">
-                                    "{categoryToDelete?.name}"
-                                </span>
-                                ?<br />
-                                This action cannot be undone.
-                            </p>
-                        </div>
-                        
-                        <div className="flex justify-end space-x-3">
-                            <button
-                                onClick={cancelDelete}
-                                className="px-4 py-2 text-gray-700 bg-gray-200 rounded-md hover:bg-gray-300 transition-colors font-medium"
-                            >
-                                Cancel
-                            </button>
-                            <button
-                                onClick={confirmDelete}
-                                className="px-4 py-2 text-white bg-red-600 rounded-md hover:bg-red-700 transition-colors flex items-center gap-2 font-medium"
-                            >
-                                <Trash2 size={16} />
-                                Delete
-                            </button>
-                        </div>
-                    </div>
-                </Modal>
+                    message={`Are you sure you want to delete the category "${categoryToDelete?.name}"? This action cannot be undone.`}
+                    confirmText="Delete"
+                    cancelText="Cancel"
+                    confirmColor="bg-red-600 hover:bg-red-700"
+                />
+
             </div>
         </div>
     )

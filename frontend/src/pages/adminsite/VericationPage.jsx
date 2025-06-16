@@ -6,6 +6,7 @@ import DocumentModal from '../../components/admincompo/DocumentModal';
 import EmptyState from '../../components/admincompo/EmptyState';
 import LoadingSpinner from '../../components/admincompo/LoadingSpinner';
 import TabNavigation from '../../components/admincompo/TabNavigation';
+import { ConfirmationModal } from '../../components/admincompo/serviceCom/ConfirmationModal';
 
 function VerificationPage() {
     const [pendingRequests, setPendingRequests] = useState([]);
@@ -14,6 +15,8 @@ function VerificationPage() {
     const [activeTab, setActiveTab] = useState('pending');
     const [selectedBarber, setSelectedBarber] = useState(null);
     const [actionLoading, setActionLoading] = useState(false);
+    const [confirmModalOpen, setConfirmModalOpen] = useState(false);
+    const [confirmAction, setConfirmAction] = useState(null);
 
     useEffect(() => {
         fetchRequests();
@@ -60,15 +63,22 @@ function VerificationPage() {
     };
 
     const handleApprove = (userId) => {
-        if (window.confirm('Are you sure you want to approve this barber request?')) {
-            handleAction(userId, 'approve');
-        }
+        setConfirmAction({ type: 'approve', userId });
+        setConfirmModalOpen(true);
     };
 
     const handleReject = (userId, comment) => {
-        if (window.confirm('Are you sure you want to reject this barber request?')) {
-            handleAction(userId, 'reject', comment);
-        }
+        setConfirmAction({ type: 'reject', userId, comment });
+        setConfirmModalOpen(true);
+    };
+
+    const handleConfirmAction = () => {
+        if (!confirmAction) return;
+
+        const { userId, type, comment = '' } = confirmAction;
+        handleAction(userId, type, comment);
+        setConfirmModalOpen(false);
+        setConfirmAction(null);
     };
 
     const viewDocuments = async (barberId) => {
@@ -93,7 +103,7 @@ function VerificationPage() {
         },
         {
             id: 'all',
-            label: 'All Requests',
+            label: 'Verified Requests',
             count: allRequests.length
         }
     ];
@@ -169,8 +179,18 @@ function VerificationPage() {
                         barber={selectedBarber}
                         onClose={closeModal}
                     />
+                    <ConfirmationModal
+                        isOpen={confirmModalOpen}
+                        onClose={() => setConfirmModalOpen(false)}
+                        onConfirm={handleConfirmAction}
+                        title={`Confirm ${confirmAction?.type === 'approve' ? 'Approval' : 'Rejection'}`}
+                        message={`Are you sure you want to ${confirmAction?.type} this barber request?`}
+                        confirmText={confirmAction?.type === 'approve' ? 'Approve' : 'Reject'}
+                        cancelText="Cancel"
+                        confirmColor={confirmAction?.type === 'approve' ? 'bg-green-600 hover:bg-green-700' : 'bg-red-600 hover:bg-red-700'}
+                    />
 
-                    {/* Loading Overlay */}
+                   
                     {actionLoading && (
                         <div className="fixed inset-0 bg-black bg-opacity-25 flex items-center justify-center z-40">
                             <div className="bg-white rounded-lg p-6">

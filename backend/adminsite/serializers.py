@@ -32,6 +32,8 @@ class BarbersListSerializer(serializers.ModelSerializer):
             return obj.profileimage.url
         return None
     
+
+    
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = CategoryModel

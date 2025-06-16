@@ -4,6 +4,8 @@ import apiClient from '../../slices/api/apiIntercepters'
 import LoadingSpinner from '../../components/admincompo/LoadingSpinner'
 import LocationModal from '../../components/basics/LocationModal'
 import useGeolocation from '../../customHooks/useGeolocation'
+import { MapPin } from 'lucide-react';
+
 
 function BarberDash() {
     const [data, setData] = useState(null)
@@ -123,7 +125,8 @@ function BarberDash() {
                                 </p>
                                 {location && (
                                     <p className="text-sm text-green-600 mt-2">
-                                        📍 Location enabled - Customers can find you nearby
+                                        <MapPin className="w-4 h-4" />
+                                        Location enabled - Customers can find you nearby
                                     </p>
                                 )}
                             </div>
