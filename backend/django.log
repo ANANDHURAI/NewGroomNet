@@ -10158,3 +10158,178 @@ Watching for file changes with StatReloader
 D:\practiceProject\backend\barber_reg\urls.py changed, reloading.
 Watching for file changes with StatReloader
 Watching for file changes with StatReloader
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 240
+"GET /profile-service/user-profile/ HTTP/1.1" 200 240
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-portfolio/ HTTP/1.1" 200 0
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"GET /barbersite/barber-portfolio/ HTTP/1.1" 200 155
+"OPTIONS /barbersite/barber-slots/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-slots/ HTTP/1.1" 200 0
+"GET /barbersite/barber-slots/ HTTP/1.1" 200 1046
+"GET /barbersite/barber-slots/ HTTP/1.1" 200 1046
+"OPTIONS /barbersite/barber-services/categories/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-services/categories/ HTTP/1.1" 200 0
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /media/categories/haircolor_hYEd0ff.webp HTTP/1.1" 304 0
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-slots/ HTTP/1.1" 200 1046
+"GET /barbersite/barber-slots/ HTTP/1.1" 200 1046
+Bad Request: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 400 25
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"GET /customersite/home/ HTTP/1.1" 200 1229
+"GET /customersite/home/ HTTP/1.1" 200 1229
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"POST /auth/logout/ HTTP/1.1" 200 37
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+Bad Request: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 400 25
+"OPTIONS /auth/admin-login/ HTTP/1.1" 200 0
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /profile-service/user-profile/ HTTP/1.1" 200 195
+"GET /profile-service/user-profile/ HTTP/1.1" 200 195
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/admin-login/ HTTP/1.1" 200 560
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+Unauthorized: /barbersite/barber-dash/
+"GET /barbersite/barber-dash/ HTTP/1.1" 401 172
+Unauthorized: /barbersite/barber-dash/
+"OPTIONS /auth/token/refresh/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+"OPTIONS /auth/admin-dashboard/ HTTP/1.1" 200 0
+Unauthorized: /auth/admin-dashboard/
+"GET /auth/admin-dashboard/ HTTP/1.1" 401 172
+Unauthorized: /auth/admin-dashboard/
+"GET /auth/admin-dashboard/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 195
+"GET /profile-service/user-profile/ HTTP/1.1" 200 195
+"GET /media/profile_images/images.jpg HTTP/1.1" 304 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 240
+"GET /profile-service/user-profile/ HTTP/1.1" 200 240
+"GET /media/profile_images/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+Unauthorized: /customersite/home/
+Unauthorized: /customersite/home/
+"GET /customersite/home/ HTTP/1.1" 401 172
+"GET /customersite/home/ HTTP/1.1" 401 172
+"POST /auth/token/refresh/ HTTP/1.1" 200 483
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /media/categories/haircolor_hYEd0ff.webp HTTP/1.1" 304 0
+"GET /media/categories/photo_EBRL3Gp.webp HTTP/1.1" 304 0
+"GET /media/categories/fasial.jpg HTTP/1.1" 304 0
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 304 0
+"GET /media/services/unnamed.jpg HTTP/1.1" 304 0
+"GET /media/services/Pompadour.jpeg HTTP/1.1" 304 0
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 304 0
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /media/profile_images/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /profile-service/user-profile/
+"GET /profile-service/user-profile/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+Unauthorized: /auth/logout/
+"POST /auth/logout/ HTTP/1.1" 401 172
+Unauthorized: /auth/token/refresh/
+"POST /auth/token/refresh/ HTTP/1.1" 401 58
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"GET /customersite/home/ HTTP/1.1" 200 1235
+"GET /customersite/home/ HTTP/1.1" 200 1235
+Watching for file changes with StatReloader
