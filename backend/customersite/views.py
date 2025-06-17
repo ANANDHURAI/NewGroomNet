@@ -21,6 +21,7 @@ from django.utils import timezone
 from profileservice.models import Address
 from profileservice.serializers import AddressSerializer
 from authservice.models import User
+from.models import Booking , PaymentModel
 
 logger = logging.getLogger(__name__)
 
@@ -232,18 +233,82 @@ def booking_summary(request):
     
 
 class BookingCreateView(generics.CreateAPIView):
-
     permission_classes = [IsAuthenticated]
     serializer_class = BookingCreateSerializer
-    
+
     def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        booking = serializer.save()
+        # Log the incoming request data for debugging
+        logger.info(f"Booking request data: {request.data}")
+        logger.info(f"User: {request.user}")
         
-        return Response({
-            "message": "Your booking is confirmed! Barber will see your appointment.",
-            "booking_id": booking.id,
-            "status": booking.status
-        }, status=status.HTTP_201_CREATED)
+        # Check if user is authenticated
+        if not request.user.is_authenticated:
+            return Response(
+                {"detail": "Authentication required"}, 
+                status=status.HTTP_401_UNAUTHORIZED
+            )
+        
+        serializer = self.get_serializer(data=request.data)
+        
+        # Custom validation with detailed error messages
+        if not serializer.is_valid():
+            logger.error(f"Serializer errors: {serializer.errors}")
+            return Response(
+                {
+                    "detail": "Validation failed",
+                    "errors": serializer.errors
+                }, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        # Check payment method before creating booking
+        payment_method = request.data.get('payment_method')
+        if payment_method != 'COD':
+            return Response(
+                {"detail": "Currently only COD payments are accepted"}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+        
+        try:
+            # Create booking only for COD
+            booking = serializer.save()
+            logger.info(f"Booking created successfully: {booking.id}")
+            
+            return Response(
+                {
+                    "detail": "Booking created successfully", 
+                    "booking_id": booking.id,
+                    "success": True
+                }, 
+                status=status.HTTP_201_CREATED
+            )
+        except Exception as e:
+            logger.error(f"Error creating booking: {str(e)}")
+            return Response(
+                {"detail": f"Error creating booking: {str(e)}"}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+
+class BookingSuccessView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        booking = Booking.objects.filter(customer=request.user).order_by('-created_at').first()
+        if not booking:
+            return Response({"detail": "No bookings found"}, status=404)
+        payment = getattr(booking, 'payment', None)
+        data = {
+            "orderid": booking.id,
+            "name": booking.customer.name,
+            "barbername": booking.barber.name,
+            "slottime": f"{booking.slot.start_time} - {booking.slot.end_time}",
+            "start_time": str(booking.slot.start_time),
+            "end_time": str(booking.slot.end_time),
+            "date": str(booking.slot.date),
+            "service": booking.service.name,
+            "total_amount": str(booking.total_amount),"payment_method": payment.payment_method if payment else "N/A",
+            "booking_status": booking.status,
+        }
+        return Response(data)
+        
 

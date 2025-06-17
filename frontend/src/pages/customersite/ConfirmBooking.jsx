@@ -3,29 +3,30 @@ import apiClient from "../../slices/api/apiIntercepters";
 import { ArrowLeft, Check, Scissors, User, Calendar, Clock, MapPin, Phone } from 'lucide-react';
 import Navbar from "../../components/basics/Navbar";
 
-
 export const ConfirmBooking = () => {
   const [bookingSummary, setBookingSummary] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [confirming, setConfirming] = useState(false);
+  const [bookingData, setBookingData] = useState(null); // Store booking data
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const bookingData = {
+    const currentBookingData = {
       service_id: urlParams.get('service_id'),
       barber_id: urlParams.get('barber_id'),
       slot_id: urlParams.get('slot_id'),
       address_id: urlParams.get('address_id')
     };
 
-    if (!bookingData.service_id || !bookingData.barber_id || !bookingData.slot_id || !bookingData.address_id) {
+    if (!currentBookingData.service_id || !currentBookingData.barber_id || !currentBookingData.slot_id || !currentBookingData.address_id) {
       setError('Missing booking information. Please start from the beginning.');
       setLoading(false);
       return;
     }
 
-    fetchBookingSummary(bookingData);
+    setBookingData(currentBookingData); // Store for later use
+    fetchBookingSummary(currentBookingData);
   }, []);
 
   const fetchBookingSummary = async (bookingData) => {
@@ -65,7 +66,15 @@ export const ConfirmBooking = () => {
   const handleConfirmBooking = async () => {
     try {
       setConfirming(true);
-      window.location.href = '/payment';
+      
+      // Create URL with parameters to pass to PaymentPage
+      const paymentUrl = new URL('/payment', window.location.origin);
+      paymentUrl.searchParams.set('service_id', bookingData.service_id);
+      paymentUrl.searchParams.set('barber_id', bookingData.barber_id);
+      paymentUrl.searchParams.set('slot_id', bookingData.slot_id);
+      paymentUrl.searchParams.set('address_id', bookingData.address_id);
+      
+      window.location.href = paymentUrl.toString();
     } catch (error) {
       console.error('Error confirming booking:', error);
       alert('Failed to confirm booking. Please try again.');
@@ -202,7 +211,6 @@ export const ConfirmBooking = () => {
       </div>
     </div>
   );
-
 };
 
 export default ConfirmBooking;

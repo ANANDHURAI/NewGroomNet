@@ -34,6 +34,8 @@ import SelectTime from './pages/customersite/SelectTimeSlots'
 import AddAddress from './pages/customersite/AddAddress'
 import ConfirmBooking from './pages/customersite/ConfirmBooking'
 import ProtectedRoute from './components/protectRoute/ProtectedRoute'
+import PaymentPage from './pages/customersite/PaymentPage'
+import SuccessPage from './pages/customersite/SussessPage'
 
 function App() {
   return (
@@ -115,6 +117,24 @@ function App() {
               element={
                 <ProtectedRoute allowedUserTypes={['customer']}>
                   <ConfirmBooking />
+                </ProtectedRoute>
+              } 
+            />
+
+            <Route 
+              path="/payment" 
+              element={
+                <ProtectedRoute allowedUserTypes={['customer']}>
+                  <PaymentPage />
+                </ProtectedRoute>
+              } 
+            />
+
+            <Route 
+              path="/booking-success" 
+              element={
+                <ProtectedRoute allowedUserTypes={['customer']}>
+                  <SuccessPage />
                 </ProtectedRoute>
               } 
             />
