@@ -1,6 +1,6 @@
 import { ActionButton } from "./ActionButton"
 import {StatusBadge} from './StatusBadge'
-import { Plus, Edit2, Eye, EyeOff, Trash2, Search } from 'lucide-react'
+import { Edit2, Eye, EyeOff, Trash2 } from 'lucide-react'
 
 export const CategoryCard = ({ category, onEdit, onToggleBlock, onDelete }) => (
     <div className="bg-white rounded-lg shadow-md overflow-hidden">

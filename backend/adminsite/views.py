@@ -15,9 +15,11 @@ User = get_user_model()
 logger = logging.getLogger(__name__)
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import ListAPIView
+# from commanapp.pagination import StandardResultsSetPagination
 
 class PendingBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
+    # pagination_class = StandardResultsSetPagination
 
     def get_full_url(self, request, file_field):
         if file_field:
@@ -57,6 +59,7 @@ class PendingBarbersRequestsView(APIView):
 
 class AllBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
+    # pagination_class = StandardResultsSetPagination
 
     def get_full_url(self, request, file_field):
         if file_field:

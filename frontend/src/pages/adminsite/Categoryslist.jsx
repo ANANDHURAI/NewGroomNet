@@ -49,34 +49,45 @@ export function Categoryslist() {
     }
 
     const handleSubmit = async (e) => {
-        e.preventDefault()
-        
-        if (!formData.name.trim()) {
-            setError('Category name is required')
-            return
+        e.preventDefault();
+
+        const trimmedName = formData.name.trim();
+        if (!editingCategory) {
+            if (!trimmedName || !formData.image) {
+                setError('Both name and image are required to create a new category');
+                return;
+            }
+        }
+
+        if (editingCategory && !trimmedName && !formData.image) {
+            setError('Please update either the name or image');
+            return;
         }
 
         try {
-            const formDataToSend = new FormData()
-            formDataToSend.append('name', formData.name.trim())
+            const formDataToSend = new FormData();
+            if (trimmedName) {
+                formDataToSend.append('name', trimmedName);
+            }
             if (formData.image) {
-                formDataToSend.append('image', formData.image)
+                formDataToSend.append('image', formData.image);
             }
 
             if (editingCategory) {
-                await apiClient.put(`/adminsite/categories/${editingCategory.id}/`, formDataToSend)
+                await apiClient.put(`/adminsite/categories/${editingCategory.id}/`, formDataToSend);
             } else {
-                await apiClient.post('/adminsite/categories/', formDataToSend)
+                await apiClient.post('/adminsite/categories/', formDataToSend);
             }
-            
-            await fetchCategories()
-            closeModal()
-            setError(null)
+
+            await fetchCategories();
+            closeModal();
+            setError(null);
         } catch (error) {
-            console.error('Error saving category:', error)
-            setError('Failed to save category. Please try again.')
+            console.error('Error saving category:', error);
+            setError('Failed to save category. Please try again.');
         }
-    }
+    };
+
 
     const toggleBlock = async (category) => {
         try {
@@ -165,7 +176,6 @@ export function Categoryslist() {
                     </button>
                 </div>
 
-                {error && <ErrorMessage error={error} onRetry={fetchCategories} />}
 
                 {data.length > 0 && (
                     <SearchBar 
@@ -241,6 +251,7 @@ export function Categoryslist() {
                         onSubmit={handleSubmit}
                         onCancel={closeModal}
                         isEditing={!!editingCategory}
+                        error={error}
                     />
                 </Modal>
 

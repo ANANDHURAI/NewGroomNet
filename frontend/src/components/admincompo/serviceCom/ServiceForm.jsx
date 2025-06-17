@@ -1,8 +1,14 @@
-
-
 export const ServiceForm = ({ formData, onFormChange, onSubmit, onCancel, isEditing, categories, errors }) => {
     return (
         <form onSubmit={onSubmit} className="space-y-5">
+
+            {/* Global error (if any) */}
+            {errors.global && (
+                <div className="bg-red-100 text-red-700 border border-red-300 px-4 py-2 rounded text-sm">
+                    {errors.global}
+                </div>
+            )}
+
             <div>
                 <label className="block mb-1 font-medium text-sm text-gray-700">
                     Service Name <span className="text-red-500">*</span>
@@ -13,8 +19,10 @@ export const ServiceForm = ({ formData, onFormChange, onSubmit, onCancel, isEdit
                     onChange={(e) => onFormChange({ ...formData, name: e.target.value })}
                     className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     placeholder="Enter service name"
-                    
                 />
+                {errors.name && (
+                    <p className="text-xs text-red-500 mt-1">{errors.name}</p>
+                )}
             </div>
 
             <div>
@@ -25,7 +33,6 @@ export const ServiceForm = ({ formData, onFormChange, onSubmit, onCancel, isEdit
                     value={formData.category}
                     onChange={(e) => onFormChange({ ...formData, category: e.target.value })}
                     className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    
                 >
                     <option value="">Select Category</option>
                     {categories.map(category => (
@@ -34,6 +41,9 @@ export const ServiceForm = ({ formData, onFormChange, onSubmit, onCancel, isEdit
                         </option>
                     ))}
                 </select>
+                {errors.category && (
+                    <p className="text-xs text-red-500 mt-1">{errors.category}</p>
+                )}
             </div>
 
             <div>
@@ -47,6 +57,9 @@ export const ServiceForm = ({ formData, onFormChange, onSubmit, onCancel, isEdit
                     placeholder="Enter service description"
                     rows="3"
                 />
+                {errors.description && (
+                    <p className="text-xs text-red-500 mt-1">{errors.description}</p>
+                )}
             </div>
 
             <div className="grid grid-cols-2 gap-4">
@@ -61,9 +74,12 @@ export const ServiceForm = ({ formData, onFormChange, onSubmit, onCancel, isEdit
                         onChange={(e) => onFormChange({ ...formData, price: e.target.value })}
                         className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="0.00"
-                       
                     />
+                    {errors.price && (
+                        <p className="text-xs text-red-500 mt-1">{errors.price}</p>
+                    )}
                 </div>
+
                 <div>
                     <label className="block mb-1 font-medium text-sm text-gray-700">
                         Duration (minutes) <span className="text-red-500">*</span>
@@ -74,8 +90,10 @@ export const ServiceForm = ({ formData, onFormChange, onSubmit, onCancel, isEdit
                         onChange={(e) => onFormChange({ ...formData, duration_minutes: e.target.value })}
                         className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         placeholder="60"
-                        
                     />
+                    {errors.duration_minutes && (
+                        <p className="text-xs text-red-500 mt-1">{errors.duration_minutes}</p>
+                    )}
                 </div>
             </div>
 
@@ -88,7 +106,6 @@ export const ServiceForm = ({ formData, onFormChange, onSubmit, onCancel, isEdit
                     accept="image/*"
                     onChange={(e) => onFormChange({ ...formData, image: e.target.files[0] })}
                     className="w-full border border-gray-300 rounded-md px-4 py-2"
-                    required={!isEditing}
                 />
                 <p className="text-xs text-gray-500 mt-1">
                     Image must be uploaded for this service
