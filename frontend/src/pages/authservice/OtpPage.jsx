@@ -22,7 +22,7 @@ function OtpPage() {
       return;
     }
 
-    const email = localStorage.getItem('pending_email') || registerData.email;
+    const email = sessionStorage.getItem('pending_email') || registerData.email;
 
     if (!email) {
       setError('Email not found. Please register again.');
@@ -40,9 +40,9 @@ function OtpPage() {
       });
       
       if (response.data.access && response.data.refresh) {
-        localStorage.setItem('access_token', response.data.access);
-        localStorage.setItem('refresh_token', response.data.refresh);
-        localStorage.removeItem('pending_email');
+        sessionStorage.setItem('access_token', response.data.access);
+        sessionStorage.setItem('refresh_token', response.data.refresh);
+        sessionStorage.removeItem('pending_email');
         
         dispatch(login({ 
           email, 

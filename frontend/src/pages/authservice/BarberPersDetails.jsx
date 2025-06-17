@@ -35,11 +35,11 @@ function BarberPersonalDetails() {
 
     try {
       const response = await apiClient.post('barber-reg/personal-details/', formData);
-      
-      localStorage.setItem('access_token', response.data.access);
-      localStorage.setItem('refresh_token', response.data.refresh);
-      localStorage.setItem('user_type', 'barber');
-      localStorage.setItem('user_id', response.data.user_id);
+
+      sessionStorage.setItem('access_token', response.data.access);
+      sessionStorage.setItem('refresh_token', response.data.refresh);
+      sessionStorage.setItem('user_type', 'barber');
+      sessionStorage.setItem('user_id', response.data.user_id);
       
       setSuccessMessage('Personal details submitted successfully!');
       

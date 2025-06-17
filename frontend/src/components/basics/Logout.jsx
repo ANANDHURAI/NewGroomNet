@@ -11,10 +11,10 @@ function Logout({ className = "" }) {
 
   const handleLogout = async () => {
     setLoading(true);
-    
-    const refresh_token = localStorage.getItem('refresh_token');
-    const user_type = localStorage.getItem('user_type');
-    
+
+    const refresh_token = sessionStorage.getItem('refresh_token');
+    const user_type = sessionStorage.getItem('user_type');
+
     try {
       if (refresh_token && user_type) {
         await apiClient.post('/auth/logout/', {
@@ -25,9 +25,7 @@ function Logout({ className = "" }) {
       }
     } catch (error) {
       console.error('Logout API failed:', error);
-      
     } finally {
-    
       dispatch(logout());
 
       if (user_type === 'admin') {
@@ -35,7 +33,7 @@ function Logout({ className = "" }) {
       } else {
         navigate('/login');
       }
-      
+
       setLoading(false);
     }
   };

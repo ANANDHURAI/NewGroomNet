@@ -68,7 +68,7 @@ function RegisterPage() {
 
       if (response.data.email) {
         dispatch(setRegisterData(formData));
-        localStorage.setItem('pending_email', response.data.email);
+        sessionStorage.setItem('pending_email', response.data.email);
         navigate('/otp');
       }
     } catch (err) {

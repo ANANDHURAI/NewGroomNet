@@ -18,8 +18,7 @@ function DocumentUpload() {
 
     const handleFileChange = (type) => (file) => {
         setFiles(prev => ({ ...prev, [type]: file }));
-        
-        // Clear error for this field
+
         if (errors[type]) {
             setErrors(prev => ({ ...prev, [type]: '' }));
         }

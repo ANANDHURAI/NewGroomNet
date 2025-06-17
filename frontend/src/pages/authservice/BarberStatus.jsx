@@ -32,9 +32,9 @@ function BarberStatus() {
       setCanContinue(data.can_continue);
 
       if (data.user_data?.status === 'approved') {
-        const storedUserData = localStorage.getItem('user_data');
-        const storedAccessToken = localStorage.getItem('access_token');
-        const storedRefreshToken = localStorage.getItem('refresh_token');
+        const storedUserData = sessionStorage.getItem('user_data');
+        const storedAccessToken = sessionStorage.getItem('access_token');
+        const storedRefreshToken = sessionStorage.getItem('refresh_token');
         
         if (storedUserData) {
           try {
@@ -45,8 +45,7 @@ function BarberStatus() {
               is_active: true
             };
             
-            localStorage.setItem('user_data', JSON.stringify(updatedUser));
-
+            sessionStorage.setItem('user_data', JSON.stringify(updatedUser));
             dispatch(login({
               user: updatedUser,
               access: storedAccessToken,

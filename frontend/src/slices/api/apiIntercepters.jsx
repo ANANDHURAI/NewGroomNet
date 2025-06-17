@@ -31,20 +31,21 @@ const authEndpoints = [
 
 apiClient.interceptors.request.use(
   (config) => {
-    const isAuthEndpoint = authEndpoints.some(endpoint => 
+    const isAuthEndpoint = authEndpoints.some(endpoint =>
       config.url?.includes(endpoint)
     );
-    
+
     if (!isAuthEndpoint) {
-      const token = localStorage.getItem("access_token");
+      const token = sessionStorage.getItem("access_token");
       if (token) {
         config.headers["Authorization"] = `Bearer ${token}`;
       }
     }
+
     if (config.data instanceof FormData) {
       delete config.headers['Content-Type'];
     }
-    
+
     return config;
   },
   (error) => Promise.reject(error)
@@ -57,13 +58,13 @@ apiClient.interceptors.response.use(
 
     if (error.response?.status === 401 && !originalRequest._retry) {
       if (originalRequest.url?.includes("/token/refresh/")) {
-        return Promise.reject(error); 
+        return Promise.reject(error); // prevent infinite loop
       }
 
-      const isAuthEndpoint = authEndpoints.some(endpoint => 
+      const isAuthEndpoint = authEndpoints.some(endpoint =>
         originalRequest.url?.includes(endpoint)
       );
-      
+
       if (isAuthEndpoint) {
         return Promise.reject(error);
       }
@@ -81,7 +82,7 @@ apiClient.interceptors.response.use(
       isRefreshing = true;
 
       try {
-        const refreshToken = localStorage.getItem("refresh_token");
+        const refreshToken = sessionStorage.getItem("refresh_token");
         if (!refreshToken) throw new Error("No refresh token available");
 
         const response = await axios.post("http://localhost:8000/auth/token/refresh/", {
@@ -89,7 +90,7 @@ apiClient.interceptors.response.use(
         });
 
         const newAccessToken = response.data.access;
-        localStorage.setItem("access_token", newAccessToken);
+        sessionStorage.setItem("access_token", newAccessToken);
 
         onRefreshed(newAccessToken);
         isRefreshing = false;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 import { login, logout } from '../../slices/auth/LoginSlice';
+import LoadingSpinner from '../admincompo/LoadingSpinner';
 
 const ProtectedRoute = ({ children, allowedUserTypes = [], requireVerification = false }) => {
   const { isLogin, user, user_type } = useSelector((state) => state.login);
@@ -9,10 +10,11 @@ const ProtectedRoute = ({ children, allowedUserTypes = [], requireVerification =
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const storedUserData = localStorage.getItem('user_data');
-    const storedAccessToken = localStorage.getItem('access_token');
-    const storedRefreshToken = localStorage.getItem('refresh_token');
-    const storedUserType = localStorage.getItem('user_type');
+
+    const storedUserData = sessionStorage.getItem('user_data');
+    const storedAccessToken = sessionStorage.getItem('access_token');
+    const storedRefreshToken = sessionStorage.getItem('refresh_token');
+    const storedUserType = sessionStorage.getItem('user_type');
 
     if (storedUserData && storedAccessToken && storedRefreshToken && storedUserType && !isLogin) {
       try {
@@ -33,14 +35,11 @@ const ProtectedRoute = ({ children, allowedUserTypes = [], requireVerification =
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-100">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600">Loading...</p>
-        </div>
+        <LoadingSpinner/>
       </div>
     );
   }
-
+  
   if (!isLogin || !user) {
 
     if (window.location.pathname.includes('admin')) {
