@@ -19,6 +19,11 @@ from rest_framework.generics import ListAPIView
 class PendingBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
 
+    def get_full_url(self, request, file_field):
+        if file_field:
+            return request.build_absolute_uri(file_field.url)
+        return None
+
     def get(self, request):
         try:
             pending_requests = BarberRequest.objects.filter(
@@ -36,9 +41,9 @@ class PendingBarbersRequestsView(APIView):
                     'gender': req.user.gender,
                     'status': req.status,
                     'request_date': req.created_at,
-                    'licence': req.licence.url if req.licence else None,
-                    'certificate': req.certificate.url if req.certificate else None,
-                    'profile_image': req.profile_image.url if req.profile_image else None,
+                    'licence': self.get_full_url(request, req.licence),
+                    'certificate': self.get_full_url(request, req.certificate),
+                    'profile_image': self.get_full_url(request, req.profile_image),
                 })
             
             return Response(data, status=status.HTTP_200_OK)
@@ -52,6 +57,11 @@ class PendingBarbersRequestsView(APIView):
 
 class AllBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
+
+    def get_full_url(self, request, file_field):
+        if file_field:
+            return request.build_absolute_uri(file_field.url)
+        return None
 
     def get(self, request):
         try:
@@ -69,9 +79,9 @@ class AllBarbersRequestsView(APIView):
                     'gender': req.user.gender,
                     'status': req.status,
                     'request_date': req.created_at,
-                    'licence': req.licence.url if req.licence else None,
-                    'certificate': req.certificate.url if req.certificate else None,
-                    'profile_image': req.profile_image.url if req.profile_image else None,
+                    'licence': self.get_full_url(request, req.licence),
+                    'certificate': self.get_full_url(request, req.certificate),
+                    'profile_image': self.get_full_url(request, req.profile_image),
                     'admin_comment': req.admin_comment,
                 })
             
@@ -82,7 +92,7 @@ class AllBarbersRequestsView(APIView):
             return Response({
                 'error': 'Failed to fetch requests'
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-
+        
 
 class BarberApprovalActionView(APIView):
     permission_classes = [IsAuthenticated]
@@ -159,6 +169,11 @@ class BarberApprovalActionView(APIView):
 class BarberDetailsView(APIView):
     permission_classes = [IsAuthenticated]
 
+    def get_full_url(self, request, file_field):
+        if file_field:
+            return request.build_absolute_uri(file_field.url)
+        return None
+
     def get(self, request, barber_id):
         try:
             user = get_object_or_404(User, id=barber_id, user_type='barber')
@@ -178,9 +193,9 @@ class BarberDetailsView(APIView):
                 'gender': user.gender,
                 'status': barber_request.status,
                 'request_date': barber_request.created_at,
-                'licence': barber_request.licence.url if barber_request.licence else None,
-                'certificate': barber_request.certificate.url if barber_request.certificate else None,
-                'profile_image': barber_request.profile_image.url if barber_request.profile_image else None,
+                'licence': self.get_full_url(request, barber_request.licence),
+                'certificate': self.get_full_url(request, barber_request.certificate),
+                'profile_image': self.get_full_url(request, barber_request.profile_image),
                 'admin_comment': barber_request.admin_comment,
                 'registration_step': barber_request.registration_step,
                 'created_at': barber_request.created_at,
@@ -199,7 +214,6 @@ class BarberDetailsView(APIView):
             return Response({
                 'error': 'Failed to fetch barber details'
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-        
     
 class UsersListView(ListAPIView):
     serializer_class = UsersListSerializer

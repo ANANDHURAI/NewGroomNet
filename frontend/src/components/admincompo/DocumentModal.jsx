@@ -3,28 +3,45 @@ import React from 'react';
 const DocumentModal = ({ barber, onClose }) => {
     if (!barber) return null;
 
-    const DocumentSection = ({ title, icon, document, documentType }) => (
-        <div className="border border-gray-200 rounded-lg p-4">
-            <h4 className="text-lg font-medium text-gray-900 mb-3">
-                {icon} {title}
-            </h4>
-            {document ? (
-                <a 
-                    href={document} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm font-medium transition-colors duration-200"
-                >
-                    View {documentType}
-                    <svg className="ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                </a>
-            ) : (
-                <p className="text-gray-500">No {documentType.toLowerCase()} document uploaded</p>
-            )}
-        </div>
-    );
+    const DocumentSection = ({ title, icon, document, documentType }) => {
+        
+        return (
+            <div className="border border-gray-200 rounded-lg p-4">
+                <h4 className="text-lg font-medium text-gray-900 mb-3">
+                    {icon} {title}
+                </h4>
+                {document ? (
+                    <div className="space-y-2">
+                        <a 
+                            href={document} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm font-medium transition-colors duration-200"
+                            onClick={(e) => {
+                    
+                                fetch(document, { method: 'HEAD' })
+                                    .then(response => {
+                                        if (!response.ok) {
+                                            alert(`Error: File not accessible (${response.status})`);
+                                        }
+                                    })
+                                    .catch(error => {
+                                        alert('Error: Cannot access file. Check console for details.');
+                                    });
+                            }}
+                        >
+                            View {documentType}
+                            <svg className="ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                ) : (
+                    <p className="text-gray-500">No {documentType.toLowerCase()} document uploaded</p>
+                )}
+            </div>
+        );
+    };
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
@@ -51,23 +68,29 @@ const DocumentModal = ({ barber, onClose }) => {
                             <h4 className="text-lg font-medium text-gray-900 mb-3">
                                 👤 Profile Image
                             </h4>
-                            <div className="flex items-center space-x-4">
-                                <img 
-                                    src={barber.profile_image} 
-                                    alt={`${barber.name}'s profile`}
-                                    className="w-16 h-16 rounded-full object-cover border-2 border-gray-200"
-                                />
-                                <a 
-                                    href={barber.profile_image} 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm font-medium transition-colors duration-200"
-                                >
-                                    View Full Image
-                                    <svg className="ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
-                                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                                    </svg>
-                                </a>
+                            <div className="space-y-2">
+                                <div className="flex items-center space-x-4">
+                                    <img 
+                                        src={barber.profile_image} 
+                                        alt={`${barber.name}'s profile`}
+                                        className="w-16 h-16 rounded-full object-cover border-2 border-gray-200"
+                                        onError={(e) => {
+                                            console.error('Image failed to load:', barber.profile_image);
+                                            e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA2NCA2NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiNGM0Y0RjYiLz4KPHN2ZyB4PSIxNiIgeT0iMTYiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM5Q0EzQUYiIHN0cm9rZS13aWR0aD0iMiI+CjxwYXRoIGQ9Im0yMCAxNi0yLTJtMCAwbC0yLTJtMiAybC0yIDJtMiAybC0yIDIiLz4KPHN2Zz4KPC9zdmc+';
+                                        }}
+                                    />
+                                    <a 
+                                        href={barber.profile_image} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer"
+                                        className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-sm font-medium transition-colors duration-200"
+                                    >
+                                        View Full Image
+                                        <svg className="ml-2 h-4 w-4" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     )}

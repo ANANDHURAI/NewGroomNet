@@ -174,7 +174,6 @@ function VerificationPage() {
 
                     {renderRequestsList()}
 
-                    {/* Document Modal */}
                     <DocumentModal 
                         barber={selectedBarber}
                         onClose={closeModal}

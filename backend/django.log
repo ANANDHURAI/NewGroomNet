@@ -10565,3 +10565,55 @@ Watching for file changes with StatReloader
 "GET /auth/admin-dashboard/ HTTP/1.1" 200 46
 "GET /auth/admin-dashboard/ HTTP/1.1" 200 46
 "GET /auth/admin-dashboard/ HTTP/1.1" 200 46
+"GET /profile-service/user-profile/ HTTP/1.1" 200 195
+"GET /profile-service/user-profile/ HTTP/1.1" 200 195
+"GET /adminsite/customers-list/ HTTP/1.1" 200 695
+"GET /adminsite/customers-list/ HTTP/1.1" 200 695
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /barbersite/barber-services/categories/ HTTP/1.1" 200 407
+"GET /media/categories/haircolor_hYEd0ff.webp HTTP/1.1" 304 0
+"GET /adminsite/customers-list/ HTTP/1.1" 200 695
+"GET /adminsite/customers-list/ HTTP/1.1" 200 695
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 8261
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 8261
+"OPTIONS /adminsite/barber-details/24/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/24/ HTTP/1.1" 200 602
+"GET /media/barber_profiles/images.jpg HTTP/1.1" 200 8447
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 3302
+"HEAD /media/documents/licences/Screenshot_2025-06-10_140007_NqFBGy1.png HTTP/1.1" 200 0
+"GET /media/documents/licences/Screenshot_2025-06-10_140007_NqFBGy1.png HTTP/1.1" 200 451530
+"HEAD /media/documents/certificates/Screenshot_2025-06-10_142031_Y8tGpxm.png HTTP/1.1" 200 0
+"GET /media/documents/certificates/Screenshot_2025-06-10_142031_Y8tGpxm.png HTTP/1.1" 200 218850
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 8261
+"GET /adminsite/pending-requests/ HTTP/1.1" 200 2
+"GET /adminsite/all-requests/ HTTP/1.1" 200 8261
+"GET /adminsite/barber-details/24/ HTTP/1.1" 200 602
+"HEAD /media/documents/licences/Screenshot_2025-06-10_140007_NqFBGy1.png HTTP/1.1" 200 0
+"GET /media/documents/licences/Screenshot_2025-06-10_140007_NqFBGy1.png HTTP/1.1" 200 451530
+"OPTIONS /adminsite/barber-details/23/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/23/ HTTP/1.1" 200 583
+"GET /media/barber_profiles/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 200 60347
+"OPTIONS /adminsite/barber-details/22/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/22/ HTTP/1.1" 200 565
+"GET /media/barber_profiles/bfced07e2c857f72970b7c104edb304b_1iVHtF2.jpg HTTP/1.1" 200 73211
+"OPTIONS /adminsite/barber-details/20/ HTTP/1.1" 200 0
+"GET /adminsite/barber-details/20/ HTTP/1.1" 200 534
+"GET /media/barber_profiles/TheFrenchCrop_Bvbudtt.jpeg HTTP/1.1" 200 179496
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\adminsite\views.py changed, reloading.
+Watching for file changes with StatReloader
