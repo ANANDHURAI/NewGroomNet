@@ -11981,3 +11981,233 @@ D:\practiceProject\backend\customersite\views.py changed, reloading.
 Watching for file changes with StatReloader
 D:\practiceProject\backend\customersite\views.py changed, reloading.
 Watching for file changes with StatReloader
+"GET /customersite/booking-success/ HTTP/1.1" 200 245
+"GET /customersite/booking-success/ HTTP/1.1" 200 245
+Bad Request: /customersite/create-booking/
+"POST /customersite/create-booking/ HTTP/1.1" 400 80
+Bad Request: /customersite/booking-summary/
+Bad Request: /customersite/booking-summary/
+"POST /customersite/booking-summary/ HTTP/1.1" 400 53
+"POST /customersite/booking-summary/ HTTP/1.1" 400 53
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"GET /customersite/home/ HTTP/1.1" 200 1238
+"GET /customersite/home/ HTTP/1.1" 200 1238
+"GET /media/services/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg HTTP/1.1" 304 0
+"GET /customersite/categories/ HTTP/1.1" 200 318
+"GET /customersite/categories/ HTTP/1.1" 200 318
+"GET /customersite/services/?category_id=8 HTTP/1.1" 200 1034
+"GET /customersite/services/?category_id=8 HTTP/1.1" 200 1034
+"OPTIONS /customersite/barbers/?service_id=5 HTTP/1.1" 200 0
+"OPTIONS /customersite/barbers/?service_id=5 HTTP/1.1" 200 0
+"GET /customersite/barbers/?service_id=5 HTTP/1.1" 200 153
+"GET /customersite/barbers/?service_id=5 HTTP/1.1" 200 153
+"GET /customersite/available-dates/?barber_id=8 HTTP/1.1" 200 34
+"GET /customersite/available-dates/?barber_id=8 HTTP/1.1" 200 34
+"GET /customersite/available-slots/?barber_id=8&date=2025-06-17 HTTP/1.1" 200 77
+"GET /customersite/available-slots/?barber_id=8&date=2025-06-17 HTTP/1.1" 200 77
+"GET /customersite/addresses/ HTTP/1.1" 200 482
+"GET /customersite/addresses/ HTTP/1.1" 200 482
+"POST /customersite/booking-summary/ HTTP/1.1" 200 313
+"POST /customersite/booking-summary/ HTTP/1.1" 200 313
+"POST /customersite/create-booking/ HTTP/1.1" 201 71
+"GET /customersite/booking-success/ HTTP/1.1" 200 250
+"GET /customersite/booking-success/ HTTP/1.1" 200 250
+Watching for file changes with StatReloader
+"OPTIONS /auth/customer-barber-login/ HTTP/1.1" 200 0
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 610
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"OPTIONS /customersite/home/ HTTP/1.1" 200 0
+"GET /customersite/home/ HTTP/1.1" 200 1238
+"GET /customersite/home/ HTTP/1.1" 200 1238
+"GET /media/services/bfced07e2c857f72970b7c104edb304b_MtfhsFB.jpg HTTP/1.1" 304 0
+"GET /media/services/TheFrenchCrop.jpeg HTTP/1.1" 304 0
+"GET /media/services/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg HTTP/1.1" 304 0
+"GET /media/categories/fasial.jpg HTTP/1.1" 304 0
+"GET /media/categories/second-row-crochet-2024-10-25T154110_ve9QD4J.webp HTTP/1.1" 304 0
+"GET /media/categories/haircolor_hYEd0ff.webp HTTP/1.1" 304 0
+"OPTIONS /customersite/categories/ HTTP/1.1" 200 0
+"OPTIONS /customersite/categories/ HTTP/1.1" 200 0
+"GET /customersite/categories/ HTTP/1.1" 200 318
+"GET /customersite/categories/ HTTP/1.1" 200 318
+"OPTIONS /customersite/services/?category_id=10 HTTP/1.1" 200 0
+"OPTIONS /customersite/services/?category_id=10 HTTP/1.1" 200 0
+"GET /customersite/services/?category_id=10 HTTP/1.1" 200 2
+"GET /customersite/services/?category_id=10 HTTP/1.1" 200 2
+"OPTIONS /customersite/services/?category_id=8 HTTP/1.1" 200 0
+"OPTIONS /customersite/services/?category_id=8 HTTP/1.1" 200 0
+"GET /customersite/services/?category_id=8 HTTP/1.1" 200 1034
+"GET /customersite/services/?category_id=8 HTTP/1.1" 200 1034
+"OPTIONS /customersite/barbers/?service_id=14 HTTP/1.1" 200 0
+"OPTIONS /customersite/barbers/?service_id=14 HTTP/1.1" 200 0
+"GET /customersite/barbers/?service_id=14 HTTP/1.1" 200 153
+"GET /customersite/barbers/?service_id=14 HTTP/1.1" 200 153
+"GET /media/profile_images/Adolf-Hitler-1933.webp HTTP/1.1" 304 0
+"OPTIONS /customersite/available-dates/?barber_id=8 HTTP/1.1" 200 0
+"OPTIONS /customersite/available-dates/?barber_id=8 HTTP/1.1" 200 0
+"GET /customersite/available-dates/?barber_id=8 HTTP/1.1" 200 22
+"GET /customersite/available-dates/?barber_id=8 HTTP/1.1" 200 22
+"OPTIONS /auth/logout/ HTTP/1.1" 200 0
+"POST /auth/logout/ HTTP/1.1" 200 37
+"POST /auth/customer-barber-login/ HTTP/1.1" 200 595
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-dash/ HTTP/1.1" 200 0
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"GET /barbersite/barber-dash/ HTTP/1.1" 200 117
+"OPTIONS /barbersite/barber-slots/ HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-slots/ HTTP/1.1" 200 0
+"GET /barbersite/barber-slots/ HTTP/1.1" 200 1149
+"GET /barbersite/barber-slots/ HTTP/1.1" 200 1149
+"OPTIONS /barbersite/barber-slots/?date=2025-06-18 HTTP/1.1" 200 0
+"OPTIONS /barbersite/barber-slots/?date=2025-06-18 HTTP/1.1" 200 0
+"GET /barbersite/barber-slots/?date=2025-06-18 HTTP/1.1" 200 2
+"GET /barbersite/barber-slots/?date=2025-06-18 HTTP/1.1" 200 2
+"OPTIONS /barbersite/barber-slots/create-slot/ HTTP/1.1" 200 0
+"POST /barbersite/barber-slots/create-slot/ HTTP/1.1" 201 166
+"GET /barbersite/barber-slots/ HTTP/1.1" 200 1254
+"GET /customersite/available-dates/?barber_id=8 HTTP/1.1" 200 34
+"GET /customersite/available-dates/?barber_id=8 HTTP/1.1" 200 34
+"OPTIONS /customersite/available-slots/?barber_id=8&date=2025-06-18 HTTP/1.1" 200 0
+"OPTIONS /customersite/available-slots/?barber_id=8&date=2025-06-18 HTTP/1.1" 200 0
+"GET /customersite/available-slots/?barber_id=8&date=2025-06-18 HTTP/1.1" 200 77
+"GET /customersite/available-slots/?barber_id=8&date=2025-06-18 HTTP/1.1" 200 77
+"OPTIONS /customersite/addresses/ HTTP/1.1" 200 0
+"OPTIONS /customersite/addresses/ HTTP/1.1" 200 0
+"GET /customersite/addresses/ HTTP/1.1" 200 482
+"GET /customersite/addresses/ HTTP/1.1" 200 482
+"OPTIONS /customersite/booking-summary/ HTTP/1.1" 200 0
+"OPTIONS /customersite/booking-summary/ HTTP/1.1" 200 0
+"POST /customersite/booking-summary/ HTTP/1.1" 200 308
+"POST /customersite/booking-summary/ HTTP/1.1" 200 308
+"POST /customersite/booking-summary/ HTTP/1.1" 200 308
+"POST /customersite/booking-summary/ HTTP/1.1" 200 308
+"OPTIONS /customersite/create-booking/ HTTP/1.1" 200 0
+"POST /customersite/create-booking/ HTTP/1.1" 201 71
+"OPTIONS /customersite/booking-success/ HTTP/1.1" 200 0
+"OPTIONS /customersite/booking-success/ HTTP/1.1" 200 0
+"GET /customersite/booking-success/ HTTP/1.1" 200 245
+"GET /customersite/booking-success/ HTTP/1.1" 200 245
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"OPTIONS /profile-service/user-profile/ HTTP/1.1" 200 0
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /profile-service/user-profile/ HTTP/1.1" 200 266
+"GET /media/profile_images/hindu-iphone-jz2sx0ggo0723few.jpg HTTP/1.1" 304 0
+"GET /customersite/booking-success/ HTTP/1.1" 200 245
+"GET /customersite/booking-success/ HTTP/1.1" 200 245
+"GET /customersite/booking-success/ HTTP/1.1" 200 245
+"GET /customersite/booking-success/ HTTP/1.1" 200 245
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\practiceProject\backend\barbersite\urls.py changed, reloading.
+Watching for file changes with StatReloader

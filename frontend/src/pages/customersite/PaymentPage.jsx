@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import apiClient from '../../slices/api/apiIntercepters';
 import { ConfirmationModal } from '../../components/admincompo/serviceCom/ConfirmationModal';
+import Navbar from '../../components/basics/Navbar';
 
 function PaymentPage() {
   const [method, setMethod] = useState("COD");
@@ -75,8 +76,6 @@ function PaymentPage() {
       });
 
       console.log('Booking success response:', response.data);
-      
-      // Success - redirect to success page
       navigate('/booking-success');
       
     } catch (error) {
@@ -115,29 +114,13 @@ function PaymentPage() {
     }
   };
 
-  // Check if we have all required data
   const hasAllData = bookingData.selectedServiceId && bookingData.selectedBarberId && 
                     bookingData.selectedSlotId && bookingData.selectedAddressId;
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+      <Navbar/>
       <h2 className="text-2xl font-bold mb-6 text-center">Choose Payment Method</h2>
-      
-      {/* Debug section - remove in production */}
-      <div className="mb-4 p-3 bg-gray-100 rounded text-xs">
-        <button onClick={debugData} className="text-blue-600 underline mb-2 block">
-          Debug Data
-        </button>
-        <div className="space-y-1">
-          <p>Service: {bookingData.selectedServiceId || 'Not selected'}</p>
-          <p>Barber: {bookingData.selectedBarberId || 'Not selected'}</p>
-          <p>Slot: {bookingData.selectedSlotId || 'Not selected'}</p>
-          <p>Address: {bookingData.selectedAddressId || 'Not selected'}</p>
-          <p className={hasAllData ? 'text-green-600' : 'text-red-600'}>
-            Status: {hasAllData ? 'Ready' : 'Missing data'}
-          </p>
-        </div>
-      </div>
       
       <div className="mb-6">
         <label className="block text-sm font-medium text-gray-700 mb-2">

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import apiClient from '../../slices/api/apiIntercepters';
+import Navbar from '../../components/basics/Navbar';
 
 function SuccessPage() {
   const [data, setData] = useState(null);
@@ -31,7 +32,7 @@ function SuccessPage() {
     const diff = bookingTime - now;
 
     if (diff <= 0) {
-      setTimeLeft("Your service time has passed or is currently active.");
+      setTimeLeft("Your service currently active.");
       return;
     }
 
@@ -68,7 +69,9 @@ function SuccessPage() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
+    <>
+    <Navbar/>
+      <div className="max-w-2xl mx-auto p-6 bg-white rounded-lg shadow-md">
       <div className="text-center mb-8">
         <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,13 +125,13 @@ function SuccessPage() {
             <h3 className="font-semibold text-blue-800 mb-2">Important Notes</h3>
             <ul className="text-sm text-blue-700 space-y-1">
               <li>• Please be available at the scheduled time</li>
-              <li>• Payment will be collected on delivery (COD)</li>
-              <li>• Contact support if you need to reschedule</li>
             </ul>
           </div>
         </div>
       )}
     </div>
+    </>
+
   );
 }
 

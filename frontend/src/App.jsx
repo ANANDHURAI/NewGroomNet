@@ -36,6 +36,7 @@ import ConfirmBooking from './pages/customersite/ConfirmBooking'
 import ProtectedRoute from './components/protectRoute/ProtectedRoute'
 import PaymentPage from './pages/customersite/PaymentPage'
 import SuccessPage from './pages/customersite/SussessPage'
+import Appointments from './pages/barbersite/Appointments'
 
 function App() {
   return (
@@ -251,6 +252,14 @@ function App() {
               element={
                 <ProtectedRoute allowedUserTypes={['barber']} requireVerification={true}>
                   <BarberSlotBooking />
+                </ProtectedRoute>
+              } 
+            />
+            <Route 
+              path="/barber-appointments" 
+              element={
+                <ProtectedRoute allowedUserTypes={['barber']} requireVerification={true}>
+                  <Appointments />
                 </ProtectedRoute>
               } 
             />

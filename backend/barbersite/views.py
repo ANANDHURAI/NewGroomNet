@@ -18,7 +18,7 @@ from authservice.models import User
 from django.db import transaction
 from django.db.models import ProtectedError
 import logging
-
+from customersite.models import Booking
 logger = logging.getLogger(__name__)
 
 
@@ -257,3 +257,23 @@ class BarberSlotViewSet(viewsets.ViewSet):
         
         serializer = BarberSlotSerializer(slots, many=True)
         return Response(serializer.data)
+
+
+class BarberAppointments(APIView):
+    def get(self, request):
+        appointments = Booking.objects.all().select_related('customer', 'slot', 'address')
+
+        data = []
+        for booking in appointments:
+            data.append({
+                'customer_name': booking.customer.name,
+                'time': f"{booking.slot.start_time} - {booking.slot.end_time}",
+                'date': booking.slot.date.strftime('%Y-%m-%d'),
+                'address': f"{booking.address.street}, {booking.address.city}, {booking.address.pincode}",
+                'price': float(booking.total_amount),
+                'status': booking.status,
+                'service': booking.service.name
+            })
+
+        return Response(data)
+        
