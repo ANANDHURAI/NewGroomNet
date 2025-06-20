@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import apiClient from '../../slices/api/apiIntercepters';
 import Navbar from '../../components/basics/Navbar';
+import { useNavigate } from 'react-router-dom';
 
 function SuccessPage() {
   const [data, setData] = useState(null);
   const [timeLeft, setTimeLeft] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     fetchBookingDetails();
@@ -128,7 +131,14 @@ function SuccessPage() {
             </ul>
           </div>
         </div>
+        
       )}
+      <button
+        onClick={() => navigate('/home')}
+        className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+      >
+        Go Home
+    </button>
     </div>
     </>
 

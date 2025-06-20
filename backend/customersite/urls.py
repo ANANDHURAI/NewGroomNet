@@ -22,11 +22,8 @@ urlpatterns = [
     path('barbers/', BarberListView.as_view(), name='barbers'),
     path('available-dates/', available_dates, name='available-dates'),
     path('available-slots/', AvailableSlotListView.as_view(), name='available-slots'),
-
     path('addresses/', AddressListCreateView.as_view(), name='addresses'),
-    
     path('booking-summary/', booking_summary, name='booking-summary'),
     path('create-booking/', BookingCreateView.as_view(), name='create-booking'),
     path('booking-success/', BookingSuccessView.as_view()),
 ]
-

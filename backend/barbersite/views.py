@@ -10,16 +10,15 @@ from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from .models import BarberService
 from adminsite.models import CategoryModel, ServiceModel
-from datetime import datetime, timedelta
-from calendar import day_name
-from .models import BarberSlot, BarberSlotBooking
-from .serializers import BarberSlotSerializer, BarberSlotBookingSerializer
-from authservice.models import User
+from .models import BarberSlot
+from .serializers import BarberSlotSerializer
 from django.db import transaction
 from django.db.models import ProtectedError
 import logging
 from customersite.models import Booking
 logger = logging.getLogger(__name__)
+from rest_framework import status, generics
+
 
 
 class BarberDashboard(APIView): 
@@ -261,7 +260,7 @@ class BarberSlotViewSet(viewsets.ViewSet):
 
 class BarberAppointments(APIView):
     def get(self, request):
-        appointments = Booking.objects.all().select_related('customer', 'slot', 'address')
+        appointments = Booking.objects.all().select_related('customer', 'slot', 'address').order_by('-id')
 
         data = []
         for booking in appointments:
@@ -272,8 +271,8 @@ class BarberAppointments(APIView):
                 'address': f"{booking.address.street}, {booking.address.city}, {booking.address.pincode}",
                 'price': float(booking.total_amount),
                 'status': booking.status,
+                'phone':booking.customer.phone,
                 'service': booking.service.name
             })
 
         return Response(data)
-        

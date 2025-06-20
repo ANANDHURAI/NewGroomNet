@@ -22,8 +22,20 @@ from profileservice.models import Address
 from profileservice.serializers import AddressSerializer
 from authservice.models import User
 from.models import Booking , PaymentModel
-
+from rest_framework import status, generics
+from rest_framework.views import APIView
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework.exceptions import ValidationError, NotFound
+from .models import Booking, PaymentModel
+import razorpay
+import hmac
+import hashlib
+import razorpay
+from django.conf import settings
 logger = logging.getLogger(__name__)
+from decimal import Decimal
+
 
 class Home(APIView):
     permission_classes = [IsAuthenticated]
@@ -237,11 +249,9 @@ class BookingCreateView(generics.CreateAPIView):
     serializer_class = BookingCreateSerializer
 
     def create(self, request, *args, **kwargs):
-        # Log the incoming request data for debugging
         logger.info(f"Booking request data: {request.data}")
         logger.info(f"User: {request.user}")
         
-        # Check if user is authenticated
         if not request.user.is_authenticated:
             return Response(
                 {"detail": "Authentication required"}, 
@@ -249,8 +259,7 @@ class BookingCreateView(generics.CreateAPIView):
             )
         
         serializer = self.get_serializer(data=request.data)
-        
-        # Custom validation with detailed error messages
+
         if not serializer.is_valid():
             logger.error(f"Serializer errors: {serializer.errors}")
             return Response(
@@ -261,7 +270,6 @@ class BookingCreateView(generics.CreateAPIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
         
-        # Check payment method before creating booking
         payment_method = request.data.get('payment_method')
         if payment_method != 'COD':
             return Response(
@@ -270,7 +278,6 @@ class BookingCreateView(generics.CreateAPIView):
             )
         
         try:
-            # Create booking only for COD
             booking = serializer.save()
             logger.info(f"Booking created successfully: {booking.id}")
             
@@ -310,5 +317,3 @@ class BookingSuccessView(APIView):
             "booking_status": booking.status,
         }
         return Response(data)
-        
-

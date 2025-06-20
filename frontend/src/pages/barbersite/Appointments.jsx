@@ -36,6 +36,7 @@ function Appointments() {
                 <p><span className="font-semibold text-gray-700">Service:</span> {item.service}</p>
                 <p><span className="font-semibold text-gray-700">Slot:</span> {item.date} | {item.time}</p>
                 <p><span className="font-semibold text-gray-700">Address:</span> {item.address}</p>
+                <p><span className="font-semibold text-gray-700">Phone:</span> {item.phone}</p>
                 <p><span className="font-semibold text-gray-700">Price:</span> ₹{item.price}</p>
               </div>
             ))}

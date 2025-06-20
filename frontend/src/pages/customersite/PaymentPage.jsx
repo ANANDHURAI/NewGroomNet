@@ -18,7 +18,6 @@ function PaymentPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Get booking data from URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     const serviceId = urlParams.get('service_id');
     const barberId = urlParams.get('barber_id');
@@ -40,25 +39,11 @@ function PaymentPage() {
     });
   }, []);
 
-  // Debug function to log all data
-  const debugData = () => {
-    console.log('PaymentPage Booking Data:', bookingData);
-  };
 
   const handlePaymentMethod = async () => {
     setLoading(true);
     setError(null);
 
-    // Debug logging
-    console.log('Attempting to create booking with data:', {
-      service: bookingData.selectedServiceId,
-      barber: bookingData.selectedBarberId,
-      slot: bookingData.selectedSlotId,
-      address: bookingData.selectedAddressId,
-      payment_method: method
-    });
-
-    // Validate all required fields
     if (!bookingData.selectedServiceId || !bookingData.selectedBarberId || !bookingData.selectedSlotId || !bookingData.selectedAddressId) {
       setError("Missing required booking information. Please go back and complete all steps.");
       setLoading(false);
@@ -90,7 +75,7 @@ function PaymentPage() {
         const errorData = error.response.data;
         
         if (errorData.errors) {
-          // Handle validation errors
+
           const errorMessages = [];
           for (const [field, messages] of Object.entries(errorData.errors)) {
             errorMessages.push(`${field}: ${messages.join(', ')}`);
@@ -123,17 +108,13 @@ function PaymentPage() {
       <h2 className="text-2xl font-bold mb-6 text-center">Choose Payment Method</h2>
       
       <div className="mb-6">
-        <label className="block text-sm font-medium text-gray-700 mb-2">
-          Payment Method
-        </label>
         <select 
           value={method} 
           onChange={(e) => setMethod(e.target.value)}
           className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           disabled={loading}
         >
-          <option value="COD">Cash on Delivery (COD)</option>
-          <option value="UPI" disabled>UPI (Coming Soon)</option>
+          <option value="COD">COD</option>
         </select>
       </div>
 
@@ -148,18 +129,6 @@ function PaymentPage() {
       >
         {loading ? 'Processing...' : 'Confirm Booking'}
       </button>
-
-      {!hasAllData && (
-        <div className="mt-4 p-3 bg-yellow-100 border border-yellow-400 text-yellow-700 rounded">
-          <strong>Warning:</strong> Missing booking information. Please go back and complete all steps.
-        </div>
-      )}
-
-      {error && (
-        <div className="mt-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
-          <strong>Error:</strong> {error}
-        </div>
-      )}
 
       <ConfirmationModal
         isOpen={confirming}

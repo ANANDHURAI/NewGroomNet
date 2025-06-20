@@ -58,7 +58,7 @@ function MyServices() {
               </div>
               <div className="bg-white rounded-lg shadow p-6">
                 <h3 className="text-lg font-semibold text-gray-700 mb-2">Total Value</h3>
-                <p className="text-3xl font-bold text-green-600">${stats.totalPrice.toFixed(2)}</p>
+                <p className="text-3xl font-bold text-green-600">₹{stats.totalPrice.toFixed(2)}</p>
               </div>
               <div className="bg-white rounded-lg shadow p-6">
                 <h3 className="text-lg font-semibold text-gray-700 mb-2">Total Duration</h3>

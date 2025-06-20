@@ -187,3 +187,6 @@ LOGGING = {
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+RAZORPAY_KEY_ID = 'rzp_test_DHtuF0v3qoXhz0'
+RAZORPAY_KEY_SECRET = 'KFTPe4I2aK1XieuWOzF02PBc'

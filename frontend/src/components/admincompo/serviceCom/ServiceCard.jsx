@@ -25,7 +25,7 @@ export const ServiceCard = ({ service, onEdit, onToggleBlock, onDelete }) => (
                 Category: {service.category?.name || 'N/A'}
             </p>
             <p className="text-sm text-gray-600 mb-2">
-                Price: ${service.price}
+                Price: ₹{service.price}
             </p>
             <p className="text-sm text-gray-600 mb-3">
                 Duration: {service.duration_minutes} mins

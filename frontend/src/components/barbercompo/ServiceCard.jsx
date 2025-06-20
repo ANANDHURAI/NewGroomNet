@@ -55,7 +55,7 @@ const ServiceCard = ({ service, showAddButton = false, showRemoveButton = false,
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-800 mb-2">{service.name}</h3>
         <div className="flex justify-between items-center mb-4">
-          <span className="text-xl font-bold text-green-600">${service.price}</span>
+          <span className="text-xl font-bold text-green-600">₹{service.price}</span>
           <span className="text-gray-500 text-sm">{service.duration_minutes} min</span>
         </div>
 
