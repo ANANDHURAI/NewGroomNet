@@ -37,6 +37,9 @@ import ProtectedRoute from './components/protectRoute/ProtectedRoute'
 import PaymentPage from './pages/customersite/PaymentPage'
 import SuccessPage from './pages/customersite/SussessPage'
 import Appointments from './pages/barbersite/Appointments'
+import CustomerChatPage from './pages/customersite/CustomerChatPage'
+import BarberChatPage from './pages/barbersite/BarberChatPage'
+import CancelledPage from './pages/customersite/CancelledPage'
 
 function App() {
   return (
@@ -263,7 +266,9 @@ function App() {
                 </ProtectedRoute>
               } 
             />
-
+            <Route path="/customer/chat/:id" element={<CustomerChatPage />} />
+            <Route path="/barber/chat/:id" element={<BarberChatPage />} />
+            <Route path="/payment-cancelled" element={<CancelledPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </ServiceProvider>

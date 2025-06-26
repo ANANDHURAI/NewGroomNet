@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import apiClient from '../../slices/api/apiIntercepters';
 import { ConfirmationModal } from '../../components/admincompo/serviceCom/ConfirmationModal';
 import Navbar from '../../components/basics/Navbar';
+import { loadStripe } from '@stripe/stripe-js';
 
 function PaymentPage() {
   const [method, setMethod] = useState("COD");
@@ -24,8 +25,6 @@ function PaymentPage() {
     const slotId = urlParams.get('slot_id');
     const addressId = urlParams.get('address_id');
 
-    console.log('URL Parameters:', { serviceId, barberId, slotId, addressId });
-
     if (!serviceId || !barberId || !slotId || !addressId) {
       setError('Missing booking information. Please start from the beginning.');
       return;
@@ -39,7 +38,6 @@ function PaymentPage() {
     });
   }, []);
 
-
   const handlePaymentMethod = async () => {
     setLoading(true);
     setError(null);
@@ -52,7 +50,8 @@ function PaymentPage() {
     }
 
     try {
-      const response = await apiClient.post('/customersite/create-booking/', {
+      // 1. Create booking
+      const bookingRes = await apiClient.post('/customersite/create-booking/', {
         service: bookingData.selectedServiceId,
         barber: bookingData.selectedBarberId,
         slot: bookingData.selectedSlotId,
@@ -60,38 +59,31 @@ function PaymentPage() {
         payment_method: method
       });
 
-      console.log('Booking success response:', response.data);
-      navigate('/booking-success');
-      
-    } catch (error) {
-      console.error('Booking error details:', {
-        message: error.message,
-        response: error.response?.data,
-        status: error.response?.status,
-        statusText: error.response?.statusText
-      });
-      
-      if (error.response?.status === 400) {
-        const errorData = error.response.data;
-        
-        if (errorData.errors) {
+      const bookingId = bookingRes.data.booking_id;
 
-          const errorMessages = [];
-          for (const [field, messages] of Object.entries(errorData.errors)) {
-            errorMessages.push(`${field}: ${messages.join(', ')}`);
-          }
-          setError(`Validation errors: ${errorMessages.join('; ')}`);
-        } else if (errorData.detail) {
-          setError(errorData.detail);
-        } else {
-          setError("Invalid request data. Please check all fields.");
-        }
-      } else if (error.response?.status === 401) {
-        setError("Authentication required. Please log in again.");
-      } else if (error.response?.data?.detail) {
+      // 2. If COD, navigate to success page
+      if (method === "COD") {
+        navigate('/booking-success');
+        return;
+      }
+
+      // 3. If Stripe, create checkout session
+      const stripeSessionRes = await apiClient.post('/paymentservice/create-checkout-session/', {
+        booking_id: bookingId
+      });
+
+      const { sessionId, stripe_public_key } = stripeSessionRes.data;
+
+      // 4. Redirect to Stripe Checkout
+      const stripe = await loadStripe(stripe_public_key);
+      await stripe.redirectToCheckout({ sessionId });
+
+    } catch (error) {
+      console.error('Booking error:', error);
+      if (error.response?.data?.detail) {
         setError(error.response.data.detail);
       } else {
-        setError("Failed to create booking. Please try again.");
+        setError("Something went wrong while booking.");
       }
     } finally {
       setLoading(false);
@@ -99,31 +91,32 @@ function PaymentPage() {
     }
   };
 
-  const hasAllData = bookingData.selectedServiceId && bookingData.selectedBarberId && 
-                    bookingData.selectedSlotId && bookingData.selectedAddressId;
+  const hasAllData = bookingData.selectedServiceId && bookingData.selectedBarberId &&
+    bookingData.selectedSlotId && bookingData.selectedAddressId;
 
   return (
     <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
-      <Navbar/>
+      <Navbar />
       <h2 className="text-2xl font-bold mb-6 text-center">Choose Payment Method</h2>
-      
+
       <div className="mb-6">
-        <select 
-          value={method} 
+        <select
+          value={method}
           onChange={(e) => setMethod(e.target.value)}
           className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           disabled={loading}
         >
-          <option value="COD">COD</option>
+          <option value="COD">Cash on Delivery</option>
+          <option value="STRIPE">Pay with Card (Stripe)</option>
         </select>
       </div>
 
-      <button 
+      <button
         onClick={() => setConfirming(true)}
         disabled={loading || !hasAllData}
         className={`w-full py-3 px-4 rounded-md font-semibold ${
           !loading && hasAllData
-            ? 'bg-blue-600 hover:bg-blue-700 text-white' 
+            ? 'bg-blue-600 hover:bg-blue-700 text-white'
             : 'bg-gray-300 text-gray-500 cursor-not-allowed'
         }`}
       >
@@ -141,6 +134,8 @@ function PaymentPage() {
         confirmColor="bg-blue-600 hover:bg-blue-700"
         disabled={loading}
       />
+
+      {error && <p className="text-red-600 mt-4">{error}</p>}
     </div>
   );
 }
