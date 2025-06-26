@@ -29,10 +29,13 @@ class AddressSerializer(serializers.ModelSerializer):
 from rest_framework import serializers
 from .models import Booking, PaymentModel
 
+
 class BookingCreateSerializer(serializers.ModelSerializer):
+    payment_method = serializers.CharField(write_only=True)
+
     class Meta:
         model = Booking
-        fields = ['service', 'barber', 'slot', 'address']
+        fields = ['service', 'barber', 'slot', 'address', 'payment_method']
 
     def validate_address(self, value):
         request = self.context.get('request')
@@ -41,27 +44,33 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         return value
 
     def create(self, validated_data):
-        customer = self.context['request'].user
+        request = self.context['request']
+        customer = request.user
+        payment_method = validated_data.pop('payment_method', 'COD') 
+
         service = validated_data['service']
         total_amount = getattr(service, 'price', 100.00)
 
         booking = Booking.objects.create(
             customer=customer,
             total_amount=total_amount,
-            is_payment_done=False,
+            is_payment_done=(payment_method == 'COD'), 
             **validated_data
         )
 
-        validated_data['slot'].is_booked = True
-        validated_data['slot'].save()
+        slot = validated_data['slot']
+        slot.is_booked = True
+        slot.save()
 
         PaymentModel.objects.create(
             booking=booking,
-            payment_status='FAILED'
+            payment_method=payment_method,
+            payment_status='SUCCESS' if payment_method == 'COD' else 'PENDING',
+            service_amount=total_amount,
+            platform_fee=0
         )
 
         return booking
-
 
 
 

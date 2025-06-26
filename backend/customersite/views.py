@@ -28,10 +28,6 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.exceptions import ValidationError, NotFound
 from .models import Booking, PaymentModel
-import razorpay
-import hmac
-import hashlib
-import razorpay
 from django.conf import settings
 logger = logging.getLogger(__name__)
 from decimal import Decimal
@@ -271,9 +267,10 @@ class BookingCreateView(generics.CreateAPIView):
             )
         
         payment_method = request.data.get('payment_method')
-        if payment_method != 'COD':
+
+        if payment_method not in ['COD', 'STRIPE']:
             return Response(
-                {"detail": "Currently only COD payments are accepted"}, 
+                {"detail": "Unsupported payment method"}, 
                 status=status.HTTP_400_BAD_REQUEST
             )
         
@@ -296,6 +293,8 @@ class BookingCreateView(generics.CreateAPIView):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
+
+
 class BookingSuccessView(APIView):
     permission_classes = [IsAuthenticated]
 
@@ -315,5 +314,7 @@ class BookingSuccessView(APIView):
             "service": booking.service.name,
             "total_amount": str(booking.total_amount),"payment_method": payment.payment_method if payment else "N/A",
             "booking_status": booking.status,
+            "booking_type":booking.booking_type
         }
         return Response(data)
+    
