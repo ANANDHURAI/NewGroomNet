@@ -21,17 +21,17 @@ from django.utils import timezone
 from profileservice.models import Address
 from profileservice.serializers import AddressSerializer
 from authservice.models import User
-from.models import Booking , PaymentModel
+from.models import Booking 
 from rest_framework import status, generics
 from rest_framework.views import APIView
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-from rest_framework.exceptions import ValidationError, NotFound
-from .models import Booking, PaymentModel
 from django.conf import settings
 logger = logging.getLogger(__name__)
-from decimal import Decimal
-
+from barbersite.tasks import notify_barber_before_appointment
+from datetime import datetime, timedelta
+from django.utils import timezone
+from django.utils.timezone import make_aware
 
 class Home(APIView):
     permission_classes = [IsAuthenticated]
@@ -240,6 +240,8 @@ def booking_summary(request):
         return Response({"error": str(e)}, status=400)
     
 
+
+
 class BookingCreateView(generics.CreateAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = BookingCreateSerializer
@@ -247,14 +249,14 @@ class BookingCreateView(generics.CreateAPIView):
     def create(self, request, *args, **kwargs):
         logger.info(f"Booking request data: {request.data}")
         logger.info(f"User: {request.user}")
-        
+
         if not request.user.is_authenticated:
             return Response(
                 {"detail": "Authentication required"}, 
                 status=status.HTTP_401_UNAUTHORIZED
             )
-        
-        serializer = self.get_serializer(data=request.data)
+
+        serializer = self.get_serializer(data=request.data, context={'request': request})
 
         if not serializer.is_valid():
             logger.error(f"Serializer errors: {serializer.errors}")
@@ -265,7 +267,7 @@ class BookingCreateView(generics.CreateAPIView):
                 }, 
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         payment_method = request.data.get('payment_method')
 
         if payment_method not in ['COD', 'STRIPE']:
@@ -273,25 +275,44 @@ class BookingCreateView(generics.CreateAPIView):
                 {"detail": "Unsupported payment method"}, 
                 status=status.HTTP_400_BAD_REQUEST
             )
-        
+
         try:
             booking = serializer.save()
             logger.info(f"Booking created successfully: {booking.id}")
-            
+
+            slot_date = booking.slot.date
+            slot_time = booking.slot.start_time
+            slot_datetime = make_aware(datetime.combine(slot_date, slot_time)) 
+
+            reminder_time = slot_datetime - timedelta(minutes=15)
+            delay_seconds = (reminder_time - timezone.now()).total_seconds()
+
+            if delay_seconds > 0:
+                notify_barber_before_appointment.apply_async(
+                    args=[booking.id],
+                    countdown=delay_seconds
+                )
+                logger.info(f"Reminder task scheduled for {reminder_time}")
+            else:
+                logger.warning("Reminder time already passed; skipping scheduling.")
+
             return Response(
                 {
-                    "detail": "Booking created successfully", 
+                    "detail": "Booking created successfully",
                     "booking_id": booking.id,
                     "success": True
-                }, 
+                },
                 status=status.HTTP_201_CREATED
             )
+
         except Exception as e:
             logger.error(f"Error creating booking: {str(e)}")
             return Response(
-                {"detail": f"Error creating booking: {str(e)}"}, 
+                {"detail": f"Error creating booking: {str(e)}"},
                 status=status.HTTP_400_BAD_REQUEST
             )
+
+
 
 
 
@@ -318,3 +339,98 @@ class BookingSuccessView(APIView):
         }
         return Response(data)
     
+class BookingHistoryView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        bookings = Booking.objects.filter(customer=request.user).order_by('-created_at')
+        data = []
+        for b in bookings:
+            data.append({
+                "id": b.id,
+                "service": b.service.name,
+                "barbername": b.barber.name,
+                "slottime": f"{b.slot.start_time} - {b.slot.end_time}",
+                "date": str(b.slot.date),
+                "booking_status": b.status
+            })
+        return Response(data)
+    
+class BookingDetailView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, pk):
+        try:
+            booking = Booking.objects.get(pk=pk, customer=request.user)
+        except Booking.DoesNotExist:
+            return Response({"detail": "Booking not found"}, status=status.HTTP_404_NOT_FOUND)
+
+        payment = getattr(booking, 'payment', None)
+        data = {
+            "orderid": booking.id,
+            "name": booking.customer.name,
+            "barbername": booking.barber.name,
+            "slottime": f"{booking.slot.start_time} - {booking.slot.end_time}",
+            "start_time": str(booking.slot.start_time),
+            "end_time": str(booking.slot.end_time),
+            "date": str(booking.slot.date),
+            "service": booking.service.name,
+            "total_amount": str(booking.total_amount),
+            "payment_method": payment.payment_method if payment else "N/A",
+            "booking_status": booking.status,
+            "booking_type": booking.booking_type,
+        }
+        return Response(data)
+    
+import requests
+class TravelStatusAPIView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, booking_id):
+        try:
+            booking = Booking.objects.get(id=booking_id, customer=request.user)
+            barber_profile = UserProfile.objects.filter(user=booking.barber).first()
+            customer_profile = UserProfile.objects.filter(user=request.user).first()
+
+            if not barber_profile or not customer_profile:
+                return Response({'detail': 'Location not available'}, status=400)
+
+            origin = f"{barber_profile.latitude},{barber_profile.longitude}"
+            destination = f"{customer_profile.latitude},{customer_profile.longitude}"
+            api_key = settings.GOOGLE_MAPS_API_KEY
+
+            url = (
+                f"https://maps.googleapis.com/maps/api/directions/json"
+                f"?origin={origin}&destination={destination}&key={api_key}"
+            )
+            response = requests.get(url)
+            data = response.json()
+
+            if data['status'] != 'OK':
+                return Response({'detail': 'Google API error'}, status=500)
+
+            leg = data['routes'][0]['legs'][0]
+            distance = leg['distance']['text']
+            duration = leg['duration']['text']
+            duration_seconds = leg['duration']['value']
+
+
+            if duration_seconds > 900:
+                travel_status = "Barber started"
+            elif 900 >= duration_seconds > 300:
+                travel_status = "On the way"
+            elif 300 >= duration_seconds > 60:
+                travel_status = "Almost near"
+            else:
+                travel_status = "Arrived"
+
+            return Response({
+                'eta': duration,
+                'distance': distance,
+                'travel_status': travel_status
+            })
+
+        except Booking.DoesNotExist:
+            return Response({'detail': 'Invalid booking ID'}, status=404)
+        except Exception as e:
+            return Response({'detail': str(e)}, status=500)

@@ -2,6 +2,8 @@ from django.db import models
 from authservice.models import User
 from adminsite.models import CategoryModel , ServiceModel
 
+
+
 class BarberService(models.Model):
     barber = models.ForeignKey(User, on_delete=models.CASCADE, related_name='barber_services')
     service = models.ForeignKey(ServiceModel, on_delete=models.CASCADE)
@@ -28,10 +30,31 @@ class BarberSlotBooking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     slot = models.ForeignKey(BarberSlot, on_delete=models.CASCADE)
     booked_at = models.DateTimeField(auto_now_add=True)
+    TRAVEL_STATUS_CHOICES = [
+    ('NOT_STARTED', 'Not Started'),
+    ('STARTED', 'Started'),
+    ('ON_THE_WAY', 'On the Way'),
+    ('ALMOST_NEAR', 'Almost Near'),
+    ('ARRIVED', 'Arrived'),
+    ]
+
+    travel_status = models.CharField(max_length=20, choices=TRAVEL_STATUS_CHOICES, default='NOT_STARTED')
 
     def __str__(self):
         return f"{self.user.name} booked {self.slot}"
     
+
+    
+
+class BarberWallet(models.Model):
+    barber = models.OneToOneField(User, on_delete=models.CASCADE, limit_choices_to={'user_type': 'barber'})
+    balance = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"{self.barber.name} Wallet - ₹{self.balance}"
+
+
 
 class Portfolio(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='portfolio')

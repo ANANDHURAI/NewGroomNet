@@ -62,7 +62,8 @@ class PaymentModel(models.Model):
     transaction_id = models.CharField(max_length=100, null=True, blank=True)
     service_amount = models.DecimalField(max_digits=10, decimal_places=2, default=0)
     platform_fee = models.DecimalField(max_digits=10, decimal_places=2, default=0)
-    
+    is_released_to_barber = models.BooleanField(default=False)
+    released_at = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

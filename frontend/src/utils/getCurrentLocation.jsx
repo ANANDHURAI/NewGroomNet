@@ -1,8 +1,7 @@
 export const getCurrentLocation = () => {
   return new Promise((resolve, reject) => {
     if (!navigator.geolocation) {
-      reject('Geolocation is not supported by your browser');
-      return;
+      return reject('Geolocation is not supported by your browser');
     }
 
     navigator.geolocation.getCurrentPosition(
@@ -12,18 +11,17 @@ export const getCurrentLocation = () => {
           longitude: position.coords.longitude,
         });
       },
-      (err) => {
-        console.warn('Geolocation failed:', err);
-        if (err.code === err.POSITION_UNAVAILABLE) {
-
-          console.warn('Falling back to Bengaluru location');
-
+      (error) => {
+        console.warn('Geolocation error:', error);
+        // Only fallback to Chennai if location cannot be determined
+        if (error.code === error.PERMISSION_DENIED || error.code === error.POSITION_UNAVAILABLE) {
           resolve({
-            latitude: 13.0827,   
-            longitude: 80.2707, 
+            latitude: 13.0827,
+            longitude: 80.2707,
+            fallback: true,
           });
         } else {
-          reject('Location error: ' + err.message);
+          reject('Unable to fetch location. Please try again.');
         }
       },
       {

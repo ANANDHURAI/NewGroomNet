@@ -23,3 +23,10 @@ class ServiceModel(models.Model):
 
     def __str__(self):
         return f"{self.name} → {self.category.name}"
+
+class AdminWallet(models.Model):
+    total_earnings = models.DecimalField(max_digits=10, decimal_places=2, default=0)
+    last_updated = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Admin Wallet - ₹{self.total_earnings}"

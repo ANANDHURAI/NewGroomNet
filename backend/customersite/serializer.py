@@ -4,6 +4,7 @@ from .models import Booking , PaymentModel
 from authservice.models import User
 from barbersite.models import BarberSlot
 from profileservice.models import Address
+from .utils import get_lat_lng_from_address
 
 class BarberSerializer(serializers.ModelSerializer):
     class Meta:
@@ -22,8 +23,24 @@ class AddressSerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'mobile', 'building', 'street', 'city', 'district', 'state', 'pincode', 'is_default']
         
     def create(self, validated_data):
-        validated_data['user'] = self.context['request'].user
-        return super().create(validated_data)
+        user = self.context['request'].user
+        validated_data['user'] = user
+        address = super().create(validated_data)
+
+        # Construct full address for geocoding
+        full_address = f"{address.building}, {address.street}, {address.city}, {address.district}, {address.state}, {address.pincode}"
+        lat, lng = get_lat_lng_from_address(full_address)
+        print("latitude and langitut",lat,lng)
+
+        if lat and lng:
+            profile, _ = user.profile.get_or_create(user=user)
+            profile.latitude = lat
+            profile.longitude = lng
+            profile.address = address
+            profile.save()
+        
+        return address
+
     
 
 from rest_framework import serializers
@@ -43,6 +60,11 @@ class BookingCreateSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Address does not belong to the current user")
         return value
 
+    def validate_slot(self, slot):
+        if slot.is_booked:
+            raise serializers.ValidationError("This slot is already booked.")
+        return slot
+
     def create(self, validated_data):
         request = self.context['request']
         customer = request.user
@@ -51,17 +73,21 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         service = validated_data['service']
         total_amount = getattr(service, 'price', 100.00)
 
-        booking = Booking.objects.create(
-            customer=customer,
-            total_amount=total_amount,
-            is_payment_done=(payment_method == 'COD'), 
-            **validated_data
-        )
-
         slot = validated_data['slot']
+
+        # Mark slot as booked
         slot.is_booked = True
         slot.save()
 
+        # Create the booking
+        booking = Booking.objects.create(
+            customer=customer,
+            total_amount=total_amount,
+            is_payment_done=(payment_method == 'COD'),
+            **validated_data
+        )
+
+        # Create payment record
         PaymentModel.objects.create(
             booking=booking,
             payment_method=payment_method,
@@ -71,7 +97,6 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         )
 
         return booking
-
 
 
 class BookingSummarySerializer(serializers.ModelSerializer):

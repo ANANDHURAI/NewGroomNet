@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import apiClient from '../../slices/api/apiIntercepters';
 import ProfileNavbar from '../../components/profilecompo/ProfileNavbar';
+import CusSideNavBar from '../../components/customercompo/CusSideNavBar';
 import { ProfileDisplay } from '../../components/profilecompo/ProfileDisplay';
 import { ProfileField } from '../../components/profilecompo/ProfileField';
 import { ProfileInput } from '../../components/profilecompo/ProfileInput';
@@ -39,16 +40,12 @@ function ProfilePage() {
     try {
       if (uploadedImage instanceof File) {
         const formData = new FormData();
-
         if (data.date_of_birth) formData.append('date_of_birth', data.date_of_birth);
         if (data.gender) formData.append('gender', data.gender);
         if (data.bio) formData.append('bio', data.bio);
         formData.append('profileimage', uploadedImage);
 
-        const response = await apiClient.put('/profile-service/user-profile/', formData, {
-          headers: {}
-        });
-
+        const response = await apiClient.put('/profile-service/user-profile/', formData);
         if (data.profileimage && data.profileimage.startsWith('blob:')) {
           URL.revokeObjectURL(data.profileimage);
         }
@@ -68,13 +65,12 @@ function ProfilePage() {
         setData(response.data);
         setOriginalData(response.data);
       }
-      
+
       setUploadedImage(null);
       setIsEdit(false);
       setError(null);
     } catch (error) {
       console.error('Profile update error:', error);
-      console.error('Error details:', error.response?.data);
       setError(error.response?.data?.error || error.response?.data?.detail || 'Failed to update profile');
     }
   };
@@ -107,11 +103,12 @@ function ProfilePage() {
     );
   }
 
+  const hasSidebar = data.usertype?.toLowerCase() === 'customer';
+
   const ProfileContent = () => (
-    <div className={`${data.usertype === 'admin' || data.usertype === 'barber' ? 'ml-64' : ''} min-h-screen bg-gray-50`}>
+    <div className={`${hasSidebar ? 'ml-64' : ''} min-h-screen bg-gray-50`}>
       <div className="max-w-2xl mx-auto p-6">
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
-      
           <div className="bg-gradient-to-r from-blue-500 to-purple-600 px-6 py-8 text-white">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-4">
@@ -146,7 +143,6 @@ function ProfilePage() {
             </div>
           </div>
 
-      
           <div className="p-6 space-y-6">
             {error && (
               <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
@@ -232,9 +228,13 @@ function ProfilePage() {
   );
 
   return (
-    <div className="flex">
+    <div className="flex flex-col">
       <ProfileNavbar userType={data.usertype} />
-      <ProfileContent />
+
+      <div className="flex">
+        {hasSidebar && <CusSideNavBar />}
+        <ProfileContent />
+      </div>
     </div>
   );
 }

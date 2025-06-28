@@ -17,7 +17,7 @@ from django.db.models import ProtectedError
 import logging
 from customersite.models import Booking
 logger = logging.getLogger(__name__)
-from rest_framework import status, generics
+from rest_framework import status
 
 
 
@@ -265,13 +265,14 @@ class BarberAppointments(APIView):
         data = []
         for booking in appointments:
             data.append({
+                'id': booking.id, 
                 'customer_name': booking.customer.name,
                 'time': f"{booking.slot.start_time} - {booking.slot.end_time}",
                 'date': booking.slot.date.strftime('%Y-%m-%d'),
                 'address': f"{booking.address.street}, {booking.address.city}, {booking.address.pincode}",
                 'price': float(booking.total_amount),
                 'status': booking.status,
-                'phone':booking.customer.phone,
+                'phone': booking.customer.phone,
                 'service': booking.service.name
             })
 

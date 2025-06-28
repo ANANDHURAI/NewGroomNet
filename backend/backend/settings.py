@@ -20,21 +20,28 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+
+    'daphne',
+    
     'django.contrib.staticfiles',
+
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt.token_blacklist',
+
     'authservice',
     'adminsite',
     'profileservice',
     'barber_reg',
     'barbersite',
     'customersite',
+
     'channels',
     'channels_redis',
     'chat',
     'paymentservice',
 ]
+
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -210,3 +217,7 @@ CHANNEL_LAYERS = {
 load_dotenv()
 
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0' 
+CELERY_ACCEPT_CONTENT = ['json']
+CELERY_TASK_SERIALIZER = 'json'
