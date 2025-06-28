@@ -50,7 +50,6 @@ function PaymentPage() {
     }
 
     try {
-      // 1. Create booking
       const bookingRes = await apiClient.post('/customersite/create-booking/', {
         service: bookingData.selectedServiceId,
         barber: bookingData.selectedBarberId,
@@ -61,20 +60,17 @@ function PaymentPage() {
 
       const bookingId = bookingRes.data.booking_id;
 
-      // 2. If COD, navigate to success page
       if (method === "COD") {
         navigate('/booking-success');
         return;
       }
 
-      // 3. If Stripe, create checkout session
       const stripeSessionRes = await apiClient.post('/paymentservice/create-checkout-session/', {
         booking_id: bookingId
       });
 
       const { sessionId, stripe_public_key } = stripeSessionRes.data;
 
-      // 4. Redirect to Stripe Checkout
       const stripe = await loadStripe(stripe_public_key);
       await stripe.redirectToCheckout({ sessionId });
 

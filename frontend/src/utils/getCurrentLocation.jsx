@@ -13,7 +13,6 @@ export const getCurrentLocation = () => {
       },
       (error) => {
         console.warn('Geolocation error:', error);
-        // Only fallback to Chennai if location cannot be determined
         if (error.code === error.PERMISSION_DENIED || error.code === error.POSITION_UNAVAILABLE) {
           resolve({
             latitude: 13.0827,

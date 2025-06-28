@@ -35,11 +35,11 @@ INSTALLED_APPS = [
     'barber_reg',
     'barbersite',
     'customersite',
-
     'channels',
     'channels_redis',
     'chat',
     'paymentservice',
+    'travel_tracking',
 ]
 
 

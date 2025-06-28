@@ -13,5 +13,6 @@ urlpatterns = [
     path('customersite/', include('customersite.urls')),
     path('chat/', include('chat.urls')),
     path('paymentservice/', include('paymentservice.urls')),
+    path('travel-tracking/', include('travel_tracking.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

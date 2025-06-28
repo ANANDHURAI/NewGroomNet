@@ -91,7 +91,6 @@ const BarberChatPage = () => {
           return;
         }
 
-        // Check booking status - Adjust endpoint based on your backend
         try {
           const bookingStatusResponse = await apiClient.get(`/chat/booking/${id}/status/`);
           const bookingStatusData = bookingStatusResponse.data;
@@ -104,10 +103,9 @@ const BarberChatPage = () => {
           }
         } catch (statusError) {
           console.warn('Could not fetch booking status, proceeding with chat...');
-          setBookingStatus('CONFIRMED'); // Default status
+          setBookingStatus('CONFIRMED');
         }
 
-        // Fetch chat messages
         const messagesResponse = await apiClient.get(`/chat/chat/${id}/messages/`);
         console.log('Messages response:', messagesResponse.data);
         setMessages(messagesResponse.data);
@@ -118,7 +116,6 @@ const BarberChatPage = () => {
           bookingStatus: bookingStatus || 'CONFIRMED'
         });
 
-        // Initialize WebSocket
         initializeWebSocket();
         
         setError(null);
@@ -140,8 +137,6 @@ const BarberChatPage = () => {
     };
 
     fetchData();
-
-    // Cleanup WebSocket on unmount
     return () => {
       if (wsRef.current) {
         wsRef.current.close(1000, 'Component unmounting');
@@ -149,7 +144,6 @@ const BarberChatPage = () => {
     };
   }, [id, customerName, appointmentFromState]);
 
-  // Auto-scroll to bottom when new messages arrive
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
@@ -160,29 +154,26 @@ const BarberChatPage = () => {
     if (!newMessage.trim()) return;
 
     const messageText = newMessage.trim();
-    setNewMessage(''); // Clear input immediately
+    setNewMessage('');
 
     try {
-      // Try WebSocket first
       if (wsRef.current && wsRef.current.readyState === WebSocket.OPEN) {
         wsRef.current.send(JSON.stringify({
           message: messageText
         }));
       } else {
-        // Fallback to HTTP API
+  
         console.log('WebSocket not available, using HTTP API');
         const response = await apiClient.post(`/chat/chat/${id}/send/`, { 
           message: messageText 
         });
         
-        // Add message to UI if not added by WebSocket
         if (response.data) {
           setMessages(prev => [...prev, response.data]);
         }
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      // Restore message to input on error
       setNewMessage(messageText);
       
       if (error.response?.status === 400) {
@@ -250,7 +241,6 @@ const BarberChatPage = () => {
 
   return (
     <div className="h-screen flex flex-col bg-gray-50">
-      {/* Header */}
       <div className="bg-white border-b border-gray-200 px-4 py-3 flex items-center justify-between shadow-sm">
         <div className="flex items-center gap-3">
           <button
@@ -283,7 +273,6 @@ const BarberChatPage = () => {
         </div>
       </div>
 
-      {/* Messages Area */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 ? (
           <div className="text-center py-12">
@@ -339,7 +328,6 @@ const BarberChatPage = () => {
         )}
       </div>
 
-      {/* Message Input */}
       <div className="bg-white border-t border-gray-200 p-4">
         <form onSubmit={handleSendMessage} className="flex gap-2">
           <div className="flex-1 relative">

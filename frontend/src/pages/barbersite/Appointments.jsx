@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import apiClient from '../../slices/api/apiIntercepters';
 import BarberSidebar from '../../components/barbercompo/BarberSidebar';
-import { MessageCircle, MapPin } from 'lucide-react';
+import { MessageCircle, MapPin, Navigation, Square, Clock, AlertCircle } from 'lucide-react';
 
 function Appointments() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [trackingBookingId, setTrackingBookingId] = useState(null);
+  const [locationPermission, setLocationPermission] = useState(false);
+  const [currentLocation, setCurrentLocation] = useState(null);
   const navigate = useNavigate();
 
   const fetchAppointments = async () => {
@@ -25,12 +27,72 @@ function Appointments() {
     }
   };
 
+  const requestLocationPermission = async () => {
+    if ("geolocation" in navigator) {
+      try {
+        const position = await new Promise((resolve, reject) => {
+          navigator.geolocation.getCurrentPosition(resolve, reject, {
+            enableHighAccuracy: true,
+            timeout: 10000,
+            maximumAge: 300000
+          });
+        });
+
+        setCurrentLocation({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude
+        });
+        setLocationPermission(true);
+        return true;
+      } catch (error) {
+        alert('Location permission is required for travel tracking');
+        return false;
+      }
+    } else {
+      alert('Geolocation is not supported by this browser');
+      return false;
+    }
+  };
+
+  const updateLocationPeriodically = () => {
+    if (!trackingBookingId) return;
+
+    const locationInterval = setInterval(() => {
+      navigator.geolocation.getCurrentPosition(
+        async (position) => {
+          try {
+            await apiClient.post('/barbersite/update-location/', {
+              latitude: position.coords.latitude,
+              longitude: position.coords.longitude
+            });
+          } catch (error) {
+            console.error('Failed to update location:', error);
+          }
+        },
+        (error) => console.error('Location update failed:', error),
+        { enableHighAccuracy: true, timeout: 5000, maximumAge: 30000 }
+      );
+    }, 10000);
+
+    return locationInterval;
+  };
+
   useEffect(() => {
     fetchAppointments();
   }, []);
 
+  useEffect(() => {
+    let locationInterval;
+    if (trackingBookingId) {
+      locationInterval = updateLocationPeriodically();
+    }
+
+    return () => {
+      if (locationInterval) clearInterval(locationInterval);
+    };
+  }, [trackingBookingId]);
+
   const handleChatClick = (appointment) => {
-    if (!appointment.id) return alert('Invalid booking ID');
     navigate(`/barber/chat/${appointment.id}`, {
       state: {
         appointmentData: appointment,
@@ -40,20 +102,27 @@ function Appointments() {
   };
 
   const handleViewMap = (appointment) => {
-    if (!appointment.address) return alert("No address for this booking.");
     const query = encodeURIComponent(appointment.address);
     window.open(`https://www.google.com/maps/search/?api=1&query=${query}`, '_blank');
   };
 
   const handleStartTravel = async (appointment) => {
-    const bookingId = appointment.id;
+    const hasPermission = locationPermission || await requestLocationPermission();
+
+    if (!hasPermission || !currentLocation) return;
+
     try {
       await apiClient.post('/barbersite/start-travel/', {
-        booking_id: bookingId
+        booking_id: appointment.id,
+        latitude: currentLocation.latitude,
+        longitude: currentLocation.longitude
       });
-      setTrackingBookingId(bookingId);
+
+      setTrackingBookingId(appointment.id);
+      setData(prev =>
+        prev.map(item => item.id === appointment.id ? { ...item, status: 'TRAVELLING' } : item)
+      );
     } catch (err) {
-      console.error('Start travel failed:', err);
       alert('Failed to start travel');
     }
   };
@@ -61,10 +130,94 @@ function Appointments() {
   const handleStopTravel = async () => {
     try {
       await apiClient.post('/barbersite/stop-travel/');
+      setData(prev =>
+        prev.map(item => item.id === trackingBookingId ? { ...item, status: 'ARRIVED' } : item)
+      );
       setTrackingBookingId(null);
     } catch (err) {
-      console.error('Stop travel failed:', err);
       alert('Failed to stop travel');
+    }
+  };
+
+  const handleMarkInProgress = async (appointment) => {
+    try {
+      await apiClient.patch(`/barbersite/booking/${appointment.id}/`, {
+        status: 'IN_PROGRESS'
+      });
+      setData(prev =>
+        prev.map(item => item.id === appointment.id ? { ...item, status: 'IN_PROGRESS' } : item)
+      );
+    } catch (err) {
+      alert('Failed to update status');
+    }
+  };
+
+  const handleMarkCompleted = async (appointment) => {
+    try {
+      await apiClient.patch(`/barbersite/booking/${appointment.id}/`, {
+        status: 'COMPLETED'
+      });
+      setData(prev =>
+        prev.map(item => item.id === appointment.id ? { ...item, status: 'COMPLETED' } : item)
+      );
+    } catch (err) {
+      alert('Failed to mark as completed');
+    }
+  };
+
+  const getStatusColor = (status) => {
+    switch (status) {
+      case 'COMPLETED': return 'bg-green-100 text-green-800';
+      case 'CONFIRMED': return 'bg-blue-100 text-blue-800';
+      case 'TRAVELLING': return 'bg-orange-100 text-orange-800';
+      case 'ARRIVED': return 'bg-purple-100 text-purple-800';
+      case 'IN_PROGRESS': return 'bg-indigo-100 text-indigo-800';
+      case 'PENDING': return 'bg-yellow-100 text-yellow-800';
+      default: return 'bg-gray-100 text-gray-800';
+    }
+  };
+
+  const getStatusActions = (appointment) => {
+    const { status, id } = appointment;
+
+    switch (status) {
+      case 'CONFIRMED':
+        return trackingBookingId === id ? (
+          <button onClick={handleStopTravel} className="bg-red-600 text-white px-4 py-2 mt-4 rounded">
+            <Square size={16} className="inline mr-2" />
+            Mark as Arrived
+          </button>
+        ) : (
+          <button onClick={() => handleStartTravel(appointment)} className="bg-blue-600 text-white px-4 py-2 mt-4 rounded">
+            <Navigation size={16} className="inline mr-2" />
+            Start Travel
+          </button>
+        );
+
+      case 'TRAVELLING':
+        return (
+          <button onClick={handleStopTravel} className="bg-purple-600 text-white px-4 py-2 mt-4 rounded">
+            <Square size={16} className="inline mr-2" />
+            Mark as Arrived
+          </button>
+        );
+
+      case 'ARRIVED':
+        return (
+          <button onClick={() => handleMarkInProgress(appointment)} className="bg-indigo-600 text-white px-4 py-2 mt-4 rounded">
+            Start Service
+          </button>
+        );
+
+      case 'IN_PROGRESS':
+        return (
+          <button onClick={() => handleMarkCompleted(appointment)} className="bg-green-600 text-white px-4 py-2 mt-4 rounded">
+            Complete Service
+          </button>
+        );
+
+      default:
+        return null;
     }
   };
 
@@ -72,7 +225,7 @@ function Appointments() {
     return (
       <div className="flex min-h-screen bg-gray-100">
         <div className="w-64 bg-[#0f172a] text-white"><BarberSidebar /></div>
-        <div className="flex-1 p-8 flex items-center justify-center">
+        <div className="flex-1 p-8 flex justify-center items-center">
           <p className="text-gray-500">Loading appointments...</p>
         </div>
       </div>
@@ -83,7 +236,8 @@ function Appointments() {
     return (
       <div className="flex min-h-screen bg-gray-100">
         <div className="w-64 bg-[#0f172a] text-white"><BarberSidebar /></div>
-        <div className="flex-1 p-8 flex items-center justify-center">
+        <div className="flex-1 p-8 flex justify-center items-center">
+          <AlertCircle className="text-red-500 mr-2" />
           <p className="text-red-600">{error}</p>
         </div>
       </div>
@@ -94,82 +248,66 @@ function Appointments() {
     <div className="flex min-h-screen bg-gray-100">
       <div className="w-64 bg-[#0f172a] text-white"><BarberSidebar /></div>
       <div className="flex-1 p-8">
-        <h1 className="text-3xl font-bold text-gray-800 mb-6">Appointments</h1>
+        <div className="flex justify-between items-center mb-6">
+          <h1 className="text-3xl font-bold text-gray-800">Appointments</h1>
+          {trackingBookingId && (
+            <div className="flex items-center gap-2 px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-medium border border-orange-400">
+              <Clock size={16} className="animate-pulse" />
+              Tracking Active
+            </div>
+          )}
+        </div>
 
         {data.length === 0 ? (
-          <p className="text-gray-600 text-center">No appointments yet.</p>
+          <p className="text-gray-600">No appointments found.</p>
         ) : (
           <div className="space-y-4">
-            {data.map((item, index) => (
-              <div key={item.id || index} className="border border-gray-200 p-6 rounded-lg shadow bg-white relative">
-                {/* Chat Button */}
-                {item.status !== 'COMPLETED' && (
-                  <div
-                    className="absolute top-4 right-4 text-blue-600 hover:text-blue-800 cursor-pointer flex items-center gap-2 bg-blue-50 hover:bg-blue-100 px-3 py-2 rounded-lg"
-                    onClick={() => handleChatClick(item)}
-                    title="Open chat with customer"
-                  >
-                    <MessageCircle size={18} />
-                    <span className="text-sm font-medium">Chat</span>
-                  </div>
-                )}
-
-                {/* Map Button */}
-                <div className="absolute top-4 right-28">
-                  <button
-                    className="text-green-600 hover:text-green-800 cursor-pointer flex items-center gap-2 bg-green-50 hover:bg-green-100 px-3 py-2 rounded-lg"
-                    onClick={() => handleViewMap(item)}
-                    title="View customer location"
-                  >
-                    <MapPin size={18} />
-                    <span className="text-sm font-medium">Map</span>
+            {data.map((item) => (
+              <div key={item.id} className="bg-white shadow rounded p-6 relative border">
+                {/* Buttons */}
+                <div className="absolute top-4 right-4 flex gap-2">
+                  <button onClick={() => handleViewMap(item)} className="bg-green-100 hover:bg-green-200 text-green-800 px-3 py-2 rounded flex items-center gap-1">
+                    <MapPin size={16} />
+                    Map
                   </button>
+                  {item.status !== 'COMPLETED' && (
+                    <button onClick={() => handleChatClick(item)} className="bg-blue-100 hover:bg-blue-200 text-blue-800 px-3 py-2 rounded flex items-center gap-1">
+                      <MessageCircle size={16} />
+                      Chat
+                    </button>
+                  )}
                 </div>
 
-                {/* Status Badge */}
-                <div className="mb-4">
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${
-                    item.status === 'COMPLETED'
-                      ? 'bg-green-100 text-green-800'
-                      : item.status === 'CONFIRMED'
-                      ? 'bg-blue-100 text-blue-800'
-                      : item.status === 'PENDING'
-                      ? 'bg-yellow-100 text-yellow-800'
-                      : 'bg-gray-100 text-gray-800'
-                  }`}>
-                    {item.status}
+                {/* Status */}
+                <div className="mb-3">
+                  <span className={`text-xs font-semibold px-3 py-1 rounded-full ${getStatusColor(item.status)}`}>
+                    {item.status.replace('_', ' ')}
                   </span>
+                  {trackingBookingId === item.id && (
+                    <span className="ml-2 text-xs font-semibold px-3 py-1 rounded-full bg-orange-100 text-orange-800">
+                      LIVE TRACKING
+                    </span>
+                  )}
                 </div>
 
-                {/* Appointment Info */}
-                <div className="space-y-2">
-                  <p><strong>Booking ID:</strong> #{item.id}</p>
-                  <p><strong>Customer Name:</strong> {item.customer_name}</p>
-                  <p><strong>Service:</strong> {item.service}</p>
-                  <p><strong>Slot:</strong> {item.date} | {item.time}</p>
-                  <p><strong>Address:</strong> {item.address}</p>
-                  <p><strong>Phone:</strong> {item.phone}</p>
-                  <p><strong>Price:</strong> ₹{item.price}</p>
+                {/* Details */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                  <div>
+                    <p><strong>Booking ID:</strong> #{item.id}</p>
+                    <p><strong>Customer:</strong> {item.customer_name}</p>
+                    <p><strong>Service:</strong> {item.service}</p>
+                    <p><strong>Booking Type:</strong> {item.booking_type?.replace('_', ' ')}</p>
+                  </div>
+                  <div>
+                    <p><strong>Date & Time:</strong> {item.date} | {item.time}</p>
+                    <p><strong>Phone:</strong> {item.phone}</p>
+                    <p><strong>Price:</strong> ₹{item.price}</p>
+                    <p><strong>Address:</strong> {item.address}</p>
+                  </div>
                 </div>
 
-                {/* Travel Controls */}
-                {item.status === 'CONFIRMED' && (
-                  trackingBookingId === item.id ? (
-                    <button
-                      className="mt-4 bg-red-600 text-white px-4 py-2 rounded"
-                      onClick={handleStopTravel}
-                    >
-                      Stop Travel
-                    </button>
-                  ) : (
-                    <button
-                      className="mt-4 bg-blue-600 text-white px-4 py-2 rounded"
-                      onClick={() => handleStartTravel(item)}
-                    >
-                      Start Travel
-                    </button>
-                  )
-                )}
+                {/* Actions */}
+                {getStatusActions(item)}
               </div>
             ))}
           </div>

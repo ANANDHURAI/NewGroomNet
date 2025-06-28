@@ -8,7 +8,7 @@ export const ConfirmBooking = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [confirming, setConfirming] = useState(false);
-  const [bookingData, setBookingData] = useState(null); // Store booking data
+  const [bookingData, setBookingData] = useState(null);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -25,7 +25,7 @@ export const ConfirmBooking = () => {
       return;
     }
 
-    setBookingData(currentBookingData); // Store for later use
+    setBookingData(currentBookingData);
     fetchBookingSummary(currentBookingData);
   }, []);
 
@@ -66,8 +66,7 @@ export const ConfirmBooking = () => {
   const handleConfirmBooking = async () => {
     try {
       setConfirming(true);
-      
-      // Create URL with parameters to pass to PaymentPage
+
       const paymentUrl = new URL('/payment', window.location.origin);
       paymentUrl.searchParams.set('service_id', bookingData.service_id);
       paymentUrl.searchParams.set('barber_id', bookingData.barber_id);
@@ -99,7 +98,6 @@ export const ConfirmBooking = () => {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
         <div className="bg-white rounded-lg p-6 text-center max-w-md">
-          <div className="text-red-500 text-4xl mb-4">⚠️</div>
           <h2 className="text-lg font-semibold text-gray-800 mb-2">Something went wrong</h2>
           <p className="text-gray-600 mb-4">{error}</p>
           <button

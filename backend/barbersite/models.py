@@ -30,16 +30,7 @@ class BarberSlotBooking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     slot = models.ForeignKey(BarberSlot, on_delete=models.CASCADE)
     booked_at = models.DateTimeField(auto_now_add=True)
-    TRAVEL_STATUS_CHOICES = [
-    ('NOT_STARTED', 'Not Started'),
-    ('STARTED', 'Started'),
-    ('ON_THE_WAY', 'On the Way'),
-    ('ALMOST_NEAR', 'Almost Near'),
-    ('ARRIVED', 'Arrived'),
-    ]
-
-    travel_status = models.CharField(max_length=20, choices=TRAVEL_STATUS_CHOICES, default='NOT_STARTED')
-
+    
     def __str__(self):
         return f"{self.user.name} booked {self.slot}"
     

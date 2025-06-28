@@ -14,11 +14,11 @@ function AddressList() {
   }, []);
 
   const handleAddAddress = () => {
-    navigate('/add-address'); // Ensure this route exists
+    navigate('/add-address');
   };
 
   const handleEdit = (id) => {
-    navigate(`/edit-address/${id}`); // Placeholder route
+    navigate(`/edit-address/${id}`);
   };
 
   const handleDelete = (id) => {

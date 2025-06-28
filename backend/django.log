@@ -20057,3 +20057,607 @@ Not Found: /profileservice/address/
 [33mHTTP GET /profileservice/address/ 404 [0.02, 127.0.0.1:57523][0m
 [mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:57523][0m
 [mHTTP GET /customersite/booking-history/ 200 [0.04, 127.0.0.1:57523][0m
+Not Found: /profileservice/address/
+[33mHTTP GET /profileservice/address/ 404 [0.01, 127.0.0.1:57598][0m
+Not Found: /profileservice/address/
+[33mHTTP GET /profileservice/address/ 404 [0.01, 127.0.0.1:57598][0m
+[mHTTP OPTIONS /profile-service/address/ 200 [0.02, 127.0.0.1:57674][0m
+[mHTTP OPTIONS /profile-service/address/ 200 [0.02, 127.0.0.1:57673][0m
+[mHTTP GET /profile-service/address/ 200 [0.06, 127.0.0.1:57673][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57673][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57673][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57673][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57826][0m
+[mHTTP GET /profile-service/address/ 200 [0.03, 127.0.0.1:57826][0m
+[mHTTP GET /profile-service/address/ 200 [0.03, 127.0.0.1:57900][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57900][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57900][0m
+[mHTTP GET /customersite/addresses/ 200 [0.02, 127.0.0.1:57900][0m
+[mHTTP GET /customersite/addresses/ 200 [0.02, 127.0.0.1:57900][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57900][0m
+[mHTTP GET /profile-service/address/ 200 [0.03, 127.0.0.1:57900][0m
+[mHTTP GET /customersite/addresses/ 200 [0.01, 127.0.0.1:57900][0m
+[mHTTP GET /customersite/addresses/ 200 [0.02, 127.0.0.1:57900][0m
+[mHTTP GET /profile-service/address/ 200 [0.01, 127.0.0.1:57931][0m
+[mHTTP GET /profile-service/address/ 200 [0.01, 127.0.0.1:57931][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57931][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:57931][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.04, 127.0.0.1:57979][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:57979][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.03, 127.0.0.1:57979][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.04, 127.0.0.1:57979][0m
+[mHTTP OPTIONS /customersite/booking-details/10/ 200 [0.00, 127.0.0.1:57979][0m
+[mHTTP OPTIONS /customersite/booking-details/10/ 200 [0.04, 127.0.0.1:57980][0m
+[mHTTP GET /customersite/booking-details/10/ 200 [0.02, 127.0.0.1:57980][0m
+[mHTTP OPTIONS /customersite/travel-status/10/ 200 [0.00, 127.0.0.1:57979][0m
+[mHTTP GET /customersite/booking-details/10/ 200 [0.05, 127.0.0.1:57980][0m
+Internal Server Error: /customersite/travel-status/10/
+[35;1mHTTP GET /customersite/travel-status/10/ 500 [0.38, 127.0.0.1:57979][0m
+Internal Server Error: /customersite/travel-status/10/
+[35;1mHTTP GET /customersite/travel-status/10/ 500 [0.30, 127.0.0.1:57979][0m
+[mHTTP GET /profile-service/address/ 200 [0.01, 127.0.0.1:57979][0m
+[mHTTP GET /profile-service/address/ 200 [0.01, 127.0.0.1:57979][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.03, 127.0.0.1:57979][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:57979][0m
+[mHTTP GET /customersite/booking-details/10/ 200 [0.02, 127.0.0.1:57979][0m
+[mHTTP GET /customersite/booking-details/10/ 200 [0.05, 127.0.0.1:57979][0m
+Internal Server Error: /customersite/travel-status/10/
+[35;1mHTTP GET /customersite/travel-status/10/ 500 [0.33, 127.0.0.1:57980][0m
+Internal Server Error: /customersite/travel-status/10/
+[35;1mHTTP GET /customersite/travel-status/10/ 500 [0.33, 127.0.0.1:57980][0m
+[mHTTP GET /customersite/booking-details/10/ 200 [0.04, 127.0.0.1:57980][0m
+[mHTTP GET /customersite/booking-details/10/ 200 [0.04, 127.0.0.1:57980][0m
+Internal Server Error: /customersite/travel-status/10/
+[35;1mHTTP GET /customersite/travel-status/10/ 500 [0.21, 127.0.0.1:57980][0m
+Internal Server Error: /customersite/travel-status/10/
+[35;1mHTTP GET /customersite/travel-status/10/ 500 [0.28, 127.0.0.1:57980][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.01, 127.0.0.1:58019][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.01, 127.0.0.1:58019][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.01, 127.0.0.1:58019][0m
+Unauthorized: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 401 [0.02, 127.0.0.1:58019][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.02, 127.0.0.1:58019][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [1.06, 127.0.0.1:58019][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.01, 127.0.0.1:58019][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.01, 127.0.0.1:58021][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.02, 127.0.0.1:58021][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.02, 127.0.0.1:58021][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:58021][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:58021][0m
+[mHTTP GET /customersite/booking-details/10/ 200 [0.02, 127.0.0.1:58214][0m
+[mHTTP GET /customersite/booking-details/10/ 200 [0.04, 127.0.0.1:58214][0m
+Internal Server Error: /customersite/travel-status/10/
+[35;1mHTTP GET /customersite/travel-status/10/ 500 [0.46, 127.0.0.1:58214][0m
+Internal Server Error: /customersite/travel-status/10/
+[35;1mHTTP GET /customersite/travel-status/10/ 500 [0.26, 127.0.0.1:58214][0m
+[mHTTP GET /customersite/home/ 200 [0.03, 127.0.0.1:58214][0m
+[mHTTP GET /customersite/home/ 200 [0.03, 127.0.0.1:58214][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.01, 127.0.0.1:58226][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.02, 127.0.0.1:58225][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.02, 127.0.0.1:58227][0m
+[mHTTP GET /customersite/categories/ 200 [0.02, 127.0.0.1:58214][0m
+[mHTTP GET /customersite/categories/ 200 [0.02, 127.0.0.1:58214][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.04, 127.0.0.1:58214][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.04, 127.0.0.1:58214][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.06, 127.0.0.1:58227][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.07, 127.0.0.1:58225][0m
+[mHTTP GET /customersite/barbers/?service_id=1 200 [0.06, 127.0.0.1:58214][0m
+[mHTTP GET /customersite/barbers/?service_id=1 200 [0.03, 127.0.0.1:58214][0m
+[36mHTTP GET /media/profile_images/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 304 [0.02, 127.0.0.1:58225][0m
+[mHTTP GET /customersite/available-dates/?barber_id=3 200 [0.11, 127.0.0.1:58249][0m
+[mHTTP GET /customersite/available-dates/?barber_id=3 200 [0.06, 127.0.0.1:58249][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-28 200 [0.03, 127.0.0.1:58249][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-28 200 [0.03, 127.0.0.1:58249][0m
+[mHTTP GET /customersite/addresses/ 200 [0.03, 127.0.0.1:58249][0m
+[mHTTP GET /customersite/addresses/ 200 [0.03, 127.0.0.1:58249][0m
+[mHTTP POST /customersite/booking-summary/ 200 [0.05, 127.0.0.1:58250][0m
+[mHTTP POST /customersite/booking-summary/ 200 [0.06, 127.0.0.1:58249][0m
+[mHTTP POST /customersite/create-booking/ 201 [0.33, 127.0.0.1:58319][0m
+[mHTTP POST /paymentservice/create-checkout-session/ 200 [1.42, 127.0.0.1:58319][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.03, 127.0.0.1:58605][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.08, 127.0.0.1:58605][0m
+[mHTTP OPTIONS /customersite/booking-details/12/ 200 [0.00, 127.0.0.1:58605][0m
+[mHTTP OPTIONS /customersite/booking-details/12/ 200 [0.00, 127.0.0.1:58606][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:58606][0m
+[mHTTP OPTIONS /customersite/travel-status/12/ 200 [0.00, 127.0.0.1:58605][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.05, 127.0.0.1:58606][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.41, 127.0.0.1:58605][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.28, 127.0.0.1:58605][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:58605][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.07, 127.0.0.1:58605][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.01, 127.0.0.1:58605][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:58605][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.15, 127.0.0.1:58606][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.28, 127.0.0.1:58606][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:58606][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:58606][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:58606][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:58606][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:58606][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:58606][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.03, 127.0.0.1:59279][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.03, 127.0.0.1:59279][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:59279][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:59279][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:59279][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:59279][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:59279][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:59279][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.03, 127.0.0.1:59279][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.03, 127.0.0.1:59279][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:59279][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:59279][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:59279][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:59279][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.01, 127.0.0.1:59279][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:59279][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.04, 127.0.0.1:61747][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.05, 127.0.0.1:61748][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.08, 127.0.0.1:61748][0m
+[mHTTP OPTIONS /auth/token/refresh/ 200 [0.00, 127.0.0.1:61747][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.04, 127.0.0.1:61748][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.05, 127.0.0.1:61747][0m
+Unauthorized: /customersite/booking-history/
+[31;1mHTTP GET /customersite/booking-history/ 401 [0.02, 127.0.0.1:61747][0m
+Unauthorized: /customersite/booking-history/
+[31;1mHTTP GET /customersite/booking-history/ 401 [0.04, 127.0.0.1:61747][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.05, 127.0.0.1:61748][0m
+[mHTTP OPTIONS /auth/logout/ 200 [0.00, 127.0.0.1:61748][0m
+Unauthorized: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 401 [0.02, 127.0.0.1:61748][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.03, 127.0.0.1:61748][0m
+[mHTTP OPTIONS /auth/customer-barber-login/ 200 [0.00, 127.0.0.1:61748][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [1.13, 127.0.0.1:61748][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.01, 127.0.0.1:61748][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.01, 127.0.0.1:61747][0m
+[mHTTP GET /customersite/home/ 200 [0.05, 127.0.0.1:61748][0m
+[mHTTP GET /customersite/home/ 200 [0.05, 127.0.0.1:61748][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.07, 127.0.0.1:61792][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.07, 127.0.0.1:61790][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.07, 127.0.0.1:61791][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:61748][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:61748][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:61748][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:61748][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:61748][0m
+[mHTTP GET /profile-service/address/ 200 [0.03, 127.0.0.1:61748][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:61748][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.08, 127.0.0.1:61748][0m
+Unauthorized: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 401 [0.01, 127.0.0.1:61748][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.03, 127.0.0.1:61748][0m
+Bad Request: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 400 [0.01, 127.0.0.1:61748][0m
+Bad Request: /auth/customer-barber-login/
+[31;1mHTTP POST /auth/customer-barber-login/ 400 [0.95, 127.0.0.1:61748][0m
+Bad Request: /auth/customer-barber-login/
+[31;1mHTTP POST /auth/customer-barber-login/ 400 [0.87, 127.0.0.1:61748][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [0.97, 127.0.0.1:61748][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.01, 127.0.0.1:61748][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.03, 127.0.0.1:61748][0m
+[mHTTP OPTIONS /barbersite/barber-slots/ 200 [0.00, 127.0.0.1:61748][0m
+[mHTTP OPTIONS /barbersite/barber-slots/ 200 [0.00, 127.0.0.1:61747][0m
+[mHTTP GET /barbersite/barber-slots/ 200 [0.03, 127.0.0.1:61747][0m
+[mHTTP GET /barbersite/barber-slots/ 200 [0.01, 127.0.0.1:61747][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.00, 127.0.0.1:61747][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.01, 127.0.0.1:61748][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:61748][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:61748][0m
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\barbersite\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.01, 127.0.0.1:60062][0m
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.01, 127.0.0.1:60063][0m
+Unauthorized: /customersite/booking-history/
+[31;1mHTTP GET /customersite/booking-history/ 401 [0.10, 127.0.0.1:60063][0m
+[mHTTP OPTIONS /auth/token/refresh/ 200 [0.00, 127.0.0.1:60062][0m
+Unauthorized: /customersite/booking-history/
+[31;1mHTTP GET /customersite/booking-history/ 401 [0.02, 127.0.0.1:60063][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.04, 127.0.0.1:60062][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:60062][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.07, 127.0.0.1:60062][0m
+[mHTTP OPTIONS /auth/logout/ 200 [0.08, 127.0.0.1:60062][0m
+Bad Request: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 400 [0.05, 127.0.0.1:60062][0m
+[mHTTP OPTIONS /auth/customer-barber-login/ 200 [0.00, 127.0.0.1:60083][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [1.80, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.01, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.01, 127.0.0.1:60084][0m
+[mHTTP GET /customersite/home/ 200 [0.05, 127.0.0.1:60084][0m
+[mHTTP GET /customersite/home/ 200 [0.04, 127.0.0.1:60084][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.06, 127.0.0.1:60091][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.06, 127.0.0.1:60093][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.06, 127.0.0.1:60092][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [1.02, 127.0.0.1:60084][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.00, 127.0.0.1:60084][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.01, 127.0.0.1:60083][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.02, 127.0.0.1:60084][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.03, 127.0.0.1:60084][0m
+[mHTTP OPTIONS /customersite/categories/ 200 [0.01, 127.0.0.1:60084][0m
+[mHTTP OPTIONS /customersite/categories/ 200 [0.01, 127.0.0.1:60083][0m
+[mHTTP GET /customersite/categories/ 200 [0.02, 127.0.0.1:60083][0m
+[mHTTP GET /customersite/categories/ 200 [0.03, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /customersite/services/?category_id=1 200 [0.01, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /customersite/services/?category_id=1 200 [0.01, 127.0.0.1:60084][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.05, 127.0.0.1:60083][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.04, 127.0.0.1:60083][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.02, 127.0.0.1:60092][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.02, 127.0.0.1:60093][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.00, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.00, 127.0.0.1:60084][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:60083][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:60083][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.07, 127.0.0.1:60083][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.10, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.01, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.01, 127.0.0.1:60084][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.05, 127.0.0.1:60083][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:60083][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.01, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /chat/booking/12/status/ 200 [0.00, 127.0.0.1:60084][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:60083][0m
+[mHTTP GET /chat/booking/12/status/ 200 [0.03, 127.0.0.1:60084][0m
+[mHTTP OPTIONS /chat/chat/12/messages/ 200 [0.00, 127.0.0.1:60083][0m
+[mHTTP GET /chat/booking/12/status/ 200 [0.04, 127.0.0.1:60084][0m
+[mHTTP GET /chat/chat/12/messages/ 200 [0.04, 127.0.0.1:60083][0m
+[mHTTP GET /chat/chat/12/messages/ 200 [0.02, 127.0.0.1:60083][0m
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60121]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60121]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60121]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60124]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60124]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60124]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60133]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60133]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60133]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60136]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60136]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60136]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60142]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60142]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60142]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60145]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60145]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60145]
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.05, 127.0.0.1:60083][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:60083][0m
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60169]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60169]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60169]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60172]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60172]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60172]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60212]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60212]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60212]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60215]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60215]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60215]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60230]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60230]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60230]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60233]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60233]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60233]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60244]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60244]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60244]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60247]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60247]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60247]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60252]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60252]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60252]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60255]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60255]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60255]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60259]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60259]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60259]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60262]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60262]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60262]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60270]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60270]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60270]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60273]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60273]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60273]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60281]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60281]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60281]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60284]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60284]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60284]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60289]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60289]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60289]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60292]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60292]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60292]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60299]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60299]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60299]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60306]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60306]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60306]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60318]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60318]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60318]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60322]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60322]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60322]
+[mHTTP OPTIONS /customersite/booking-details/12/ 200 [0.00, 127.0.0.1:60083][0m
+[mHTTP OPTIONS /customersite/booking-details/12/ 200 [0.01, 127.0.0.1:60084][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:60084][0m
+[mHTTP OPTIONS /customersite/travel-status/12/ 200 [0.00, 127.0.0.1:60083][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.05, 127.0.0.1:60084][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.31, 127.0.0.1:60083][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.21, 127.0.0.1:60083][0m
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60331]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60331]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60331]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60335]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60335]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60335]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60339]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60339]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60339]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60343]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60343]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60343]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60347]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60347]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60347]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60350]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60350]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60350]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60356]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60356]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60356]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60361]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60361]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60361]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60365]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60365]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60365]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60369]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60369]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60369]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60372]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60372]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60372]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60378]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60378]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60378]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60382]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60382]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60382]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60386]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60386]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60386]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60390]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60390]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60390]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60395]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60395]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60395]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60400]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60400]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60400]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60408]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60408]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60408]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60412]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60412]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60412]
+WebSocket HANDSHAKING /ws/chat/12/ [127.0.0.1:60415]
+WebSocket REJECT /ws/chat/12/ [127.0.0.1:60415]
+WebSocket DISCONNECT /ws/chat/12/ [127.0.0.1:60415]
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.06, 127.0.0.1:60435][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.05, 127.0.0.1:60435][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:60435][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:60435][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.22, 127.0.0.1:60435][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:60443][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:60443][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.20, 127.0.0.1:60443][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.21, 127.0.0.1:60443][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:60443][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.05, 127.0.0.1:60443][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.06, 127.0.0.1:60478][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:60478][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:60478][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:60478][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.24, 127.0.0.1:60478][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.20, 127.0.0.1:60478][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:60566][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.05, 127.0.0.1:60566][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:60566][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:60566][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.21, 127.0.0.1:60566][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.20, 127.0.0.1:60566][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.03, 127.0.0.1:60835][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.04, 127.0.0.1:60835][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.15, 127.0.0.1:60835][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.12, 127.0.0.1:60835][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.05, 127.0.0.1:60835][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.07, 127.0.0.1:60835][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.29, 127.0.0.1:60836][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.18, 127.0.0.1:60836][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.06, 127.0.0.1:61003][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.05, 127.0.0.1:61003][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.22, 127.0.0.1:61003][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.26, 127.0.0.1:61003][0m
+[mHTTP OPTIONS /customersite/booking-details/undefined/ 200 [0.00, 127.0.0.1:61093][0m
+[mHTTP OPTIONS /customersite/booking-details/undefined/ 200 [0.01, 127.0.0.1:61094][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.10, 127.0.0.1:61094][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.02, 127.0.0.1:61093][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:61103][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:61103][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.26, 127.0.0.1:61103][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.18, 127.0.0.1:61103][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.01, 127.0.0.1:61161][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.01, 127.0.0.1:61161][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.23, 127.0.0.1:61161][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.22, 127.0.0.1:61161][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:61161][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:61161][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.24, 127.0.0.1:61164][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.21, 127.0.0.1:61164][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.07, 127.0.0.1:61164][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.11, 127.0.0.1:61164][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:61164][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.05, 127.0.0.1:61164][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.54, 127.0.0.1:61161][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.22, 127.0.0.1:61161][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.01, 127.0.0.1:61161][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:61161][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.25, 127.0.0.1:61164][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.21, 127.0.0.1:61164][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.04, 127.0.0.1:61164][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.05, 127.0.0.1:61164][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.52, 127.0.0.1:61161][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.23, 127.0.0.1:61161][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.03, 127.0.0.1:61161][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.05, 127.0.0.1:61164][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:61164][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.05, 127.0.0.1:61164][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.26, 127.0.0.1:61161][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.22, 127.0.0.1:61161][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:61346][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:61346][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.23, 127.0.0.1:61346][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.21, 127.0.0.1:61346][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.05, 127.0.0.1:61346][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.04, 127.0.0.1:61346][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.57, 127.0.0.1:61349][0m
+Internal Server Error: /customersite/travel-status/12/
+[35;1mHTTP GET /customersite/travel-status/12/ 500 [0.21, 127.0.0.1:61349][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:61443][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.04, 127.0.0.1:61443][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.02, 127.0.0.1:61443][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.03, 127.0.0.1:61444][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.01, 127.0.0.1:61467][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:61467][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.07, 127.0.0.1:61467][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.08, 127.0.0.1:61467][0m
+[mHTTP OPTIONS /profile-service/address/ 200 [0.01, 127.0.0.1:61467][0m
+[mHTTP OPTIONS /profile-service/address/ 200 [0.01, 127.0.0.1:61468][0m
+[mHTTP GET /profile-service/address/ 200 [0.05, 127.0.0.1:61467][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP OPTIONS /customersite/addresses/ 200 [0.00, 127.0.0.1:61467][0m
+[mHTTP OPTIONS /customersite/addresses/ 200 [0.00, 127.0.0.1:61468][0m
+[mHTTP GET /customersite/addresses/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP GET /customersite/addresses/ 200 [0.03, 127.0.0.1:61467][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP GET /profile-service/address/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:61467][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:61467][0m
+[mHTTP OPTIONS /customersite/booking-details/4/ 200 [0.00, 127.0.0.1:61467][0m
+[mHTTP OPTIONS /customersite/booking-details/4/ 200 [0.00, 127.0.0.1:61468][0m
+[mHTTP GET /customersite/booking-details/4/ 200 [0.03, 127.0.0.1:61467][0m
+[mHTTP GET /customersite/booking-details/4/ 200 [0.02, 127.0.0.1:61467][0m
+[mHTTP GET /customersite/booking-details/4/ 200 [0.04, 127.0.0.1:61570][0m
+[mHTTP GET /customersite/booking-details/4/ 200 [0.05, 127.0.0.1:61570][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.03, 127.0.0.1:61570][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.04, 127.0.0.1:61571][0m
+[mHTTP GET /customersite/booking-details/4/ 200 [0.03, 127.0.0.1:61571][0m
+[mHTTP GET /customersite/booking-details/4/ 200 [0.03, 127.0.0.1:61571][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:61571][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:61571][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.04, 127.0.0.1:61571][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:61571][0m
+[mHTTP GET /profile-service/address/ 200 [0.01, 127.0.0.1:61571][0m
+[mHTTP GET /profile-service/address/ 200 [0.01, 127.0.0.1:61571][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:62095][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.04, 127.0.0.1:62095][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.02, 127.0.0.1:62095][0m
+[mHTTP GET /customersite/booking-details/12/ 200 [0.03, 127.0.0.1:62095][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:62095][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:62095][0m
+[mHTTP OPTIONS /barbersite/barber-portfolio/ 200 [0.00, 127.0.0.1:62095][0m
+[mHTTP OPTIONS /barbersite/barber-portfolio/ 200 [0.00, 127.0.0.1:62097][0m
+[mHTTP GET /barbersite/barber-portfolio/ 200 [0.05, 127.0.0.1:62097][0m
+[mHTTP GET /barbersite/barber-portfolio/ 200 [0.02, 127.0.0.1:62097][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:62097][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:62097][0m
+D:\NewGroomNet-clean\backend\barbersite\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\barbersite\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\barbersite\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\barbersite\tasks.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\travel_tracking\models.py changed, reloading.
+Watching for file changes with StatReloader

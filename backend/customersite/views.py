@@ -28,7 +28,6 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from django.conf import settings
 logger = logging.getLogger(__name__)
-from barbersite.tasks import notify_barber_before_appointment
 from datetime import datetime, timedelta
 from django.utils import timezone
 from django.utils.timezone import make_aware
@@ -241,7 +240,6 @@ def booking_summary(request):
     
 
 
-
 class BookingCreateView(generics.CreateAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = BookingCreateSerializer
@@ -311,9 +309,6 @@ class BookingCreateView(generics.CreateAPIView):
                 {"detail": f"Error creating booking: {str(e)}"},
                 status=status.HTTP_400_BAD_REQUEST
             )
-
-
-
 
 
 class BookingSuccessView(APIView):

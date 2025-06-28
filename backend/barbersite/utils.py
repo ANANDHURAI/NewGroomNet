@@ -1,27 +1,53 @@
-from django.core.mail import send_mail
+import logging
+import requests
 from django.conf import settings
+from twilio.rest import Client
+import firebase_admin
+from firebase_admin import messaging
 
-def send_otp_email(email, otp_code, name=""):
-    subject = 'Your Login OTP'
-    message = f'''
-Hello {name},
 
-Your login OTP is: {otp_code}
+if not firebase_admin._apps:
+    firebase_admin.initialize_app()
 
-This code will expire in 5 minutes.
+logger = logging.getLogger(__name__)
 
-Best regards,
-Barber App Team
-    '''.strip()
-    
+def send_push_notification(user_id, title, message, data=None):
     try:
-        send_mail(
-            subject=subject,
-            message=message,
-            from_email=settings.DEFAULT_FROM_EMAIL,
-            recipient_list=[email],
-            fail_silently=False,
+        from authservice.models import User, FCMToken
+
+        user = User.objects.get(id=user_id)
+        fcm_tokens = FCMToken.objects.filter(user=user, is_active=True)
+
+        if not fcm_tokens.exists():
+            logger.warning(f"No FCM tokens found for user {user_id}")
+            return False
+        notification = messaging.Notification(
+            title=title,
+            body=message
         )
-        return True
-    except:
+
+        success_count = 0
+        for fcm_token in fcm_tokens:
+            try:
+                message_obj = messaging.Message(
+                    notification=notification,
+                    data=data or {},
+                    token=fcm_token.token
+                )
+
+                response = messaging.send(message_obj)
+                logger.info(f"Push notification sent to {user.username}: {response}")
+                success_count += 1
+
+            except Exception as e:
+                logger.error(f"Failed to send notification to token {fcm_token.token}: {str(e)}")
+
+        return success_count > 0
+
+    except User.DoesNotExist:
+        logger.error(f"User with ID {user_id} does not exist.")
+        return False
+
+    except Exception as e:
+        logger.exception(f"Unexpected error in send_push_notification: {str(e)}")
         return False

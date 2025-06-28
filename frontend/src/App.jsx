@@ -42,6 +42,7 @@ import CancelledPage from './pages/customersite/CancelledPage'
 import BookingDetailsPage from './pages/customersite/BookingDetailsPage'
 import BookingHistoryPage from './pages/customersite/BookingHistoryPage'
 import AddressList from './pages/customersite/AddressList'
+import BookingStatus from './pages/customersite/BookingStatus'
 
 function App() {
   return (
@@ -275,6 +276,7 @@ function App() {
             <Route path="/booking-history" element={<BookingHistoryPage />} />
             <Route path="/booking-details/:id" element={<BookingDetailsPage />} />
             <Route path="/my-addresses" element={<AddressList />} />
+            <Route path="/booking-status" element={<BookingStatus />} />
           </Routes>
         </ServiceProvider>
       </BrowserRouter>

@@ -33,7 +33,7 @@ function Navbar() {
               Services
             </a>
             <Link to="/profile" className="text-gray-700 hover:text-purple-600 font-medium transition-colors duration-200">
-              Profile
+              My Account
             </Link>
           </div>
 

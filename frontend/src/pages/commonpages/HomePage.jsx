@@ -32,11 +32,11 @@ function HomePage() {
   }, []);
 
   const handleEnableLocation = async () => {
-    console.log('📍 Trying to get current location'); // ADD THIS
+    console.log('Trying to get current location');
 
     try {
       const loc = await getCurrentLocation();
-      console.log('✅ Got location:', loc); // ADD THIS
+      console.log('Got location:', loc);
       setLocation(loc);
 
       sessionStorage.setItem('locationSent', 'true');
@@ -45,12 +45,12 @@ function HomePage() {
       await apiClient.post('/customersite/user-location/', {
         latitude: loc.latitude,
         longitude: loc.longitude,
-        user_type: 'barber' // or 'customer'
+        user_type: 'barber'
       });
 
-      console.log('✅ Location sent to server');
+      console.log('Location sent to server');
     } catch (err) {
-      console.error('❌ Location error:', err); // ADD THIS
+      console.error(' Location error:', err); 
       setLocationError(err);
     }
   };
@@ -107,7 +107,7 @@ function HomePage() {
               )}
               {location && (
                 <p className="text-sm text-green-600 mt-2">
-                  📍 Location enabled - Showing nearby services
+                  Location enabled - Showing nearby services
                 </p>
               )}
             </div>

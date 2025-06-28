@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import apiClient from '../../slices/api/apiIntercepters';
-import { useParams } from 'react-router-dom';
 import CustomerLayout from '../../components/customercompo/CustomerLayout';
-import { Truck, Clock, MessageSquare } from 'lucide-react';
+import { Truck, Clock, MessageSquare , MapPin } from 'lucide-react';
+
 
 function BookingDetailsPage() {
   const { id } = useParams();
@@ -14,27 +15,27 @@ function BookingDetailsPage() {
     apiClient.get(`/customersite/booking-details/${id}/`)
       .then(res => {
         setData(res.data);
-        calculateTimeLeft(res.data.date, res.data.start_time);
+        calculateTimeLeft(res.data.date, res.data.slottime);
         fetchTravelStatus(res.data.orderid);
       })
       .catch(err => console.error("Booking fetch error", err));
-  }, []);
+  }, [id]);
 
-  const calculateTimeLeft = (date, time) => {
-    const serviceTime = new Date(`${date}T${time}`);
-    const now = new Date();
-    const diff = serviceTime - now;
-    if (diff <= 0) return setTimeLeft("Service is active now");
+  // const calculateTimeLeft = (date, time) => {
+  //   const serviceTime = new Date(`${date}T${time}`);
+  //   const now = new Date();
+  //   const diff = serviceTime - now;
+  //   if (diff <= 0) return setTimeLeft("Service is active now");
 
-    const mins = Math.floor(diff / 60000);
-    const hrs = Math.floor(mins / 60);
-    const rem = mins % 60;
-    setTimeLeft(`${hrs}h ${rem}m remaining`);
-  };
+  //   const mins = Math.floor(diff / 60000);
+  //   const hrs = Math.floor(mins / 60);
+  //   const rem = mins % 60;
+  //   setTimeLeft(`${hrs}h ${rem}m remaining`);
+  // };
 
   const fetchTravelStatus = async (bookingId) => {
     try {
-      const res = await apiClient.get(`/customersite/travel-status/${bookingId}/`);
+      const res = await apiClient.get(`/travel-tracking/travel-status/${bookingId}/`);
       setTravelStatus(res.data);
     } catch (err) {
       console.warn("Travel status not available");
@@ -45,8 +46,8 @@ function BookingDetailsPage() {
     <CustomerLayout>
       <h2 className="text-2xl font-bold text-gray-800 mb-4">Booking Details</h2>
 
-      {data && (
-        <div className="space-y-4 bg-white p-6 rounded-lg shadow">
+      {data ? (
+        <div className="space-y-4 bg-white p-6 rounded-lg shadow border border-gray-200">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
               <p><strong>Order ID:</strong> #{data.orderid}</p>
@@ -60,7 +61,7 @@ function BookingDetailsPage() {
             <div>
               <p><strong>Date:</strong> {data.date}</p>
               <p><strong>Time:</strong> {data.slottime}</p>
-              <p className="text-sm text-blue-600">{timeLeft}</p>
+              <p className="text-sm text-blue-600 mt-1">{timeLeft}</p>
             </div>
             <div>
               <p><strong>Payment:</strong> {data.payment_method}</p>
@@ -74,22 +75,33 @@ function BookingDetailsPage() {
                 <Truck size={18} /> Travel Status
               </h3>
               <p><strong>Status:</strong> {travelStatus.travel_status}</p>
-              <p>
+              <p className="mt-1">
                 <Clock size={14} className="inline mr-1" />
-                <strong>ETA:</strong> {travelStatus.eta} | Distance: {travelStatus.distance}
+                <strong>ETA:</strong> {travelStatus.eta} | <strong>Distance:</strong> {travelStatus.distance}
               </p>
             </div>
           )}
 
-          <div className="text-center mt-6">
+          <div className="flex flex-col items-center gap-4 mt-6">
             <button
               onClick={() => alert('Start chat')}
-              className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+              className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors"
             >
-              <MessageSquare size={18} /> Chat with Barber
+              <MessageSquare size={18} />
+              Chat with Barber
             </button>
+
+            <Link
+              to="/booking-status"
+              className="flex items-center gap-2 px-4 py-2 text-indigo-600 border border-indigo-600 rounded hover:bg-indigo-50 transition-colors"
+            >
+              <MapPin size={18} />
+              Track Your Booking
+            </Link>
           </div>
         </div>
+      ) : (
+        <div className="text-gray-600">Loading booking details...</div>
       )}
     </CustomerLayout>
   );
