@@ -273,7 +273,9 @@ class BarberAppointments(APIView):
                 'price': float(booking.total_amount),
                 'status': booking.status,
                 'phone': booking.customer.phone,
-                'service': booking.service.name
+                'service': booking.service.name,
+                'bookingType': booking.booking_type or "",
+                'bookingTypeDisplay': booking.get_booking_type_display()
             })
 
         return Response(data)

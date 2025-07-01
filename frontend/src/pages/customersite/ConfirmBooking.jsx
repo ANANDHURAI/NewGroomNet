@@ -33,7 +33,24 @@ export const ConfirmBooking = () => {
     try {
       setLoading(true);
       const response = await apiClient.post('/customersite/booking-summary/', bookingData);
-      setBookingSummary(response.data);
+      console.log('Booking Summary Response:', response.data); // Debug log
+      
+      // If service_amount and platform_fee are missing, calculate them
+      let summary = response.data;
+      if (!summary.service_amount && summary.service && summary.service.price) {
+        const serviceAmount = parseFloat(summary.service.price);
+        const platformFee = Math.round(serviceAmount * 0.05 * 100) / 100; // 5% fee, rounded to 2 decimals
+        const totalAmount = Math.round((serviceAmount + platformFee) * 100) / 100;
+        
+        summary = {
+          ...summary,
+          service_amount: serviceAmount,
+          platform_fee: platformFee,
+          total_amount: totalAmount
+        };
+      }
+      
+      setBookingSummary(summary);
     } catch (error) {
       console.error('Error fetching booking summary:', error);
       setError('Failed to load booking details. Please try again.');
@@ -188,9 +205,25 @@ export const ConfirmBooking = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-xl p-6 mb-6 shadow-md flex justify-between items-center">
-          <span className="text-lg font-semibold text-gray-800">Total Amount</span>
-          <span className="text-2xl font-bold text-green-600">₹{bookingSummary.total_amount}</span>
+        {/* Price Breakdown - FIXED */}
+        <div className="bg-white rounded-xl p-6 mb-6 shadow-md">
+          <h3 className="font-semibold text-gray-800 mb-4">Price Breakdown</h3>
+          <div className="space-y-3">
+            <div className="flex justify-between items-center">
+              <span className="text-gray-600">Service Amount</span>
+              <span className="text-gray-800">₹{Number(bookingSummary.service_amount).toFixed(2)}</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-gray-600">Platform Fee (5%)</span>
+              <span className="text-gray-800">₹{Number(bookingSummary.platform_fee).toFixed(2)}</span>
+            </div>
+            <div className="border-t pt-3">
+              <div className="flex justify-between items-center">
+                <span className="text-lg font-semibold text-gray-800">Total Amount</span>
+                <span className="text-2xl font-bold text-green-600">₹{Number(bookingSummary.total_amount).toFixed(2)}</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <button
@@ -203,12 +236,10 @@ export const ConfirmBooking = () => {
 
         <div className="mt-4 bg-blue-50 rounded-lg p-3">
           <p className="text-sm text-blue-800 text-center">
-            Payment will be processed securely.
+            Payment will be processed securely. Total includes service fee and platform charges.
           </p>
         </div>
       </div>
     </div>
   );
 };
-
-export default ConfirmBooking;

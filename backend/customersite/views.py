@@ -196,6 +196,7 @@ class AddressListCreateView(generics.ListCreateAPIView):
         return Address.objects.filter(user=self.request.user)
 
 
+
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def booking_summary(request):
@@ -210,10 +211,14 @@ def booking_summary(request):
         slot = BarberSlot.objects.get(id=slot_id, is_booked=False)
         address = Address.objects.get(id=address_id, user=request.user)
         
+        service_amount = float(service.price)
+        platform_fee = round(0.05 * service_amount, 2)
+        total_amount = round(service_amount + platform_fee, 2)
+        
         summary = {
             'service': {
                 'name': service.name,
-                'price': service.price,
+                'price': float(service.price),
                 'duration': service.duration_minutes
             },
             'barber': {
@@ -229,14 +234,17 @@ def booking_summary(request):
                 'full_address': f"{address.building}, {address.street}, {address.city}, {address.state} - {address.pincode}",
                 'mobile': address.mobile
             },
-            'total_amount': service.price
+            'service_amount': service_amount,
+            'platform_fee': platform_fee,
+            'total_amount': total_amount
         }
         
+        print(f"Debug - API Response: {summary}")
         return Response(summary)
         
     except Exception as e:
+        print(f"Error in booking_summary: {str(e)}") 
         return Response({"error": str(e)}, status=400)
-    
 
 class BookingCreateView(generics.CreateAPIView):
     permission_classes = [IsAuthenticated]

@@ -48,18 +48,28 @@ class AddressSerializer(serializers.ModelSerializer):
 from rest_framework import serializers
 from .models import Booking, PaymentModel
 
-
 class BookingCreateSerializer(serializers.ModelSerializer):
     payment_method = serializers.CharField(write_only=True)
+    booking_type = serializers.CharField(write_only=True)
 
     class Meta:
         model = Booking
-        fields = ['service', 'barber', 'slot', 'address', 'payment_method','booking_type']
+        fields = ['service', 'barber', 'slot', 'address', 'payment_method', 'booking_type']
 
     def validate_address(self, value):
         request = self.context.get('request')
         if request and value.user != request.user:
             raise serializers.ValidationError("Address does not belong to the current user")
+        return value
+
+    def validate_payment_method(self, value):
+        if value not in ['COD', 'STRIPE', 'WALLET']:
+            raise serializers.ValidationError("Invalid payment method")
+        return value
+
+    def validate_booking_type(self, value):
+        if value not in ['INSTANT_BOOKING', 'SCHEDULE_BOOKING']:
+            raise serializers.ValidationError("Invalid booking type")
         return value
 
     def create(self, validated_data):
@@ -68,8 +78,14 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         payment_method = validated_data.pop('payment_method')
         booking_type = validated_data.pop('booking_type')
         service = validated_data['service']
-        total_amount = getattr(service, 'price', 100.00)
         slot = validated_data['slot']
+        
+        service_amount = float(getattr(service, 'price', 100.00))
+        platform_fee = 0.05 * service_amount
+        total_amount = service_amount + platform_fee
+
+        if slot.is_booked:
+            raise serializers.ValidationError("This slot is already booked")
 
         with transaction.atomic():
             slot.is_booked = True
@@ -78,18 +94,26 @@ class BookingCreateSerializer(serializers.ModelSerializer):
             booking = Booking.objects.create(
                 customer=customer,
                 total_amount=total_amount,
-                is_payment_done=(payment_method == 'COD'),
+                is_payment_done=(payment_method in ['COD', 'WALLET']),
                 status='CONFIRMED',
                 booking_type=booking_type,
                 **validated_data
             )
 
+            payment_status = 'PENDING'
+            if payment_method == 'COD':
+                payment_status = 'PENDING'  
+            elif payment_method == 'WALLET':
+                payment_status = 'SUCCESS'  
+            elif payment_method == 'STRIPE':
+                payment_status = 'PENDING'
+
             PaymentModel.objects.create(
                 booking=booking,
                 payment_method=payment_method,
-                payment_status='PENDING' if payment_method == 'COD' else 'SUCCESS',
-                service_amount=total_amount,
-                platform_fee=(0.05 * float(total_amount))
+                payment_status=payment_status,
+                service_amount=service_amount,
+                platform_fee=platform_fee
             )
 
         return booking

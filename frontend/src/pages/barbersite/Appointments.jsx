@@ -296,7 +296,8 @@ function Appointments() {
                     <p><strong>Booking ID:</strong> #{item.id}</p>
                     <p><strong>Customer:</strong> {item.customer_name}</p>
                     <p><strong>Service:</strong> {item.service}</p>
-                    <p><strong>Booking Type:</strong> {item.booking_type?.replace('_', ' ')}</p>
+                    <p><strong>Booking Type:</strong> {item.bookingTypeDisplay || 'N/A'}</p>
+                    {console.log('Booking Type:', item.bookingType)}
                   </div>
                   <div>
                     <p><strong>Date & Time:</strong> {item.date} | {item.time}</p>
@@ -306,7 +307,6 @@ function Appointments() {
                   </div>
                 </div>
 
-                {/* Actions */}
                 {getStatusActions(item)}
               </div>
             ))}

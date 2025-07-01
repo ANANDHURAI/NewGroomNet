@@ -33,7 +33,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
         key = f"{booking_id}_{user_id}"
         if is_online:
             ONLINE_USERS[key] = time.time()
-            print(f"Memory: Set user {user_id} ONLINE for booking {booking_id}")
         else:
             ONLINE_USERS.pop(key, None)
             print(f"Memory: Set user {user_id} OFFLINE for booking {booking_id}")
