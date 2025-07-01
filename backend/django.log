@@ -23282,3 +23282,11 @@ Unauthorized: /chat-service/chat/14/info/
 Unauthorized: /chat-service/chat/14/messages/
 Unauthorized: /chat-service/chat/14/info/
 Unauthorized: /chat-service/chat/14/messages/
+Bad Request: /auth/customer-barber-login/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/messages/
+Bad Request: /auth/logout/

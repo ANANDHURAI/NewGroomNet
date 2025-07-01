@@ -264,7 +264,7 @@ function Appointments() {
           <div className="space-y-4">
             {data.map((item) => (
               <div key={item.id} className="bg-white shadow rounded p-6 relative border">
-                {/* Buttons */}
+              
                 <div className="absolute top-4 right-4 flex gap-2">
                   <button onClick={() => handleViewMap(item)} className="bg-green-100 hover:bg-green-200 text-green-800 px-3 py-2 rounded flex items-center gap-1">
                     <MapPin size={16} />
@@ -278,7 +278,7 @@ function Appointments() {
                   )}
                 </div>
 
-                {/* Status */}
+               
                 <div className="mb-3">
                   <span className={`text-xs font-semibold px-3 py-1 rounded-full ${getStatusColor(item.status)}`}>
                     {item.status.replace('_', ' ')}
@@ -290,7 +290,7 @@ function Appointments() {
                   )}
                 </div>
 
-                {/* Details */}
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   <div>
                     <p><strong>Booking ID:</strong> #{item.id}</p>
