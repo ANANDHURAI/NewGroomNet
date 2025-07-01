@@ -46,7 +46,6 @@ function CustomerChatPage() {
     const token = sessionStorage.getItem('access_token');
     const wsUrl = `${protocol}//localhost:8000/ws/chat/${bookingId}/?token=${token}`;
 
-    
     websocketRef.current = new WebSocket(wsUrl);
 
     websocketRef.current.onopen = () => {
@@ -56,7 +55,14 @@ function CustomerChatPage() {
     websocketRef.current.onmessage = (event) => {
       const data = JSON.parse(event.data);
       if (data.type === 'message') {
-        setMessages(prevMessages => [...prevMessages, data.data]);
+        setMessages(prevMessages => {
+          // Check if message already exists to prevent duplicates
+          const messageExists = prevMessages.some(msg => msg.id === data.data.id);
+          if (messageExists) {
+            return prevMessages;
+          }
+          return [...prevMessages, data.data];
+        });
       } else if (data.type === 'error') {
         alert(data.message);
       }
@@ -83,18 +89,15 @@ function CustomerChatPage() {
 
     setSending(true);
     try {
-      await apiClient.post(`/chat-service/chat/${bookingId}/messages/`, {
-        message: newMessage.trim()
-      });
-
-
+      // Only send via WebSocket - don't use HTTP POST
       if (websocketRef.current && websocketRef.current.readyState === WebSocket.OPEN) {
         websocketRef.current.send(JSON.stringify({
           message: newMessage.trim()
         }));
+        setNewMessage('');
+      } else {
+        throw new Error('WebSocket not connected');
       }
-
-      setNewMessage('');
     } catch (error) {
       console.error('Error sending message:', error);
       alert('Failed to send message. Please try again.');
@@ -169,7 +172,6 @@ function CustomerChatPage() {
             </div>
           )}
         </div>
-
 
         <div className="h-96 overflow-y-auto p-4 space-y-4 bg-gray-50">
           {messages.length === 0 ? (

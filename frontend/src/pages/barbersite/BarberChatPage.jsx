@@ -59,7 +59,14 @@ function BarberChatPage() {
     websocketRef.current.onmessage = (event) => {
       const data = JSON.parse(event.data);
       if (data.type === 'message') {
-        setMessages(prevMessages => [...prevMessages, data.data]);
+        setMessages(prevMessages => {
+          // Check if message already exists to prevent duplicates
+          const messageExists = prevMessages.some(msg => msg.id === data.data.id);
+          if (messageExists) {
+            return prevMessages;
+          }
+          return [...prevMessages, data.data];
+        });
       } else if (data.type === 'error') {
         alert(data.message);
       }
@@ -86,19 +93,15 @@ function BarberChatPage() {
 
     setSending(true);
     try {
-      // Send via API first for reliability
-      await apiClient.post(`/chat-service/chat/${bookingId}/messages/`, {
-        message: newMessage.trim()
-      });
-
-      // Also send via WebSocket for real-time updates
+      // Only send via WebSocket - don't use HTTP POST
       if (websocketRef.current && websocketRef.current.readyState === WebSocket.OPEN) {
         websocketRef.current.send(JSON.stringify({
           message: newMessage.trim()
         }));
+        setNewMessage('');
+      } else {
+        throw new Error('WebSocket not connected');
       }
-
-      setNewMessage('');
     } catch (error) {
       console.error('Error sending message:', error);
       alert('Failed to send message. Please try again.');
@@ -142,7 +145,6 @@ function BarberChatPage() {
   return (
     <BarberLayout>
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        {/* Chat Header */}
         <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-4">
           <button 
             onClick={() => navigate('/barber/appointments')}
@@ -179,7 +181,6 @@ function BarberChatPage() {
             </div>
           )}
         </div>
-
 
         <div className="h-96 overflow-y-auto p-4 space-y-4 bg-gray-50">
           {messages.length === 0 ? (
@@ -222,7 +223,6 @@ function BarberChatPage() {
           )}
           <div ref={messagesEndRef} />
         </div>
-
 
         <form onSubmit={handleSendMessage} className="p-4 border-t bg-white">
           <div className="flex space-x-2">

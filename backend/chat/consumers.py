@@ -30,6 +30,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
         print("WebSocket: Trying to connect...")
 
         self.booking_id = self.scope['url_route']['kwargs']['booking_id']
+        self.room_group_name = f'chat_{self.booking_id}'
         print(f"WebSocket: Booking ID - {self.booking_id}")
 
         self.user = AnonymousUser()
@@ -68,7 +69,6 @@ class ChatConsumer(AsyncWebsocketConsumer):
             await self.close(code=4001)
             return
 
-        # Get booking asynchronously
         self.booking = await self.get_booking(self.booking_id)
         if not self.booking:
             print("WebSocket: Booking does not exist")
@@ -83,11 +83,23 @@ class ChatConsumer(AsyncWebsocketConsumer):
             await self.close()
             return
 
+        # Join room group
+        await self.channel_layer.group_add(
+            self.room_group_name,
+            self.channel_name
+        )
+
         await self.accept()
-        print("WebSocket: Connection accepted")
+        print(f"WebSocket: Connection accepted and joined group {self.room_group_name}")
 
     async def disconnect(self, close_code):
-        print(f"WebSocket: Disconnected with code {close_code}")
+        # Leave room group
+        if hasattr(self, 'room_group_name'):
+            await self.channel_layer.group_discard(
+                self.room_group_name,
+                self.channel_name
+            )
+        print(f"WebSocket: Disconnected with code {close_code} and left group")
 
     @database_sync_to_async
     def create_chat_message(self, booking, user, message_text):
@@ -115,6 +127,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 }))
                 return
 
+            # Create message in database
             message = await self.create_chat_message(
                 booking=self.booking,
                 user=self.user,
@@ -122,6 +135,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
             )
             print(f"WebSocket: Message saved - ID: {message.id}")
 
+            # Prepare message data
             message_data = {
                 'id': message.id,
                 'message': message.message,
@@ -134,11 +148,15 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 'is_read': message.is_read
             }
 
-            await self.send(text_data=json.dumps({
-                'type': 'message',
-                'data': message_data
-            }))
-            print("WebSocket: Message sent")
+            # Send message to room group (all connected clients in this chat)
+            await self.channel_layer.group_send(
+                self.room_group_name,
+                {
+                    'type': 'chat_message',
+                    'message_data': message_data
+                }
+            )
+            print("WebSocket: Message broadcast to group")
 
         except Exception as e:
             print(f"WebSocket: Error in receive - {str(e)}")
@@ -146,3 +164,14 @@ class ChatConsumer(AsyncWebsocketConsumer):
                 'type': 'error',
                 'message': 'Failed to send message'
             }))
+
+    # Receive message from room group
+    async def chat_message(self, event):
+        message_data = event['message_data']
+
+        # Send message to WebSocket
+        await self.send(text_data=json.dumps({
+            'type': 'message',
+            'data': message_data
+        }))
+        print("WebSocket: Message sent to client")
