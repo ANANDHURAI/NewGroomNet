@@ -4,6 +4,7 @@ from pathlib import Path
 from datetime import timedelta
 import os
 from dotenv import load_dotenv
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -195,8 +196,12 @@ LOGGING = {
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
+
+
 STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
 STRIPE_PUBLISHABLE_KEY = os.getenv("STRIPE_PUBLISHABLE_KEY")
+
+print("Loaded STRIPE_SECRET_KEY:", STRIPE_SECRET_KEY)
 
 ASGI_APPLICATION = 'backend.asgi.application'
 
@@ -211,8 +216,6 @@ CHANNEL_LAYERS = {
     },
 }
 
-
-load_dotenv()
 
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY")
 

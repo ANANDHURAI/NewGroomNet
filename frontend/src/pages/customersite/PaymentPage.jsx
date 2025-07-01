@@ -72,7 +72,7 @@ function PaymentPage() {
         return;
       }
 
-      const stripeSessionRes = await apiClient.post('/paymentservice/create-checkout-session/', {
+      const stripeSessionRes = await apiClient.post('/payment-service/create-checkout-session/', {
         booking_id: bookingId
       });
 

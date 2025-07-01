@@ -246,14 +246,16 @@ def booking_summary(request):
         print(f"Error in booking_summary: {str(e)}") 
         return Response({"error": str(e)}, status=400)
 
+
 class BookingCreateView(generics.CreateAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = BookingCreateSerializer
 
     def create(self, request, *args, **kwargs):
         serializer = BookingCreateSerializer(data=request.data, context={'request': request})
+        
         if not serializer.is_valid():
-            print("error : ", serializer.errors)
+            logger.error(f"Booking validation failed: {serializer.errors}")
             return Response(
                 {
                     "detail": "Validation failed",
@@ -261,24 +263,28 @@ class BookingCreateView(generics.CreateAPIView):
                 }, 
                 status=status.HTTP_400_BAD_REQUEST
             )
-        payment_method = request.data.get('payment_method')
-
-        if payment_method not in ['COD', 'STRIPE','WALLET']:
-            return Response(
-                {"detail": "Unsupported payment method"}, 
-                status=status.HTTP_400_BAD_REQUEST
-            )
         
-        booking = serializer.save()
-        return Response(
-            {
-                "detail": "Booking created successfully",
-                "booking_id": booking.id,
-                "success": True
-            },
-            status=status.HTTP_201_CREATED
-        )
-       
+        try:
+            booking = serializer.save()
+            logger.info(f"Booking created successfully: {booking.id}")
+            
+            return Response(
+                {
+                    "detail": "Booking created successfully",
+                    "booking_id": booking.id,
+                    "success": True,
+                    "total_amount": float(booking.total_amount),
+                    "payment_method": request.data.get('payment_method')
+                },
+                status=status.HTTP_201_CREATED
+            )
+        except Exception as e:
+            logger.error(f"Error creating booking: {str(e)}")
+            return Response(
+                {"detail": "Failed to create booking", "error": str(e)}, 
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
 
 class BookingSuccessView(APIView):
     permission_classes = [IsAuthenticated]

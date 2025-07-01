@@ -63,13 +63,15 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         return value
 
     def validate_payment_method(self, value):
-        if value not in ['COD', 'STRIPE', 'WALLET']:
-            raise serializers.ValidationError("Invalid payment method")
+        valid_methods = ['COD', 'STRIPE', 'WALLET']
+        if value not in valid_methods:
+            raise serializers.ValidationError(f"Invalid payment method. Must be one of: {valid_methods}")
         return value
 
     def validate_booking_type(self, value):
-        if value not in ['INSTANT_BOOKING', 'SCHEDULE_BOOKING']:
-            raise serializers.ValidationError("Invalid booking type")
+        valid_types = ['INSTANT_BOOKING', 'SCHEDULE_BOOKING']
+        if value not in valid_types:
+            raise serializers.ValidationError(f"Invalid booking type. Must be one of: {valid_types}")
         return value
 
     def create(self, validated_data):
@@ -80,8 +82,14 @@ class BookingCreateSerializer(serializers.ModelSerializer):
         service = validated_data['service']
         slot = validated_data['slot']
         
-        service_amount = float(getattr(service, 'price', 100.00))
-        platform_fee = 0.05 * service_amount
+        # Ensure service has a price
+        if not hasattr(service, 'price') or service.price is None:
+            raise serializers.ValidationError("Service price is not set")
+        
+        # Convert to Decimal for precise calculations
+        from decimal import Decimal
+        service_amount = Decimal(str(service.price))
+        platform_fee = (service_amount * Decimal('0.05')).quantize(Decimal('0.01'))
         total_amount = service_amount + platform_fee
 
         if slot.is_booked:
@@ -100,12 +108,14 @@ class BookingCreateSerializer(serializers.ModelSerializer):
                 **validated_data
             )
 
-            payment_status = 'PENDING'
+            # Set payment status based on method
             if payment_method == 'COD':
-                payment_status = 'PENDING'  
+                payment_status = 'PENDING'
             elif payment_method == 'WALLET':
-                payment_status = 'SUCCESS'  
+                payment_status = 'SUCCESS'
             elif payment_method == 'STRIPE':
+                payment_status = 'PENDING'
+            else:
                 payment_status = 'PENDING'
 
             PaymentModel.objects.create(
@@ -117,7 +127,6 @@ class BookingCreateSerializer(serializers.ModelSerializer):
             )
 
         return booking
-
 
 class BookingSummarySerializer(serializers.ModelSerializer):
     service_name = serializers.CharField(source='service.name', read_only=True)

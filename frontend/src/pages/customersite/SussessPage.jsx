@@ -1,9 +1,26 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import apiClient from '../../slices/api/apiIntercepters';
 import Navbar from '../../components/basics/Navbar';
 
 function SuccessPage() {
   const navigate = useNavigate();
+  const [params] = useSearchParams();
+
+  useEffect(() => {
+    const sessionId = params.get('session_id');
+
+    if (sessionId) {
+      apiClient
+        .post('/payment-service/verify-payment/', { session_id: sessionId })
+        .then((res) => {
+          console.log('Payment Verified:', res.data.message);
+        })
+        .catch((err) => {
+          console.error('Error verifying payment:', err.response?.data || err.message);
+        });
+    }
+  }, []);
 
   return (
     <>
@@ -11,7 +28,12 @@ function SuccessPage() {
       <div className="flex flex-col items-center justify-center min-h-screen bg-white p-6">
         <div className="text-center">
           <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <svg className="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg
+              className="w-10 h-10 text-green-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
             </svg>
           </div>
