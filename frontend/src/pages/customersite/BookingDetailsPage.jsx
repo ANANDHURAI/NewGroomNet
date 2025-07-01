@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import apiClient from '../../slices/api/apiIntercepters';
 import CustomerLayout from '../../components/customercompo/CustomerLayout';
-import { Truck, Clock, MessageSquare , MapPin } from 'lucide-react';
-
+import { Truck, Clock, MessageSquare, MapPin } from 'lucide-react';
 
 function BookingDetailsPage() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const [data, setData] = useState(null);
   const [travelStatus, setTravelStatus] = useState(null);
   const [timeLeft, setTimeLeft] = useState('');
@@ -21,17 +21,17 @@ function BookingDetailsPage() {
       .catch(err => console.error("Booking fetch error", err));
   }, [id]);
 
-  // const calculateTimeLeft = (date, time) => {
-  //   const serviceTime = new Date(`${date}T${time}`);
-  //   const now = new Date();
-  //   const diff = serviceTime - now;
-  //   if (diff <= 0) return setTimeLeft("Service is active now");
+  const calculateTimeLeft = (date, time) => {
+    const serviceTime = new Date(`${date}T${time}`);
+    const now = new Date();
+    const diff = serviceTime - now;
+    if (diff <= 0) return setTimeLeft("Service is active now");
 
-  //   const mins = Math.floor(diff / 60000);
-  //   const hrs = Math.floor(mins / 60);
-  //   const rem = mins % 60;
-  //   setTimeLeft(`${hrs}h ${rem}m remaining`);
-  // };
+    const mins = Math.floor(diff / 60000);
+    const hrs = Math.floor(mins / 60);
+    const rem = mins % 60;
+    setTimeLeft(`${hrs}h ${rem}m remaining`);
+  };
 
   const fetchTravelStatus = async (bookingId) => {
     try {
@@ -40,6 +40,15 @@ function BookingDetailsPage() {
     } catch (err) {
       console.warn("Travel status not available");
     }
+  };
+
+  const handleChatClick = () => {
+    navigate(`/customer/chat/${id}`, {
+      state: {
+        bookingData: data,
+        barberName: data.barbername
+      }
+    });
   };
 
   return (
@@ -66,6 +75,7 @@ function BookingDetailsPage() {
             <div>
               <p><strong>Payment:</strong> {data.payment_method}</p>
               <p><strong>Amount:</strong> ₹{data.total_amount}</p>
+              <p><strong>Booking Type:</strong> {data.booking_type}</p>
             </div>
           </div>
 
@@ -83,13 +93,16 @@ function BookingDetailsPage() {
           )}
 
           <div className="flex flex-col items-center gap-4 mt-6">
-            <button
-              onClick={() => alert('Start chat')}
-              className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors"
-            >
-              <MessageSquare size={18} />
-              Chat with Barber
-            </button>
+            {/* Chat Button - Only show if booking is not completed or cancelled */}
+            {data.booking_status !== 'COMPLETED' && data.booking_status !== 'CANCELLED' && (
+              <button
+                onClick={handleChatClick}
+                className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition-colors"
+              >
+                <MessageSquare size={18} />
+                Chat with Beautician
+              </button>
+            )}
 
             <Link
               to="/booking-status"

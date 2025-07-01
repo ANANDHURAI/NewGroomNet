@@ -5,6 +5,8 @@ from authservice.models import User
 from barbersite.models import BarberSlot
 from profileservice.models import Address
 from .utils import get_lat_lng_from_address
+from django.db import transaction
+
 
 class BarberSerializer(serializers.ModelSerializer):
     class Meta:
@@ -52,7 +54,7 @@ class BookingCreateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Booking
-        fields = ['service', 'barber', 'slot', 'address', 'payment_method']
+        fields = ['service', 'barber', 'slot', 'address', 'payment_method','booking_type']
 
     def validate_address(self, value):
         request = self.context.get('request')
@@ -60,41 +62,35 @@ class BookingCreateSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError("Address does not belong to the current user")
         return value
 
-    def validate_slot(self, slot):
-        if slot.is_booked:
-            raise serializers.ValidationError("This slot is already booked.")
-        return slot
-
     def create(self, validated_data):
         request = self.context['request']
         customer = request.user
-        payment_method = validated_data.pop('payment_method', 'COD') 
-
+        payment_method = validated_data.pop('payment_method')
+        booking_type = validated_data.pop('booking_type')
         service = validated_data['service']
         total_amount = getattr(service, 'price', 100.00)
-
         slot = validated_data['slot']
 
-        # Mark slot as booked
-        slot.is_booked = True
-        slot.save()
+        with transaction.atomic():
+            slot.is_booked = True
+            slot.save()
 
-        # Create the booking
-        booking = Booking.objects.create(
-            customer=customer,
-            total_amount=total_amount,
-            is_payment_done=(payment_method == 'COD'),
-            **validated_data
-        )
+            booking = Booking.objects.create(
+                customer=customer,
+                total_amount=total_amount,
+                is_payment_done=(payment_method == 'COD'),
+                status='CONFIRMED',
+                booking_type=booking_type,
+                **validated_data
+            )
 
-        # Create payment record
-        PaymentModel.objects.create(
-            booking=booking,
-            payment_method=payment_method,
-            payment_status='SUCCESS' if payment_method == 'COD' else 'PENDING',
-            service_amount=total_amount,
-            platform_fee=0
-        )
+            PaymentModel.objects.create(
+                booking=booking,
+                payment_method=payment_method,
+                payment_status='PENDING' if payment_method == 'COD' else 'SUCCESS',
+                service_amount=total_amount,
+                platform_fee=(0.05 * float(total_amount))
+            )
 
         return booking
 

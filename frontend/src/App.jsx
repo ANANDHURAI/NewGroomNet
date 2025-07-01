@@ -43,6 +43,7 @@ import BookingDetailsPage from './pages/customersite/BookingDetailsPage'
 import BookingHistoryPage from './pages/customersite/BookingHistoryPage'
 import AddressList from './pages/customersite/AddressList'
 import BookingStatus from './pages/customersite/BookingStatus'
+import CustomerChatPage from './pages/customersite/CustomerChatPage'
 
 function App() {
   return (
@@ -269,7 +270,6 @@ function App() {
                 </ProtectedRoute>
               } 
             />
-            <Route path="/barber/chat/:id" element={<BarberChatPage />} />
             <Route path="/payment-cancelled" element={<CancelledPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
 
@@ -277,6 +277,11 @@ function App() {
             <Route path="/booking-details/:id" element={<BookingDetailsPage />} />
             <Route path="/my-addresses" element={<AddressList />} />
             <Route path="/booking-status" element={<BookingStatus />} />
+
+
+            <Route path="/barber/chat/:bookingId" element={<BarberChatPage />} />
+            <Route path="/customer/chat/:bookingId" element={<CustomerChatPage />} />
+
           </Routes>
         </ServiceProvider>
       </BrowserRouter>

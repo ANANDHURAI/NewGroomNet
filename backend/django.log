@@ -20661,3 +20661,2611 @@ D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
 Watching for file changes with StatReloader
 D:\NewGroomNet-clean\backend\travel_tracking\models.py changed, reloading.
 Watching for file changes with StatReloader
+[mHTTP OPTIONS /auth/customer-barber-login/ 200 [0.12, 127.0.0.1:51857][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [4.09, 127.0.0.1:51857][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.00, 127.0.0.1:51857][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.01, 127.0.0.1:51857][0m
+[mHTTP GET /customersite/home/ 200 [0.08, 127.0.0.1:51857][0m
+[mHTTP GET /customersite/home/ 200 [0.12, 127.0.0.1:51857][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.14, 127.0.0.1:51872][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.24, 127.0.0.1:51873][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.26, 127.0.0.1:51874][0m
+[mHTTP OPTIONS /customersite/user-location/ 200 [0.05, 127.0.0.1:51857][0m
+[mHTTP POST /customersite/user-location/ 200 [0.13, 127.0.0.1:51857][0m
+[mHTTP OPTIONS /customersite/categories/ 200 [0.12, 127.0.0.1:51891][0m
+[mHTTP OPTIONS /customersite/categories/ 200 [0.13, 127.0.0.1:51892][0m
+[mHTTP GET /customersite/categories/ 200 [0.17, 127.0.0.1:51892][0m
+[mHTTP GET /customersite/categories/ 200 [0.06, 127.0.0.1:51892][0m
+[mHTTP OPTIONS /customersite/services/?category_id=1 200 [0.10, 127.0.0.1:51892][0m
+[mHTTP OPTIONS /customersite/services/?category_id=1 200 [0.11, 127.0.0.1:51891][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.15, 127.0.0.1:51892][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.20, 127.0.0.1:51892][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.13, 127.0.0.1:51908][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.14, 127.0.0.1:51909][0m
+[mHTTP OPTIONS /customersite/barbers/?service_id=1 200 [0.13, 127.0.0.1:51921][0m
+[mHTTP OPTIONS /customersite/barbers/?service_id=1 200 [0.08, 127.0.0.1:51922][0m
+[mHTTP GET /customersite/barbers/?service_id=1 200 [0.31, 127.0.0.1:51921][0m
+[mHTTP GET /customersite/barbers/?service_id=1 200 [0.17, 127.0.0.1:51921][0m
+[36mHTTP GET /media/profile_images/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 304 [0.03, 127.0.0.1:51926][0m
+[mHTTP OPTIONS /customersite/available-dates/?barber_id=3 200 [0.13, 127.0.0.1:51921][0m
+[mHTTP OPTIONS /customersite/available-dates/?barber_id=3 200 [0.13, 127.0.0.1:51922][0m
+[mHTTP GET /customersite/available-dates/?barber_id=3 200 [0.35, 127.0.0.1:51921][0m
+[mHTTP GET /customersite/available-dates/?barber_id=3 200 [0.06, 127.0.0.1:51921][0m
+[mHTTP OPTIONS /customersite/available-slots/?barber_id=3&date=2025-06-28 200 [0.01, 127.0.0.1:51935][0m
+[mHTTP OPTIONS /customersite/available-slots/?barber_id=3&date=2025-06-28 200 [0.02, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-28 200 [0.24, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-28 200 [0.09, 127.0.0.1:51936][0m
+[mHTTP OPTIONS /customersite/addresses/ 200 [0.10, 127.0.0.1:51936][0m
+[mHTTP OPTIONS /customersite/addresses/ 200 [0.01, 127.0.0.1:51935][0m
+[mHTTP GET /customersite/addresses/ 200 [0.65, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/addresses/ 200 [0.13, 127.0.0.1:51936][0m
+[mHTTP OPTIONS /customersite/booking-summary/ 200 [0.01, 127.0.0.1:51936][0m
+[mHTTP OPTIONS /customersite/booking-summary/ 200 [0.01, 127.0.0.1:51935][0m
+[mHTTP POST /customersite/booking-summary/ 200 [0.19, 127.0.0.1:51935][0m
+[mHTTP POST /customersite/booking-summary/ 200 [0.40, 127.0.0.1:51936][0m
+[mHTTP OPTIONS /customersite/create-booking/ 200 [0.01, 127.0.0.1:51978][0m
+Bad Request: /customersite/create-booking/
+[31;1mHTTP POST /customersite/create-booking/ 400 [0.16, 127.0.0.1:51978][0m
+[mHTTP GET /customersite/home/ 200 [0.12, 127.0.0.1:52039][0m
+[mHTTP GET /customersite/home/ 200 [0.22, 127.0.0.1:52039][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.27, 127.0.0.1:52047][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.35, 127.0.0.1:52046][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.46, 127.0.0.1:52045][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [3.95, 127.0.0.1:52086][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.08, 127.0.0.1:52086][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.06, 127.0.0.1:52087][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.08, 127.0.0.1:52086][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.06, 127.0.0.1:52086][0m
+[mHTTP POST /customersite/user-location/ 200 [0.15, 127.0.0.1:52086][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:52086][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.01, 127.0.0.1:52087][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.19, 127.0.0.1:52086][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.29, 127.0.0.1:52086][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.02, 127.0.0.1:52287][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.03, 127.0.0.1:52288][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.11, 127.0.0.1:52288][0m
+[mHTTP OPTIONS /chat/booking/13/status/ 200 [0.07, 127.0.0.1:52287][0m
+[mHTTP GET /chat/booking/13/status/ 200 [0.17, 127.0.0.1:52287][0m
+[mHTTP OPTIONS /chat/chat/13/messages/ 200 [0.02, 127.0.0.1:52287][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.38, 127.0.0.1:52288][0m
+[mHTTP GET /chat/chat/13/messages/ 200 [0.16, 127.0.0.1:52287][0m
+[mHTTP GET /chat/booking/13/status/ 200 [0.13, 127.0.0.1:52288][0m
+[mHTTP GET /chat/chat/13/messages/ 200 [0.17, 127.0.0.1:52288][0m
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52292]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52292]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52292]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52295]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52295]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52295]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52301]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52301]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52301]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52304]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52304]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52304]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52322]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52322]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52322]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52325]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52325]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52325]
+[mHTTP OPTIONS /chat/chat/13/send/ 200 [0.09, 127.0.0.1:52288][0m
+[mHTTP POST /chat/chat/13/send/ 201 [0.13, 127.0.0.1:52288][0m
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52328]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52328]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52328]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52331]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52331]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52331]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52334]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52334]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52334]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52337]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52337]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52337]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52353]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52353]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52353]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52359]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52359]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52359]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52372]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52372]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52372]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52375]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52375]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52375]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52387]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52387]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52387]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52391]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52391]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52391]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52395]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52395]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52395]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52401]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52401]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52401]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52405]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52405]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52405]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52413]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52413]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52413]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52421]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52421]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52421]
+[mHTTP GET /profile-service/user-profile/ 200 [0.11, 127.0.0.1:52425][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.22, 127.0.0.1:52425][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.35, 127.0.0.1:52427][0m
+[mHTTP GET /chat/booking/13/status/ 200 [0.16, 127.0.0.1:52429][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.77, 127.0.0.1:52427][0m
+[mHTTP GET /chat/booking/13/status/ 200 [1.01, 127.0.0.1:52429][0m
+[mHTTP GET /chat/chat/13/messages/ 200 [0.84, 127.0.0.1:52425][0m
+[mHTTP GET /chat/chat/13/messages/ 200 [0.08, 127.0.0.1:52425][0m
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52433]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52433]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52433]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52440]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52440]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52440]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52446]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52446]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52446]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52455]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52455]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52455]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52466]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52466]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52466]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52479]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52479]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52479]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52488]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52488]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52488]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52493]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52493]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52493]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52498]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52498]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52498]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52501]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52501]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52501]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52512]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52512]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52512]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52515]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52515]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52515]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52524]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52524]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52524]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52536]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52536]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52536]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52540]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52540]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52540]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52549]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52549]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52549]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52571]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52571]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52571]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52582]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52582]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52582]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52585]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52585]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52585]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52588]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52588]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52588]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52592]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52592]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52592]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52595]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52595]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52595]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52598]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52598]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52598]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52601]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52601]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52601]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52617]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52617]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52617]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52620]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52620]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52620]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52624]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52624]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52624]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52627]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52627]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52627]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52630]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52630]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52630]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52637]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52637]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52637]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52640]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52640]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52640]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52643]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52643]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52643]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52646]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52646]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52646]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52649]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52649]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52649]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52652]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52652]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52652]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52659]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52659]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52659]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52665]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52665]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52665]
+[mHTTP GET /profile-service/user-profile/ 200 [0.09, 127.0.0.1:52669][0m
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52672]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52672]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52672]
+[mHTTP GET /profile-service/user-profile/ 200 [0.65, 127.0.0.1:52669][0m
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52675]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52675]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52675]
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.03, 127.0.0.1:52669][0m
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.02, 127.0.0.1:52671][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.28, 127.0.0.1:52669][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.55, 127.0.0.1:52669][0m
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52683]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52683]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52683]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52686]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52686]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52686]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52689]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52689]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52689]
+[mHTTP GET /profile-service/user-profile/ 200 [0.11, 127.0.0.1:52669][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.14, 127.0.0.1:52669][0m
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52692]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52692]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52692]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52696]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52696]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52696]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52699]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52699]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52699]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52702]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52702]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52702]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52705]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52705]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52705]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52708]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52708]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52708]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52711]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52711]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52711]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52714]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52714]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52714]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52717]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52717]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52717]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52720]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52720]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52720]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52723]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52723]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52723]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52726]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52726]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52726]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52729]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52729]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52729]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52732]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52732]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52732]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52735]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52735]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52735]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52738]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52738]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52738]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52741]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52741]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52741]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52744]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52744]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52744]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52747]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52747]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52747]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52750]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52750]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52750]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52753]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52753]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52753]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52756]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52756]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52756]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52759]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52759]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52759]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52762]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52762]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52762]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52765]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52765]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52765]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52769]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52769]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52769]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52772]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52772]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52772]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52775]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52775]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52775]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52778]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52778]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52778]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52781]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52781]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52781]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52784]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52784]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52784]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52790]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52790]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52790]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52793]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52793]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52793]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52796]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52796]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52796]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52799]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52799]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52799]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52802]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52802]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52802]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52805]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52805]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52805]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52808]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52808]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52808]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52811]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52811]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52811]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52814]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52814]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52814]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52817]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52817]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52817]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52820]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52820]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52820]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52823]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52823]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52823]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52826]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52826]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52826]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52829]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52829]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52829]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52832]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52832]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52832]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52835]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52835]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52835]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52838]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52838]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52838]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52841]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52841]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52841]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52844]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52844]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52844]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52847]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52847]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52847]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52851]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52851]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52851]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52854]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52854]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52854]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52857]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52857]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52857]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52860]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52860]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52860]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52863]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52863]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52863]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52866]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52866]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52866]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52869]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52869]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52869]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52872]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52872]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52872]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52875]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52875]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52875]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52878]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52878]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52878]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52881]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52881]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52881]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52884]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52884]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52884]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52887]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52887]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52887]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52890]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52890]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52890]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52893]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52893]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52893]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52900]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52900]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52900]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52903]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52903]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52903]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52906]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52906]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52906]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52912]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52912]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52912]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52915]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52915]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52915]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52918]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52918]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52918]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52921]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52921]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52921]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52924]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52924]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52924]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52927]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52927]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52927]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52931]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52931]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52931]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52934]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52934]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52934]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52937]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52937]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52937]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52940]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52940]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52940]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52943]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52943]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52943]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52946]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52946]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52946]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52949]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52949]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52949]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52952]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52952]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52952]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52955]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52955]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52955]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52958]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52958]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52958]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52961]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52961]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52961]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52964]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52964]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52964]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52967]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52967]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52967]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52970]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52970]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52970]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52973]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52973]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52973]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52976]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52976]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52976]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52979]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52979]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52979]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52982]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52982]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52982]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52985]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52985]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52985]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52988]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52988]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52988]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52991]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52991]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52991]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52994]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52994]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52994]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:52997]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:52997]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:52997]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53000]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53000]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53000]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53006]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53006]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53006]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53021]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53021]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53021]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53031]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53031]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53031]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53050]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53050]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53050]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53088]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53088]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53088]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53118]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53118]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53118]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53133]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53133]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53133]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53139]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53139]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53139]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53142]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53142]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53142]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53145]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53145]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53145]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53157]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53157]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53157]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53194]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53194]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53194]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53198]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53198]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53198]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53233]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53233]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53233]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53245]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53245]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53245]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53257]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53257]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53257]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53260]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53260]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53260]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53263]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53263]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53263]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53276]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53276]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53276]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53282]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53282]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53282]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53293]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53293]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53293]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53296]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53296]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53296]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53353]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53353]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53353]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53405]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53405]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53405]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53479]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53479]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53479]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53620]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53620]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53620]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53653]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53653]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53653]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53660]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53660]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53660]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53690]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53690]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53690]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53699]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53699]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53699]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53708]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53708]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53708]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53714]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53714]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53714]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53730]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53730]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53730]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53739]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53739]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53739]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53772]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53772]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53772]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53817]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53817]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53817]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53856]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53856]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53856]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53916]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53916]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53916]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53928]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53928]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53928]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53949]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53949]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53949]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:53976]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:53976]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:53976]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54024]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54024]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54024]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54042]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54042]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54042]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54054]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54054]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54054]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54069]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54069]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54069]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54079]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54079]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54079]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54122]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54122]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54122]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54125]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54125]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54125]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54140]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54140]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54140]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54158]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54158]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54158]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54170]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54170]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54170]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54182]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54182]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54182]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54186]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54186]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54186]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54189]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54189]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54189]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54226]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54226]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54226]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54229]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54229]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54229]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54238]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54238]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54238]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54245]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54245]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54245]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54272]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54272]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54272]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54281]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54281]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54281]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54284]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54284]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54284]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54290]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54290]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54290]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54293]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54293]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54293]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54296]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54296]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54296]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54299]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54299]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54299]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54314]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54314]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54314]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54317]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54317]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54317]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54335]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54335]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54335]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54341]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54341]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54341]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54363]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54363]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54363]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54366]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54366]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54366]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54375]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54375]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54375]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54378]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54378]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54378]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54402]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54402]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54402]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54412]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54412]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54412]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54416]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54416]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54416]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54425]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54425]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54425]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54434]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54434]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54434]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54437]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54437]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54437]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54440]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54440]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54440]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54446]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54446]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54446]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54449]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54449]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54449]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54455]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54455]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54455]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54482]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54482]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54482]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54485]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54485]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54485]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54491]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54491]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54491]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54499]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54499]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54499]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54505]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54505]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54505]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54508]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54508]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54508]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54511]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54511]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54511]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54514]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54514]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54514]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54517]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54517]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54517]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54524]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54524]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54524]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54527]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54527]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54527]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54531]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54531]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54531]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54534]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54534]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54534]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54541]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54541]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54541]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54544]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54544]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54544]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54547]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54547]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54547]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54550]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54550]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54550]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54553]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54553]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54553]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54556]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54556]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54556]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54559]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54559]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54559]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54562]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54562]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54562]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54565]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54565]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54565]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54568]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54568]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54568]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54571]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54571]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54571]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54574]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54574]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54574]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54577]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54577]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54577]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54580]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54580]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54580]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54583]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54583]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54583]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54601]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54601]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54601]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54604]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54604]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54604]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54607]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54607]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54607]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54610]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54610]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54610]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54613]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54613]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54613]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54617]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54617]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54617]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54620]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54620]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54620]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54623]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54623]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54623]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54626]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54626]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54626]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54629]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54629]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54629]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54632]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54632]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54632]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54635]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54635]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54635]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54638]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54638]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54638]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54641]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54641]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54641]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54644]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54644]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54644]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54647]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54647]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54647]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54650]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54650]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54650]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54653]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54653]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54653]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54656]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54656]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54656]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54659]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54659]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54659]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54670]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54670]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54670]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54698]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54698]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54698]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54705]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54705]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54705]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54711]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54711]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54711]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54714]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54714]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54714]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54717]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54717]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54717]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54720]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54720]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54720]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54723]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54723]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54723]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54730]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54730]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54730]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54733]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54733]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54733]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54736]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54736]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54736]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54739]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54739]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54739]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54745]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54745]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54745]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54748]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54748]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54748]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54751]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54751]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54751]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54754]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54754]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54754]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54768]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54768]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54768]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54777]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54777]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54777]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54780]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54780]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54780]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54783]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54783]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54783]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54786]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54786]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54786]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54789]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54789]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54789]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54792]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54792]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54792]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54795]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54795]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54795]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54798]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54798]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54798]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54801]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54801]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54801]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54804]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54804]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54804]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54807]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54807]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54807]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54811]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54811]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54811]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54814]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54814]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54814]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54817]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54817]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54817]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54820]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54820]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54820]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54823]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54823]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54823]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54827]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54827]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54827]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54830]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54830]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54830]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54833]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54833]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54833]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54836]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54836]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54836]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54839]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54839]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54839]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54842]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54842]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54842]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54845]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54845]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54845]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54848]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54848]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54848]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54851]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54851]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54851]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54854]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54854]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54854]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54857]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54857]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54857]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54860]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54860]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54860]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54868]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54868]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54868]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54871]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54871]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54871]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54874]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54874]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54874]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54877]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54877]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54877]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54881]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54881]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54881]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54886]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54886]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54886]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54889]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54889]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54889]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54892]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54892]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54892]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54895]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54895]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54895]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54898]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54898]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54898]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54902]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54902]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54902]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54905]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54905]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54905]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54908]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54908]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54908]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54911]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54911]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54911]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54914]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54914]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54914]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54917]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54917]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54917]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54926]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54926]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54926]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54929]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54929]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54929]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54934]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54934]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54934]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54947]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54947]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54947]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54950]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54950]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54950]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54953]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54953]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54953]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54956]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54956]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54956]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54959]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54959]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54959]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54962]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54962]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54962]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54965]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54965]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54965]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54968]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54968]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54968]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54971]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54971]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54971]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54974]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54974]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54974]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54977]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54977]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54977]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54983]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54983]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54983]
+WebSocket HANDSHAKING /ws/chat/13/ [127.0.0.1:54988]
+WebSocket REJECT /ws/chat/13/ [127.0.0.1:54988]
+WebSocket DISCONNECT /ws/chat/13/ [127.0.0.1:54988]
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.01, 127.0.0.1:54996][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.02, 127.0.0.1:54996][0m
+[mHTTP OPTIONS /auth/token/refresh/ 200 [0.00, 127.0.0.1:54996][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.01, 127.0.0.1:54996][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.04, 127.0.0.1:54996][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.01, 127.0.0.1:54996][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.03, 127.0.0.1:54996][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:54996][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:54996][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:54996][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.01, 127.0.0.1:55001][0m
+[mHTTP GET /customersite/home/ 200 [0.05, 127.0.0.1:55349][0m
+[mHTTP GET /customersite/home/ 200 [0.05, 127.0.0.1:55349][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.05, 127.0.0.1:55356][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.05, 127.0.0.1:55357][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.05, 127.0.0.1:55358][0m
+Watching for file changes with StatReloader
+[mHTTP OPTIONS /auth/customer-barber-login/ 200 [0.05, 127.0.0.1:50083][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [1.04, 127.0.0.1:50083][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.01, 127.0.0.1:50083][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.00, 127.0.0.1:50084][0m
+[mHTTP GET /customersite/home/ 200 [0.04, 127.0.0.1:50083][0m
+[mHTTP GET /customersite/home/ 200 [0.03, 127.0.0.1:50083][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.02, 127.0.0.1:50090][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.02, 127.0.0.1:50091][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.02, 127.0.0.1:50089][0m
+[mHTTP OPTIONS /customersite/user-location/ 200 [0.00, 127.0.0.1:50083][0m
+[mHTTP POST /customersite/user-location/ 200 [0.03, 127.0.0.1:50083][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.02, 127.0.0.1:50117][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.02, 127.0.0.1:50118][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.02, 127.0.0.1:50119][0m
+[mHTTP OPTIONS /auth/logout/ 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP POST /auth/logout/ 200 [0.08, 127.0.0.1:50123][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [0.93, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.01, 127.0.0.1:50124][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.02, 127.0.0.1:50124][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.02, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.01, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.01, 127.0.0.1:50123][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.05, 127.0.0.1:50124][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-slots/ 200 [0.00, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-slots/ 200 [0.01, 127.0.0.1:50123][0m
+[mHTTP GET /barbersite/barber-slots/ 200 [0.02, 127.0.0.1:50124][0m
+[mHTTP GET /barbersite/barber-slots/ 200 [0.02, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-slots/?date=2025-06-30 200 [0.00, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-slots/?date=2025-06-30 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP GET /barbersite/barber-slots/?date=2025-06-30 200 [0.07, 127.0.0.1:50123][0m
+[mHTTP GET /barbersite/barber-slots/?date=2025-06-30 200 [0.01, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.01, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.01, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.00, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.00, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.01, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.00, 127.0.0.1:50124][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.01, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /barbersite/barber-slots/create-slot/ 200 [0.01, 127.0.0.1:50124][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.08, 127.0.0.1:50123][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.02, 127.0.0.1:50123][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.12, 127.0.0.1:50124][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.02, 127.0.0.1:50124][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.02, 127.0.0.1:50124][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.02, 127.0.0.1:50124][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.02, 127.0.0.1:50124][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.02, 127.0.0.1:50124][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.03, 127.0.0.1:50124][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.05, 127.0.0.1:50134][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.06, 127.0.0.1:50135][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.07, 127.0.0.1:50136][0m
+[mHTTP POST /barbersite/barber-slots/create-slot/ 201 [0.07, 127.0.0.1:50137][0m
+Internal Server Error: /barbersite/barber-slots/create-slot/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\utils\dateparse.py", line 95, in parse_time
+    return datetime.time.fromisoformat(value).replace(tzinfo=None)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+ValueError: hour must be in 0..23
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2593, in to_python
+    parsed = parse_time(value)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\utils\dateparse.py", line 101, in parse_time
+    return datetime.time(**kw)
+           ~~~~~~~~~~~~~^^^^^^
+ValueError: hour must be in 0..23
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\backend\barbersite\views.py", line 178, in create_slot
+    if BarberSlot.objects.filter(
+       ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        barber=request.user,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        end_time=end_time
+        ^^^^^^^^^^^^^^^^^
+    ).exists():
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\query.py", line 1491, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\query.py", line 1509, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\query.py", line 1516, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\sql\query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\sql\query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ~~~~~~~~~~~~~~~~~^
+        child,
+        ^^^^^^
+    ...<7 lines>...
+        update_join_types=update_join_types,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\sql\query.py", line 1585, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\sql\query.py", line 1412, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\lookups.py", line 38, in __init__
+    self.rhs = self.get_prep_lookup()
+               ~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\lookups.py", line 410, in get_prep_lookup
+    return super().get_prep_lookup()
+           ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\lookups.py", line 96, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2619, in get_prep_value
+    return self.to_python(value)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\db\models\fields\__init__.py", line 2597, in to_python
+    raise exceptions.ValidationError(
+    ...<3 lines>...
+    )
+django.core.exceptions.ValidationError: ['“24:00:00” value has the correct format (HH:MM[:ss[.uuuuuu]]) but it is an invalid time.']
+[35;1mHTTP POST /barbersite/barber-slots/create-slot/ 500 [0.41, 127.0.0.1:50123][0m
+[mHTTP GET /barbersite/barber-slots/ 200 [0.02, 127.0.0.1:50123][0m
+[mHTTP GET /barbersite/barber-slots/ 200 [0.02, 127.0.0.1:50137][0m
+[mHTTP OPTIONS /customersite/categories/ 200 [0.00, 127.0.0.1:50137][0m
+[mHTTP OPTIONS /customersite/categories/ 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP GET /customersite/categories/ 200 [0.03, 127.0.0.1:50123][0m
+[mHTTP GET /customersite/categories/ 200 [0.02, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /customersite/services/?category_id=1 200 [0.01, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /customersite/services/?category_id=1 200 [0.01, 127.0.0.1:50137][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.05, 127.0.0.1:50137][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.08, 127.0.0.1:50137][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.06, 127.0.0.1:50118][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.08, 127.0.0.1:50119][0m
+[mHTTP OPTIONS /customersite/barbers/?service_id=2 200 [0.00, 127.0.0.1:50137][0m
+[mHTTP OPTIONS /customersite/barbers/?service_id=2 200 [0.01, 127.0.0.1:50123][0m
+[mHTTP GET /customersite/barbers/?service_id=2 200 [0.02, 127.0.0.1:50123][0m
+[mHTTP GET /customersite/barbers/?service_id=2 200 [0.02, 127.0.0.1:50123][0m
+[36mHTTP GET /media/profile_images/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 304 [0.02, 127.0.0.1:50119][0m
+[mHTTP OPTIONS /customersite/available-dates/?barber_id=3 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /customersite/available-dates/?barber_id=3 200 [0.00, 127.0.0.1:50137][0m
+[mHTTP GET /customersite/available-dates/?barber_id=3 200 [0.07, 127.0.0.1:50123][0m
+[mHTTP GET /customersite/available-dates/?barber_id=3 200 [0.02, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.00, 127.0.0.1:50137][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:50137][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:50137][0m
+[36mHTTP GET /media/profile_images/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 304 [0.02, 127.0.0.1:50119][0m
+[mHTTP OPTIONS /customersite/available-slots/?barber_id=3&date=2025-06-30 200 [0.00, 127.0.0.1:50137][0m
+[mHTTP OPTIONS /customersite/available-slots/?barber_id=3&date=2025-06-30 200 [0.00, 127.0.0.1:50123][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-30 200 [0.05, 127.0.0.1:50137][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-30 200 [0.02, 127.0.0.1:50137][0m
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-30 200 [0.04, 127.0.0.1:51140][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-30 200 [0.01, 127.0.0.1:51140][0m
+[mHTTP OPTIONS /customersite/addresses/ 200 [0.00, 127.0.0.1:51174][0m
+[mHTTP OPTIONS /customersite/addresses/ 200 [0.00, 127.0.0.1:51175][0m
+[mHTTP GET /customersite/addresses/ 200 [0.03, 127.0.0.1:51175][0m
+[mHTTP GET /customersite/addresses/ 200 [0.01, 127.0.0.1:51175][0m
+[mHTTP OPTIONS /customersite/booking-summary/ 200 [0.01, 127.0.0.1:51175][0m
+[mHTTP OPTIONS /customersite/booking-summary/ 200 [0.01, 127.0.0.1:51174][0m
+[mHTTP POST /customersite/booking-summary/ 200 [0.06, 127.0.0.1:51174][0m
+[mHTTP POST /customersite/booking-summary/ 200 [0.08, 127.0.0.1:51175][0m
+[mHTTP OPTIONS /customersite/create-booking/ 200 [0.00, 127.0.0.1:51175][0m
+Internal Server Error: /customersite/create-booking/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\backend\customersite\views.py", line 266, in create
+    booking = serializer.save()
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\backend\customersite\serializer.py", line 69, in create
+    booking_type = validated_data['booking_type']
+                   ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'booking_type'
+[35;1mHTTP POST /customersite/create-booking/ 500 [0.20, 127.0.0.1:51175][0m
+Bad Request: /customersite/create-booking/
+[31;1mHTTP POST /customersite/create-booking/ 400 [0.01, 127.0.0.1:51625][0m
+Bad Request: /customersite/create-booking/
+[31;1mHTTP POST /customersite/create-booking/ 400 [0.01, 127.0.0.1:51631][0m
+Bad Request: /customersite/create-booking/
+[31;1mHTTP POST /customersite/create-booking/ 400 [0.02, 127.0.0.1:51741][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.01, 127.0.0.1:51848][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.01, 127.0.0.1:51848][0m
+[mHTTP OPTIONS /auth/token/refresh/ 200 [0.00, 127.0.0.1:51848][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.03, 127.0.0.1:51848][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.01, 127.0.0.1:51848][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:51848][0m
+[36mHTTP GET /media/profile_images/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 304 [0.01, 127.0.0.1:51854][0m
+Unauthorized: /customersite/create-booking/
+[31;1mHTTP POST /customersite/create-booking/ 401 [0.02, 127.0.0.1:51868][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.01, 127.0.0.1:51868][0m
+Unauthorized: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 401 [0.01, 127.0.0.1:51875][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.02, 127.0.0.1:51875][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:51875][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:51875][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:51901][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.02, 127.0.0.1:51901][0m
+Bad Request: /auth/customer-barber-login/
+[31;1mHTTP POST /auth/customer-barber-login/ 400 [1.08, 127.0.0.1:51901][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [0.97, 127.0.0.1:51901][0m
+[mHTTP GET /customersite/home/ 200 [0.03, 127.0.0.1:51901][0m
+[mHTTP GET /customersite/home/ 200 [0.03, 127.0.0.1:51901][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.06, 127.0.0.1:51918][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.06, 127.0.0.1:51920][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.06, 127.0.0.1:51919][0m
+[mHTTP GET /customersite/categories/ 200 [0.01, 127.0.0.1:51901][0m
+[mHTTP GET /customersite/categories/ 200 [0.01, 127.0.0.1:51901][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.02, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/services/?category_id=1 200 [0.02, 127.0.0.1:51936][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.01, 127.0.0.1:51941][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.01, 127.0.0.1:51942][0m
+[mHTTP OPTIONS /customersite/barbers/?service_id=1 200 [0.00, 127.0.0.1:51936][0m
+[mHTTP OPTIONS /customersite/barbers/?service_id=1 200 [0.01, 127.0.0.1:51939][0m
+[mHTTP GET /customersite/barbers/?service_id=1 200 [0.04, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/barbers/?service_id=1 200 [0.03, 127.0.0.1:51936][0m
+[36mHTTP GET /media/profile_images/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 304 [0.02, 127.0.0.1:51942][0m
+[mHTTP GET /customersite/available-dates/?barber_id=3 200 [0.05, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/available-dates/?barber_id=3 200 [0.02, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-30 200 [0.05, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/available-slots/?barber_id=3&date=2025-06-30 200 [0.05, 127.0.0.1:51936][0m
+[mHTTP GET /customersite/addresses/ 200 [0.02, 127.0.0.1:51966][0m
+[mHTTP GET /customersite/addresses/ 200 [0.02, 127.0.0.1:51966][0m
+[mHTTP POST /customersite/booking-summary/ 200 [0.06, 127.0.0.1:51966][0m
+[mHTTP POST /customersite/booking-summary/ 200 [0.06, 127.0.0.1:51967][0m
+Internal Server Error: /customersite/create-booking/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\generics.py", line 194, in post
+    return self.create(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\backend\customersite\views.py", line 266, in create
+    booking = serializer.save()
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\backend\customersite\serializer.py", line 78, in create
+    booking = Booking.objects.create(
+        customer=customer,
+    ...<4 lines>...
+        **validated_data
+    )
+TypeError: django.db.models.query.QuerySet.create() got multiple values for keyword argument 'booking_type'
+[35;1mHTTP POST /customersite/create-booking/ 500 [0.13, 127.0.0.1:51980][0m
+D:\NewGroomNet-clean\backend\customersite\serializer.py changed, reloading.
+Watching for file changes with StatReloader
+[mHTTP POST /customersite/create-booking/ 201 [0.13, 127.0.0.1:52074][0m
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.01, 127.0.0.1:52074][0m
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.01, 127.0.0.1:52075][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:52075][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:52075][0m
+[mHTTP GET /barbersite/barber-slots/ 200 [0.02, 127.0.0.1:52075][0m
+[mHTTP GET /barbersite/barber-slots/ 200 [0.02, 127.0.0.1:52074][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:52074][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:52074][0m
+[mHTTP OPTIONS /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:52094][0m
+[mHTTP OPTIONS /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:52095][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:52095][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:52095][0m
+[mHTTP GET /customersite/home/ 200 [0.03, 127.0.0.1:52095][0m
+[mHTTP GET /customersite/home/ 200 [0.02, 127.0.0.1:52095][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.04, 127.0.0.1:52114][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.04, 127.0.0.1:52115][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.04, 127.0.0.1:52113][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.01, 127.0.0.1:52192][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.01, 127.0.0.1:52192][0m
+[mHTTP OPTIONS /auth/admin-login/ 200 [0.00, 127.0.0.1:52192][0m
+[mHTTP POST /auth/admin-login/ 200 [1.08, 127.0.0.1:52192][0m
+[mHTTP OPTIONS /auth/admin-dashboard/ 200 [0.00, 127.0.0.1:52192][0m
+[mHTTP OPTIONS /auth/admin-dashboard/ 200 [0.00, 127.0.0.1:52193][0m
+[mHTTP GET /auth/admin-dashboard/ 200 [0.02, 127.0.0.1:52193][0m
+[mHTTP GET /auth/admin-dashboard/ 200 [0.01, 127.0.0.1:52193][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:52193][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/categories/ 200 [0.01, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/services/ 200 [0.01, 127.0.0.1:52192][0m
+[mHTTP OPTIONS /adminsite/categories/ 200 [0.00, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/services/ 200 [0.00, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/categories/ 200 [0.03, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/services/ 200 [0.06, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/categories/ 200 [0.03, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/services/ 200 [0.02, 127.0.0.1:52193][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.04, 127.0.0.1:52235][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.05, 127.0.0.1:52234][0m
+[mHTTP GET /adminsite/categories/ 200 [0.01, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/categories/ 200 [0.01, 127.0.0.1:52193][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.01, 127.0.0.1:52235][0m
+[mHTTP OPTIONS /adminsite/pending-requests/ 200 [0.01, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/all-requests/ 200 [0.01, 127.0.0.1:52192][0m
+[mHTTP OPTIONS /adminsite/all-requests/ 200 [0.02, 127.0.0.1:52230][0m
+[mHTTP OPTIONS /adminsite/pending-requests/ 200 [0.03, 127.0.0.1:52229][0m
+[mHTTP GET /adminsite/pending-requests/ 200 [0.03, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/all-requests/ 200 [0.03, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/all-requests/ 200 [0.03, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/pending-requests/ 200 [0.03, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/barber-details/3/ 200 [0.00, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/barber-details/3/ 200 [0.07, 127.0.0.1:52193][0m
+[mHTTP GET /media/barber_profiles/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 200 [0.20, 127.0.0.1:52235][0m
+[mHTTP HEAD /media/documents/certificates/Screenshot_2025-06-14_084708.png 200 [0.09, 127.0.0.1:52193][0m
+[mHTTP GET /media/documents/certificates/Screenshot_2025-06-14_084708.png 200 [0.01, 127.0.0.1:52235][0m
+Not Found: /favicon.ico
+[33mHTTP GET /favicon.ico 404 [0.08, 127.0.0.1:52235][0m
+[mHTTP HEAD /media/documents/licences/Screenshot_2025-06-12_210510_6m9DU1Z.png 200 [0.07, 127.0.0.1:52193][0m
+[mHTTP GET /media/documents/licences/Screenshot_2025-06-12_210510_6m9DU1Z.png 200 [0.03, 127.0.0.1:52235][0m
+[mHTTP GET /adminsite/categories/ 200 [0.03, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/services/ 200 [0.04, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/categories/ 200 [0.03, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/services/ 200 [0.03, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/categories/ 200 [0.01, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/categories/ 200 [0.01, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/pending-requests/ 200 [0.02, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/all-requests/ 200 [0.02, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/pending-requests/ 200 [0.04, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/all-requests/ 200 [0.04, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/barbers-list/ 200 [0.00, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/barbers-list/ 200 [0.00, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/barbers-list/ 200 [0.02, 127.0.0.1:52192][0m
+[mHTTP GET /adminsite/barbers-list/ 200 [0.01, 127.0.0.1:52192][0m
+[36mHTTP GET /media/profile_images/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 304 [0.01, 127.0.0.1:52235][0m
+[mHTTP OPTIONS /adminsite/customers-list/ 200 [0.03, 127.0.0.1:52192][0m
+[mHTTP OPTIONS /adminsite/customers-list/ 200 [0.03, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/customers-list/ 200 [0.02, 127.0.0.1:52193][0m
+[mHTTP GET /adminsite/customers-list/ 200 [0.01, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/users-block/1/ 200 [0.00, 127.0.0.1:52193][0m
+[mHTTP POST /adminsite/users-block/1/ 200 [0.07, 127.0.0.1:52193][0m
+[mHTTP POST /adminsite/users-block/1/ 200 [0.02, 127.0.0.1:52193][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:52193][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:52193][0m
+[mHTTP OPTIONS /adminsite/customers-details/1/ 200 [0.00, 127.0.0.1:52274][0m
+[mHTTP OPTIONS /adminsite/customers-details/1/ 200 [0.00, 127.0.0.1:52275][0m
+[mHTTP GET /adminsite/customers-details/1/ 200 [0.01, 127.0.0.1:52275][0m
+[mHTTP GET /adminsite/customers-details/1/ 200 [0.01, 127.0.0.1:52275][0m
+[mHTTP POST /adminsite/users-block/1/ 200 [0.02, 127.0.0.1:52275][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.03, 127.0.0.1:52297][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.03, 127.0.0.1:52297][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.03, 127.0.0.1:52297][0m
+[mHTTP POST /adminsite/users-block/1/ 200 [0.06, 127.0.0.1:52297][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.05, 127.0.0.1:52297][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:52297][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:52297][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:52297][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:52313][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:52313][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.01, 127.0.0.1:52313][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:52313][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:52313][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.08, 127.0.0.1:52313][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.03, 127.0.0.1:52313][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:52313][0m
+[mHTTP OPTIONS /customersite/booking-details/undefined/ 200 [0.00, 127.0.0.1:52313][0m
+[mHTTP OPTIONS /customersite/booking-details/undefined/ 200 [0.00, 127.0.0.1:52317][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.02, 127.0.0.1:52317][0m
+Not Found: /customersite/booking-details/undefined/
+[33mHTTP GET /customersite/booking-details/undefined/ 404 [0.02, 127.0.0.1:52313][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:52313][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.03, 127.0.0.1:52313][0m
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+[mHTTP GET /customersite/booking-details/14/ 200 [0.06, 127.0.0.1:52502][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:52502][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:52679][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:52679][0m
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\backend\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\backend\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\customersite\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\routeing.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\routeing.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\urls.py changed, reloading.
+Watching for file changes with StatReloader
+[mHTTP OPTIONS /adminsite/customers-details/1/ 200 [0.03, 127.0.0.1:54662][0m
+[mHTTP OPTIONS /adminsite/customers-details/1/ 200 [0.03, 127.0.0.1:54663][0m
+[mHTTP OPTIONS /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:54664][0m
+[mHTTP OPTIONS /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:54665][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.02, 127.0.0.1:54666][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.02, 127.0.0.1:54667][0m
+Unauthorized: /customersite/booking-details/14/
+Unauthorized: /barbersite/barber-appointments/
+Unauthorized: /adminsite/customers-details/1/
+[31;1mHTTP GET /customersite/booking-details/14/ 401 [0.09, 127.0.0.1:54665][0m
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.09, 127.0.0.1:54667][0m
+[31;1mHTTP GET /adminsite/customers-details/1/ 401 [0.09, 127.0.0.1:54662][0m
+[mHTTP OPTIONS /auth/token/refresh/ 200 [0.00, 127.0.0.1:54666][0m
+[mHTTP OPTIONS /auth/token/refresh/ 200 [0.01, 127.0.0.1:54664][0m
+[mHTTP OPTIONS /auth/token/refresh/ 200 [0.01, 127.0.0.1:54663][0m
+Unauthorized: /adminsite/customers-details/1/
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /adminsite/customers-details/1/ 401 [0.04, 127.0.0.1:54662][0m
+Unauthorized: /customersite/booking-details/14/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.05, 127.0.0.1:54667][0m
+[31;1mHTTP GET /customersite/booking-details/14/ 401 [0.11, 127.0.0.1:54665][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.14, 127.0.0.1:54666][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.19, 127.0.0.1:54664][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.20, 127.0.0.1:54663][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.05, 127.0.0.1:54664][0m
+[mHTTP GET /adminsite/customers-details/1/ 200 [0.05, 127.0.0.1:54663][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.03, 127.0.0.1:54664][0m
+[mHTTP GET /adminsite/customers-details/1/ 200 [0.02, 127.0.0.1:54663][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:54663][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:54663][0m
+[mHTTP GET /adminsite/customers-details/1/ 200 [0.01, 127.0.0.1:54663][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.01, 127.0.0.1:54664][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.02, 127.0.0.1:54664][0m
+[mHTTP GET /adminsite/customers-details/1/ 200 [0.02, 127.0.0.1:54663][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.01, 127.0.0.1:54663][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.07, 127.0.0.1:54663][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.04, 127.0.0.1:54663][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.02, 127.0.0.1:54663][0m
+[mHTTP OPTIONS /auth/logout/ 200 [0.00, 127.0.0.1:54663][0m
+Unauthorized: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 401 [0.02, 127.0.0.1:54663][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.02, 127.0.0.1:54663][0m
+Bad Request: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 400 [0.02, 127.0.0.1:54663][0m
+[mHTTP OPTIONS /auth/customer-barber-login/ 200 [0.00, 127.0.0.1:54726][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [1.16, 127.0.0.1:54726][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.00, 127.0.0.1:54726][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.00, 127.0.0.1:54728][0m
+[mHTTP GET /customersite/home/ 200 [0.10, 127.0.0.1:54726][0m
+[mHTTP GET /customersite/home/ 200 [0.03, 127.0.0.1:54726][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.09, 127.0.0.1:54735][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.09, 127.0.0.1:54736][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.10, 127.0.0.1:54734][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [0.99, 127.0.0.1:54726][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.00, 127.0.0.1:54726][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.01, 127.0.0.1:54728][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.02, 127.0.0.1:54726][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.02, 127.0.0.1:54726][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.00, 127.0.0.1:54726][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.00, 127.0.0.1:54728][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:54726][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:54726][0m
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.01, 127.0.0.1:54726][0m
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.00, 127.0.0.1:54728][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:54728][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.05, 127.0.0.1:54728][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:54728][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.02, 127.0.0.1:54728][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.08, 127.0.0.1:54728][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:54728][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:54728][0m
+[mHTTP OPTIONS /chat-service/chat/undefined/messages/ 200 [0.01, 127.0.0.1:54726][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:54728][0m
+Not Found: /chat-service/chat/undefined/messages/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.03, 127.0.0.1:54726][0m
+Not Found: /chat-service/chat/undefined/messages/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.02, 127.0.0.1:54728][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.03, 127.0.0.1:55263][0m
+Unauthorized: /profile-service/user-profile/
+[31;1mHTTP GET /profile-service/user-profile/ 401 [0.04, 127.0.0.1:55263][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.08, 127.0.0.1:55263][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.06, 127.0.0.1:55263][0m
+Not Found: /chat-service/chat/undefined/messages/
+[mHTTP GET /profile-service/user-profile/ 200 [0.08, 127.0.0.1:55263][0m
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.07, 127.0.0.1:55266][0m
+Not Found: /chat-service/chat/undefined/messages/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.08, 127.0.0.1:55266][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.10, 127.0.0.1:55328][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.06, 127.0.0.1:55328][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.15, 127.0.0.1:55328][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.08, 127.0.0.1:55328][0m
+Unauthorized: /customersite/booking-details/14/
+[31;1mHTTP GET /customersite/booking-details/14/ 401 [0.02, 127.0.0.1:55328][0m
+Unauthorized: /customersite/booking-details/14/
+[31;1mHTTP GET /customersite/booking-details/14/ 401 [0.05, 127.0.0.1:55328][0m
+[mHTTP POST /auth/token/refresh/ 200 [0.10, 127.0.0.1:55329][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.08, 127.0.0.1:55329][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.15, 127.0.0.1:55329][0m
+Bad Request: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 400 [0.03, 127.0.0.1:55329][0m
+Unauthorized: /adminsite/customers-details/1/
+[31;1mHTTP GET /adminsite/customers-details/1/ 401 [0.02, 127.0.0.1:55329][0m
+Unauthorized: /adminsite/customers-details/1/
+[31;1mHTTP GET /adminsite/customers-details/1/ 401 [0.02, 127.0.0.1:55329][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.02, 127.0.0.1:55329][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:57232][0m
+[mHTTP OPTIONS /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:57233][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.03, 127.0.0.1:57233][0m
+[mHTTP OPTIONS /auth/token/refresh/ 200 [0.00, 127.0.0.1:57232][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.04, 127.0.0.1:57233][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.06, 127.0.0.1:57232][0m
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\consumers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.10, 127.0.0.1:58994][0m
+Unauthorized: /barbersite/barber-appointments/
+[31;1mHTTP GET /barbersite/barber-appointments/ 401 [0.03, 127.0.0.1:58994][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.03, 127.0.0.1:58994][0m
+[mHTTP OPTIONS /auth/logout/ 200 [0.00, 127.0.0.1:59008][0m
+Unauthorized: /auth/logout/
+[31;1mHTTP POST /auth/logout/ 401 [0.01, 127.0.0.1:59008][0m
+Unauthorized: /auth/token/refresh/
+[31;1mHTTP POST /auth/token/refresh/ 401 [0.03, 127.0.0.1:59008][0m
+[mHTTP OPTIONS /auth/customer-barber-login/ 200 [0.00, 127.0.0.1:59162][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [1.14, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.00, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /customersite/home/ 200 [0.00, 127.0.0.1:59163][0m
+[mHTTP GET /customersite/home/ 200 [0.05, 127.0.0.1:59163][0m
+[mHTTP GET /customersite/home/ 200 [0.05, 127.0.0.1:59163][0m
+[36mHTTP GET /media/categories/hair_cut_jRyambl.webp 304 [0.11, 127.0.0.1:59169][0m
+[36mHTTP GET /media/services/Pompadour_1jvrmOT.jpeg 304 [0.11, 127.0.0.1:59170][0m
+[36mHTTP GET /media/services/WhatsApp_Image_2025-06-17_at_18_LbYyPcF.55.06_b8ba0119.jpg 304 [0.11, 127.0.0.1:59171][0m
+[mHTTP POST /auth/customer-barber-login/ 200 [0.98, 127.0.0.1:59163][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.01, 127.0.0.1:59163][0m
+[mHTTP OPTIONS /barbersite/barber-dash/ 200 [0.01, 127.0.0.1:59162][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.04, 127.0.0.1:59163][0m
+[mHTTP GET /barbersite/barber-dash/ 200 [0.02, 127.0.0.1:59163][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.00, 127.0.0.1:59163][0m
+[mHTTP OPTIONS /profile-service/user-profile/ 200 [0.00, 127.0.0.1:59162][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.03, 127.0.0.1:59163][0m
+[mHTTP GET /profile-service/user-profile/ 200 [0.02, 127.0.0.1:59163][0m
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.00, 127.0.0.1:59163][0m
+[mHTTP OPTIONS /customersite/booking-history/ 200 [0.00, 127.0.0.1:59162][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.06, 127.0.0.1:59162][0m
+[mHTTP GET /customersite/booking-history/ 200 [0.04, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /customersite/booking-details/14/ 200 [0.01, 127.0.0.1:59163][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.04, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /travel-tracking/travel-status/14/ 200 [0.01, 127.0.0.1:59163][0m
+[mHTTP GET /travel-tracking/travel-status/14/ 200 [0.04, 127.0.0.1:59163][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.06, 127.0.0.1:59162][0m
+[mHTTP GET /travel-tracking/travel-status/14/ 200 [0.06, 127.0.0.1:59162][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:59162][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.04, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /chat-service/chat/14/messages/ 200 [0.01, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /chat-service/chat/14/info/ 200 [0.01, 127.0.0.1:59163][0m
+[mHTTP OPTIONS /chat-service/chat/14/messages/ 200 [0.03, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /chat-service/chat/14/info/ 200 [0.01, 127.0.0.1:59163][0m
+[mHTTP GET /chat-service/chat/14/messages/ 200 [0.06, 127.0.0.1:59162][0m
+[mHTTP GET /chat-service/chat/14/messages/ 200 [0.04, 127.0.0.1:59162][0m
+Internal Server Error: /chat-service/chat/14/info/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[35;1mHTTP GET /chat-service/chat/14/info/ 500 [0.42, 127.0.0.1:59163][0m
+Internal Server Error: /chat-service/chat/14/info/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[35;1mHTTP GET /chat-service/chat/14/info/ 500 [0.07, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /chat-service/chat/undefined/messages/ 200 [0.01, 127.0.0.1:59162][0m
+[mHTTP OPTIONS /chat-service/chat/undefined/messages/ 200 [0.01, 127.0.0.1:59230][0m
+[mHTTP OPTIONS /chat-service/chat/undefined/info/ 200 [0.01, 127.0.0.1:59163][0m
+[mHTTP OPTIONS /chat-service/chat/undefined/info/ 200 [0.01, 127.0.0.1:59231][0m
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.06, 127.0.0.1:59162][0m
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.05, 127.0.0.1:59231][0m
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.10, 127.0.0.1:59163][0m
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.10, 127.0.0.1:59162][0m
+[mHTTP POST /chat-service/chat/14/messages/ 201 [0.06, 127.0.0.1:59290][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.03, 127.0.0.1:59290][0m
+[mHTTP GET /travel-tracking/travel-status/14/ 200 [0.06, 127.0.0.1:59292][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.06, 127.0.0.1:59290][0m
+[mHTTP GET /travel-tracking/travel-status/14/ 200 [0.02, 127.0.0.1:59290][0m
+Internal Server Error: /chat-service/chat/14/info/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[mHTTP GET /chat-service/chat/14/messages/ 200 [0.09, 127.0.0.1:59290][0m
+[35;1mHTTP GET /chat-service/chat/14/info/ 500 [0.10, 127.0.0.1:59292][0m
+[mHTTP GET /chat-service/chat/14/messages/ 200 [0.10, 127.0.0.1:59290][0m
+Internal Server Error: /chat-service/chat/14/info/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[35;1mHTTP GET /chat-service/chat/14/info/ 500 [0.14, 127.0.0.1:59292][0m
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.03, 127.0.0.1:59290][0m
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.04, 127.0.0.1:59292][0m
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.06, 127.0.0.1:59290][0m
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.07, 127.0.0.1:59302][0m
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.04, 127.0.0.1:59302][0m
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.04, 127.0.0.1:59290][0m
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.04, 127.0.0.1:59292][0m
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.04, 127.0.0.1:59302][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:59367][0m
+[mHTTP GET /barbersite/barber-appointments/ 200 [0.03, 127.0.0.1:59367][0m
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.03, 127.0.0.1:59368][0m
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.04, 127.0.0.1:59367][0m
+Not Found: /chat-service/chat/undefined/info/
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.08, 127.0.0.1:59368][0m
+Not Found: /chat-service/chat/undefined/messages/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.06, 127.0.0.1:59367][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.03, 127.0.0.1:59367][0m
+[mHTTP GET /travel-tracking/travel-status/14/ 200 [0.04, 127.0.0.1:59368][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.06, 127.0.0.1:59367][0m
+[mHTTP GET /travel-tracking/travel-status/14/ 200 [0.03, 127.0.0.1:59367][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.08, 127.0.0.1:59367][0m
+[mHTTP GET /travel-tracking/travel-status/14/ 200 [0.04, 127.0.0.1:59368][0m
+[mHTTP GET /customersite/booking-details/14/ 200 [0.13, 127.0.0.1:59367][0m
+[mHTTP GET /travel-tracking/travel-status/14/ 200 [0.03, 127.0.0.1:59367][0m
+[mHTTP GET /chat-service/chat/14/messages/ 200 [0.07, 127.0.0.1:59367][0m
+Internal Server Error: /chat-service/chat/14/info/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[35;1mHTTP GET /chat-service/chat/14/info/ 500 [0.13, 127.0.0.1:59368][0m
+[mHTTP GET /chat-service/chat/14/messages/ 200 [0.10, 127.0.0.1:59367][0m
+Internal Server Error: /chat-service/chat/14/info/
+Traceback (most recent call last):
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\exception.py", line 42, in inner
+    response = await get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 518, in thread_handler
+    raise exc_info[1]
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\core\handlers\base.py", line 253, in _get_response_async
+    response = await wrapped_callback(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+        request, *callback_args, **callback_kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 468, in __call__
+    ret = await asyncio.shield(exec_coro)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python313\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\asgiref\sync.py", line 522, in thread_handler
+    return func(*args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 517, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+                    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\NewGroomNet-clean\venv\Lib\site-packages\rest_framework\views.py", line 429, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected a `Response`, `HttpResponse` or `StreamingHttpResponse` to be returned from the view, but received a `<class 'NoneType'>`
+[35;1mHTTP GET /chat-service/chat/14/info/ 500 [0.14, 127.0.0.1:59375][0m
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\NewGroomNet-clean\backend\chat\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.03, 127.0.0.1:60083][0m
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.04, 127.0.0.1:60082][0m
+Not Found: /chat-service/chat/undefined/info/
+[33mHTTP GET /chat-service/chat/undefined/info/ 404 [0.03, 127.0.0.1:60083][0m
+Not Found: /chat-service/chat/undefined/messages/
+[33mHTTP GET /chat-service/chat/undefined/messages/ 404 [0.03, 127.0.0.1:60082][0m
+[mHTTP GET /chat-service/chat/14/info/ 200 [0.11, 127.0.0.1:60080][0m
+[mHTTP GET /chat-service/chat/14/messages/ 200 [0.17, 127.0.0.1:60079][0m
+[mHTTP GET /chat-service/chat/14/info/ 200 [0.02, 127.0.0.1:60080][0m
+[mHTTP GET /chat-service/chat/14/messages/ 200 [0.02, 127.0.0.1:60079][0m
+[36mHTTP GET /media/profile_images/WhatsApp_Image_2025-06-17_at_18.55.06_b8ba0119.jpg 304 [0.06, 127.0.0.1:60089][0m
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Bad Request: /auth/logout/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Not Found: /chat-service/chat/undefined/info/
+Not Found: /chat-service/chat/undefined/messages/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /auth/token/refresh/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /auth/token/refresh/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /auth/token/refresh/
+Unauthorized: /customersite/booking-details/14/
+Unauthorized: /customersite/booking-details/14/
+Unauthorized: /auth/token/refresh/
+Unauthorized: /auth/logout/
+Unauthorized: /auth/token/refresh/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /chat-service/chat/14/info/
+Bad Request: /auth/logout/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/messages/
+Unauthorized: /chat-service/chat/14/info/
+Unauthorized: /chat-service/chat/14/messages/

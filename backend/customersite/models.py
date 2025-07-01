@@ -10,7 +10,6 @@ class Booking(models.Model):
         ("SCHEDULE_BOOKING","schedule_booking")
     ]
     BOOKING_STATUS = [
-        ("PENDING", "Pending"), 
         ("CONFIRMED", "Confirmed"),
         ("CANCELLED", "Cancelled"),
         ("COMPLETED", "Completed")
@@ -31,7 +30,7 @@ class Booking(models.Model):
     service = models.ForeignKey(ServiceModel, on_delete=models.CASCADE)
     slot = models.ForeignKey(BarberSlot, on_delete=models.CASCADE)
     address = models.ForeignKey(Address, on_delete=models.CASCADE)
-    status = models.CharField(max_length=15, choices=BOOKING_STATUS, default="PENDING")
+    status = models.CharField(max_length=15, choices=BOOKING_STATUS, default="CONFIRMED")
     booking_type = models.CharField(max_length=20 , choices=BOOKING_TYPE_CHOICES , default="INSTANT_BOOKING")
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
     is_payment_done = models.BooleanField(default=False)
@@ -43,17 +42,19 @@ class Booking(models.Model):
         return f"{self.customer.name} - {self.service.name} - {self.slot.date}"
 
 
+
+
 class PaymentModel(models.Model):
     PAYMENT_METHODS = [
         ("STRIPE", "stripe"), 
-        ("COD" , "cod")
+        ("COD" , "cod"),
+        ('WALLET','wallet')
     ]
     
     PAYMENT_STATUS = [
         ('PENDING', 'Pending'),
         ('SUCCESS', 'Success'), 
         ('FAILED', 'Failed'),
-        ('RELEASED', 'Released')
     ]
     
     booking = models.OneToOneField(Booking, on_delete=models.CASCADE, related_name='payment')

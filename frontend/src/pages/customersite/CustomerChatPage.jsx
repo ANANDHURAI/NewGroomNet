@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { Send, ArrowLeft, User } from 'lucide-react';
 import apiClient from '../../slices/api/apiIntercepters';
-import BarberLayout from '../../components/chatcomponents/BarberLayout';
+import CustomerLayout from '../../components/chatcomponents/CustomerLayout'
 
-function BarberChatPage() {
+function CustomerChatPage() {
   const { bookingId } = useParams();
   const navigate = useNavigate();
-  const location = useLocation();
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
   const [bookingInfo, setBookingInfo] = useState(null);
@@ -15,9 +14,6 @@ function BarberChatPage() {
   const [sending, setSending] = useState(false);
   const messagesEndRef = useRef(null);
   const websocketRef = useRef(null);
-
-  const appointmentData = location.state?.appointmentData;
-  const customerName = location.state?.customerName;
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -49,6 +45,7 @@ function BarberChatPage() {
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     const token = sessionStorage.getItem('access_token');
     const wsUrl = `${protocol}//localhost:8000/ws/chat/${bookingId}/?token=${token}`;
+
     
     websocketRef.current = new WebSocket(wsUrl);
 
@@ -86,12 +83,11 @@ function BarberChatPage() {
 
     setSending(true);
     try {
-      // Send via API first for reliability
       await apiClient.post(`/chat-service/chat/${bookingId}/messages/`, {
         message: newMessage.trim()
       });
 
-      // Also send via WebSocket for real-time updates
+
       if (websocketRef.current && websocketRef.current.readyState === WebSocket.OPEN) {
         websocketRef.current.send(JSON.stringify({
           message: newMessage.trim()
@@ -131,25 +127,24 @@ function BarberChatPage() {
 
   if (loading) {
     return (
-      <BarberLayout>
+      <CustomerLayout>
         <div className="flex justify-center items-center h-64">
           <div className="text-gray-600">Loading chat...</div>
         </div>
-      </BarberLayout>
+      </CustomerLayout>
     );
   }
 
   return (
-    <BarberLayout>
+    <CustomerLayout>
       <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-        {/* Chat Header */}
-        <div className="bg-gradient-to-r from-green-600 to-green-700 text-white p-4">
+        <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4">
           <button 
-            onClick={() => navigate('/barber/appointments')}
-            className="flex items-center text-white hover:text-green-200 mb-2"
+            onClick={() => navigate(-1)}
+            className="flex items-center text-white hover:text-blue-200 mb-2"
           >
             <ArrowLeft className="w-4 h-4 mr-1" />
-            Back to Appointments
+            Back to Booking
           </button>
           
           {bookingInfo && (
@@ -166,14 +161,9 @@ function BarberChatPage() {
                 )}
               </div>
               <div>
-                <h2 className="text-lg font-semibold">
-                  {bookingInfo.other_user.name || customerName}
-                </h2>
-                <p className="text-sm text-green-100">
+                <h2 className="text-lg font-semibold">{bookingInfo.other_user.name}</h2>
+                <p className="text-sm text-blue-100">
                   {bookingInfo.service_name} • {bookingInfo.booking_date} at {bookingInfo.booking_time}
-                </p>
-                <p className="text-xs text-green-200">
-                  Status: {bookingInfo.status}
                 </p>
               </div>
             </div>
@@ -184,7 +174,7 @@ function BarberChatPage() {
         <div className="h-96 overflow-y-auto p-4 space-y-4 bg-gray-50">
           {messages.length === 0 ? (
             <div className="text-center text-gray-500 py-8">
-              <p>No messages yet. Start the conversation with your customer!</p>
+              <p>No messages yet. Start the conversation!</p>
             </div>
           ) : (
             messages.map((message, index) => {
@@ -202,7 +192,7 @@ function BarberChatPage() {
                   <div className={`flex ${isCurrentUser ? 'justify-end' : 'justify-start'}`}>
                     <div className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
                       isCurrentUser 
-                        ? 'bg-green-600 text-white' 
+                        ? 'bg-blue-600 text-white' 
                         : 'bg-white text-gray-800 border'
                     }`}>
                       {!isCurrentUser && (
@@ -210,7 +200,7 @@ function BarberChatPage() {
                       )}
                       <p className="text-sm">{message.message}</p>
                       <p className={`text-xs mt-1 ${
-                        isCurrentUser ? 'text-green-100' : 'text-gray-500'
+                        isCurrentUser ? 'text-blue-100' : 'text-gray-500'
                       }`}>
                         {formatTime(message.timestamp)}
                       </p>
@@ -223,21 +213,20 @@ function BarberChatPage() {
           <div ref={messagesEndRef} />
         </div>
 
-
         <form onSubmit={handleSendMessage} className="p-4 border-t bg-white">
           <div className="flex space-x-2">
             <input
               type="text"
               value={newMessage}
               onChange={(e) => setNewMessage(e.target.value)}
-              placeholder="Type your message to customer..."
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+              placeholder="Type your message..."
+              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               disabled={sending}
             />
             <button
               type="submit"
               disabled={!newMessage.trim() || sending}
-              className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2"
+              className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center gap-2"
             >
               <Send className="w-4 h-4" />
               {sending ? 'Sending...' : 'Send'}
@@ -245,8 +234,8 @@ function BarberChatPage() {
           </div>
         </form>
       </div>
-    </BarberLayout>
+    </CustomerLayout>
   );
 }
 
-export default BarberChatPage;
+export default CustomerChatPage;

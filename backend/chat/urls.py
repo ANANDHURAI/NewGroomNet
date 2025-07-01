@@ -1,9 +1,9 @@
+# chat/urls.py
 from django.urls import path
-from . import views
+from .views import ChatMessagesView, get_unread_count, get_booking_info
 
 urlpatterns = [
-    path('chat/<int:booking_id>/messages/', views.get_chat_messages, name='chat-messages'),
-    path('chat/<int:booking_id>/send/', views.send_message, name='send-message'),
-    path('chat/<int:booking_id>/unread-count/', views.get_unread_count, name='unread-count'),
-    path('booking/<int:booking_id>/status/', views.get_booking_status, name='booking-status'), 
+    path('chat/<int:booking_id>/messages/', ChatMessagesView.as_view(), name='chat-messages'),
+    path('chat/<int:booking_id>/unread-count/', get_unread_count, name='unread-count'),
+    path('chat/<int:booking_id>/info/', get_booking_info, name='booking-info'),
 ]

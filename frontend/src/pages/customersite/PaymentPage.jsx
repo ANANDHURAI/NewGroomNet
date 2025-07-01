@@ -7,6 +7,7 @@ import { loadStripe } from '@stripe/stripe-js';
 
 function PaymentPage() {
   const [method, setMethod] = useState("COD");
+  const [bookingType , SetBookingType] = useState('')
   const [error, setError] = useState(null);
   const [confirming, setConfirming] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -55,12 +56,18 @@ function PaymentPage() {
         barber: bookingData.selectedBarberId,
         slot: bookingData.selectedSlotId,
         address: bookingData.selectedAddressId,
-        payment_method: method
+        payment_method: method,
+        booking_type:bookingType
       });
 
       const bookingId = bookingRes.data.booking_id;
 
       if (method === "COD") {
+        navigate('/booking-success');
+        return;
+      }
+
+      if (method === "Wallet") {
         navigate('/booking-success');
         return;
       }
@@ -103,7 +110,20 @@ function PaymentPage() {
           disabled={loading}
         >
           <option value="COD">Cash on Delivery</option>
-          <option value="STRIPE">Pay with Card (Stripe)</option>
+          <option value="STRIPE">Stripe (pay with card)</option>
+          <option value="WALLET">Wallet</option>
+        </select>
+      </div>
+      <h2>Select your booking type</h2>
+      <div className="mb-6">
+        <select
+          value={bookingType}
+          onChange={(e) => SetBookingType(e.target.value)}
+          className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          disabled={loading}
+        >
+          <option value="INSTANT_BOOKING">Instant Booking</option>
+          <option value="SCHEDULE_BOOKING">Schedule Booking</option>
         </select>
       </div>
 

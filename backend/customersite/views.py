@@ -28,9 +28,8 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from django.conf import settings
 logger = logging.getLogger(__name__)
-from datetime import datetime, timedelta
 from django.utils import timezone
-from django.utils.timezone import make_aware
+
 
 class Home(APIView):
     permission_classes = [IsAuthenticated]
@@ -239,25 +238,14 @@ def booking_summary(request):
         return Response({"error": str(e)}, status=400)
     
 
-
 class BookingCreateView(generics.CreateAPIView):
     permission_classes = [IsAuthenticated]
     serializer_class = BookingCreateSerializer
 
     def create(self, request, *args, **kwargs):
-        logger.info(f"Booking request data: {request.data}")
-        logger.info(f"User: {request.user}")
-
-        if not request.user.is_authenticated:
-            return Response(
-                {"detail": "Authentication required"}, 
-                status=status.HTTP_401_UNAUTHORIZED
-            )
-
-        serializer = self.get_serializer(data=request.data, context={'request': request})
-
+        serializer = BookingCreateSerializer(data=request.data, context={'request': request})
         if not serializer.is_valid():
-            logger.error(f"Serializer errors: {serializer.errors}")
+            print("error : ", serializer.errors)
             return Response(
                 {
                     "detail": "Validation failed",
@@ -265,51 +253,24 @@ class BookingCreateView(generics.CreateAPIView):
                 }, 
                 status=status.HTTP_400_BAD_REQUEST
             )
-
         payment_method = request.data.get('payment_method')
 
-        if payment_method not in ['COD', 'STRIPE']:
+        if payment_method not in ['COD', 'STRIPE','WALLET']:
             return Response(
                 {"detail": "Unsupported payment method"}, 
                 status=status.HTTP_400_BAD_REQUEST
             )
-
-        try:
-            booking = serializer.save()
-            logger.info(f"Booking created successfully: {booking.id}")
-
-            slot_date = booking.slot.date
-            slot_time = booking.slot.start_time
-            slot_datetime = make_aware(datetime.combine(slot_date, slot_time)) 
-
-            reminder_time = slot_datetime - timedelta(minutes=15)
-            delay_seconds = (reminder_time - timezone.now()).total_seconds()
-
-            if delay_seconds > 0:
-                notify_barber_before_appointment.apply_async(
-                    args=[booking.id],
-                    countdown=delay_seconds
-                )
-                logger.info(f"Reminder task scheduled for {reminder_time}")
-            else:
-                logger.warning("Reminder time already passed; skipping scheduling.")
-
-            return Response(
-                {
-                    "detail": "Booking created successfully",
-                    "booking_id": booking.id,
-                    "success": True
-                },
-                status=status.HTTP_201_CREATED
-            )
-
-        except Exception as e:
-            logger.error(f"Error creating booking: {str(e)}")
-            return Response(
-                {"detail": f"Error creating booking: {str(e)}"},
-                status=status.HTTP_400_BAD_REQUEST
-            )
-
+        
+        booking = serializer.save()
+        return Response(
+            {
+                "detail": "Booking created successfully",
+                "booking_id": booking.id,
+                "success": True
+            },
+            status=status.HTTP_201_CREATED
+        )
+       
 
 class BookingSuccessView(APIView):
     permission_classes = [IsAuthenticated]
@@ -370,6 +331,7 @@ class BookingDetailView(APIView):
             "end_time": str(booking.slot.end_time),
             "date": str(booking.slot.date),
             "service": booking.service.name,
+            "booking_type": booking.booking_type,
             "total_amount": str(booking.total_amount),
             "payment_method": payment.payment_method if payment else "N/A",
             "booking_status": booking.status,
