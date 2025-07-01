@@ -44,6 +44,7 @@ import BookingHistoryPage from './pages/customersite/BookingHistoryPage'
 import AddressList from './pages/customersite/AddressList'
 import BookingStatus from './pages/customersite/BookingStatus'
 import CustomerChatPage from './pages/customersite/CustomerChatPage'
+import CustomerLayout from './components/customercompo/CustomerLayout'
 
 function App() {
   return (
@@ -280,7 +281,16 @@ function App() {
 
 
             <Route path="/barber/chat/:bookingId" element={<BarberChatPage />} />
-            <Route path="/customer/chat/:bookingId" element={<CustomerChatPage />} />
+            {/* <Route path="/customer/chat/:bookingId" element={<CustomerChatPage />} /> */}
+
+            <Route
+              path="/customer/chat/:bookingId"
+              element={
+                <CustomerLayout>
+                  <CustomerChatPage />
+                </CustomerLayout>
+              }
+            />
 
           </Routes>
         </ServiceProvider>

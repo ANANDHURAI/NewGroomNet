@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Send, ArrowLeft, User } from 'lucide-react';
 import apiClient from '../../slices/api/apiIntercepters';
-import CustomerLayout from '../../components/chatcomponents/CustomerLayout'
+import { OnlineStatus, TypingIndicator, useTypingIndicator } from '../../components/chatcomponents/ChatStatusIndicators';
 
 function CustomerChatPage() {
   const { bookingId } = useParams();
@@ -12,8 +12,11 @@ function CustomerChatPage() {
   const [bookingInfo, setBookingInfo] = useState(null);
   const [loading, setLoading] = useState(true);
   const [sending, setSending] = useState(false);
+  const [isOtherUserOnline, setIsOtherUserOnline] = useState(false);
   const messagesEndRef = useRef(null);
   const websocketRef = useRef(null);
+
+  const { isOtherUserTyping, handleInputChange, handleWebSocketMessage } = useTypingIndicator(websocketRef, bookingId);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -30,7 +33,7 @@ function CustomerChatPage() {
           apiClient.get(`/chat-service/chat/${bookingId}/messages/`),
           apiClient.get(`/chat-service/chat/${bookingId}/info/`)
         ]);
-        
+
         setMessages(messagesRes.data.messages || []);
         setBookingInfo(bookingRes.data);
         setLoading(false);
@@ -48,40 +51,33 @@ function CustomerChatPage() {
 
     websocketRef.current = new WebSocket(wsUrl);
 
-    websocketRef.current.onopen = () => {
-      console.log('WebSocket connected');
-    };
-
+    websocketRef.current.onopen = () => console.log('WebSocket connected');
     websocketRef.current.onmessage = (event) => {
       const data = JSON.parse(event.data);
+
+      const userStatus = handleWebSocketMessage(data);
+      if (userStatus !== undefined) {
+        setIsOtherUserOnline(userStatus);
+        return;
+      }
+
       if (data.type === 'message') {
-        setMessages(prevMessages => {
-          // Check if message already exists to prevent duplicates
-          const messageExists = prevMessages.some(msg => msg.id === data.data.id);
-          if (messageExists) {
-            return prevMessages;
-          }
-          return [...prevMessages, data.data];
+        setMessages(prev => {
+          const exists = prev.some(msg => msg.id === data.data.id);
+          return exists ? prev : [...prev, data.data];
         });
       } else if (data.type === 'error') {
         alert(data.message);
       }
     };
 
-    websocketRef.current.onclose = () => {
-      console.log('WebSocket disconnected');
-    };
-
-    websocketRef.current.onerror = (error) => {
-      console.error('WebSocket error:', error);
-    };
+    websocketRef.current.onclose = () => console.log('WebSocket disconnected');
+    websocketRef.current.onerror = (error) => console.error('WebSocket error:', error);
 
     return () => {
-      if (websocketRef.current) {
-        websocketRef.current.close();
-      }
+      if (websocketRef.current) websocketRef.current.close();
     };
-  }, [bookingId]);
+  }, [bookingId, handleWebSocketMessage]);
 
   const handleSendMessage = async (e) => {
     e.preventDefault();
@@ -89,29 +85,21 @@ function CustomerChatPage() {
 
     setSending(true);
     try {
-      // Only send via WebSocket - don't use HTTP POST
       if (websocketRef.current && websocketRef.current.readyState === WebSocket.OPEN) {
-        websocketRef.current.send(JSON.stringify({
-          message: newMessage.trim()
-        }));
+        websocketRef.current.send(JSON.stringify({ message: newMessage.trim() }));
         setNewMessage('');
       } else {
         throw new Error('WebSocket not connected');
       }
     } catch (error) {
-      console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again.');
+      console.error('Send error:', error);
+      alert('Failed to send message. Try again.');
     } finally {
       setSending(false);
     }
   };
 
-  const formatTime = (timestamp) => {
-    return new Date(timestamp).toLocaleTimeString([], { 
-      hour: '2-digit', 
-      minute: '2-digit' 
-    });
-  };
+  const formatTime = (timestamp) => new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
   const formatDate = (timestamp) => {
     const date = new Date(timestamp);
@@ -119,43 +107,37 @@ function CustomerChatPage() {
     const yesterday = new Date(today);
     yesterday.setDate(yesterday.getDate() - 1);
 
-    if (date.toDateString() === today.toDateString()) {
-      return 'Today';
-    } else if (date.toDateString() === yesterday.toDateString()) {
-      return 'Yesterday';
-    } else {
-      return date.toLocaleDateString();
-    }
+    if (date.toDateString() === today.toDateString()) return 'Today';
+    if (date.toDateString() === yesterday.toDateString()) return 'Yesterday';
+    return date.toLocaleDateString();
   };
 
   if (loading) {
     return (
-      <CustomerLayout>
-        <div className="flex justify-center items-center h-64">
-          <div className="text-gray-600">Loading chat...</div>
-        </div>
-      </CustomerLayout>
+      <div className="flex justify-center items-center h-64">
+        <div className="text-gray-600">Loading chat...</div>
+      </div>
     );
   }
 
   return (
-    <CustomerLayout>
-      <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className="w-full h-full">
+      <div className="h-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
         <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4">
-          <button 
+          <button
             onClick={() => navigate(-1)}
             className="flex items-center text-white hover:text-blue-200 mb-2"
           >
             <ArrowLeft className="w-4 h-4 mr-1" />
             Back to Booking
           </button>
-          
+
           {bookingInfo && (
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
                 {bookingInfo.other_user.profile_image ? (
-                  <img 
-                    src={bookingInfo.other_user.profile_image} 
+                  <img
+                    src={bookingInfo.other_user.profile_image}
                     alt={bookingInfo.other_user.name}
                     className="w-10 h-10 rounded-full object-cover"
                   />
@@ -163,11 +145,12 @@ function CustomerChatPage() {
                   <User className="w-6 h-6 text-white" />
                 )}
               </div>
-              <div>
+              <div className="flex-1">
                 <h2 className="text-lg font-semibold">{bookingInfo.other_user.name}</h2>
                 <p className="text-sm text-blue-100">
                   {bookingInfo.service_name} • {bookingInfo.booking_date} at {bookingInfo.booking_time}
                 </p>
+                <OnlineStatus isOnline={isOtherUserOnline} />
               </div>
             </div>
           )}
@@ -181,8 +164,7 @@ function CustomerChatPage() {
           ) : (
             messages.map((message, index) => {
               const isCurrentUser = message.sender.id === bookingInfo?.current_user_id;
-              const showDate = index === 0 || 
-                formatDate(messages[index - 1].timestamp) !== formatDate(message.timestamp);
+              const showDate = index === 0 || formatDate(messages[index - 1].timestamp) !== formatDate(message.timestamp);
 
               return (
                 <div key={message.id}>
@@ -193,17 +175,13 @@ function CustomerChatPage() {
                   )}
                   <div className={`flex ${isCurrentUser ? 'justify-end' : 'justify-start'}`}>
                     <div className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
-                      isCurrentUser 
-                        ? 'bg-blue-600 text-white' 
-                        : 'bg-white text-gray-800 border'
+                      isCurrentUser ? 'bg-blue-600 text-white' : 'bg-white text-gray-800 border'
                     }`}>
                       {!isCurrentUser && (
                         <p className="text-xs text-gray-500 mb-1">{message.sender.name}</p>
                       )}
                       <p className="text-sm">{message.message}</p>
-                      <p className={`text-xs mt-1 ${
-                        isCurrentUser ? 'text-blue-100' : 'text-gray-500'
-                      }`}>
+                      <p className={`text-xs mt-1 ${isCurrentUser ? 'text-blue-100' : 'text-gray-500'}`}>
                         {formatTime(message.timestamp)}
                       </p>
                     </div>
@@ -212,6 +190,8 @@ function CustomerChatPage() {
               );
             })
           )}
+
+          <TypingIndicator isTyping={isOtherUserTyping} userName={bookingInfo?.other_user.name} colorTheme="blue" />
           <div ref={messagesEndRef} />
         </div>
 
@@ -220,7 +200,7 @@ function CustomerChatPage() {
             <input
               type="text"
               value={newMessage}
-              onChange={(e) => setNewMessage(e.target.value)}
+              onChange={(e) => handleInputChange(e.target.value, setNewMessage)}
               placeholder="Type your message..."
               className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
               disabled={sending}
@@ -236,7 +216,7 @@ function CustomerChatPage() {
           </div>
         </form>
       </div>
-    </CustomerLayout>
+    </div>
   );
 }
 
