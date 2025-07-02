@@ -5,12 +5,13 @@ from .views import (
     PendingBarbersRequestsView, AllBarbersRequestsView,
     BarberApprovalActionView, BarberDetailsView, BarbersListView,
     BlockingView,
-    CategoryViewSet, ServiceViewSet
+    CategoryViewSet, ServiceViewSet,AdminWalletView,payment_history_view
 )
 
 router = DefaultRouter()
 router.register(r'categories', CategoryViewSet, basename='category')
 router.register(r'services', ServiceViewSet, basename='service')
+
 
 urlpatterns = [
     path('customers-list/', UsersListView.as_view(), name='customers-list'),
@@ -22,6 +23,8 @@ urlpatterns = [
     path('approve-barber/', BarberApprovalActionView.as_view(), name='approve-barber'),
     path('barber-details/<int:barber_id>/', BarberDetailsView.as_view(), name='barber-details'),
     path('users-block/<int:id>/', BlockingView.as_view(), name='users-block'),
+    path('admin-wallet/', AdminWalletView.as_view(), name='admin-wallet'),
+    path('payment-history/', payment_history_view, name='admin-wallet-payment-history'),
 
     path('', include(router.urls)),
 ]

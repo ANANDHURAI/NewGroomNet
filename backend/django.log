@@ -23546,3 +23546,10 @@ Bad Request: /customersite/create-booking/
 Bad Request: /auth/customer-barber-login/
 Internal Server Error: /paymentservice/create-checkout-session/
 Bad Request: /customersite/create-booking/
+Unauthorized: /barbersite/barber-appointments/
+Unauthorized: /barbersite/barber-appointments/
+Bad Request: /auth/logout/
+Unauthorized: /customersite/home/
+Unauthorized: /customersite/home/
+Internal Server Error: /adminsite/admin-wallet/
+Internal Server Error: /adminsite/admin-wallet/

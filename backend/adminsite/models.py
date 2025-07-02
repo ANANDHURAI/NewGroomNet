@@ -30,3 +30,4 @@ class AdminWallet(models.Model):
 
     def __str__(self):
         return f"Admin Wallet - ₹{self.total_earnings}"
+    

@@ -3,7 +3,6 @@ from authservice.models import User
 from adminsite.models import CategoryModel , ServiceModel
 
 
-
 class BarberService(models.Model):
     barber = models.ForeignKey(User, on_delete=models.CASCADE, related_name='barber_services')
     service = models.ForeignKey(ServiceModel, on_delete=models.CASCADE)

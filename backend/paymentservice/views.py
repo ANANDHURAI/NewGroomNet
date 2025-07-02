@@ -4,7 +4,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from customersite.models import Booking, PaymentModel
+from adminsite.models import AdminWallet
 from django.shortcuts import get_object_or_404
+from django.db import transaction
 import logging
 
 logger = logging.getLogger(__name__)
@@ -22,7 +24,6 @@ class CreateStripeCheckoutSession(APIView):
                     status=status.HTTP_400_BAD_REQUEST
                 )
             
-            # Get booking and verify ownership
             try:
                 booking = get_object_or_404(Booking, id=booking_id, customer=request.user)
                 logger.info(f"Found booking {booking_id} for user {request.user.id}")
@@ -118,10 +119,6 @@ class CreateStripeCheckoutSession(APIView):
                 {"error": "An unexpected error occurred"}, 
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )
-        
-
-from django.views.decorators.csrf import csrf_exempt
-from django.http import HttpResponse
 
 
 class VerifyPayment(APIView):
@@ -135,18 +132,44 @@ class VerifyPayment(APIView):
             if session.payment_status == 'paid':
                 booking_id = session.metadata.get("booking_id")
 
-                booking = Booking.objects.get(id=booking_id)
-                booking.is_payment_done = True
-                booking.save()
+                with transaction.atomic():
+                    booking = Booking.objects.get(id=booking_id)
+                    booking.is_payment_done = True
+                    booking.save()
 
-                PaymentModel.objects.filter(booking=booking).update(
-                    transaction_id=session.id,
-                    payment_status='SUCCESS',
-                    payment_method='STRIPE'
-                )
+                    # Update payment record
+                    payment = PaymentModel.objects.filter(booking=booking).first()
+                    if payment:
+                        payment.transaction_id = session.id
+                        payment.payment_status = 'SUCCESS'
+                        payment.payment_method = 'STRIPE'
+                        payment.save()
+
+                        # Add amount to admin wallet
+                        self.add_to_admin_wallet(payment.total_amount)
+
+                        logger.info(f"Payment verified and admin wallet updated for booking {booking_id}")
 
                 return Response({"message": "Payment verified and booking updated."})
             else:
                 return Response({"message": "Payment not completed yet."}, status=202)
         except Exception as e:
+            logger.error(f"Error in payment verification: {str(e)}")
             return Response({"error": str(e)}, status=500)
+    
+    def add_to_admin_wallet(self, amount):
+        """Add payment amount to admin wallet"""
+        try:
+            # Get or create admin wallet (assuming there's only one admin wallet)
+            admin_wallet, created = AdminWallet.objects.get_or_create(
+                id=1,  # Assuming single admin wallet with ID 1
+                defaults={'total_earnings': 0}
+            )
+            admin_wallet.total_earnings += amount
+            admin_wallet.save()
+            
+            logger.info(f"Added ₹{amount} to admin wallet. New total: ₹{admin_wallet.total_earnings}")
+            
+        except Exception as e:
+            logger.error(f"Error adding to admin wallet: {str(e)}")
+            raise

@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from authservice.models import User 
-from .models import CategoryModel , ServiceModel
+from .models import CategoryModel , ServiceModel , AdminWallet
 
 class UsersListSerializer(serializers.ModelSerializer):
     profileimage_url = serializers.SerializerMethodField()
@@ -58,4 +58,13 @@ class ServiceSerializer(serializers.ModelSerializer):
             }
         return representation
 
+from rest_framework import serializers
+from .models import AdminWallet
+
+class AdminWalletSerializer(serializers.ModelSerializer):
+    amount = serializers.DecimalField(max_digits=10, decimal_places=2, write_only=True, required=False)
     
+    class Meta:
+        model = AdminWallet
+        fields = ['id', 'total_earnings', 'last_updated', 'amount']
+        read_only_fields = ['id', 'last_updated']

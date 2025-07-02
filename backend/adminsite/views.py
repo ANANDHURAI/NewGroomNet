@@ -15,11 +15,10 @@ User = get_user_model()
 logger = logging.getLogger(__name__)
 from rest_framework.viewsets import ModelViewSet
 from rest_framework.generics import ListAPIView
-# from commanapp.pagination import StandardResultsSetPagination
+
 
 class PendingBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
-    # pagination_class = StandardResultsSetPagination
 
     def get_full_url(self, request, file_field):
         if file_field:
@@ -59,7 +58,6 @@ class PendingBarbersRequestsView(APIView):
 
 class AllBarbersRequestsView(APIView):
     permission_classes = [IsAuthenticated]
-    # pagination_class = StandardResultsSetPagination
 
     def get_full_url(self, request, file_field):
         if file_field:
@@ -273,3 +271,82 @@ class ServiceViewSet(ModelViewSet):
     queryset = ServiceModel.objects.all().order_by('-id')
     serializer_class = ServiceSerializer
     permission_classes = [IsAuthenticated]
+
+from rest_framework.viewsets import ModelViewSet
+from rest_framework.decorators import action
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework import status
+from .models import AdminWallet
+from .serializers import AdminWalletSerializer
+import logging
+from customersite.models import PaymentModel , Booking
+
+logger = logging.getLogger(__name__)
+
+class AdminWalletView(APIView):
+    permission_classes = [IsAuthenticated]
+    
+    def get(self, request):
+        try:
+            admin_wallet, created = AdminWallet.objects.get_or_create(
+                id=1,
+                defaults={'total_earnings': 0}
+            )
+            
+            if created:
+                logger.info("Created new admin wallet")
+            
+            serializer = AdminWalletSerializer(admin_wallet)
+            return Response(serializer.data, status=status.HTTP_200_OK)
+            
+        except Exception as e:
+            logger.error(f"Error fetching admin wallet: {str(e)}")
+            return Response(
+                {"error": "Failed to fetch admin wallet", "details": str(e)}, 
+                status=status.HTTP_500_INTERNAL_SERVER_ERROR
+            )
+
+from rest_framework.decorators import api_view, permission_classes
+from customersite.models import Booking, PaymentModel
+from .models import ServiceModel, CategoryModel , AdminWallet 
+from authservice.models import User
+from barbersite.models import BarberSlot ,BarberService , BarberSlotBooking
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def payment_history_view(request):
+    try:
+        if request.user.user_type != 'admin':
+            return Response({'error': 'Admin access required'}, status=status.HTTP_403_FORBIDDEN)
+            
+        payments = PaymentModel.objects.select_related(
+            'booking', 
+            'booking__customer', 
+            'booking__barber', 
+            'booking__service', 
+            'booking__service__category'
+        ).order_by('-created_at')
+
+        history = []
+        for pay in payments:
+            booking = pay.booking
+            history.append({
+                'customer': booking.customer.name,
+                'barber': booking.barber.name,
+                'category': booking.service.category.name,
+                'service': booking.service.name,
+                'payment_method': pay.payment_method,
+                'payment_status': pay.payment_status,
+                'service_amount': float(pay.service_amount),
+                'platform_fee': float(pay.platform_fee),
+                'total_amount': float(pay.total_amount),
+                'created_at': pay.created_at,
+            })
+
+        return Response({'history': history}, status=status.HTTP_200_OK)
+
+    except Exception as e:
+        print(f"Error in payment_history_view: {str(e)}")  # For debugging
+        return Response({'error': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

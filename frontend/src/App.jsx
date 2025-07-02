@@ -45,6 +45,7 @@ import AddressList from './pages/customersite/AddressList'
 import BookingStatus from './pages/customersite/BookingStatus'
 import CustomerChatPage from './pages/customersite/CustomerChatPage'
 import CustomerLayout from './components/customercompo/CustomerLayout'
+import AdminWallet from './pages/adminsite/AdminWallet'
 
 function App() {
   return (
@@ -279,9 +280,9 @@ function App() {
             <Route path="/my-addresses" element={<AddressList />} />
             <Route path="/booking-status" element={<BookingStatus />} />
 
-
+            <Route path="/admin-wallet/" element={<AdminWallet />} />
             <Route path="/barber/chat/:bookingId" element={<BarberChatPage />} />
-            {/* <Route path="/customer/chat/:bookingId" element={<CustomerChatPage />} /> */}
+            
 
             <Route
               path="/customer/chat/:bookingId"

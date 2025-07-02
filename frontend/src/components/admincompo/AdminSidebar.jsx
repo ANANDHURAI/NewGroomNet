@@ -5,7 +5,8 @@ import {
   Scissors, 
   Clock, 
   Grid3X3, 
-  Settings, 
+  Settings,
+  Wallet, 
   User, 
   Wrench
 } from 'lucide-react';
@@ -61,10 +62,12 @@ function AdminSidebar() {
           <span className="font-medium">Services</span>
         </Link>
 
-        <div className="flex items-center space-x-3 p-3 rounded-lg text-violet-700 hover:bg-black hover:text-white transition-all duration-200 cursor-pointer group">
-          <Settings className="w-5 h-5 transition-colors" />
-          <span className="font-medium">Settings</span>
-        </div>
+        <Link to="/admin-wallet/">
+          <div className="flex items-center space-x-3 p-3 rounded-lg text-violet-700 hover:bg-black hover:text-white transition-all duration-200 cursor-pointer group">
+            <Wallet className="w-5 h-5 transition-colors" />
+            <span className="font-medium">Money Bag</span>
+          </div>
+        </Link>
 
         <Link 
           to="/profile" 
